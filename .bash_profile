@@ -55,3 +55,20 @@ extract() {
 }
 # spotlight:  Search for a file using MacOS Spotlight's metadata
 spotlight() { mdfind "kMDItemDisplayName == '$@'wc"; }
+# Networking Commands
+alias myip='curl ip.appspot.com'                    # myip:         Public facing IP Address
+alias flushDNS='dscacheutil -flushcache'            # flushDNS:     Flush out the DNS Cache
+alias openPorts='sudo lsof -i | grep LISTEN'        # openPorts:    All listening connections
+
+# ii:  display useful host related informaton
+ii() {
+  echo -e "\nYou are logged on ${RED}$HOST"
+  echo -e "\nAdditionnal information:$NC " ; uname -a
+  echo -e "\n${RED}Users logged on:$NC " ; w -h
+  echo -e "\n${RED}Current date :$NC " ; date
+  echo -e "\n${RED}Machine stats :$NC " ; uptime
+  echo -e "\n${RED}Current network location :$NC " ; scselect
+  echo -e "\n${RED}Public facing IP Address :$NC " ;myip
+  echo -e "\n${RED}DNS Configuration:$NC " ; scutil --dns
+  echo
+}

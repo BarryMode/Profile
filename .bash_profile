@@ -26,3 +26,7 @@ trash() { command mv "$@" ~/.Trash ; }      # trash:        Moves a file to the 
 ql() { qlmanage -p "$*" >& /dev/null; }     # ql:           Opens any file in MacOS Quicklook Preview
 zipf () { zip -r "$1".zip "$1" ; }          # zipf:         To create a ZIP archive of a folder
 alias numFiles='echo $(ls -1 | wc -l)'      # numFiles:     Count of non-hidden files in current dir
+# finderShowHidden:  Show hidden files in Finder
+# finderHideHidden:  Hide hidden files in Finder
+alias finderShowHidden='defaults write com.apple.finder ShowAllFiles TRUE'
+alias finderHideHidden='defaults write com.apple.finder ShowAllFiles FALSE'

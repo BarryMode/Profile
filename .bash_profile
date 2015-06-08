@@ -53,3 +53,5 @@ extract() {
     echo "'$1' is not a valid file"
   fi
 }
+# spotlight:  Search for a file using MacOS Spotlight's metadata
+spotlight() { mdfind "kMDItemDisplayName == '$@'wc"; }

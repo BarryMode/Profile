@@ -1,3 +1,6 @@
+# Sources: natelandau.com/my-mac-osx-bash_profile/
+#          github.com/mdo/config/blob/master/.bash_profile
+
 # Custom Bash Prompt (kirsle.net/wizards/ps1.html)
 parse_git_branch() {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'

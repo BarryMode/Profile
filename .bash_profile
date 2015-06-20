@@ -23,21 +23,26 @@ alias less='less -FSRXc'                    # Preferred 'less' implementation
 cd() { builtin cd "$@"; ls; }               # Always list directory contents upon 'cd'
 
 # Basic Commands
-alias edit='subl'                           # edit:         Opens any file in sublime editor
-alias f='open -a Finder ./'                 # f:            Opens current directory in MacOS Finder
-alias ~="cd ~"                              # ~:            Go Home
-alias c='clear'                             # c:            Clear terminal display
-alias path='echo -e ${PATH//:/\\n}'         # path:         Echo all executable Paths
-mcd() { mkdir -p "$1" && cd "$1"; }         # mcd:          Makes new Dir and jumps inside
-trash() { command mv "$@" ~/.Trash ; }      # trash:        Moves a file to the MacOS trash
-ql() { qlmanage -p "$*" >& /dev/null; }     # ql:           Opens any file in MacOS Quicklook Preview
-zipf () { zip -r "$1".zip "$1" ; }          # zipf:         To create a ZIP archive of a folder
-alias numFiles='echo $(ls -1 | wc -l)'      # numFiles:     Count of non-hidden files in current dir
+alias edit='subl'                               # edit:       Opens any file in sublime editor.
+alias f='open -a Finder ./'                     # f:          Opens current directory in Finder.
+alias ~="cd ~"                                  # ~:          Go Home.
+alias c='clear'                                 # c:          Clear terminal display.
+alias path='echo -e ${PATH//:/\\n}'             # path:       Echo all executable Paths.
+alias eject='/usr/bin/drutil eject'             # eject:      Force eject disc.
+alias empty='rm -rf ~/.Trash/*'                 # empty:      Empty the trash.
+alias update='softwareupdate -ia'               # update:     Installs OS X software updates.
+alias repair='diskutil repairPermissions /'     # repair:     Repair disk permissions.
+mcd() { mkdir -p "$1" && cd "$1"; }             # mcd:        Makes new Dir and jumps inside.
+trash() { command mv "$@" ~/.Trash ; }          # trash:      Moves a file to the MacOS trash.
+delete() { command rm -rf "$@" ; }              # delete:     Permanently deletes a file.
+quicklook() { qlmanage -p "$*" >& /dev/null; }  # quicklook:  Opens any file in MacOS Quicklook Preview.
+zipfolder () { zip -r "$1".zip "$1" ; }         # zipfolder:  To create a ZIP archive of a folder.
+alias numFiles='echo $(ls -1 | wc -l)'          # numFiles:   Count of non-hidden files in current dir.
 
 # finderShowHidden:  Show hidden files in Finder
 # finderHideHidden:  Hide hidden files in Finder
-alias finderShowHidden='defaults write com.apple.finder ShowAllFiles TRUE'
-alias finderHideHidden='defaults write com.apple.finder ShowAllFiles FALSE'
+alias showHiddenFiles='defaults write com.apple.finder ShowAllFiles TRUE'
+alias hideHiddenFiles='defaults write com.apple.finder ShowAllFiles FALSE'
 
 # lr:  Full Recursive Directory Listing
 alias lr='ls -R | grep ":$" | sed -e '\''s/:$//'\'' -e '\''s/[^-][^\/]*\//--/g'\'' -e '\''s/^/   /'\'' -e '\''s/-/|/'\'' | less'
@@ -68,9 +73,9 @@ extract() {
 spotlight() { mdfind "kMDItemDisplayName == '$@'wc"; }
 
 # Networking Commands
-alias myip='curl ip.appspot.com'                    # myip:         Public facing IP Address
-alias flushDNS='dscacheutil -flushcache'            # flushDNS:     Flush out the DNS Cache
-alias openPorts='sudo lsof -i | grep LISTEN'        # openPorts:    All listening connections
+alias myip='curl ip.appspot.com'                # myip:       Public facing IP Address
+alias flushDNS='dscacheutil -flushcache'        # flushDNS:   Flush out the DNS Cache
+alias openPorts='sudo lsof -i | grep LISTEN'    # openPorts:  All listening connections
 
 # ii:  display useful host related informaton
 ii() {
@@ -85,7 +90,7 @@ ii() {
   echo
 }
 
-# Webdev Commands
-alias editHosts='edit /etc/hosts' # editHosts:  Edit /etc/hosts file
+# Web Development
+alias editHosts='edit /etc/hosts'                        # editHosts:  Edit /etc/hosts file
 # httpDebug:  Download a web page and show info on what took time
 httpDebug() { /usr/bin/curl $@ -o /dev/null -w "dns: %{time_namelookup} connect: %{time_connect} pretransfer: %{time_pretransfer} starttransfer: %{time_starttransfer} total: %{time_total}\n" ; }

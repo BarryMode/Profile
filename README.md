@@ -5,4 +5,5 @@ Personal guide to tailor my Mac for development.
 
 1. Run `os-x-primer.command`.
 2. Copy `.bash_profile` & `.gitconfig` to `~/`.
-3. Copy `Preferences.sublime-settings` to `~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User`.
+3. Copy `com.apple.Terminal.plist` to `~/Library/Preferences/`.
+4. Copy `Preferences.sublime-settings` to `~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/`.

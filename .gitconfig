@@ -3,7 +3,7 @@
   email = barry@netforger.com
 
 [alias]
-  undo = reset HEAD~
+  undo = reset HEAD~1
   squash = update-ref -d HEAD
   publish = push --force
 

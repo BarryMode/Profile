@@ -1,6 +1,6 @@
-# OS X Primer
-Personal guide to tailor my Mac for development.
+# Apple Sauce
+Personal guide to tailor my Mac.
 
-## Guide (WIP)
+## Guide
 
 1. Run `os-x-primer.command` in Terminal.

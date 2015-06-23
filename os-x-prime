@@ -3,6 +3,12 @@
 # Install Xcode Command Line Tools
 xcode-select --install
 
+# Update RubyGems
+sudo gem update --system
+
+# Install Gems
+sudo gem install jekyll
+
 # Install Homebrew
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 

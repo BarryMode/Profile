@@ -28,12 +28,8 @@ alias f='open -a Finder ./'                     # f:          Opens current dire
 alias ~="cd ~"                                  # ~:          Go Home.
 alias c='clear'                                 # c:          Clear terminal display.
 alias path='echo -e ${PATH//:/\\n}'             # path:       Echo all executable Paths.
-alias eject='/usr/bin/drutil eject'             # eject:      Force eject disc.
-alias empty='rm -rf ~/.Trash/*'                 # empty:      Empty the trash.
 alias hide='chflags hidden'                     # hide:       Hide the file.
 alias show='chflags nohidden'                   # show:       Show the file.
-alias update='softwareupdate -ia'               # update:     Installs OS X software updates.
-alias repair='diskutil repairPermissions /'     # repair:     Repair disk permissions.
 mcd() { mkdir -p "$1" && cd "$1"; }             # mcd:        Makes new Dir and jumps inside.
 trash() { command mv "$@" ~/.Trash ; }          # trash:      Moves a file to the MacOS trash.
 delete() { command rm -rf "$@" ; }              # delete:     Permanently deletes a file.

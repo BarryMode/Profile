@@ -1,6 +1,6 @@
-# Apple Sauce
+# OS X Prime
 Personal guide to tailor my Mac.
 
 ## Guide
 
-1. Run `./os-x-primer.command` in Terminal.
+1. Run `./os-x-prime` in Terminal.

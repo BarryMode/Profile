@@ -23,6 +23,7 @@ alias less='less -FSRXc'                    # Preferred 'less' implementation
 cd() { builtin cd "$@"; ls; }               # Always list directory contents upon 'cd'
 
 # Basic Commands
+alias maintenance='~/Scripts/maintenance/maintenance' # maintenance: Executes a series of upkeep tasks.
 alias edit='subl'                               # edit:       Opens any file in sublime editor.
 alias f='open -a Finder ./'                     # f:          Opens current directory in Finder.
 alias ~="cd ~"                                  # ~:          Go Home.

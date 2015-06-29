@@ -29,7 +29,7 @@ ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local
 
 # Install Preferences
   # .bash_profile, .gitconfig, .gitignore
-  cp ./.[^.]* ~/
+  cp ./preferences/.[^.]* ~/
   # Application Preferences
   cp ./preferences/*.plist ~/Library/Preferences/
   # Sublime Text Settings

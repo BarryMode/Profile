@@ -10,6 +10,7 @@ export PS1="\[$(tput setaf 5)\]⌘ \[$(tput setaf 6)\]\w/\[$(tput setaf 3)\]\$(p
 # Set Paths
 export PATH="$PATH:/usr/local/bin/"
 export PATH="/usr/local/git/bin:/sw/bin/:/usr/local/bin:/usr/local/:/usr/local/sbin:/usr/local/mysql/bin:$PATH"
+# export PATH="/usr/local/Cellar/qt5/5.4.2/bin"
 
 # Set Default Editor to Sublime Text
 export EDITOR=/usr/local/bin/subl

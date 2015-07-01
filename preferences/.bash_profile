@@ -20,11 +20,11 @@ alias cp='cp -iv'                           # Preferred 'cp' implementation
 alias mv='mv -iv'                           # Preferred 'mv' implementation
 alias mkdir='mkdir -pv'                     # Preferred 'mkdir' implementation
 alias ll='ls -FGlAhp'                       # Preferred 'ls' implementation
-alias less='less -FSRXc'                    # Preferred 'less' implementation
 cd() { builtin cd "$@"; ls; }               # Always list directory contents upon 'cd'
 
 # Basic Commands
 alias maintenance='~/Scripts/maintenance/maintenance' # maintenance: Executes a series of upkeep tasks.
+alias vlc='/Applications/VLC.app/Contents/MacOS/VLC'  # vlc: VLC media player.
 alias edit='subl'                               # edit:       Opens any file in sublime editor.
 alias f='open -a Finder ./'                     # f:          Opens current directory in Finder.
 alias ~="cd ~"                                  # ~:          Go Home.

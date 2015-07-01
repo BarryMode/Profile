@@ -24,10 +24,6 @@ sudo npm install -g underscore
 sudo npm install -g moment
 npm update
 
-# Install Composer
-curl -sS https://getcomposer.org/installer | php
-composer self-update
-
 # Make a shortcut for Sublime Text alias.
 ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl
 

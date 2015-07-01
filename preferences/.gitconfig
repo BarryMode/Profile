@@ -3,7 +3,7 @@
   email = barry@netforger.com
 
 [alias]
-  undo = reset HEAD~1
+  undo = "!f() { git reset --soft HEAD~$1; }; f"
   squash = update-ref -d HEAD
   publish = push --force
 

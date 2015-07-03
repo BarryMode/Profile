@@ -3,7 +3,8 @@
   email = barry@netforger.com
 
 [alias]
-  undo = "!f() { git reset --soft HEAD~$1; }; f"
+  unstage = "!f() { git reset --soft HEAD~$1; }; f"
+  undo = "!f() { git reset --hard HEAD~$1; }; f"
   squash = update-ref -d HEAD
   publish = push --force
 
@@ -28,3 +29,7 @@
   editor = subl
   whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
   excludesfile = ~/.gitignore
+[filter "lfs"]
+  clean = git lfs clean %f
+  smudge = git lfs smudge %f
+  required = true

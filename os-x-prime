@@ -16,6 +16,7 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 brew update
 brew install ack
 brew install node
+brew install gcc
 # brew install qt5 --with-docs --with-developer --with-d-bus
 brew upgrade
 

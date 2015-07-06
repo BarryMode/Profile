@@ -70,7 +70,7 @@ spotlight() { mdfind "kMDItemDisplayName == '$@'wc"; }
 # App Commands
 # ============
 alias edit='subl'                                      # edit:  Opens any file in sublime editor.
-alias sweep='open ~/Scripts/maintenance/sweep'         # sweep: Run upkeep tasks.
+alias sweep='open ~/Scripts/maintenance/sweep.sh'      # sweep: Run upkeep tasks.
 alias vlc='/Applications/VLC.app/Contents/MacOS/VLC'   # vlc:   VLC media player.
 
 # Internet Commands

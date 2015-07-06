@@ -42,8 +42,8 @@ case ${answer:0:1} in
     echo 'Installing GCC...'
     brew install gcc
     # echo
-    # echo 'Installing QT5...'
-    # brew install qt5 --with-docs --with-developer --with-d-bus --with-mysql
+    echo 'Installing QT5...'
+    brew install qt5 --with-docs --with-developer --with-d-bus --with-mysql
     echo
     echo 'Upgrading Homebrew Packages...'
     brew upgrade

@@ -95,5 +95,6 @@ internet() {
 # Web Development
 # ===============
 alias hosts='edit /etc/hosts'                          # hosts:     Edit system hosts file
+alias dreamhost='~/Scripts/host-web/connect-to-dreamhost.sh' # dreamhost: Connect to DreamHost
 # httpdebug:  Download a web page and show info on what took time
 httpdebug() { /usr/bin/curl $@ -o /dev/null -w "dns: %{time_namelookup} connect: %{time_connect} pretransfer: %{time_pretransfer} starttransfer: %{time_starttransfer} total: %{time_total}\n" ; }

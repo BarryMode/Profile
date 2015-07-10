@@ -1,14 +1,12 @@
 # OS X Prime
 echo 'Welcome to OS X Prime.'
-echo
-echo '--- Xcode'
-echo
+
+echo ; echo '--- Xcode' ; echo
 echo 'Installing Xcode Command Line Tools...'
 xcode-select --install
-echo
-echo '--- Ruby'
-echo
-echo Updating RubyGems...
+
+echo ; echo '--- Ruby' ; echo
+echo 'Updating RubyGems...'
 sudo gem update --system
 echo
 read -p 'Install Gem: Jekyll? (y/n) ' answer
@@ -18,17 +16,15 @@ case ${answer:0:1} in
     sudo gem install jekyll
   ;;
 esac
-echo
-echo '--- Homebrew'
-echo
+
+echo ; echo '--- Homebrew' ; echo
 echo 'Installing Homebrew...'
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 echo
 echo 'Updating Homebrew...'
 brew update
-echo
-echo '--- Development Packages'
-echo
+
+echo ; echo '--- Development Packages' ; echo
 read -p 'Install Development Packages? (y/n) ' answer
 case ${answer:0:1} in
   y|Y )
@@ -58,9 +54,8 @@ case ${answer:0:1} in
     npm update
   ;;
 esac
-echo
-echo '--- Preferences'
-echo
+
+echo ; echo '--- Preferences' ; echo
 read -p 'Shortcut for Sublime Text alias? (y/n) ' answer
 case ${answer:0:1} in
   y|Y )

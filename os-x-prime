@@ -76,6 +76,9 @@ case ${answer:0:1} in
     echo 'Installing Sublime Text Settings...'
     ditto ./preferences/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
     echo
+    echo 'Disabling Dashboard...'
+    defaults write com.apple.dashboard mcx-disabled -boolean YES
+    echo
     echo 'Display folders first when sorted by kind.'
     ditto ./preferences/InfoPlist.strings /System/Library/CoreServices/Finder.app/Contents/Resources/English.lproj/
     echo

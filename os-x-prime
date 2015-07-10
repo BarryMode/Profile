@@ -86,4 +86,8 @@ case ${answer:0:1} in
     defaults write com.apple.finder QLEnableTextSelection -bool TRUE
   ;;
 esac
-
+echo
+echo 'Restarting Dock...'
+killall Dock
+echo 'Restarting Finder...'
+killall Finder

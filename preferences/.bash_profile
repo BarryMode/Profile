@@ -39,8 +39,10 @@ hide() { chflags hidden "$1"; }                        # hide:   Hide the file.
 show() { chflags nohidden "$1"; }                      # show:   Show the file.
 trash() { command mv "$@" ~/.Trash; }                  # trash:  Moves a file to the MacOS trash.
 zipdir() { zip -r "$1".zip "$1" ; }                    # zipdir: To create a ZIP archive of a folder.
-hidefiles() { defaults write com.apple.finder AppleShowAllFiles NO; killall Finder; }  # hidefiles: Hide hidden files in Finder
-showfiles() { defaults write com.apple.finder AppleShowAllFiles YES; killall Finder; } # showfiles: Show hidden files in Finder
+hidefiles() { defaults write com.apple.finder AppleShowAllFiles NO; killall Finder; }  # hidefiles: Hide hidden files in Finder.
+showfiles() { defaults write com.apple.finder AppleShowAllFiles YES; killall Finder; } # showfiles: Show hidden files in Finder.
+editbinary() { plutil -convert xml1 ${1} && subl ${1}; }                               # editbinary: Edit a binary file as xml.
+convertbinary() { plutil -convert binary1 ${1} }                                       # convertbinary: Convert a file to binary.
 
 # extract: Extract most known archives with one command.
 extract() {
@@ -79,7 +81,7 @@ alias myip='curl ip.appspot.com'                       # myip:      Public facin
 alias flushdns='dscacheutil -flushcache'               # flushdns:  Flush out the DNS Cache
 alias openports='sudo lsof -i | grep LISTEN'           # openports: All listening connections
 
-# ii: display useful host related informaton
+# internet: display useful host related informaton
 internet() {
   echo -e "\nYou are logged on ${RED}$HOST"
   echo -e "\nAdditionnal information:$NC " ; uname -a
@@ -94,7 +96,7 @@ internet() {
 
 # Web Development
 # ===============
-alias hosts='edit /etc/hosts'                          # hosts:     Edit system hosts file
-alias dreamhost='~/Scripts/host-web/connect-to-dreamhost.sh' # dreamhost: Connect to DreamHost
+alias hosts='subl /etc/hosts'                          # hosts:     Edit system hosts file
+alias dreamhost='ssh netbasis@butternut.dreamhost.com' # dreamhost: Connect to DreamHost
 # httpdebug:  Download a web page and show info on what took time
 httpdebug() { /usr/bin/curl $@ -o /dev/null -w "dns: %{time_namelookup} connect: %{time_connect} pretransfer: %{time_pretransfer} starttransfer: %{time_starttransfer} total: %{time_total}\n" ; }

@@ -67,22 +67,44 @@ read -p 'Install Preferences? (y/n) ' answer
 case ${answer:0:1} in
   y|Y )
     echo
-    echo 'Load Bash Profile, Git Config, and Git Ignore...'
+    echo 'Loading Bash Profile, Git Config, and Git Ignore...'
     ditto ./preferences/.[^.]* ~/
     echo
-    echo 'Load Application Preferences...'
+    echo 'Loading Application Preferences...'
     ditto ./preferences/*.plist ~/Library/Preferences/
     echo
-    echo 'Load Sublime Text Settings...'
+    echo 'Loading Sublime Text Settings...'
     ditto ./preferences/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
+    echo
+    echo 'Setting the default Finder location to the home folder...'
+    defaults write com.apple.finder NewWindowTarget -string "PfLo" && \
+    defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}"
+    echo
+    echo 'Setting the current directory as the default search scope in Finder...'
+    defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
+    echo
+    echo 'Displaying the path bar in Finder...'
+    defaults write com.apple.finder ShowPathbar -bool true
+    echo
+    echo 'Displaying the status bar in Finder...'
+    defaults write com.apple.finder ShowStatusBar -bool true
+    echo
+    echo 'Displaying the ~/Library folder...'
+    chflags nohidden ~/Library
+    echo
+    echo 'Displaying folders first when sorted by kind in Finder...'
+    ditto ./preferences/InfoPlist.strings /System/Library/CoreServices/Finder.app/Contents/Resources/English.lproj/
+    echo
+    echo 'Disabling icons for hard drives, servers, and removable media on the desktop...'
+    defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool false && \
+    defaults write com.apple.finder ShowHardDrivesOnDesktop -bool false && \
+    defaults write com.apple.finder ShowMountedServersOnDesktop -bool false && \
+    defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool false
     echo
     echo 'Disabling Dashboard...'
     defaults write com.apple.dashboard mcx-disabled -boolean YES
     echo
-    echo 'Display folders first when sorted by kind.'
-    ditto ./preferences/InfoPlist.strings /System/Library/CoreServices/Finder.app/Contents/Resources/English.lproj/
-    echo
-    echo 'Enable text selection in Quick Look.'
+    echo 'Enabling text selection in Quick Look...'
     defaults write com.apple.finder QLEnableTextSelection -bool TRUE
   ;;
 esac

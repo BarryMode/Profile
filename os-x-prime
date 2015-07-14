@@ -90,7 +90,7 @@ case ${answer:0:1} in
     # Finder: Display the Library folder.
     chflags nohidden ~/Library
     # Finder: Display folders first when sorted by kind.
-    ditto ./preferences/InfoPlist.strings /System/Library/CoreServices/Finder.app/Contents/Resources/English.lproj/
+    # ditto ./preferences/InfoPlist.strings /System/Library/CoreServices/Finder.app/Contents/Resources/English.lproj/
     # Finder: Disable the extension change warning.
     defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
     # Desktop: Disable icons for hard drives, servers, and removable media.

@@ -42,7 +42,7 @@ zipdir() { zip -r "$1".zip "$1" ; }                    # zipdir: To create a ZIP
 hidefiles() { defaults write com.apple.finder AppleShowAllFiles NO; killall Finder; }  # hidefiles: Hide hidden files in Finder.
 showfiles() { defaults write com.apple.finder AppleShowAllFiles YES; killall Finder; } # showfiles: Show hidden files in Finder.
 editbinary() { plutil -convert xml1 ${1} && subl ${1}; }                               # editbinary: Edit a binary file as xml.
-convertbinary() { plutil -convert binary1 ${1} }                                       # convertbinary: Convert a file to binary.
+convertbinary() { plutil -convert binary1 ${1}; }                                      # convertbinary: Convert a file to binary.
 
 # extract: Extract most known archives with one command.
 extract() {

@@ -1,83 +1,15 @@
-# OS X Prime
-echo 'Welcome to OS X Prime.'
-
-echo ; echo '--- Xcode' ; echo
-echo 'Installing Xcode Command Line Tools...'
-xcode-select --install
-
-echo ; echo '--- Ruby' ; echo
-echo 'Updating RubyGems...'
-sudo gem update --system
-echo
-read -p 'Install Gem: Jekyll? (y/n) ' answer
-case ${answer:0:1} in
-  y|Y )
-    echo 'Installing Jekyll...'
-    sudo gem install jekyll
-  ;;
-esac
-
-echo ; echo '--- Homebrew' ; echo
-echo 'Installing Homebrew...'
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-echo
-echo 'Updating Homebrew...'
-brew update
-
-echo ; echo '--- Development Packages' ; echo
-read -p 'Install Development Packages? (y/n) ' answer
-case ${answer:0:1} in
-  y|Y )
-    echo
-    echo 'Installing Ack...'
-    brew install ack
-    echo
-    echo 'Installing Node...'
-    brew install node
-    echo
-    echo 'Installing GCC...'
-    brew install gcc
-    echo
-    echo 'Installing QT5...'
-    brew install qt5 --with-docs --with-developer --with-d-bus --with-mysql
-    echo
-    echo 'Upgrading Homebrew Packages...'
-    brew upgrade
-    echo
-    echo 'Installing Underscore...'
-    sudo npm install -g underscore
-    echo
-    echo 'Installing Moment...'
-    sudo npm install -g moment
-    echo
-    echo 'Updating Node Packages...'
-    npm update
-  ;;
-esac
-
 echo ; echo '--- Preferences' ; echo
-read -p 'Shortcut for Sublime Text alias? (y/n) ' answer
-case ${answer:0:1} in
-  y|Y )
-    ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl
-  ;;
-esac
-echo
 read -p 'Install Preferences? (y/n) ' answer
 case ${answer:0:1} in
   y|Y )
-    echo
-    echo 'Loading Bash Profile, Git Config, and Git Ignore...'
+    echo ; echo 'Loading Bash Profile, Git Config, and Git Ignore...'
     ditto ./preferences/.[^.]* ~/
-    echo
-    echo 'Loading Sublime Text Settings...'
+    echo ; echo 'Loading Sublime Text Settings...'
     ditto ./preferences/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
-    echo
-    echo 'Loading OS X system settings...'
+    echo ; echo 'Loading OS X system settings...'
     # Disable Dashboard.
     defaults write com.apple.dashboard mcx-disabled -boolean YES
-    echo
-    echo 'Loading Finder settings...'
+    echo ; echo 'Loading Finder settings...'
     # Finder: Set the default Finder location to the home folder.
     defaults write com.apple.finder NewWindowTarget -string "PfLo" && \
     defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}"
@@ -98,22 +30,20 @@ case ${answer:0:1} in
     defaults write com.apple.finder ShowHardDrivesOnDesktop -bool false && \
     defaults write com.apple.finder ShowMountedServersOnDesktop -bool false && \
     defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool false
-    echo
-    echo 'Loading Quick Look settings...'
+    echo ; echo 'Loading Quick Look settings...'
     # Quick Look: Enable text selection.
     defaults write com.apple.finder QLEnableTextSelection -bool TRUE
-    echo
-    echo 'Loading Terminal settings...'
+    echo ; echo 'Loading Terminal settings...'
     # Terminal: Pro Theme.
     defaults write com.apple.Terminal "Default Window Settings" "Pro"
-    echo
-    echo 'Loading Safari settings...'
+    echo ; echo 'Loading Safari settings...'
     # Safari: Activate the develop menu.
     defaults write com.apple.Safari IncludeDevelopMenu -bool true
   ;;
 esac
-echo
-echo 'Restarting Dock...'
-killall Dock
-echo 'Restarting Finder...'
-killall Finder
+echo ; read -p 'Shortcut for Sublime Text alias? (y/n) ' answer
+case ${answer:0:1} in
+  y|Y )
+    ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl
+  ;;
+esac

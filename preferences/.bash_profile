@@ -16,6 +16,7 @@ export EDITOR=/usr/local/bin/subl
 # Improvements
 # ============
 alias ditto='cp -iv'                                   # Preferred 'cp' implementation
+alias dittodir='cp -r'                                 # Preferred 'cp' dir implementation
 alias mv='mv -iv'                                      # Preferred 'mv' implementation
 alias mkdir='mkdir -pv'                                # Preferred 'mkdir' implementation
 alias ll='ls -FGlAhp'                                  # Preferred 'ls' implementation

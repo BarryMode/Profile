@@ -3,5 +3,41 @@ Personal guide to tailor my Mac.
 
 ## Guide
 
-1. Install applications.
-2. Run `os-x-prime` in Terminal.
+### Applications
+
+- Adobe Suite
+- Byword
+- CCleaner
+- CleanMyDrive
+- Cyberduck
+- Dolphin
+- Dr. Cleaner
+- Duplicate Detective
+- Firefox
+- Github
+- GluePrint
+- HandBrake
+- MAMP
+- MediaHuman Audio Converter
+- Melodyne
+- Microsoft Remote Desktop
+- MySQL Workbench
+- NameChanger
+- OBS
+- OmniGraffle
+- OpenEmu
+- Parallels Desktop
+- SimpleComic
+- SiteSucker
+- Steam
+- Sublime Text
+- TextHasher
+- The Unarchiver
+- Transmission
+- VLC
+- WavTap
+- Xcode
+
+### Development Tools & Preferences
+
+Run `os-x-prime` in Terminal.

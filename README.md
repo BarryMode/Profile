@@ -1,9 +1,7 @@
 # OS X Prime
 Personal guide to tailor my Mac.
 
-## Guide
-
-### Applications
+## Applications
 
 - Adobe Suite
 - Byword
@@ -38,6 +36,6 @@ Personal guide to tailor my Mac.
 - WavTap
 - Xcode
 
-### Development Tools & Preferences
+## Development Tools & Preferences
 
 Run `os-x-prime` in Terminal.

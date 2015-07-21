@@ -41,10 +41,10 @@ hide() { chflags hidden "$1"; }                        # hide:   Hide the file.
 show() { chflags nohidden "$1"; }                      # show:   Show the file.
 trash() { command mv "$@" ~/.Trash; }                  # trash:  Moves a file to the MacOS trash.
 zipdir() { zip -r "$1".zip "$1" ; }                    # zipdir: To create a ZIP archive of a folder.
+editbin() { sudo plutil -convert xml1 ${1} && subl ${1}; }                             # editbin: Edit a binary file as xml.
+savebin() { sudo plutil -convert binary1 ${1}; }                                       # savebin: Convert a file to binary.
 hidefiles() { defaults write com.apple.finder AppleShowAllFiles NO; killall Finder; }  # hidefiles: Hide hidden files in Finder.
 showfiles() { defaults write com.apple.finder AppleShowAllFiles YES; killall Finder; } # showfiles: Show hidden files in Finder.
-editbinary() { plutil -convert xml1 ${1} && subl ${1}; }                               # editbinary: Edit a binary file as xml.
-convertbinary() { plutil -convert binary1 ${1}; }                                      # convertbinary: Convert a file to binary.
 
 # extract: Extract most known archives with one command.
 extract() {

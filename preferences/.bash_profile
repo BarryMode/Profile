@@ -1,5 +1,3 @@
-# Sources (natelandau.com/my-mac-osx-bash_profile/, github.com/mdo/config/blob/master/.bash_profile)
-
 # Custom Bash Prompt (kirsle.net/wizards/ps1.html)
 parse_git_branch() {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
@@ -78,7 +76,7 @@ spotlight() { mdfind "kMDItemDisplayName == '$@'wc"; }
 # App Commands
 # ============
 alias edit='subl'                                      # edit:  Opens any file in sublime editor.
-alias sweep='~/Scripts/system/maintenance/sweep.sh' # sweep: Run upkeep tasks.
+alias sweep='~/Scripts/system/maintenance/sweep.sh'    # sweep: Run upkeep tasks.
 alias vlc='/Applications/VLC.app/Contents/MacOS/VLC'   # vlc:   VLC media player.
 
 # Internet Commands

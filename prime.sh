@@ -2,8 +2,8 @@
 echo 'Welcome to OS X Prime.'
 
 cd Scripts/os-x-prime/
-./dev.sh  # Development
-./pref.sh # Preferences
+./prime/dev.sh  # Development
+./prime/pref.sh # Preferences
 
 echo ; echo 'Restarting Dock...'
 killall Dock

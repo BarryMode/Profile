@@ -1,0 +1,2 @@
+# Homebrew Doctor
+brew doctor

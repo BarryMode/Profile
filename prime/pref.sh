@@ -3,9 +3,9 @@ read -p 'Install Preferences? (y/n) ' answer
 case ${answer:0:1} in
   y|Y )
     echo ; echo 'Loading Bash Profile, Git Config, and Git Ignore...'
-    ditto ./preferences/.[^.]* ~/
+    ditto ./.[^.]* ~/
     echo ; echo 'Loading Sublime Text Settings...'
-    ditto ./preferences/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
+    ditto ./Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
     echo ; echo 'Loading OS X system settings...'
     # Disable Dashboard.
     defaults write com.apple.dashboard mcx-disabled -boolean YES
@@ -22,7 +22,7 @@ case ${answer:0:1} in
     # Finder: Display the Library folder.
     chflags nohidden ~/Library
     # Finder: Display folders first when sorted by kind.
-    # ditto ./preferences/InfoPlist.strings /System/Library/CoreServices/Finder.app/Contents/Resources/English.lproj/
+    # ditto ./InfoPlist.strings /System/Library/CoreServices/Finder.app/Contents/Resources/English.lproj/
     # Finder: Disable the extension change warning.
     defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
     # Desktop: Disable icons for hard drives, servers, and removable media.

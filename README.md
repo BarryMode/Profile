@@ -38,4 +38,4 @@ Personal guide to tailor my Mac.
 
 ## Development Tools & Preferences
 
-Run `os-x-prime` in Terminal.
+Run `prime.sh` in Terminal.

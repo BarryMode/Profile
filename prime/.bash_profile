@@ -27,7 +27,7 @@ alias lr='ls -R | grep ":$" | sed -e '\''s/:$//'\'' -e '\''s/[^-][^\/]*\//--/g'\
 
 # System Commands
 # ===============
-alias ~="cd ~"                                         # ~:      Go Home.
+alias ~='cd ~'                                         # ~:      Go Home.
 alias c='clear'                                        # c:      Clear terminal display.
 alias f#='echo $(ls -1 | wc -l)'                       # f#:     Count of non-hidden files in current dir.
 alias path='echo -e ${PATH//:/\\n}'                    # path:   Echo all executable Paths.

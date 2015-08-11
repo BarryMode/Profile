@@ -4,12 +4,12 @@ case ${answer:0:1} in
   y|Y )
     echo ; echo 'Loading Bash Profile, Git Config, and Git Ignore...'
     ditto ./.[^.]* ~/
-    echo ; echo 'Loading Sublime Text Settings...'
+    echo 'Loading Sublime Text Settings...'
     ditto ./Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
-    echo ; echo 'Loading OS X system settings...'
+    echo 'Loading OS X system settings...'
     # Disable Dashboard.
     defaults write com.apple.dashboard mcx-disabled -boolean YES
-    echo ; echo 'Loading Finder settings...'
+    echo 'Loading Finder settings...'
     # Finder: Set the default Finder location to the home folder.
     defaults write com.apple.finder NewWindowTarget -string "PfLo" && \
     defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}"
@@ -30,13 +30,13 @@ case ${answer:0:1} in
     defaults write com.apple.finder ShowHardDrivesOnDesktop -bool false && \
     defaults write com.apple.finder ShowMountedServersOnDesktop -bool false && \
     defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool false
-    echo ; echo 'Loading Quick Look settings...'
+    echo 'Loading Quick Look settings...'
     # Quick Look: Enable text selection.
     defaults write com.apple.finder QLEnableTextSelection -bool TRUE
-    echo ; echo 'Loading Terminal settings...'
+    echo 'Loading Terminal settings...'
     # Terminal: Pro Theme.
     defaults write com.apple.Terminal "Default Window Settings" "Pro"
-    echo ; echo 'Loading Safari settings...'
+    echo 'Loading Safari settings...'
     # Safari: Activate the develop menu.
     defaults write com.apple.Safari IncludeDevelopMenu -bool true
   ;;

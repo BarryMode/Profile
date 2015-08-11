@@ -1,3 +1,9 @@
+# Permissions
+echo ; echo '---Permissions' ; echo
+echo 'Granting Executive Rights...'
+sudo chown $(whoami):admin /usr/local/
+sudo chown $(whoami):admin /usr/local/share/systemtap/tapset/
+
 # Xcode
 echo ; echo '--- Xcode' ; echo
 echo 'Installing Xcode Command Line Tools...'
@@ -13,7 +19,7 @@ echo ; read -p 'Install Gem: Jekyll? (y/n) ' answer
 case ${answer:0:1} in
   y|Y )
     echo 'Installing Jekyll...'
-    sudo gem install jekyll
+    sudo gem install -n /usr/local/bin jekyll
   ;;
 esac
 

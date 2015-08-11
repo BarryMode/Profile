@@ -2,6 +2,7 @@
 echo ; echo '---Permissions' ; echo
 echo 'Granting Executive Rights...'
 sudo chown $(whoami):admin /usr/local/
+sudo chown $(whoami):admin /usr/local/*
 sudo chown $(whoami):admin /usr/local/share/systemtap/tapset/
 
 # Xcode
@@ -37,22 +38,22 @@ case ${answer:0:1} in
     # Ack
     echo ; echo 'Installing Ack...'
     brew install ack
+    # GCC
+    echo 'Installing GCC...'
+    brew install gcc
+    # QT5
+    echo 'Installing QT5...'
+    brew install qt5 --with-docs --with-developer --with-d-bus --with-mysql
     # Node
     echo ; echo 'Installing Node...'
     brew install node
-    # GCC
-    echo ; echo 'Installing GCC...'
-    brew install gcc
-    # QT5
-    echo ; echo 'Installing QT5...'
-    brew install qt5 --with-docs --with-developer --with-d-bus --with-mysql
     echo ; echo 'Upgrading Homebrew Packages...'
     brew upgrade
     # Underscore
     echo ; echo 'Installing Underscore...'
     sudo npm install -g underscore
     # Moment
-    echo ; echo 'Installing Moment...'
+    echo 'Installing Moment...'
     sudo npm install -g moment
     echo ; echo 'Updating Node Packages...'
     npm update

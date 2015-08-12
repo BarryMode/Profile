@@ -12,7 +12,7 @@ Personal guide to tailor my Mac.
 - Dr. Cleaner
 - Duplicate Detective
 - Firefox
-- Github
+- GitHub Desktop
 - GluePrint
 - HandBrake
 - MAMP

@@ -47,3 +47,9 @@ case ${answer:0:1} in
     ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl
   ;;
 esac
+# echo ; read -p 'Use the Compy 386 delete sound when emptying trash? (y/n) ' answer
+# case ${answer:0:1} in
+#   y|Y )
+#     ditto ./empty\ trash.aif /system/Library/Components/CoreAudio.component/Contents/SharedSupport/SystemSounds/finder/
+#   ;;
+# esac

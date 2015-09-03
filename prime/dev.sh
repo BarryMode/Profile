@@ -60,9 +60,12 @@ case ${answer:0:1} in
   # Moment
   echo 'Installing Moment...'
   sudo npm install -g moment
-  # Cordova
-  echo 'Installing Cordova...'
-  sudo npm install -g cordova
+  # Gulp
+  echo 'Installing Gulp...'
+  sudo npm install -g gulp gulp-util bower gulp-concat gulp-sass gulp-minify-css gulp-rename shelljs
+  # Electron
+  echo 'Installing Electron...'
+  sudo npm install -g electron-prebuilt
   echo ; echo 'Updating Node Packages...'
   npm update
   ;;

@@ -7,13 +7,23 @@ sudo chown $(whoami):admin /usr/local/share/systemtap/tapset/
 
 # Xcode
 echo ; echo '--- Xcode' ; echo
-echo 'Installing Xcode Command Line Tools...'
-xcode-select --install
+read -p 'Install Xcode Command Line Tools? * (y/n) ' answer
+case ${answer:0:1} in
+  y|Y )
+  echo 'Installing Xcode Command Line Tools...'
+  xcode-select --install
+  ;;
+esac
 
 # Ruby
 echo ; echo '--- Ruby' ; echo
-echo 'Updating RubyGems...'
-sudo gem update --system
+read -p 'Update RubyGems? (y/n) ' answer
+case ${answer:0:1} in
+  y|Y )
+  echo 'Updating RubyGems...'
+  sudo gem update --system
+  ;;
+esac
 
 # Jekyll
 echo ; read -p 'Install Gem: Jekyll? (y/n) ' answer
@@ -26,10 +36,15 @@ esac
 
 # Homebrew
 echo ; echo '--- Homebrew' ; echo
-echo 'Installing Homebrew...'
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-echo ; echo 'Updating Homebrew...'
-brew update
+read -p 'Install Homebrew? * (y/n) ' answer
+case ${answer:0:1} in
+  y|Y )
+  echo 'Installing Homebrew...'
+  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  echo ; echo 'Updating Homebrew...'
+  brew update
+  ;;
+esac
 
 echo ; echo '--- Development Packages' ; echo
 read -p 'Install Development Packages? (y/n) ' answer

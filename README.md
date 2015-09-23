@@ -8,6 +8,7 @@ Personal guide to tailor my Mac.
 - CCleaner
 - CleanMyDrive
 - Cyberduck
+- Dash
 - Dolphin
 - Dr. Cleaner
 - Duplicate Detective

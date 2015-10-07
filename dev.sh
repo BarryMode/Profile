@@ -62,7 +62,7 @@ case ${answer:0:1} in
   case ${answer:0:1} in
   y|Y )
     echo 'Installing QT5...'
-    brew install qt5 --with-docs --with-developer --with-d-bus --with-mysql
+    brew install qt5 #--with-docs --with-developer --with-d-bus --with-mysql
     ;;
   esac
   # Node

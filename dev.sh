@@ -4,6 +4,7 @@ echo 'Granting Executive Rights...'
 sudo chown $(whoami):admin /usr/local/
 sudo chown $(whoami):admin /usr/local/*
 sudo chown -R $(whoami):admin /usr/local
+sudo chown $(whoami):admin /usr/local/sbin/
 sudo chown $(whoami):admin /usr/local/share/systemtap/tapset/
 
 # Xcode

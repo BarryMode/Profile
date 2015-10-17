@@ -7,6 +7,7 @@ Personal guide to tailor my Mac.
 - Byword
 - CCleaner
 - CleanMyDrive
+- CleanMyMac
 - Cyberduck
 - Dash
 - Dolphin
@@ -17,6 +18,8 @@ Personal guide to tailor my Mac.
 - GluePrint
 - HandBrake
 - MAMP
+- Hider
+- Leaf
 - MediaHuman Audio Converter
 - Melodyne
 - Microsoft Remote Desktop
@@ -26,6 +29,8 @@ Personal guide to tailor my Mac.
 - OmniGraffle
 - OpenEmu
 - Parallels Desktop
+- Patterns
+- Pixelmator
 - SimpleComic
 - SiteSucker
 - Steam

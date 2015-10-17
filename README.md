@@ -12,8 +12,8 @@ Personal guide to tailor my Mac.
 - Dash
 - Dolphin
 - Dr. Cleaner
-- Duplicate Detective
 - Firefox
+- Gemini
 - GitHub Desktop
 - GluePrint
 - HandBrake

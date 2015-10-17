@@ -17,9 +17,9 @@ Personal guide to tailor my Mac.
 - GitHub Desktop
 - GluePrint
 - HandBrake
-- MAMP
 - Hider
 - Leaf
+- MAMP Pro
 - MediaHuman Audio Converter
 - Melodyne
 - Microsoft Remote Desktop

@@ -4,6 +4,7 @@ Personal guide to tailor my Mac.
 ## Applications
 
 - Adobe Suite
+- Audio Hijack
 - Byword
 - CCleaner
 - CleanMyDrive

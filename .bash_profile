@@ -31,7 +31,7 @@ alias ~='cd ~'                                         # ~:      Go Home.
 alias c='clear'                                        # c:      Clear terminal display.
 alias f#='echo $(ls -1 | wc -l)'                       # f#:     Count of non-hidden files in current dir.
 alias path='echo -e ${PATH//:/\\n}'                    # path:   Echo all executable Paths.
-alias sync='~/code/Batch/sync'                         # sync:   Backup specified files.
+alias sync='~/code/Batch/sync.sh'                      # sync:   Backup specified files.
 alias finder='open -a Finder ./'                       # finder: Opens current directory in Finder.
 ql() { qlmanage -p "$*" >& /dev/null; }                # ql:     Opens any file in MacOS Quicklook Preview.
 del() { command rm -rf "$@"; }                         # del:    Permanently deletes a file.

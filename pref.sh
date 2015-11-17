@@ -6,7 +6,7 @@ case ${answer:0:1} in
   ditto ./.[^.]* ~/
 
   echo 'Loading Sublime Text Settings...'
-  ditto ./prime/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
+  ditto ./Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
 
   echo 'Loading OS X system settings...'
   # Disable Dashboard.

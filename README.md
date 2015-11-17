@@ -6,13 +6,13 @@ Personal guide to tailor my Mac.
 - Adobe Suite
 - Audio Hijack
 - Byword
+- Carbon Copy Cloner
 - CCleaner
 - CleanMyDrive
 - CleanMyMac
 - Cyberduck
 - Dash
 - Dolphin
-- Dr. Cleaner
 - Firefox
 - Gemini
 - GitHub Desktop

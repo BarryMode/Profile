@@ -36,6 +36,15 @@ case ${answer:0:1} in
   ;;
 esac
 
+# Sass
+echo ; read -p 'Install Gem: Sass? (y/n) ' answer
+case ${answer:0:1} in
+  y|Y )
+  echo 'Installing Sass...'
+  sudo gem install -n /usr/local/bin sass
+  ;;
+esac
+
 # Homebrew
 echo ; echo '--- Homebrew' ; echo
 read -p 'Install Homebrew? * (y/n) ' answer

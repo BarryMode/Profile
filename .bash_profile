@@ -31,7 +31,6 @@ alias ~='cd ~'                                         # ~:      Go Home.
 alias c='clear'                                        # c:      Clear terminal display.
 alias f#='echo $(ls -1 | wc -l)'                       # f#:     Count of non-hidden files in current dir.
 alias path='echo -e ${PATH//:/\\n}'                    # path:   Echo all executable Paths.
-alias sync='~/code/Batch/sync.sh'                      # sync:   Backup specified files.
 alias finder='open -a Finder ./'                       # finder: Opens current directory in Finder.
 ql() { qlmanage -p "$*" >& /dev/null; }                # ql:     Opens any file in MacOS Quicklook Preview.
 del() { command rm -rf "$@"; }                         # del:    Permanently deletes a file.
@@ -78,7 +77,9 @@ spotlight() { mdfind "kMDItemDisplayName == '$@'wc"; }
 # ============
 alias edit='subl'                                      # edit:    Opens any file in Sublime Text.
 alias grabber='open ~/Websites/^/Grabber.app'          # grabber: Opens Grabber.
-alias sweep='~/Scripts/system/OS\ X/sweep.sh'          # sweep:   Runs upkeep tasks.
+alias iu='~/Code/OS\ X/maintenance/install-updates.sh' # iu:      Install updates.
+alias sweep='~/Code/OS\ X/maintenance/sweep.sh'        # sweep:   Runs upkeep tasks.
+alias sync='~/Code/Batch/sync.sh'                      # sync:    Backup specified files.
 alias vlc='/Applications/VLC.app/Contents/MacOS/VLC'   # vlc:     Adds input to VLC media player playlist.
 alias r34='open ~/Websites/^/imgbrd-grabber/rule34.sh' # r34:     Does what it says.
 

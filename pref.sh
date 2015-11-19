@@ -30,7 +30,7 @@ case ${answer:0:1} in
   defaults write com.apple.finder ShowStatusBar -bool true
 
   # Finder: Activate text selection in Quick Look.
-  defaults write com.apple.finder QLEnableTextSelection -bool YES
+  # defaults write com.apple.finder QLEnableTextSelection -bool YES
 
   # Finder: Display all filename extensions.
   defaults write NSGlobalDomain AppleShowAllExtensions -bool true

@@ -73,13 +73,13 @@ spotlight() { mdfind "kMDItemDisplayName == '$@'wc"; }
 
 # App Commands
 # ============
-alias edit='subl'                                      # edit:    Opens any file in Sublime Text.
-alias grabber='open ~/Websites/^/Grabber.app'          # grabber: Opens Grabber.
 alias iu='~/Code/OS\ X/maintenance/install-updates.sh' # iu:      Install updates.
-alias sweep='~/Code/OS\ X/maintenance/sweep.sh'        # sweep:   Runs upkeep tasks.
-alias sync='~/Code/Batch/sync.sh'                      # sync:    Backup specified files.
-alias vlc='/Applications/VLC.app/Contents/MacOS/VLC'   # vlc:     Adds input to VLC media player playlist.
 alias r34='open ~/Websites/^/imgbrd-grabber/rule34.sh' # r34:     Does what it says.
+alias vlc='/Applications/VLC.app/Contents/MacOS/VLC'   # vlc:     Adds input to VLC media player playlist.
+alias edit='subl'                                      # edit:    Opens any file in Sublime Text.
+alias sync='~/Code/Bash/sync.sh'                       # sync:    Backup specified files.
+alias sweep='~/Code/OS\ X/maintenance/sweep.sh'        # sweep:   Runs upkeep tasks.
+alias grabber='open ~/Websites/^/Grabber.app'          # grabber: Opens Grabber.
 
 # recover: Opens PhotoRec
 alias recover='/Users/Anonymous/Documents/Operating\ Systems/OS\ X/Applications/TestDisk\ 7.0/photorec'
@@ -106,5 +106,6 @@ internet() {
 # Web Development
 # ===============
 alias dreamhost='ssh netbasis@butternut.dreamhost.com' # dreamhost: Connect to DreamHost
+
 # httpdebug:  Download a web page and show info on what took time
 httpdebug() { /usr/bin/curl $@ -o /dev/null -w "dns: %{time_namelookup} connect: %{time_connect} pretransfer: %{time_pretransfer} starttransfer: %{time_starttransfer} total: %{time_total}\n" ; }

@@ -11,6 +11,7 @@ Personal guide to tailor my Mac.
 - CleanMyDrive
 - CleanMyMac
 - Cyberduck
+- Daemon Tools
 - Dash
 - Dolphin
 - Firefox

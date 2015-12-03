@@ -32,6 +32,9 @@ case ${answer:0:1} in
   # Finder: Activate text selection in Quick Look.
   # defaults write com.apple.finder QLEnableTextSelection -bool YES
 
+  # Finder: Markdown support for Quick Look.
+  brew cask install qlmarkdown
+
   # Finder: Display all filename extensions.
   defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 

@@ -52,6 +52,7 @@ case ${answer:0:1} in
   y|Y )
   echo 'Installing Homebrew...'
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  brew install caskroom/cask/brew-cask
   echo ; echo 'Updating Homebrew...'
   brew update
   ;;
@@ -67,6 +68,9 @@ case ${answer:0:1} in
   # GCC
   echo ; echo 'Installing GCC...'
   brew install gcc
+  # ImageMagick
+  echo ; echo 'Installing ImageMagick...'
+  brew install imagemagick
   # QT5
   echo ; read -p 'Install QT5? (y/n) ' answer
   case ${answer:0:1} in

@@ -14,6 +14,7 @@ Personal guide to tailor my Mac.
 - Daemon Tools
 - Dash
 - Dolphin
+- Dropbox
 - Firefox
 - Gemini
 - GitHub Desktop
@@ -23,6 +24,7 @@ Personal guide to tailor my Mac.
 - Leaf
 - MAMP Pro
 - MediaHuman Audio Converter
+- MEGAsync
 - Melodyne
 - Microsoft Remote Desktop
 - MySQL Workbench
@@ -39,6 +41,7 @@ Personal guide to tailor my Mac.
 - Sublime Text
 - TextHasher
 - The Unarchiver
+- TeamViewer
 - Transmission
 - VLC
 - WavTap

@@ -28,14 +28,8 @@ _site
 *.sublime-workspace
 nbproject
 Thumbs.db
-
-# Komodo
-.komodotools
-*.komodoproject
-
-# grunt-html-validation
-validation-report.json
-validation-status.json
+.sass-cache
+composer.lock
 
 # Folders to ignore
 bower_components

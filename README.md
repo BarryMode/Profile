@@ -30,7 +30,6 @@ Personal guide to tailor my Mac.
 - MySQL Workbench
 - OBS
 - OmniGraffle
-- OnyX
 - OpenEmu
 - Parallels Desktop
 - Patterns

@@ -22,6 +22,7 @@ Personal guide to tailor my Mac.
 - HandBrake
 - Hider
 - Leaf
+- Malwarebytes
 - MAMP Pro
 - MediaHuman Audio Converter
 - MEGAsync

@@ -29,7 +29,6 @@ _site
 nbproject
 Thumbs.db
 .sass-cache
-composer.lock
 
 # Folders to ignore
 bower_components

@@ -6,6 +6,8 @@ sudo chown $(whoami):admin /usr/local/*
 sudo chown -R $(whoami):admin /usr/local
 sudo chown $(whoami):admin /usr/local/sbin/
 sudo chown $(whoami):admin /usr/local/share/systemtap/tapset/
+find $HOME -type d -perm 777 -exec chmod 755 {} \; -print
+find $HOME -type f \( -perm 777 -o -perm 666 \) -exec chmod 644 {} \; -print
 
 # Xcode
 echo ; echo '--- Xcode' ; echo

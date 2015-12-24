@@ -35,13 +35,14 @@ Personal guide to tailor my Mac.
 - Parallels Desktop
 - Patterns
 - Pixelmator
+- Plex Media Server
 - SimpleComic
 - SiteSucker
 - Steam
 - Sublime Text
+- TeamViewer
 - TextHasher
 - The Unarchiver
-- TeamViewer
 - Transmission
 - VLC
 - WavTap

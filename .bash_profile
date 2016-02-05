@@ -9,7 +9,7 @@ export PATH="$PATH:/usr/local/bin"
 export PATH="/usr/local/git/bin:/sw/bin:/usr/local/bin:/usr/local:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/Cellar/qt5/5.5.0_1/bin:$PATH"
 
 # Set Default Editor to Sublime Text
-export EDITOR=/usr/local/bin/subl
+export EDITOR=/Applications/Sublime\ Text.app/Contents/SharedSupport/bin
 
 # Improvements
 # ============

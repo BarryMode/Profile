@@ -82,7 +82,7 @@ alias update='~/Code/Bash/OSX/install-updates.sh'         # update:  Install upd
 alias grabber='open ~/Websites/^/rule34/grabber/Grabber.app' # grabber: Opens Grabber.
 
 # recover: Opens PhotoRec
-alias recover='/Users/Anonymous/Documents/Operating\ Systems/OS\ X/Applications/TestDisk\ 7.0/photorec'
+alias recover='/Users/Anonymous/Documents/Operating\ Systems/OSX/Applications/TestDisk\ 7.0/photorec'
 
 # Internet Commands
 # =================

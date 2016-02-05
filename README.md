@@ -15,6 +15,7 @@ Personal guide to tailor my Mac.
 - Dash
 - Dolphin
 - Dropbox
+- FileBot
 - Firefox
 - Gemini
 - GitHub Desktop

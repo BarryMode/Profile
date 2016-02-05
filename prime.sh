@@ -1,5 +1,5 @@
-# OS X Prime
-echo 'Welcome to OS X Prime.'
+# OSX Prime
+echo 'Welcome to OSX Prime.'
 
 ./dev.sh  # Development
 ./pref.sh # Preferences

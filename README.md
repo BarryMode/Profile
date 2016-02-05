@@ -1,4 +1,4 @@
-# OS X Prime
+# OSX Prime
 Personal guide to tailor my Mac.
 
 ## Applications

@@ -1,3 +1,4 @@
 #!/bin/sh
-ditto ~/.gitconfig ~/code/+github/os-x-prime/
-ditto ~/.gitignore ~/code/+github/os-x-prime/
+ditto ~/.bash_profile ~/code/+github/osx-prime/
+ditto ~/.gitconfig ~/code/+github/osx-prime/
+ditto ~/.gitignore ~/code/+github/osx-prime/

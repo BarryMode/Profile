@@ -76,7 +76,7 @@ spotlight() { mdfind "kMDItemDisplayName == '$@'wc"; }
 alias r34='~/Websites/^/rule34/grabber/rule34.sh'      # r34:     Does what it says.
 alias vlc='/Applications/VLC.app/Contents/MacOS/VLC'   # vlc:     Adds input to VLC media player playlist.
 alias edit='subl'                                      # edit:    Opens any file in Sublime Text.
-alias sweep='~/Code/OS\ X/maintenance/sweep.sh'        # sweep:   Runs upkeep tasks.
+alias sweep='~/Code/Bash/OSX/sweep.sh'                    # sweep:   Runs upkeep tasks.
 alias update='~/Code/Bash/OSX/install-updates.sh'         # update:  Install updates.
 alias grabber='open ~/Websites/^/rule34/grabber/Grabber.app' # grabber: Opens Grabber.
 

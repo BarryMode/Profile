@@ -43,7 +43,6 @@ Personal guide to tailor my Mac.
 - SiteSucker
 - Steam
 - Sublime Text
-- Sync Folders
 - TeamViewer
 - TextHasher
 - The Unarchiver

@@ -80,6 +80,7 @@ alias eject='~/Code/Bash/OSX/eject-super-drive.sh'        # eject:   Eject the s
 alias sweep='~/Code/Bash/OSX/sweep.sh'                    # sweep:   Runs upkeep tasks.
 alias update='~/Code/Bash/OSX/install-updates.sh'         # update:  Install updates.
 alias grabber='open ~/Websites/^/rule34/grabber/Grabber.app' # grabber: Opens Grabber.
+alias settings='subl ~/.bash_profile'                  # settings: Edit Bash config.
 
 # recover: Opens PhotoRec
 alias recover='/Users/Anonymous/Documents/Operating\ Systems/OSX/Applications/TestDisk\ 7.0/photorec'

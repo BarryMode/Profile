@@ -6,6 +6,7 @@
   undo = "!f() { git reset --soft HEAD~$1; }; f"
   squash = update-ref -d HEAD
   fix = "!f() { git commit -s -m "Publish." && git push --force; }; f"
+  update = "!f() { git fetch upstream && git checkout master && git rebase upstream/master; }; f"
   publish = push --force
 
 [color]

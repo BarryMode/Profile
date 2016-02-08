@@ -32,6 +32,7 @@ alias path='echo -e ${PATH//:/\\n}'                    # path:   Echo all execut
 alias finder='open -a Finder ./'                       # finder: Opens current directory in Finder.
 ql() { qlmanage -p "$*" >& /dev/null; }                # ql:     Opens any file in MacOS Quicklook Preview.
 del() { command rm -rf "$@"; }                         # del:    Permanently deletes a file.
+burn() { drutil burn "$1"; }                           # burn:   Burns file to inserted disc.
 mkcd() { mkdir -p "$1" && cd "$1"; }                   # mkcd:   Makes new dir and jumps inside.
 hide() { chflags hidden "$1"; }                        # hide:   Hide the file.
 show() { chflags nohidden "$1"; }                      # show:   Show the file.

@@ -30,6 +30,7 @@ alias c='clear'                                        # c:      Clear terminal 
 alias f#='echo $(ls -1 | wc -l)'                       # f#:     Count of non-hidden files in current dir.
 alias path='echo -e ${PATH//:/\\n}'                    # path:   Echo all executable Paths.
 alias finder='open -a Finder ./'                       # finder: Opens current directory in Finder.
+alias delemptydir='find . -type d -empty -delete'      # delemptydir: Delete all empty subdirectories.
 ql() { qlmanage -p "$*" >& /dev/null; }                # ql:     Opens any file in MacOS Quicklook Preview.
 del() { command rm -rf "@"; }                          # del:    Permanently deletes a file.
 burn() { drutil burn "$1"; }                           # burn:   Burns file to inserted disc.

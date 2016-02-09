@@ -31,7 +31,7 @@ alias f#='echo $(ls -1 | wc -l)'                       # f#:     Count of non-hi
 alias path='echo -e ${PATH//:/\\n}'                    # path:   Echo all executable Paths.
 alias finder='open -a Finder ./'                       # finder: Opens current directory in Finder.
 ql() { qlmanage -p "$*" >& /dev/null; }                # ql:     Opens any file in MacOS Quicklook Preview.
-del() { command rm -rf "$@"; }                         # del:    Permanently deletes a file.
+del() { command rm -rf "@"; }                          # del:    Permanently deletes a file.
 burn() { drutil burn "$1"; }                           # burn:   Burns file to inserted disc.
 mkcd() { mkdir -p "$1" && cd "$1"; }                   # mkcd:   Makes new dir and jumps inside.
 hide() { chflags hidden "$1"; }                        # hide:   Hide the file.
@@ -75,9 +75,9 @@ spotlight() { mdfind "kMDItemDisplayName == '$@'wc"; }
 alias r34='~/Websites/^/rule34/grabber/rule34.sh'      # r34:     Does what it says.
 alias vlc='/Applications/VLC.app/Contents/MacOS/VLC'   # vlc:     Adds input to VLC media player playlist.
 alias edit='subl'                                      # edit:    Opens any file in Sublime Text.
-alias eject='~/Code/Bash/OSX/eject-super-drive.sh'        # eject:   Eject the super drive.
-alias sweep='~/Code/Bash/OSX/sweep.sh'                    # sweep:   Runs upkeep tasks.
-alias update='~/Code/Bash/OSX/install-updates.sh'         # update:  Install updates.
+alias eject='~/Code/Bash/OSX/eject-super-drive.sh'     # eject:   Eject the super drive.
+alias sweep='~/Code/Bash/OSX/sweep.sh'                 # sweep:   Runs upkeep tasks.
+alias update='~/Code/Bash/OSX/install-updates.sh'      # update:  Install updates.
 alias grabber='open ~/Websites/^/rule34/grabber/Grabber.app' # grabber: Opens Grabber.
 alias settings='subl ~/.bash_profile'                  # settings: Edit Bash config.
 

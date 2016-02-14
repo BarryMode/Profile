@@ -81,6 +81,8 @@ case ${answer:0:1} in
   # Node
   echo ; echo 'Installing Node...'
   brew install node
+  echo ; echo 'Installing Finder support for video files... (avi, flv, mkv, etc.)'
+  brew cask install qlvideo
   echo ; echo 'Upgrading Homebrew Packages...'
   brew upgrade
   # Underscore

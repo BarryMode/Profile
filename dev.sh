@@ -78,11 +78,13 @@ case ${answer:0:1} in
     brew install qt5 #--with-docs --with-developer --with-d-bus --with-mysql
     ;;
   esac
+  echo ; echo 'Installing Qlvideo...'
+  brew cask install qlvideo
+  echo ; echo 'Installing Youtube-dl...'
+  brew install youtube-dl
   # Node
   echo ; echo 'Installing Node...'
   brew install node
-  echo ; echo 'Installing Finder support for video files... (avi, flv, mkv, etc.)'
-  brew cask install qlvideo
   echo ; echo 'Upgrading Homebrew Packages...'
   brew upgrade
   # Underscore

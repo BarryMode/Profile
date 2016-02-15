@@ -41,6 +41,8 @@ trash() { command mv "$@" ~/.Trash; }                  # trash:  Moves a file to
 zipdir() { zip -r "$1".zip "$1"; }                    # zipdir: To create a ZIP archive of a folder.
 hidefiles() { defaults write com.apple.finder AppleShowAllFiles NO; killall Finder; }  # hidefiles: Hide hidden files in Finder.
 showfiles() { defaults write com.apple.finder AppleShowAllFiles YES; killall Finder; } # showfiles: Show hidden files in Finder.
+
+# find-replace: Example - find-replace searchText replacementText
 find-replace() { ack "$1" -la --print0 | xargs -0 -n 1 sed -i "s/$1/$2/"; }
 
 # extract: Extract most known archives with one command.
@@ -81,7 +83,7 @@ alias eject='~/Code/Bash/OSX/eject-super-drive.sh'     # eject:   Eject the supe
 alias sweep='~/Code/Bash/OSX/sweep.sh'                 # sweep:   Runs upkeep tasks.
 alias update='~/Code/Bash/OSX/install-updates.sh'      # update:  Install updates.
 alias grabber='open ~/Websites/^/rule34/grabber/Grabber.app' # grabber: Opens Grabber.
-alias settings='subl ~/.bash_profile'                  # settings: Edit Bash config.
+alias settings='~/.bash_profile'                       # settings: Bash profile location.
 youtube() { youtube-dl -o '%(playlist)s/%(title)s.%(ext)s' "$1"; } # youtube: Download Youtube playlist.
 
 # recover: Opens PhotoRec

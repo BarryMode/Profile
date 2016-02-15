@@ -38,7 +38,8 @@ mkcd() { mkdir -p "$1" && cd "$1"; }                   # mkcd:   Makes new dir a
 hide() { chflags hidden "$1"; }                        # hide:   Hide the file.
 show() { chflags nohidden "$1"; }                      # show:   Show the file.
 trash() { command mv "$@" ~/.Trash; }                  # trash:  Moves a file to the MacOS trash.
-zipdir() { zip -r "$1".zip "$1" ; }                    # zipdir: To create a ZIP archive of a folder.
+zipdir() { zip -r "$1".zip "$1"; }                    # zipdir: To create a ZIP archive of a folder.
+youtube() { youtube-dl -o '%(playlist)s/%(title)s.%(ext)s' "$1"; } # youtube: Download Youtube playlist.
 hidefiles() { defaults write com.apple.finder AppleShowAllFiles NO; killall Finder; }  # hidefiles: Hide hidden files in Finder.
 showfiles() { defaults write com.apple.finder AppleShowAllFiles YES; killall Finder; } # showfiles: Show hidden files in Finder.
 

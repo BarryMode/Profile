@@ -82,6 +82,7 @@ case ${answer:0:1} in
   brew cask install qlvideo
   echo ; echo 'Installing Youtube-dl...'
   brew install youtube-dl
+  brew install ffmpeg
   # Node
   echo ; echo 'Installing Node...'
   brew install node

@@ -9,6 +9,10 @@ sudo chown $(whoami):admin /usr/local/share/systemtap/tapset/
 find $HOME -type d -perm 777 -exec chmod 755 {} \; -print
 find $HOME -type f \( -perm 777 -o -perm 666 \) -exec chmod 644 {} \; -print
 
+# Dot configs
+echo ; echo 'Loading dot configs...'
+ditto ./.[^.]* ~/
+
 # Xcode
 echo ; echo '--- Xcode' ; echo
 read -p 'Install Xcode Command Line Tools? * (y/n) ' answer

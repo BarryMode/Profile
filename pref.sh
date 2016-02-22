@@ -2,9 +2,6 @@ echo ; echo '--- Preferences' ; echo
 read -p 'Install Preferences? (y/n) ' answer
 case ${answer:0:1} in
   y|Y )
-  echo ; echo 'Loading Dot-files...'
-  ditto ./.[^.]* ~/
-
   echo 'Loading Sublime Text Settings...'
   ditto ./Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
 

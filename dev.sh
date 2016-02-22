@@ -38,7 +38,7 @@ echo ; read -p 'Install Gem: Jekyll? (y/n) ' answer
 case ${answer:0:1} in
   y|Y )
   echo 'Installing Jekyll...'
-  sudo gem install -n /usr/local/bin jekyll
+  sudo gem install jekyll
   ;;
 esac
 
@@ -47,7 +47,7 @@ echo ; read -p 'Install Gem: Sass? (y/n) ' answer
 case ${answer:0:1} in
   y|Y )
   echo 'Installing Sass...'
-  sudo gem install -n /usr/local/bin sass
+  sudo gem install sass
   ;;
 esac
 

@@ -44,6 +44,7 @@ Personal guide to tailor my Mac.
 - SiteSucker
 - Steam
 - Sublime Text
+- Subler
 - TeamViewer
 - TextHasher
 - The Unarchiver

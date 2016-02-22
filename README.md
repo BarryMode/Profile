@@ -35,6 +35,7 @@ Personal guide to tailor my Mac.
 - OBS
 - OmniGraffle
 - OpenEmu
+- ownCloud
 - Parallels Desktop
 - Patterns
 - Pixelmator

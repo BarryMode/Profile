@@ -43,8 +43,8 @@ Personal guide to tailor my Mac.
 - SimpleComic
 - SiteSucker
 - Steam
-- Sublime Text
 - Subler
+- Sublime Text
 - TeamViewer
 - TextHasher
 - The Unarchiver

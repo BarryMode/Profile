@@ -83,8 +83,10 @@ alias eject='~/Code/Bash/OSX/eject-super-drive.sh'     # eject:   Eject the supe
 alias sweep='~/Code/Bash/OSX/sweep.sh'                 # sweep:   Runs upkeep tasks.
 alias update='~/Code/Bash/OSX/install-updates.sh'      # update:  Install updates.
 alias grabber='open ~/Websites/^/rule34/grabber/Grabber.app' # grabber: Opens Grabber.
-alias settings='~/.bash_profile'                       # settings: Bash profile location.
-youtube() { youtube-dl -o '%(playlist)s/%(title)s.%(ext)s' "$1"; } # youtube: Download Youtube playlist.
+alias settings='subl ~/.bash_profile'                  # settings: Bash profile location.
+alias vget='youtube-dl'                                # vget: Alias for youtube-dl.
+vget-playlist() { youtube-dl -o '%(playlist)s/%(title)s.%(ext)s' "$1"; } # youtube: Download playlist with youtube-dl.
+mget() { youtube-dl --extract-audio --audio-format mp3 -l "$1"; } # mget: Download music with youtube-dl.
 
 # recover: Opens PhotoRec
 alias recover='/Users/Anonymous/Documents/Operating\ Systems/OSX/Applications/TestDisk\ 7.0/photorec'

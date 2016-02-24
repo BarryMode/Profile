@@ -82,6 +82,8 @@ case ${answer:0:1} in
     brew install qt5 #--with-docs --with-developer --with-d-bus --with-mysql
     ;;
   esac
+  echo ; echo 'Installing FileBot...'
+  brew cask install filebot
   echo ; echo 'Installing Qlvideo...'
   brew cask install qlvideo
   echo ; echo 'Installing Youtube-dl...'

@@ -53,6 +53,6 @@ Personal guide to tailor my Mac.
 - WavTap
 - Xcode
 
-## Development Tools & Preferences
+## Development Tools & System Preferences
 
-Run `prime.sh` in Terminal.
+Run `prime.sh` in Terminal. Watch for errors.

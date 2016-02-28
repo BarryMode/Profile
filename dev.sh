@@ -77,6 +77,9 @@ case ${answer:0:1} in
   # ImageMagick
   echo ; echo 'Installing ImageMagick...'
   brew install imagemagick
+  # Ghostscript
+  echo ; echo 'Installing Ghostscript...'
+  brew install ghostscript
   # QT5
   echo ; read -p 'Install QT5? (y/n) ' answer
   case ${answer:0:1} in

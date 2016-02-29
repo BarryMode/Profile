@@ -95,6 +95,9 @@ case ${answer:0:1} in
   echo ; echo 'Installing Youtube-dl...'
   brew install youtube-dl
   brew install ffmpeg
+  # Python
+  echo ; echo 'Installing Python...'
+  brew install python
   # Node
   echo ; echo 'Installing Node...'
   brew install node

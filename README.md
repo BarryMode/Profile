@@ -4,6 +4,7 @@ Personal guide to tailor my Mac.
 ## Applications
 
 - Adobe Suite
+- Amazon Cloud Drive
 - Audio Hijack
 - Byword
 - Carbon Copy Cloner

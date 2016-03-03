@@ -46,6 +46,7 @@ Personal guide to tailor my Mac.
 - Steam
 - Subler
 - Sublime Text
+- Synology Assistant
 - TeamViewer
 - TextHasher
 - The Unarchiver

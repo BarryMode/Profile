@@ -44,7 +44,6 @@ Personal guide to tailor my Mac.
 - SimpleComic
 - SiteSucker
 - Steam
-- Subler
 - Sublime Text
 - Synology Assistant
 - TeamViewer

@@ -90,6 +90,8 @@ alias vget='youtube-dl'                                # vget: Alias for youtube
 vget-playlist() { youtube-dl -o '%(playlist)s/%(title)s.%(ext)s' "$1"; }
 # mget: Download music with youtube-dl.
 mget() { youtube-dl --extract-audio --audio-format mp3 -l "$1"; }
+# remux: Ex. "remux mkv" would remux all mkvs to mp4.
+remux() { for i in *."$1"; do ffmpeg -i "$i" -codec copy "${i/${i##*.}/mp4}"; done }
 
 # Internet Commands
 # =================

@@ -85,11 +85,11 @@ alias update='~/Code/Bash/OSX/install-updates.sh'      # update:  Install update
 alias grabber='open ~/Websites/^/rule34/grabber/Grabber.app' # grabber: Opens Grabber.
 alias settings='subl ~/.bash_profile'                  # settings: Bash profile location.
 alias vget='youtube-dl'                                # vget: Alias for youtube-dl.
-vget-playlist() { youtube-dl -o '%(playlist)s/%(title)s.%(ext)s' "$1"; } # youtube: Download playlist with youtube-dl.
-mget() { youtube-dl --extract-audio --audio-format mp3 -l "$1"; } # mget: Download music with youtube-dl.
 
-# recover: Opens PhotoRec
-alias recover='/Users/Anonymous/Documents/Operating\ Systems/OSX/Applications/TestDisk\ 7.0/photorec'
+# youtube: Download playlist with youtube-dl.
+vget-playlist() { youtube-dl -o '%(playlist)s/%(title)s.%(ext)s' "$1"; }
+# mget: Download music with youtube-dl.
+mget() { youtube-dl --extract-audio --audio-format mp3 -l "$1"; }
 
 # Internet Commands
 # =================

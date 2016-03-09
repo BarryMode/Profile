@@ -57,3 +57,21 @@ Personal guide to tailor my Mac.
 ## Development Tools & System Preferences
 
 Run `prime.sh` in Terminal. Watch for errors.
+## User Files
+
+- Amazon Cloud
+  - Pictures
+- Dropbox
+  - Books
+- MEGA
+  - Archive
+  - Code
+  - Documents
+  - Music
+  - Projects
+- ownCloud
+  - Websites
+- Synology NAS Server
+  - Movies
+
+Games are not currently backed up anywhere. SOL.

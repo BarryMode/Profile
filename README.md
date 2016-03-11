@@ -57,12 +57,21 @@ Personal guide to tailor my Mac.
 ## Development Tools & System Preferences
 
 Run `prime.sh` in Terminal. Watch for errors.
+
 ## User Files
 
 - Amazon Cloud
   - Pictures
 - Dropbox
   - Books
+- iCloud
+  - Automator Documents
+  - Byword Documents
+  - Calendars
+  - Contacts
+  - Keychain
+  - Notes
+  - Safari
 - MEGA
   - Archive
   - Code

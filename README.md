@@ -80,7 +80,7 @@ Run `prime.sh` in Terminal. Watch for errors.
   - Projects
 - ownCloud
   - Websites
-- Synology NAS Server
+- Synology NAS
   - Movies
 
 Games are not currently backed up anywhere. SOL.

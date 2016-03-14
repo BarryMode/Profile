@@ -97,6 +97,8 @@ case ${answer:0:1} in
   # Python
   echo ; echo 'Installing Python...'
   brew install python
+  # Buster
+  sudo pip install buster
   # Node
   echo ; echo 'Installing Node...'
   brew install node

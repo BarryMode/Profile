@@ -18,6 +18,7 @@ Personal guide to tailor my Mac.
 - Dropbox
 - FileBot
 - Firefox
+- Flipboard
 - Gemini
 - GitHub Desktop
 - GluePrint

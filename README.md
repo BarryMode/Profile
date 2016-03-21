@@ -21,6 +21,7 @@ Personal guide to tailor my Mac.
 - Gemini
 - GitHub Desktop
 - GluePrint
+- Gmail
 - HandBrake
 - Hider
 - Leaf

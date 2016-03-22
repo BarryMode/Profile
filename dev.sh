@@ -101,7 +101,7 @@ case ${answer:0:1} in
   sudo pip install buster
   # Node
   echo ; echo 'Installing Node...'
-  brew install node
+  brew install node010
   echo ; echo 'Upgrading Homebrew Packages...'
   brew upgrade
   # Underscore

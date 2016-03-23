@@ -13,7 +13,6 @@ Personal guide to tailor my Mac.
 - CleanMyMac
 - Cyberduck
 - Daemon Tools
-- Dash
 - Dolphin
 - Dropbox
 - FileBot

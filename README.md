@@ -9,7 +9,6 @@ Personal guide to tailor my Mac.
 - Byword
 - Carbon Copy Cloner
 - CCleaner
-- CleanMyDrive
 - CleanMyMac
 - Cyberduck
 - Daemon Tools

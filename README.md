@@ -18,6 +18,7 @@ Personal guide to tailor my Mac.
 - Firefox
 - Flipboard
 - Gemini
+- Ghost
 - GitHub Desktop
 - GluePrint
 - Gmail

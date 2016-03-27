@@ -40,7 +40,6 @@ Personal guide to tailor my Mac.
 - ownCloud
 - Parallels Desktop
 - Patterns
-- Pixelmator
 - Plex Media Server
 - SimpleComic
 - SiteSucker

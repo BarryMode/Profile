@@ -16,7 +16,6 @@ Personal guide to tailor my Mac.
 - Dropbox
 - FileBot
 - Firefox
-- Flipboard
 - Gemini
 - Ghost
 - GitHub Desktop

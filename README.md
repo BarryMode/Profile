@@ -45,6 +45,7 @@ Personal guide to tailor my Mac.
 - SiteSucker
 - Steam
 - Sublime Text
+- Synkron
 - Synology Assistant
 - TeamViewer
 - TextHasher

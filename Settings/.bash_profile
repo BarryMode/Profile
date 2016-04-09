@@ -82,6 +82,7 @@ alias sweep='~/Code/Bash/sweep.sh'                      # sweep:    Runs upkeep 
 alias update='~/Code/Bash/install-updates.sh'           # update:   Install updates.
 alias carrots='~/Websites/^/carrots/grabber/index.sh'   # carrots:  Prepares carrot sql.
 alias grabber='open ~/Websites/^/carrots/grabber/Grabber.app' # grabber: Opens Grabber.
+wget-list() { wget -r --no-remove-listing -i "$1"; }    # wget-list: Downloads list of links from source input and preserves directory structure.
 
 # Video Commands
 # ==============

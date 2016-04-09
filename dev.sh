@@ -47,6 +47,15 @@ case ${answer:0:1} in
   ;;
 esac
 
+# Wayback Machine Downloader
+echo ; read -p 'Install Gem: Wayback Machine Downloader? (y/n) ' answer
+case ${answer:0:1} in
+  y|Y )
+  echo 'Installing Wayback Machine Downloader...'
+  gem install wayback_machine_downloader
+  ;;
+esac
+
 # Homebrew
 echo ; echo '--- Homebrew' ; echo
 read -p 'Install Homebrew? * (y/n) ' answer

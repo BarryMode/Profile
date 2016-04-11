@@ -40,6 +40,7 @@ Personal guide to tailor my Mac.
 - Parallels Desktop
 - Patterns
 - Plex Media Server
+- Port Map
 - SimpleComic
 - SiteSucker
 - Steam

@@ -6,6 +6,7 @@ Personal guide to tailor my Mac.
 - Adobe Suite
 - Amazon Cloud Drive
 - Audio Hijack
+- BatChmod
 - Byword
 - Carbon Copy Cloner
 - CCleaner

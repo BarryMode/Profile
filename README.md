@@ -15,6 +15,7 @@ Personal guide to tailor my Mac.
 - Daemon Tools
 - Dolphin
 - Dropbox
+- EasyFind
 - FileBot
 - Firefox
 - Gemini

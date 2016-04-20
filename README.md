@@ -5,6 +5,7 @@ Personal guide to tailor my Mac.
 
 - Adobe Suite
 - Amazon Cloud Drive
+- AppCleaner
 - Audio Hijack
 - BatChmod
 - Byword
@@ -25,6 +26,7 @@ Personal guide to tailor my Mac.
 - Gmail
 - HandBrake
 - Hider
+- iShowUAudioCapture
 - Leaf
 - Malwarebytes
 - MAMP Pro
@@ -43,8 +45,10 @@ Personal guide to tailor my Mac.
 - Patterns
 - Plex Media Server
 - Port Map
+- qBittorrent
 - SimpleComic
 - SiteSucker
+- Sophos Home
 - Steam
 - Sublime Text
 - Synkron
@@ -52,7 +56,6 @@ Personal guide to tailor my Mac.
 - TeamViewer
 - TextHasher
 - The Unarchiver
-- Transmission
 - VLC
 - WavTap
 - Xcode

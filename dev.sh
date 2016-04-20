@@ -113,6 +113,9 @@ case ${answer:0:1} in
   brew install node010
   echo ; echo 'Upgrading Homebrew Packages...'
   brew upgrade
+  # Coffeescript
+  echo ; echo 'Installing CoffeeScript...'
+  sudo npm install -g coffee-script
   # Underscore
   echo ; echo 'Installing Underscore...'
   sudo npm install -g underscore

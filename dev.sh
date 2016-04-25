@@ -7,7 +7,7 @@ find $HOME -type f \( -perm 777 -o -perm 666 \) -exec chmod 644 {} \; -print
 
 # Dot configs
 echo ; echo 'Loading dot configs...'
-ditto ./.[^.]* ~/
+ditto ./Settings/.[^.]* ~/
 
 # Xcode
 echo ; echo '--- Xcode' ; echo

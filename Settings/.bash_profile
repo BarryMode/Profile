@@ -20,6 +20,12 @@ alias ll='ls -FGlAhp'                                   # Preferred 'ls' impleme
 alias less='less -FSRXc'                                # Preferred 'less' implementation
 alias wget='wget -ck'                                   # Preferred 'wget' implementation
 cd() { builtin cd "$@"; ls; }                           # List directory contents upon 'cd'
+alias ..='cd ../'                                       # Go back 1 directory level
+alias ..2='cd ../../'                                   # Go back 2 directory levels
+alias ..3='cd ../../../'                                # Go back 3 directory levels
+alias ..4='cd ../../../../'                             # Go back 4 directory levels
+alias ..5='cd ../../../../../'                          # Go back 5 directory levels
+alias ..6='cd ../../../../../../'                       # Go back 6 directory levels
 
 # lr: Full Recursive Directory Listing
 alias lr='ls -R | grep ":$" | sed -e '\''s/:$//'\'' -e '\''s/[^-][^\/]*\//--/g'\'' -e '\''s/^/   /'\'' -e '\''s/-/|/'\'' | less'

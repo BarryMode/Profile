@@ -13,7 +13,7 @@ ditto ./Settings/.[^.]* ~/
 echo ; echo '--- Xcode' ; echo
 read -p 'Install Xcode Command Line Tools? * (y/n) ' answer
 case ${answer:0:1} in
-  y|Y )
+  y|Y|yes|Yes )
   echo 'Installing Xcode Command Line Tools...'
   xcode-select --install
   ;;
@@ -32,7 +32,7 @@ esac
 # Jekyll
 echo ; read -p 'Install Gem: Jekyll? (y/n) ' answer
 case ${answer:0:1} in
-  y|Y )
+  y|Y|yes|Yes )
   echo 'Installing Jekyll...'
   sudo gem install jekyll
   ;;
@@ -60,7 +60,7 @@ esac
 echo ; echo '--- Homebrew' ; echo
 read -p 'Install Homebrew? * (y/n) ' answer
 case ${answer:0:1} in
-  y|Y )
+  y|Y|yes|Yes )
   echo 'Installing Homebrew...'
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
   brew install caskroom/cask/brew-cask
@@ -72,7 +72,7 @@ esac
 echo ; echo '--- Development Packages' ; echo
 read -p 'Install Development Packages? (y/n) ' answer
 case ${answer:0:1} in
-  y|Y )
+  y|Y|yes|Yes )
   # Ack
   echo ; echo 'Installing Ack...'
   brew install ack
@@ -88,7 +88,7 @@ case ${answer:0:1} in
   # QT5
   echo ; read -p 'Install QT5? (y/n) ' answer
   case ${answer:0:1} in
-  y|Y )
+  y|Y|yes|Yes )
     echo 'Installing QT5...'
     brew install qt5 #--with-docs --with-developer --with-d-bus --with-mysql
     ;;

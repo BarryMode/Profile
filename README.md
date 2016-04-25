@@ -86,4 +86,4 @@ Run `prime.sh` in Terminal. Watch for errors.
 - Synology NAS
   - Movies
 - WD My Book 1TB
-  - Holmes (everything)
+  - Holmes Time Machine

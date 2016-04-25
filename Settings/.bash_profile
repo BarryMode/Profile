@@ -18,8 +18,8 @@ alias mv='mv -iv'                                       # Preferred 'mv' impleme
 alias mkdir='mkdir -pv'                                 # Preferred 'mkdir' implementation
 alias ll='ls -FGlAhp'                                   # Preferred 'ls' implementation
 alias less='less -FSRXc'                                # Preferred 'less' implementation
-cd() { builtin cd "$@"; ls; }                           # Always list directory contents upon 'cd'
 alias wget='wget -ck'                                   # Preferred 'wget' implementation
+cd() { builtin cd "$@"; ls; }                           # List directory contents upon 'cd'
 
 # lr: Full Recursive Directory Listing
 alias lr='ls -R | grep ":$" | sed -e '\''s/:$//'\'' -e '\''s/[^-][^\/]*\//--/g'\'' -e '\''s/^/   /'\'' -e '\''s/-/|/'\'' | less'

@@ -13,6 +13,7 @@ export EDITOR=/Applications/Sublime\ Text.app/Contents/SharedSupport/bin
 
 # Improvements
 # ============
+alias cp='cp -iv'                                       # Preferred 'cp' implementation
 alias mv='mv -iv'                                       # Preferred 'mv' implementation
 alias mkdir='mkdir -pv'                                 # Preferred 'mkdir' implementation
 alias ll='ls -FGlAhp'                                   # Preferred 'ls' implementation

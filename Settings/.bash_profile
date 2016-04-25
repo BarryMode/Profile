@@ -106,7 +106,7 @@ remux-aac() { for i in *."$1"; do ffmpeg -i "$i" -c:v copy -c:a aac "${i/${i##*.
 
 # Internet Commands
 # =================
-alias myip='curl ip.appspot.com'                        # myip:      Public facing IP Address
+alias myip='curl ipinfo.io'                             # myip:      Public facing IP Address
 alias flushdns='dscacheutil -flushcache'                # flushdns:  Flush out the DNS Cache
 alias openports='sudo lsof -i | grep LISTEN'            # openports: All listening connections
 alias adler='ssh admin@192.168.1.8'                     # adler:     Enter NAS Server.

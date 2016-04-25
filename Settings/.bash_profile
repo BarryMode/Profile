@@ -26,6 +26,7 @@ alias ..3='cd ../../../'                                # Go back 3 directory le
 alias ..4='cd ../../../../'                             # Go back 4 directory levels
 alias ..5='cd ../../../../../'                          # Go back 5 directory levels
 alias ..6='cd ../../../../../../'                       # Go back 6 directory levels
+alias f='open -a Finder ./'                             # f:         Opens current directory in Finder
 
 # lr: Full Recursive Directory Listing
 alias lr='ls -R | grep ":$" | sed -e '\''s/:$//'\'' -e '\''s/[^-][^\/]*\//--/g'\'' -e '\''s/^/   /'\'' -e '\''s/-/|/'\'' | less'

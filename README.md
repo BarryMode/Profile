@@ -5,6 +5,7 @@ Personal guide to tailor my Mac.
 
 - Adobe Suite
 - Amazon Cloud Drive
+- Angry IP Scanner
 - AppCleaner
 - Audio Hijack
 - BatChmod
@@ -79,14 +80,10 @@ Run `prime.sh` in Terminal. Watch for errors.
   - Notes
   - Safari
 - MEGA
-  - Archive
-  - Code
-  - Documents
+  - Games
   - Music
   - Projects
-- ownCloud
-  - Websites
 - Synology NAS
   - Movies
-
-Games are not currently backed up anywhere. SOL.
+- WD My Book 1TB
+  - Holmes (everything)

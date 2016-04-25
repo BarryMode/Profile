@@ -11,6 +11,7 @@ ditto ./Settings/.[^.]* ~/
 
 # Xcode
 echo ; echo '--- Xcode' ; echo
+
 read -p 'Install Xcode Command Line Tools? * (y/n) ' answer
 case ${answer:0:1} in
   y|Y|yes|Yes )
@@ -21,56 +22,41 @@ esac
 
 # Ruby
 echo ; echo '--- Ruby' ; echo
-read -p 'Update RubyGems? (y/n) ' answer
-case ${answer:0:1} in
-  y|Y )
-  echo 'Updating RubyGems...'
-  sudo gem update --system
-  ;;
-esac
 
-# Jekyll
-echo ; read -p 'Install Gem: Jekyll? (y/n) ' answer
+read -p 'Install RubyGems? (y/n) ' answer
 case ${answer:0:1} in
   y|Y|yes|Yes )
+  # Jekyll
   echo 'Installing Jekyll...'
   sudo gem install jekyll
-  ;;
-esac
-
-# Sass
-echo ; read -p 'Install Gem: Sass? (y/n) ' answer
-case ${answer:0:1} in
-  y|Y )
+  # Sass
   echo 'Installing Sass...'
   sudo gem install sass
-  ;;
-esac
-
-# Wayback Machine Downloader
-echo ; read -p 'Install Gem: Wayback Machine Downloader? (y/n) ' answer
-case ${answer:0:1} in
-  y|Y )
+  # Wayback Machine Downloader
   echo 'Installing Wayback Machine Downloader...'
   gem install wayback_machine_downloader
   ;;
 esac
 
-# Homebrew
-echo ; echo '--- Homebrew' ; echo
-read -p 'Install Homebrew? * (y/n) ' answer
+echo ; echo 'Updating RubyGems...'
+sudo gem update --system
+
+# Shell
+echo ; echo '--- Shell' ; echo
+
+read -p 'Install Homebrew? (y/n) ' answer
 case ${answer:0:1} in
   y|Y|yes|Yes )
   echo 'Installing Homebrew...'
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
   brew install caskroom/cask/brew-cask
-  echo ; echo 'Updating Homebrew...'
-  brew update
   ;;
 esac
 
-echo ; echo '--- Development Packages' ; echo
-read -p 'Install Development Packages? (y/n) ' answer
+echo ; echo 'Updating Homebrew...'
+brew update
+
+read -p 'Install Shell Extensions? (y/n) ' answer
 case ${answer:0:1} in
   y|Y|yes|Yes )
   # Ack
@@ -102,33 +88,58 @@ case ${answer:0:1} in
   # Youtube-dl
   echo ; echo 'Installing Youtube-dl...'
   brew install youtube-dl
+  # FFmpeg
+   echo ; echo 'Installing FFmpeg...'
   brew install ffmpeg
-  # Python
-  echo ; echo 'Installing Python...'
+  ;;
+esac
+
+echo ; echo 'Upgrading Homebrew Packages...'
+brew upgrade
+
+# Python
+echo ; echo '--- Python' ; echo
+read -p 'Install Python? (y/n) ' answer
+case ${answer:0:1} in
+  y|Y|yes|Yes )
+  echo 'Installing Python...'
   brew install python
-  # Buster
-  sudo pip install buster
-  # Node
-  echo ; echo 'Installing Node...'
+  ;;
+esac
+
+# NodeJS
+echo ; echo '--- NodeJS' ; echo
+read -p 'Install NodeJS? (y/n) ' answer
+case ${answer:0:1} in
+  y|Y|yes|Yes )
+  echo 'Installing NodeJS...'
   brew install node010
-  echo ; echo 'Upgrading Homebrew Packages...'
-  brew upgrade
-  # Coffeescript
-  echo ; echo 'Installing CoffeeScript...'
-  sudo npm install -g coffee-script
+  ;;
+esac
+
+read -p 'Install Node Modules? (y/n) ' answer
+case ${answer:0:1} in
+  y|Y|yes|Yes )
   # Underscore
   echo ; echo 'Installing Underscore...'
   sudo npm install -g underscore
   # Moment
   echo 'Installing Moment...'
   sudo npm install -g moment
+  # Node-Fetch
+  echo 'Installing Node-Fetch...'
+  sudo npm install -g node-fetch
   # Gulp
   echo 'Installing Gulp...'
   sudo npm install -g gulp gulp-util bower gulp-concat gulp-sass gulp-minify-css gulp-rename shelljs
+  # CoffeeScript
+  echo ; echo 'Installing CoffeeScript...'
+  sudo npm install -g coffee-script
   # Electron
   echo 'Installing Electron...'
   sudo npm install -g electron-prebuilt
-  echo ; echo 'Updating Node Packages...'
-  npm update
   ;;
 esac
+
+echo ; echo 'Updating Node Packages...'
+npm update

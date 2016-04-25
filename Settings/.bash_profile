@@ -105,8 +105,6 @@ remux-aac() { for i in *."$1"; do ffmpeg -i "$i" -c:v copy -c:a aac "${i/${i##*.
 alias myip='curl ipinfo.io'                             # myip:      Public facing IP Address
 alias flushdns='dscacheutil -flushcache'                # flushdns:  Flush out the DNS Cache
 alias openports='sudo lsof -i | grep LISTEN'            # openports: All listening connections
-alias adler='ssh admin@192.168.1.8'                     # adler:     Enter NAS Server.
-alias dreamhost='ssh netbasis@goodlife.dreamhost.com'   # dreamhost: Enter Web Server.
 
 # internet: display useful host related informaton
 internet() {
@@ -117,5 +115,3 @@ internet() {
   echo -e "\n${RED}DNS Configuration:$NC " ; scutil --dns
   echo
 }
-# httpdebug:  Download a web page and show info on what took time
-httpdebug() { /usr/bin/curl $@ -o /dev/null -w "dns: %{time_namelookup} connect: %{time_connect} pretransfer: %{time_pretransfer} starttransfer: %{time_starttransfer} total: %{time_total}\n" ; }

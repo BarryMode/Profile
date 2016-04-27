@@ -12,15 +12,14 @@ Personal guide to tailor my Mac.
 - Byword
 - Carbon Copy Cloner
 - CCleaner
-- CleanMyMac
 - Cyberduck
 - Daemon Tools
+- Disk Aid
 - Dolphin
 - Dropbox
 - EasyFind
 - FileBot
 - Firefox
-- Gemini
 - Ghost
 - GitHub Desktop
 - GluePrint

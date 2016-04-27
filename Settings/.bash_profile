@@ -37,12 +37,12 @@ ssh.copy() { ssh-copy-id "$1"; }                         # ssh.copy:  Example - 
 alias ssh.settings='subl ~/.shuttle.json'               # ssh.settings:  SSH Shuttle settings
 alias bash.settings='subl ~/.bash_profile'              # bash.settings: Bash profile settings
 ql() { qlmanage -p "$*" >& /dev/null; }                 # ql:        Opens any file in MacOS Quicklook Preview
-del() { command rm -rf "@"; }                           # del:       Permanently deletes a file
+del() { rm -rf "$1"; }                                   # del:       Permanently deletes a file
 burn() { drutil burn "$1"; }                            # burn:      Burns file to inserted disc
 mkcd() { mkdir -p "$1" && cd "$1"; }                    # mkcd:      Makes new directory and jumps inside
 hide() { chflags hidden "$1"; }                         # hide:      Hide a file
 show() { chflags nohidden "$1"; }                       # show:      Show a file
-trash() { command mv "$@" ~/.Trash; }                   # trash:     Moves a file to the MacOS trash
+trash() { mv "$1" ~/.Trash; }                           # trash:     Moves a file to the MacOS trash
 zipdir() { zip -r "$1".zip "$1"; }                      # zipdir:    Create a ZIP archive of a folder
 wget-list() { wget -r --no-remove-listing -i "$1"; }    # wget-list: Downloads list of links from source input and preserves directory structure
 

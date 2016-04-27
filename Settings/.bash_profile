@@ -44,7 +44,7 @@ hide() { chflags hidden "$1"; }                         # hide:      Hide a file
 show() { chflags nohidden "$1"; }                       # show:      Show a file
 trash() { mv "$1" ~/.Trash; }                           # trash:     Moves a file to the MacOS trash
 zipdir() { zip -r "$1".zip "$1"; }                      # zipdir:    Create a ZIP archive of a folder
-wget-list() { wget -r --no-remove-listing -i "$1"; }    # wget-list: Downloads list of links from source input and preserves directory structure
+wget.list() { wget -r --no-remove-listing -i "$1"; }    # wget.list: Downloads list of links from source input and preserves directory structure
 
 # lr: Full Recursive Directory Listing
 alias lr='ls -R | grep ":$" | sed -e '\''s/:$//'\'' -e '\''s/[^-][^\/]*\//--/g'\'' -e '\''s/^/   /'\'' -e '\''s/-/|/'\'' | less'
@@ -53,7 +53,7 @@ hidefiles() { defaults write com.apple.finder AppleShowAllFiles NO; killall Find
 # showfiles: Show hidden files in Finder
 showfiles() { defaults write com.apple.finder AppleShowAllFiles YES; killall Finder; }
 # find-replace: Example - find-replace searchText replacementText
-find-replace() { ack "$1" -la --print0 | xargs -0 -n 1 sed -i "s/$1/$2/"; }
+find.replace() { ack "$1" -la --print0 | xargs -0 -n 1 sed -i "s/$1/$2/"; }
 # spotlight: Search for a file using MacOS Spotlight's metadata
 spotlight() { mdfind "kMDItemDisplayName == '$@'wc"; }
 # extract: Extract most known archives with one command
@@ -95,12 +95,12 @@ alias grabber='open ~/Websites/^/carrots/grabber/Grabber.app' # grabber: Opens G
 alias vlc='/Applications/VLC.app/Contents/MacOS/VLC'    # vlc:  Adds input to VLC media player playlist
 alias vget='youtube-dl'                                 # vget: Alias for 'youtube-dl'
 # youtube: Download playlist with 'youtube-dl'
-vget-playlist() { youtube-dl -o '%(playlist)s/%(title)s.%(ext)s' "$1"; }
+vget.playlist() { youtube-dl -o '%(playlist)s/%(title)s.%(ext)s' "$1"; }
 # mget: Download music with 'youtube-dl'
 mget() { youtube-dl --extract-audio --audio-format mp3 -l "$1"; }
 # remux: Ex. "remux mkv" would remux all mkvs to mp4
 remux() { for i in *."$1"; do ffmpeg -i "$i" -codec copy "${i/${i##*.}/mp4}"; done }
-remux-aac() { for i in *."$1"; do ffmpeg -i "$i" -c:v copy -c:a aac "${i/${i##*.}/mp4}"; done }
+remux.aac() { for i in *."$1"; do ffmpeg -i "$i" -c:v copy -c:a aac "${i/${i##*.}/mp4}"; done }
 
 # Internet Commands
 # =================

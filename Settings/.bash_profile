@@ -84,10 +84,10 @@ extract() {
 
 # App Commands
 # ============
-alias edit='subl'                                       # edit:     Opens any file in Sublime Text
-alias eject='~/Code/Bash/eject-super-drive.sh'          # eject:    Eject the super drive
-alias sweep='~/Code/Bash/sweep.sh'                      # sweep:    Runs upkeep tasks
-alias carrots='~/Websites/^/carrots/grabber/index.sh'   # carrots:  Prepares carrot sql
+alias edit='subl'                                       # edit:    Opens any file in Sublime Text
+alias eject='~/Code/Shell/eject-super-drive.sh'         # eject:   Eject the super drive
+alias sweep='~/Code/Shell/sweep.sh'                     # sweep:   Runs upkeep tasks
+alias carrots='~/Websites/^/carrots/grabber/index.sh'   # carrots: Prepares carrot sql
 alias grabber='open ~/Websites/^/carrots/grabber/Grabber.app' # grabber: Opens Grabber
 
 # Video Commands

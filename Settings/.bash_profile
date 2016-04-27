@@ -34,6 +34,8 @@ alias ded='find . -type d -empty -delete'               # ded:       Delete all 
 alias path='echo -e ${PATH//:/\\n}'                     # path:      Echo all executable paths
 alias mirror='wget -ckm -w 20'                          # mirror:    'wget' settings for mirroring
 alias settings='subl ~/.bash_profile'                   # settings:  Bash profile settings
+ssh.copy() { ssh-copy-id "$1"; }                         # ssh.copy:  Example - ssh.copy user@host to skip passwords
+alias ssh.settings='subl ~/.shuttle.json'               # ssh.settings:  SSH Shuttle settings
 ql() { qlmanage -p "$*" >& /dev/null; }                 # ql:        Opens any file in MacOS Quicklook Preview
 del() { command rm -rf "@"; }                           # del:       Permanently deletes a file
 burn() { drutil burn "$1"; }                            # burn:      Burns file to inserted disc

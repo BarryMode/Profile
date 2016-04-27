@@ -16,6 +16,8 @@ Personal guide to tailor my Mac.
 - Daemon Tools
 - Disk Aid
 - Dolphin
+- Download Shuttle
+- Drive Clean
 - Dropbox
 - EasyFind
 - FileBot
@@ -46,6 +48,7 @@ Personal guide to tailor my Mac.
 - Plex Media Server
 - Port Map
 - qBittorrent
+- Shuttle
 - SimpleComic
 - SiteSucker
 - Sophos Home

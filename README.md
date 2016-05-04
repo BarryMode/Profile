@@ -5,7 +5,6 @@ Personal guide to tailor my Mac.
 
 - Adobe Suite
 - Amazon Cloud Drive
-- Angry IP Scanner
 - AppCleaner
 - Audio Hijack
 - BatChmod

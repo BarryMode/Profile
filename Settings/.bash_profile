@@ -32,13 +32,13 @@ alias c='clear'                                         # c:         Clear termi
 alias f#='echo $(ls -1 | wc -l)'                        # f#:        Count non-hidden files in this directory
 alias ded='find . -type d -empty -delete'               # ded:       Delete all empty subdirectories
 alias path='echo -e ${PATH//:/\\n}'                     # path:      Echo all executable paths
-ssh.copy() { ssh-copy-id "$1"; }                         # ssh.copy:  Example - ssh.copy user@host to skip passwords
 alias mirror='wget -ckm'                                # mirror:    'wget' settings for mirroring
 alias mirror-slow='wget -ckm -w 20'                     # mirror-slow: 'wget' settings for mirroring
+ssh.copy() { ssh-copy-id "$1"; }                        # ssh.copy:  Example - ssh.copy user@host to skip passwords
 alias ssh.settings='subl ~/.shuttle.json'               # ssh.settings:  SSH Shuttle settings
 alias bash.settings='subl ~/.bash_profile'              # bash.settings: Bash profile settings
 ql() { qlmanage -p "$*" >& /dev/null; }                 # ql:        Opens any file in MacOS Quicklook Preview
-del() { rm -rf "$1"; }                                   # del:       Permanently deletes a file
+del() { rm -rf "$1"; }                                  # del:       Permanently deletes a file
 burn() { drutil burn "$1"; }                            # burn:      Burns file to inserted disc
 mkcd() { mkdir -p "$1" && cd "$1"; }                    # mkcd:      Makes new directory and jumps inside
 hide() { chflags hidden "$1"; }                         # hide:      Hide a file

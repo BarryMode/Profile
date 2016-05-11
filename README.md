@@ -10,7 +10,6 @@ Personal guide to tailor my Mac.
 - BatChmod
 - Byword
 - Carbon Copy Cloner
-- CCleaner
 - CleanMyMac
 - Cyberduck
 - Daemon Tools

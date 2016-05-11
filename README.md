@@ -4,7 +4,6 @@ Personal guide to tailor my Mac.
 ## Applications
 
 - Adobe Suite
-- Amazon Cloud Drive
 - AppCleaner
 - Audio Hijack
 - BatChmod

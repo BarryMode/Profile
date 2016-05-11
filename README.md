@@ -11,6 +11,7 @@ Personal guide to tailor my Mac.
 - Byword
 - Carbon Copy Cloner
 - CCleaner
+- CleanMyMac
 - Cyberduck
 - Daemon Tools
 - Disk Aid
@@ -19,8 +20,10 @@ Personal guide to tailor my Mac.
 - Drive Clean
 - Dropbox
 - EasyFind
+- Encrypto
 - FileBot
 - Firefox
+- Gemini
 - Ghost
 - GitHub Desktop
 - Gmail

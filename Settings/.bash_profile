@@ -100,9 +100,12 @@ alias vget='youtube-dl'                                 # vget: Alias for 'youtu
 vget.playlist() { youtube-dl -o '%(playlist)s/%(title)s.%(ext)s' "$1"; }
 # mget: Download music with 'youtube-dl'
 mget() { youtube-dl --extract-audio --audio-format mp3 -l "$1"; }
-# remux: Ex. "remux mkv" would remux all mkvs to mp4
-remux() { for i in *."$1"; do ffmpeg -i "$i" -codec copy "${i/${i##*.}/mp4}"; done }
-remux.aac() { for i in *."$1"; do ffmpeg -i "$i" -c:v copy -c:a aac "${i/${i##*.}/mp4}"; done }
+# remux: Ex. "remux input.mkv 1 output.mp4" makes output.mp4 with audio track 1
+remux() { ffmpeg -i "$1" -map 0:0 -map 0:"$2" -c:v copy -c:a:"$2" copy "$3"; }
+remux.aac() { ffmpeg -i "$1" -map 0:0 -map 0:"$2" -c:v copy -c:a:"$2" aac "$3"; }
+# remux.all: Ex. "remux.all mkv" would remux all mkvs to mp4 in the dir
+remux.all() { for i in *."$1"; do ffmpeg -i "$i" -codec copy "${i/${i##*.}/mp4}"; done }
+remux.all.aac() { for i in *."$1"; do ffmpeg -i "$i" -c:v copy -c:a aac "${i/${i##*.}/mp4}"; done }
 
 # Internet Commands
 # =================

@@ -15,6 +15,7 @@ Personal guide to tailor my Mac.
 - Cyberduck
 - Daemon Tools
 - Disk Aid
+- Disk Drill
 - Dolphin
 - Download Shuttle
 - Drive Clean

@@ -23,7 +23,6 @@ Personal guide to tailor my Mac.
 - Firefox
 - Ghost
 - GitHub Desktop
-- GluePrint
 - Gmail
 - HandBrake
 - Hider
@@ -31,7 +30,6 @@ Personal guide to tailor my Mac.
 - Leaf
 - Malwarebytes
 - MAMP Pro
-- MediaHuman Audio Converter
 - MEGAsync
 - Melodyne
 - Microsoft Remote Desktop

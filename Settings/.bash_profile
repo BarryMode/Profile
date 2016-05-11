@@ -32,8 +32,9 @@ alias c='clear'                                         # c:         Clear termi
 alias f#='echo $(ls -1 | wc -l)'                        # f#:        Count non-hidden files in this directory
 alias ded='find . -type d -empty -delete'               # ded:       Delete all empty subdirectories
 alias path='echo -e ${PATH//:/\\n}'                     # path:      Echo all executable paths
-alias mirror='wget -ckm -w 20'                          # mirror:    'wget' settings for mirroring
 ssh.copy() { ssh-copy-id "$1"; }                         # ssh.copy:  Example - ssh.copy user@host to skip passwords
+alias mirror='wget -ckm'                                # mirror:    'wget' settings for mirroring
+alias mirror-slow='wget -ckm -w 20'                     # mirror-slow: 'wget' settings for mirroring
 alias ssh.settings='subl ~/.shuttle.json'               # ssh.settings:  SSH Shuttle settings
 alias bash.settings='subl ~/.bash_profile'              # bash.settings: Bash profile settings
 ql() { qlmanage -p "$*" >& /dev/null; }                 # ql:        Opens any file in MacOS Quicklook Preview

@@ -9,6 +9,7 @@ Personal guide to tailor my Mac.
 - BatChmod
 - Byword
 - Carbon Copy Cloner
+- CleanMyDrive
 - CleanMyMac
 - Cyberduck
 - Daemon Tools
@@ -57,6 +58,7 @@ Personal guide to tailor my Mac.
 - TeamViewer
 - TextHasher
 - The Unarchiver
+- TinkerTool
 - VLC
 - WavTap
 - Xcode

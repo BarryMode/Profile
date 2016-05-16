@@ -16,6 +16,7 @@ export EDITOR=/Applications/Sublime\ Text.app/Contents/SharedSupport/bin
 alias cp='cp -iv'                                       # Preferred 'cp' implementation
 alias mv='mv -iv'                                       # Preferred 'mv' implementation
 alias mkdir='mkdir -pv'                                 # Preferred 'mkdir' implementation
+alias i='mdls'                                          # Preferred 'mdls' implementation
 alias less='less -FSRXc'                                # Preferred 'less' implementation
 alias wget='wget -ck'                                   # Preferred 'wget' implementation
 alias ll='ls -FGlAhp'                                   # 'ls' with more detail.

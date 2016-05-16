@@ -108,6 +108,9 @@ remux.aac() { ffmpeg -i "$1" -ac 2 -map 0:0 -map 0:"$2" -c:v copy -c:a:"$2" aac 
 # remux.all: Ex. "remux.all mkv" would remux all mkvs to mp4 in the dir
 remux.all() { for i in *."$1"; do ffmpeg -i "$i" -ac 2 -codec copy "${i/${i##*.}/mp4}"; done }
 remux.all.aac() { for i in *."$1"; do ffmpeg -i "$i" -ac 2 -c:v copy -c:a aac "${i/${i##*.}/mp4}"; done }
+# plex: Convert videos for use with Plex.
+plex() { ffmpeg -i "$1" -map 0:0 -map 0:"$2" -ac 2 -c:v libx264 -c:a:"$2" aac "$3"; }
+plex.all() { for i in *."$1"; do ffmpeg -i "$i" -ac 2 -c:v libx264 -c:a aac "${i/${i##*.}/mp4}"; done }
 
 # Internet Commands
 # =================

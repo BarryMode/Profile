@@ -13,13 +13,13 @@ export EDITOR=/Applications/Sublime\ Text.app/Contents/SharedSupport/bin
 
 # Improvements
 # ============
+alias ll='ls -FGlAhp'                                   # 'ls' with more detail
 alias cp='cp -iv'                                       # Preferred 'cp' implementation
 alias mv='mv -iv'                                       # Preferred 'mv' implementation
 alias mkdir='mkdir -pv'                                 # Preferred 'mkdir' implementation
-alias i='mdls'                                          # Preferred 'mdls' implementation
 alias less='less -FSRXc'                                # Preferred 'less' implementation
 alias wget='wget -ck'                                   # Preferred 'wget' implementation
-alias ll='ls -FGlAhp'                                   # 'ls' with more detail.
+alias i='mdls'                                          # Preferred 'mdls' implementation
 cd() { builtin cd "$@"; ls; }                           # List directory contents upon 'cd'
 alias ..='cd ../'                                       # Go back 1 directory level
 alias ..2='cd ../../'                                   # Go back 2 directory levels
@@ -103,15 +103,15 @@ vget.playlist() { youtube-dl -o '%(playlist)s/%(title)s.%(ext)s' "$1"; }
 # mget: Download music with 'youtube-dl'
 mget() { youtube-dl --extract-audio --audio-format mp3 -l "$1"; }
 
-# v.info: Show video information.
-v.info() { ffmpeg -i "$1" }
+# v.info: Show video information
+v.info() { ffmpeg -i "$1"; }
 # remux: Ex. "remux input.mkv 1 output.mp4" makes output.mp4 with audio track 1
 remux() { ffmpeg -i "$1" -ac 2 -map 0:0 -map 0:"$2" -c:v copy -c:a:"$2" copy "$3"; }
 remux.aac() { ffmpeg -i "$1" -ac 2 -map 0:0 -map 0:"$2" -c:v copy -c:a:"$2" aac "$3"; }
 # remux.all: Ex. "remux.all mkv" would remux all mkvs to mp4 in the dir
 remux.all() { for i in *."$1"; do ffmpeg -i "$i" -ac 2 -codec copy "${i/${i##*.}/mp4}"; done }
 remux.all.aac() { for i in *."$1"; do ffmpeg -i "$i" -ac 2 -c:v copy -c:a aac "${i/${i##*.}/mp4}"; done }
-# plex: Convert videos for use with Plex.
+# plex: Convert videos for use with Plex
 plex() { ffmpeg -i "$1" -map 0:0 -map 0:"$2" -ac 2 -c:v libx264 -c:a:"$2" aac "$3"; }
 plex.all() { for i in *."$1"; do ffmpeg -i "$i" -ac 2 -c:v libx264 -c:a aac "${i/${i##*.}/mp4}"; done }
 

@@ -20,6 +20,7 @@ alias mkdir='mkdir -pv'                                 # Preferred 'mkdir' impl
 alias less='less -FSRXc'                                # Preferred 'less' implementation
 alias wget='wget -ck'                                   # Preferred 'wget' implementation
 alias i='mdls'                                          # Preferred 'mdls' implementation
+iget() { mdls -raw "$1" -name "$2"; }                   # iget: Filter metadata
 cd() { builtin cd "$@"; ls; }                           # List directory contents upon 'cd'
 alias ..='cd ../'                                       # Go back 1 directory level
 alias ..2='cd ../../'                                   # Go back 2 directory levels

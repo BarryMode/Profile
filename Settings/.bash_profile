@@ -102,6 +102,9 @@ alias vget='youtube-dl'                                 # vget: Alias for 'youtu
 vget.playlist() { youtube-dl -o '%(playlist)s/%(title)s.%(ext)s' "$1"; }
 # mget: Download music with 'youtube-dl'
 mget() { youtube-dl --extract-audio --audio-format mp3 -l "$1"; }
+
+# v.info: Show video information.
+v.info() { ffmpeg -i "$1" }
 # remux: Ex. "remux input.mkv 1 output.mp4" makes output.mp4 with audio track 1
 remux() { ffmpeg -i "$1" -ac 2 -map 0:0 -map 0:"$2" -c:v copy -c:a:"$2" copy "$3"; }
 remux.aac() { ffmpeg -i "$1" -ac 2 -map 0:0 -map 0:"$2" -c:v copy -c:a:"$2" aac "$3"; }

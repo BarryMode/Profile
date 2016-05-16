@@ -16,9 +16,9 @@ export EDITOR=/Applications/Sublime\ Text.app/Contents/SharedSupport/bin
 alias cp='cp -iv'                                       # Preferred 'cp' implementation
 alias mv='mv -iv'                                       # Preferred 'mv' implementation
 alias mkdir='mkdir -pv'                                 # Preferred 'mkdir' implementation
-alias ll='ls -FGlAhp'                                   # Preferred 'ls' implementation
 alias less='less -FSRXc'                                # Preferred 'less' implementation
 alias wget='wget -ck'                                   # Preferred 'wget' implementation
+alias ll='ls -FGlAhp'                                   # 'ls' with more detail.
 cd() { builtin cd "$@"; ls; }                           # List directory contents upon 'cd'
 alias ..='cd ../'                                       # Go back 1 directory level
 alias ..2='cd ../../'                                   # Go back 2 directory levels
@@ -33,7 +33,7 @@ alias f#='echo $(ls -1 | wc -l)'                        # f#:        Count non-h
 alias ded='find . -type d -empty -delete'               # ded:       Delete all empty subdirectories
 alias path='echo -e ${PATH//:/\\n}'                     # path:      Echo all executable paths
 alias mirror='wget -ckm'                                # mirror:    'wget' settings for mirroring
-alias mirror-slow='wget -ckm -w 20'                     # mirror-slow: 'wget' settings for mirroring
+alias mirror.slow='wget -ckm -w 20'                     # mirror.slow: 'wget' settings for mirroring
 ssh.copy() { ssh-copy-id "$1"; }                        # ssh.copy:  Example - ssh.copy user@host to skip passwords
 alias ssh.settings='subl ~/.shuttle.json'               # ssh.settings:  SSH Shuttle settings
 alias bash.settings='subl ~/.bash_profile'              # bash.settings: Bash profile settings
@@ -53,7 +53,7 @@ alias lr='ls -R | grep ":$" | sed -e '\''s/:$//'\'' -e '\''s/[^-][^\/]*\//--/g'\
 hidefiles() { defaults write com.apple.finder AppleShowAllFiles NO; killall Finder; }
 # showfiles: Show hidden files in Finder
 showfiles() { defaults write com.apple.finder AppleShowAllFiles YES; killall Finder; }
-# find-replace: Example - find-replace searchText replacementText
+# find.replace: Example - find.replace searchText replacementText
 find.replace() { ack "$1" -la --print0 | xargs -0 -n 1 sed -i "s/$1/$2/"; }
 # spotlight: Search for a file using MacOS Spotlight's metadata
 spotlight() { mdfind "kMDItemDisplayName == '$@'wc"; }
@@ -95,17 +95,18 @@ alias grabber='open ~/Websites/^.noindex/carrots/grabber/Grabber.app' # grabber:
 # Video Commands
 # ==============
 alias vlc='/Applications/VLC.app/Contents/MacOS/VLC'    # vlc:  Adds input to VLC media player playlist
+
 alias vget='youtube-dl'                                 # vget: Alias for 'youtube-dl'
 # youtube: Download playlist with 'youtube-dl'
 vget.playlist() { youtube-dl -o '%(playlist)s/%(title)s.%(ext)s' "$1"; }
 # mget: Download music with 'youtube-dl'
 mget() { youtube-dl --extract-audio --audio-format mp3 -l "$1"; }
 # remux: Ex. "remux input.mkv 1 output.mp4" makes output.mp4 with audio track 1
-remux() { ffmpeg -i "$1" -map 0:0 -map 0:"$2" -c:v copy -c:a:"$2" copy "$3"; }
-remux.aac() { ffmpeg -i "$1" -map 0:0 -map 0:"$2" -c:v copy -c:a:"$2" aac "$3"; }
+remux() { ffmpeg -i "$1" -ac 2 -map 0:0 -map 0:"$2" -c:v copy -c:a:"$2" copy "$3"; }
+remux.aac() { ffmpeg -i "$1" -ac 2 -map 0:0 -map 0:"$2" -c:v copy -c:a:"$2" aac "$3"; }
 # remux.all: Ex. "remux.all mkv" would remux all mkvs to mp4 in the dir
-remux.all() { for i in *."$1"; do ffmpeg -i "$i" -codec copy "${i/${i##*.}/mp4}"; done }
-remux.all.aac() { for i in *."$1"; do ffmpeg -i "$i" -c:v copy -c:a aac "${i/${i##*.}/mp4}"; done }
+remux.all() { for i in *."$1"; do ffmpeg -i "$i" -ac 2 -codec copy "${i/${i##*.}/mp4}"; done }
+remux.all.aac() { for i in *."$1"; do ffmpeg -i "$i" -ac 2 -c:v copy -c:a aac "${i/${i##*.}/mp4}"; done }
 
 # Internet Commands
 # =================

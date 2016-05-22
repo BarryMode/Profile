@@ -37,7 +37,7 @@ alias path='echo -e ${PATH//:/\\n}'                     # path:      Echo all ex
 alias mirror='wget -ckm'                                # mirror:    'wget' settings for mirroring
 alias dump.trash='rm -rf ~/.trash/*'                    # dump.trash:    Empty the trash.
 ssh.copy() { ssh-copy-id "$1"; }                        # ssh.copy:      Example - ssh.copy user@host to skip passwords
-alias ssh.settings='subl ~/.shuttle.json'               # ssh.settings:  SSH Shuttle settings
+alias ssh.settings='subl ~/.ssh/config'                 # ssh.settings:  SSH Shuttle settings
 alias bash.settings='subl ~/.bash_profile'              # bash.settings: Bash profile settings
 ql() { qlmanage -p "$*" >& /dev/null; }                 # ql:        Opens any file in MacOS Quicklook Preview
 burn() { drutil burn "$1"; }                            # burn:      Burns file to inserted disc

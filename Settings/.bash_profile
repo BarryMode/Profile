@@ -35,16 +35,17 @@ alias f#='echo $(ls -1 | wc -l)'                        # f#:        Count non-h
 alias ded='find . -type d -empty -delete'               # ded:       Delete all empty subdirectories
 alias path='echo -e ${PATH//:/\\n}'                     # path:      Echo all executable paths
 alias mirror='wget -ckm'                                # mirror:    'wget' settings for mirroring
-alias mirror.slow='wget -ckm -w 20'                     # mirror.slow: 'wget' settings for mirroring
-ssh.copy() { ssh-copy-id "$1"; }                        # ssh.copy:  Example - ssh.copy user@host to skip passwords
+alias dump.trash='rm -rf ~/.trash/*'                    # dump.trash:    Empty the trash.
+ssh.copy() { ssh-copy-id "$1"; }                        # ssh.copy:      Example - ssh.copy user@host to skip passwords
 alias ssh.settings='subl ~/.shuttle.json'               # ssh.settings:  SSH Shuttle settings
 alias bash.settings='subl ~/.bash_profile'              # bash.settings: Bash profile settings
 ql() { qlmanage -p "$*" >& /dev/null; }                 # ql:        Opens any file in MacOS Quicklook Preview
-del() { rm -rf "$1"; }                                  # del:       Permanently deletes a file
 burn() { drutil burn "$1"; }                            # burn:      Burns file to inserted disc
 mkcd() { mkdir -p "$1" && cd "$1"; }                    # mkcd:      Makes new directory and jumps inside
 hide() { chflags hidden "$1"; }                         # hide:      Hide a file
 show() { chflags nohidden "$1"; }                       # show:      Show a file
+lock() { chflags -R uchg "$1"; }                        # lock:      Checks files(s) or folder(s) lock status.
+unlock() { chflags -R nouchg "$1"; }                    # unlock:    Unchecks file(s) or folder(s) lock status.
 trash() { mv "$1" ~/.Trash; }                           # trash:     Moves a file to the MacOS trash
 zipdir() { zip -r "$1".zip "$1"; }                      # zipdir:    Create a ZIP archive of a folder
 wget.list() { wget -r --no-remove-listing -i "$1"; }    # wget.list: Downloads list of links from source input and preserves directory structure
@@ -90,9 +91,9 @@ extract() {
 alias edit='subl'                                       # edit:    Opens any file in Sublime Text
 alias eject='~/Code/Shell/eject-super-drive.sh'         # eject:   Eject the super drive
 alias sweep='~/Code/Shell/sweep.sh'                     # sweep:   Runs upkeep tasks
-alias carrots='open ~/websites/^.noindex/carrots/'      # carrots: Opens carrot dir
-alias carrot.eat='~/Websites/^.noindex/carrots/grabber/index.sh' # carrot.eat: Eats carrot sql
-alias grabber='open ~/Websites/^.noindex/carrots/grabber/Grabber.app' # grabber: Opens Grabber
+alias carrots='open ~/websites/.noindex/^/'             # carrots: Opens carrot dir
+alias carrot.eat='~/Websites/.noindex/^/grabber/index.sh' # carrot.eat: Eats carrot sql
+alias grabber='open ~/Websites/.noindex/^/grabber/Grabber.app' # grabber: Opens Grabber
 
 # Video Commands
 # ==============

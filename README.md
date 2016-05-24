@@ -4,36 +4,40 @@ Personal guide to tailor my Mac.
 ## Applications
 
 - Adobe Suite
+- Anvil
 - AppCleaner
 - Audio Hijack
 - BatChmod
+- Blocs
 - Byword
 - Carbon Copy Cloner
-- CleanMyDrive
 - CleanMyMac
 - Cyberduck
 - Daemon Tools
 - Disk Aid
 - Disk Drill
+- Docker
 - Dolphin
 - Download Shuttle
 - Drive Clean
 - Dropbox
 - EasyFind
+- Electron
 - Encrypto
 - FileBot
 - Firefox
 - Gemini
 - Ghost
 - GitHub Desktop
-- Gmail
+- Hammer
+- Nylas N1
 - HandBrake
 - Hider
+- Inboard
 - iShowUAudioCapture
 - Leaf
 - Malwarebytes
 - MAMP Pro
-- MEGAsync
 - Melodyne
 - Microsoft Remote Desktop
 - MySQL Workbench

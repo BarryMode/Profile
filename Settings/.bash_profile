@@ -35,7 +35,7 @@ alias f#='echo $(ls -1 | wc -l)'                        # f#:        Count non-h
 alias ded='find . -type d -empty -delete'               # ded:       Delete all empty subdirectories
 alias path='echo -e ${PATH//:/\\n}'                     # path:      Echo all executable paths
 alias mirror='wget -ckm'                                # mirror:    'wget' settings for mirroring
-alias dump.trash='rm -rf ~/.trash/*'                    # dump.trash:    Empty the trash.
+alias empty.trash='sudo rm -rf ~/.trash/*'              # empty.trash:   Force empty the trash.
 ssh.copy() { ssh-copy-id "$1"; }                        # ssh.copy:      Example - ssh.copy user@host to skip passwords
 alias ssh.settings='subl ~/.ssh/config'                 # ssh.settings:  SSH Shuttle settings
 alias bash.settings='subl ~/.bash_profile'              # bash.settings: Bash profile settings
@@ -92,8 +92,8 @@ alias edit='subl'                                       # edit:    Opens any fil
 alias eject='~/Code/Shell/eject-super-drive.sh'         # eject:   Eject the super drive
 alias sweep='~/Code/Shell/sweep.sh'                     # sweep:   Runs upkeep tasks
 alias carrots='open ~/websites/.noindex/^/'             # carrots: Opens carrot dir
-alias carrot.eat='~/Websites/.noindex/^/grabber/index.sh' # carrot.eat: Eats carrot sql
-alias grabber='open ~/Websites/.noindex/^/grabber/Grabber.app' # grabber: Opens Grabber
+alias carrot.eat='~/Websites/.noindex/carrots/grabber/index.sh' # carrot.eat: Eats carrot sql
+alias grabber='open ~/Websites/.noindex/carrots/grabber/Grabber.app' # grabber: Opens Grabber
 
 # Video Commands
 # ==============

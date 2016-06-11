@@ -120,24 +120,24 @@ esac
 read -p 'Install Node Modules? (y/n) ' answer
 case ${answer:0:1} in
   y|Y|yes|Yes )
-  # Underscore
-  echo ; echo 'Installing Underscore...'
-  sudo npm install -g underscore
-  # Moment
-  echo 'Installing Moment...'
-  sudo npm install -g moment
-  # Node-Fetch
-  echo 'Installing Node-Fetch...'
-  sudo npm install -g node-fetch
-  # Gulp
-  echo 'Installing Gulp...'
-  sudo npm install -g gulp gulp-util bower gulp-concat gulp-sass gulp-minify-css gulp-rename shelljs
   # CoffeeScript
   echo ; echo 'Installing CoffeeScript...'
   sudo npm install -g coffee-script
   # Electron
   echo 'Installing Electron...'
   sudo npm install -g electron-prebuilt
+  # Gulp
+  echo 'Installing Gulp...'
+  sudo npm install -g gulp gulp-util bower gulp-concat gulp-sass gulp-minify-css gulp-rename shelljs
+  # Moment
+  echo 'Installing Moment...'
+  sudo npm install -g moment
+  # Node-Fetch
+  echo 'Installing Node-Fetch...'
+  sudo npm install -g node-fetch
+  # Underscore
+  echo ; echo 'Installing Underscore...'
+  sudo npm install -g underscore
   ;;
 esac
 

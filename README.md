@@ -33,6 +33,7 @@ Personal guide to tailor my Mac.
 - Hider
 - iShowUAudioCapture
 - Leaf
+- Lektor
 - Malwarebytes
 - MAMP Pro
 - Melodyne

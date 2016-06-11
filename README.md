@@ -28,6 +28,7 @@ Personal guide to tailor my Mac.
 - Ghost
 - GitHub Desktop
 - Gmail
+- IRCCloud
 - HandBrake
 - Hider
 - iShowUAudioCapture

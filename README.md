@@ -28,7 +28,6 @@ Personal guide to tailor my Mac.
 - GitHub Desktop
 - HandBrake
 - Hider
-- Inboard
 - iShowUAudioCapture
 - Leaf
 - Malwarebytes

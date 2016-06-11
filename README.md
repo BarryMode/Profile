@@ -63,6 +63,7 @@ Personal guide to tailor my Mac.
 - TextHasher
 - The Unarchiver
 - TinkerTool
+- Trello
 - VLC
 - WavTap
 - Xcode

@@ -11,7 +11,6 @@ Personal guide to tailor my Mac.
 - Carbon Copy Cloner
 - CleanMyMac
 - Cyberduck
-- Daemon Tools
 - Disk Aid
 - Disk Drill
 - Docker

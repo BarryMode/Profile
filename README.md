@@ -26,7 +26,6 @@ Personal guide to tailor my Mac.
 - Gemini
 - Ghost
 - GitHub Desktop
-- Hammer
 - Nylas N1
 - HandBrake
 - Hider

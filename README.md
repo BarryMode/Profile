@@ -34,7 +34,6 @@ Personal guide to tailor my Mac.
 - MAMP Pro
 - Melodyne
 - Microsoft Remote Desktop
-- MySQL Workbench
 - NameChanger
 - NTFS for Mac OS X
 - OBS

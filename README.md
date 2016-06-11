@@ -51,6 +51,7 @@ Personal guide to tailor my Mac.
 - Plex Media Server
 - Port Map
 - qBittorrent
+- SequelPro
 - SimpleComic
 - SiteSucker
 - Sophos Home

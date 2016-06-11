@@ -64,7 +64,7 @@ case ${answer:0:1} in
   brew install ack
   # GCC
   echo ; echo 'Installing GCC...'
-  brew install gcc
+  brew install gcc49
   # ImageMagick
   echo ; echo 'Installing ImageMagick...'
   brew install imagemagick

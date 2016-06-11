@@ -13,6 +13,7 @@ Personal guide to tailor my Mac.
 - Cyberduck
 - Disk Aid
 - Disk Drill
+- DiskMaker X
 - Docker
 - Dolphin
 - Download Shuttle

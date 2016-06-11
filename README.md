@@ -7,7 +7,6 @@ Personal guide to tailor my Mac.
 - AppCleaner
 - Audio Hijack
 - BatChmod
-- Blocs
 - Byword
 - Carbon Copy Cloner
 - CleanMyMac

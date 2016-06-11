@@ -27,6 +27,7 @@ Personal guide to tailor my Mac.
 - Gemini
 - Ghost
 - GitHub Desktop
+- Gmail
 - HandBrake
 - Hider
 - iShowUAudioCapture

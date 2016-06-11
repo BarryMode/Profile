@@ -47,6 +47,7 @@ Personal guide to tailor my Mac.
 - ownCloud
 - Parallels Desktop
 - Patterns
+- Pinegrow
 - Plex Media Server
 - Port Map
 - qBittorrent

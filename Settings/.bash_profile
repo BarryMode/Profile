@@ -91,14 +91,13 @@ extract() {
 alias edit='subl'                                       # edit:    Opens any file in Sublime Text
 alias eject='~/Code/Shell/eject-super-drive.sh'         # eject:   Eject the super drive
 alias sweep='~/Code/Shell/sweep.sh'                     # sweep:   Runs upkeep tasks
-alias carrots='open ~/websites/.noindex/^/'             # carrots: Opens carrot dir
-alias carrot.eat='~/Websites/.noindex/carrots/grabber/index.sh' # carrot.eat: Eats carrot sql
-alias grabber='open ~/Websites/.noindex/carrots/grabber/Grabber.app' # grabber: Opens Grabber
+alias carrots='open ~/websites/.noindex/carrots/'       # carrots: Opens carrot dir
+alias carrot.eat='~/Websites/.noindex/carrots/grabber/index.sh'      # carrot.eat: Eats carrot sql
+alias grabber='open ~/Websites/.noindex/carrots/grabber/Grabber.app' # grabber:    Opens Grabber
 
 # Video Commands
 # ==============
 alias vlc='/Applications/VLC.app/Contents/MacOS/VLC'    # vlc:  Adds input to VLC media player playlist
-
 alias vget='youtube-dl'                                 # vget: Alias for 'youtube-dl'
 # youtube: Download playlist with 'youtube-dl'
 vget.playlist() { youtube-dl -o '%(playlist)s/%(title)s.%(ext)s' "$1"; }

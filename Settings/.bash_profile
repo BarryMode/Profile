@@ -116,6 +116,10 @@ remux.all.aac() { for i in *."$1"; do ffmpeg -i "$i" -ac 2 -c:v copy -c:a aac "$
 plex() { ffmpeg -i "$1" -map 0:0 -map 0:"$2" -ac 2 -c:v libx264 -c:a:"$2" aac "$3"; }
 plex.all() { for i in *."$1"; do ffmpeg -i "$i" -ac 2 -c:v libx264 -c:a aac "${i/${i##*.}/mp4}"; done }
 
+# Web Dev Commands
+# ================
+alias php.start='open http://localhost:8000; php -S localhost:8000'
+alias npm.start='open http://localhost:2368; npm start'
 # Internet Commands
 # =================
 alias myip='curl ipinfo.io'                             # myip:      Public facing IP Address

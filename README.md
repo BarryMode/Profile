@@ -1,4 +1,4 @@
-# OSX Prime
+# macOS Prime
 Personal guide to tailor my Mac.
 
 ## Applications
@@ -10,7 +10,6 @@ Personal guide to tailor my Mac.
 - Byword
 - Carbon Copy Cloner
 - CleanMyMac
-- Cyberduck
 - Disk Aid
 - Disk Drill
 - DiskMaker X
@@ -32,6 +31,7 @@ Personal guide to tailor my Mac.
 - HandBrake
 - Hider
 - iShowUAudioCapture
+- JDownloader
 - Leaf
 - Lektor
 - Malwarebytes
@@ -63,6 +63,7 @@ Personal guide to tailor my Mac.
 - TextHasher
 - The Unarchiver
 - TinkerTool
+- Transmit
 - Trello
 - VLC
 - WavTap
@@ -74,8 +75,8 @@ Run `prime.sh` in Terminal. Watch for errors.
 
 ## User Files
 
-- Amazon Cloud
-  - Pictures
+x Amazon Drive
+  x Pictures
 - Dropbox
   - Books
 - iCloud
@@ -86,10 +87,11 @@ Run `prime.sh` in Terminal. Watch for errors.
   - Keychain
   - Notes
   - Safari
-- MEGA
-  - Games
-  - Music
-  - Projects
+  - Transmit Favorites
+x MEGA
+  x Games
+  x Music
+  x Projects
 - Synology NAS
   - Movies
 - WD My Book 1TB

@@ -1,5 +1,5 @@
 #!/bin/sh
-cp -Rfv ~/.bash_profile ~/code/\+github/osx-prime/Settings/
-cp -Rfv ~/.gemrc ~/code/\+github/osx-prime/Settings/
-cp -Rfv ~/.gitconfig ~/code/\+github/osx-prime/Settings/
-cp -Rfv ~/.gitignore ~/code/\+github/osx-prime/Settings/
+cp -Rfv ~/.bash_profile ~/code/\+github/macos-prime/Settings/
+cp -Rfv ~/.gemrc ~/code/\+github/macos-prime/Settings/
+cp -Rfv ~/.gitconfig ~/code/\+github/macos-prime/Settings/
+cp -Rfv ~/.gitignore ~/code/\+github/macos-prime/Settings/

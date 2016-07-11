@@ -75,8 +75,8 @@ Run `prime.sh` in Terminal. Watch for errors.
 
 ## User Files
 
-x Amazon Drive
-  x Pictures
+- x Amazon Drive
+  - x Pictures
 - Dropbox
   - Books
 - iCloud
@@ -88,10 +88,10 @@ x Amazon Drive
   - Notes
   - Safari
   - Transmit Favorites
-x MEGA
-  x Games
-  x Music
-  x Projects
+- x MEGA
+  - x Games
+  - x Music
+  - x Projects
 - Synology NAS
   - Movies
 - WD My Book 1TB

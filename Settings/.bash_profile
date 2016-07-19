@@ -34,7 +34,7 @@ alias c='clear'                                         # c:         Clear termi
 alias f#='echo $(ls -1 | wc -l)'                        # f#:        Count non-hidden files in this directory
 alias ded='find . -type d -empty -delete'               # ded:       Delete all empty subdirectories
 alias path='echo -e ${PATH//:/\\n}'                     # path:      Echo all executable paths
-alias mirror='wget -ckm'                                # mirror:    'wget' settings for mirroring
+alias mirror='wget -cmkEpnp'                            # mirror:    'wget' settings for mirroring
 alias empty.trash='sudo rm -rf ~/.trash/*'              # empty.trash:   Force empty the trash.
 ssh.copy() { ssh-copy-id "$1"; }                        # ssh.copy:      Example - ssh.copy user@host to skip passwords
 alias ssh.settings='subl ~/.ssh'                        # ssh.settings:  SSH keys and settings

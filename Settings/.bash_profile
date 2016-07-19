@@ -37,6 +37,7 @@ alias path='echo -e ${PATH//:/\\n}'                     # path:      Echo all ex
 alias mirror='wget -cmkEpnp'                            # mirror:    'wget' settings for mirroring
 alias empty.trash='sudo rm -rf ~/.trash/*'              # empty.trash:   Force empty the trash.
 ssh.copy() { ssh-copy-id "$1"; }                        # ssh.copy:      Example - ssh.copy user@host to skip passwords
+alias git.config='subl ~/.gitconfig'                    # git.config:  SSH keys and settings
 alias ssh.config='subl ~/.ssh'                          # ssh.config:  SSH keys and settings
 alias bash.config='subl ~/.bash_profile'                # bash.config: Bash profile settings
 ql() { qlmanage -p "$*" >& /dev/null; }                 # ql:        Opens any file in MacOS Quicklook Preview

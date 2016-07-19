@@ -37,8 +37,8 @@ alias path='echo -e ${PATH//:/\\n}'                     # path:      Echo all ex
 alias mirror='wget -cmkEpnp'                            # mirror:    'wget' settings for mirroring
 alias empty.trash='sudo rm -rf ~/.trash/*'              # empty.trash:   Force empty the trash.
 ssh.copy() { ssh-copy-id "$1"; }                        # ssh.copy:      Example - ssh.copy user@host to skip passwords
-alias ssh.settings='subl ~/.ssh'                        # ssh.settings:  SSH keys and settings
-alias bash.settings='subl ~/.bash_profile'              # bash.settings: Bash profile settings
+alias ssh.config='subl ~/.ssh'                          # ssh.config:  SSH keys and settings
+alias bash.config='subl ~/.bash_profile'                # bash.config: Bash profile settings
 ql() { qlmanage -p "$*" >& /dev/null; }                 # ql:        Opens any file in MacOS Quicklook Preview
 burn() { drutil burn "$1"; }                            # burn:      Burns file to inserted disc
 mkcd() { mkdir -p "$1" && cd "$1"; }                    # mkcd:      Makes new directory and jumps inside

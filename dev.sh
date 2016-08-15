@@ -114,9 +114,6 @@ esac
 read -p 'Install Node Modules? (y/n) ' answer
 case ${answer:0:1} in
   y|Y|yes|Yes )
-  # CoffeeScript
-  echo ; echo 'Installing CoffeeScript...'
-  sudo npm install -g coffee-script
   # Electron
   echo 'Installing Electron...'
   sudo npm install -g electron-prebuilt

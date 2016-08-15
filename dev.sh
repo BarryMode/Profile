@@ -65,12 +65,6 @@ case ${answer:0:1} in
   # GCC
   echo ; echo 'Installing GCC...'
   brew install gcc49
-  # ImageMagick
-  echo ; echo 'Installing ImageMagick...'
-  brew install imagemagick
-  # Ghostscript
-  echo ; echo 'Installing Ghostscript...'
-  brew install ghostscript
   # QT5
   echo ; read -p 'Install QT5? (y/n) ' answer
   case ${answer:0:1} in

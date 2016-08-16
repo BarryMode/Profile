@@ -2,8 +2,8 @@
 echo ; echo '--- Permissions' ; echo
 echo 'Granting Executive Rights...'
 sudo chown -R $(whoami):admin /usr/local
-find $HOME -type d -perm 777 -exec chmod 755 {} \; -print
-find $HOME -type f \( -perm 777 -o -perm 666 \) -exec chmod 644 {} \; -print
+# find $HOME -type d -perm 777 -exec chmod 755 {} \; -print
+# find $HOME -type f \( -perm 777 -o -perm 666 \) -exec chmod 644 {} \; -print
 
 # Dot configs
 echo ; echo 'Loading dot configs...'

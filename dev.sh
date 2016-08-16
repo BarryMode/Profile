@@ -129,9 +129,6 @@ case ${answer:0:1} in
   # Moment
   echo 'Installing Moment...'
   sudo npm install -g moment
-  # Node-Fetch
-  echo 'Installing Node-Fetch...'
-  sudo npm install -g node-fetch
   # Underscore
   echo ; echo 'Installing Underscore...'
   sudo npm install -g underscore

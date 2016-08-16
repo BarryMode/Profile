@@ -1,7 +1,10 @@
 # Permissions
 echo ; echo '--- Permissions' ; echo
+
 echo 'Granting Executive Rights...'
+# Allow all apps
 sudo spctl --master-disable
+# Control usr/local
 sudo chown -R $(whoami):admin /usr/local
 # find $HOME -type d -perm 777 -exec chmod 755 {} \; -print
 # find $HOME -type f \( -perm 777 -o -perm 666 \) -exec chmod 644 {} \; -print
@@ -94,6 +97,7 @@ brew upgrade
 
 # Python
 echo ; echo '--- Python' ; echo
+
 read -p 'Install Python? (y/n) ' answer
 case ${answer:0:1} in
   y|Y|yes|Yes )
@@ -104,6 +108,7 @@ esac
 
 # NodeJS
 echo ; echo '--- NodeJS' ; echo
+
 read -p 'Install NodeJS? (y/n) ' answer
 case ${answer:0:1} in
   y|Y|yes|Yes )

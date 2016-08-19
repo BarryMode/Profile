@@ -9,6 +9,9 @@ case ${answer:0:1} in
   # Disable Dashboard.
   defaults write com.apple.dashboard mcx-disabled -bool YES
 
+  # Disable the Character Accent Menu
+  defaults write -g ApplePressAndHoldEnabled -bool false
+
   echo 'Loading Finder settings...'
   # Finder: Set the default Finder location to the home folder.
   defaults write com.apple.finder NewWindowTarget -string 'PfLo' && \

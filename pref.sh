@@ -41,9 +41,6 @@ case ${answer:0:1} in
   # Finder: Display the Library folder.
   chflags nohidden ~/Library
 
-  # Finder: Display folders first when sorted by kind.
-  # TODO
-
   # Finder: Disable the extension change warning.
   defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
 

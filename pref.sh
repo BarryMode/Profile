@@ -6,39 +6,39 @@ case ${answer:0:1} in
   ditto ./Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
 
   echo 'Loading OS X system settings...'
-  # Disable Dashboard.
+  # Disable Dashboard
   defaults write com.apple.dashboard mcx-disabled -bool YES
 
   # Disable the Character Accent Menu
   defaults write -g ApplePressAndHoldEnabled -bool false
 
   echo 'Loading Finder settings...'
-  # Finder: Set the default Finder location to the home folder.
+  # Finder: Set the default Finder location to the home folder
   defaults write com.apple.finder NewWindowTarget -string 'PfLo' && \
   defaults write com.apple.finder NewWindowTargetPath -string 'file://${HOME}'
 
-  # Finder: Set the current directory as the default search scope.'
+  # Finder: Set the current directory as the default search scope
   defaults write com.apple.finder FXDefaultSearchScope -string 'SCcf'
 
-  # Finder: Set to list view.
+  # Finder: Set to list view
   defaults write com.apple.Finder FXPreferredViewStyle Nlsv
 
-  # Finder: Activate the path bar.
+  # Finder: Activate the path bar
   defaults write com.apple.finder ShowPathbar -bool true
 
-  # Finder: Activate the status bar.
+  # Finder: Activate the status bar
   defaults write com.apple.finder ShowStatusBar -bool true
 
-  # Finder: Activate text selection in Quick Look.
+  # Finder: Activate text selection in Quick Look
   # defaults write com.apple.finder QLEnableTextSelection -bool YES
 
-  # Finder: Markdown support for Quick Look.
+  # Finder: Markdown support for Quick Look
   brew cask install qlmarkdown
 
-  # Finder: Display all filename extensions.
+  # Finder: Display all filename extensions
   defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 
-  # Finder: Display the Library folder.
+  # Finder: Display the Library folder
   chflags nohidden ~/Library
 
   # Finder: Disable the extension change warning.

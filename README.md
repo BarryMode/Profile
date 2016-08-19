@@ -61,7 +61,6 @@ Personal guide to tailor my Mac.
 - TeamViewer
 - TextHasher
 - The Unarchiver
-- TinkerTool
 - Transmit
 - Trello
 - VLC

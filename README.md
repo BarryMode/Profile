@@ -10,6 +10,7 @@ Personal guide to tailor my Mac.
 - Byword
 - Carbon Copy Cloner
 - CleanMyMac
+- CrossOver
 - Disk Aid
 - Disk Drill
 - DiskMaker X
@@ -54,7 +55,8 @@ Personal guide to tailor my Mac.
 - SimpleComic
 - SiteSucker
 - Sophos Home
-- Steam
+- Steam (Mac)
+- Steam (PC)
 - Sublime Text
 - Synkron
 - Synology Assistant

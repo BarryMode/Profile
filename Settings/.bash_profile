@@ -93,9 +93,8 @@ extract() {
 alias edit='subl'                                       # edit:    Opens any file in Sublime Text
 alias eject='~/Code/Shell/eject-super-drive.sh'         # eject:   Eject the super drive
 alias sweep='~/Code/Shell/sweep.sh'                     # sweep:   Runs upkeep tasks
-alias carrots='open ~/websites/.noindex/carrots/'       # carrots: Opens carrot dir
-alias eat.carrot='~/Websites/.noindex/carrots/grabber/index.sh'      # eat.carrot: Eats carrot sql
-alias grabber='open ~/Websites/.noindex/carrots/grabber/Grabber.app' # grabber:    Opens Grabber
+alias eat.carrot='~/Websites/.noindex/grabber/index.sh' # eat.carrot: Eats carrot sql
+alias grabber='open ~/Websites/.noindex/grabber/Grabber.app' # grabber: Opens Grabber
 
 # Video Commands
 # ==============

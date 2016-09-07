@@ -132,6 +132,9 @@ case ${answer:0:1} in
   # Underscore
   echo ; echo 'Installing Underscore...'
   sudo npm install -g underscore
+  # Oboe
+  echo ; echo 'Installing Oboe...'
+  sudo npm install -g oboe
   ;;
 esac
 

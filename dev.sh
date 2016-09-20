@@ -6,6 +6,8 @@ echo 'Granting Executive Rights...'
 sudo spctl --master-disable
 # Control usr/local
 sudo chown -R $(whoami):admin /usr/local
+# Default ssh user permissions
+chmod 600 ~/.ssh/id_rsa
 
 # Dot configs
 echo ; echo 'Loading dot configs...'

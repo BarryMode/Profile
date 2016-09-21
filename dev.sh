@@ -89,6 +89,9 @@ case ${answer:0:1} in
   # FFmpeg
    echo ; echo 'Installing FFmpeg...'
   brew install ffmpeg
+  # ImageMagick
+   echo ; echo 'Installing ImageMagick...'
+  brew install imagemagick
   ;;
 esac
 

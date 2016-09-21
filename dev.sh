@@ -8,6 +8,8 @@ sudo spctl --master-disable
 sudo chown -R $(whoami):admin /usr/local
 # Default ssh user permissions
 chmod 600 ~/.ssh/id_rsa
+# Remove "you have mail" from Terminal
+rm -rf /var/mail/*
 
 # Dot configs
 echo ; echo 'Loading dot configs...'

@@ -99,4 +99,4 @@ Run `prime.sh` in Terminal. Watch for errors.
     - Safari
     - Transmit
 
-Note: Pictures, Games, Music, and Projects do not currently have a 2nd backup.
+Note: Pictures, Games, Movies, Music, and Projects do not currently have a 2nd backup.

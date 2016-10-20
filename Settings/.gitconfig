@@ -1,7 +1,3 @@
-[user]
-  name = Barry Anders
-  email = barry@netforger.com
-
 [alias]
   undo = "!f() { git reset --soft HEAD~$1; }; f"
   squash = update-ref -d HEAD

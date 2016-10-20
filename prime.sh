@@ -1,4 +1,4 @@
-# macOS Prime
+# macOS Prime 1.0
 echo 'Welcome to macOS Prime.'
 
 ./dev.sh  # Development

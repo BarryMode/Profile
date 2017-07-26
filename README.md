@@ -75,6 +75,6 @@ Note: Pictures, Games, Music, and Projects do not currently have a 2nd backup.
 
 ## Author
 
-| [![BarryMode](https://avatars3.githubusercontent.com/u/5648875?v=2&s=70)](http://twitter.com/barrymode "Follow @BarryMode on Twitter") |
+| [![BarryMode](https://avatars3.githubusercontent.com/u/5648875?v=2&s=70)](https://twitter.com/barrymode "Follow @BarryMode on Twitter") |
 |---|
 | [BarryMode](https://barrymode.github.io) |

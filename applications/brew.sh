@@ -106,6 +106,7 @@ brew cask install mountain-duck
 brew cask install lackeyccg
 brew cask install obs
 brew cask install openemu
+brew cask install paparazzi
 brew cask install paragon-ntfs
 brew cask install qbittorrent
 brew cask install sequel-pro

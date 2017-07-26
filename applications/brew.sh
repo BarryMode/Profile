@@ -109,6 +109,7 @@ brew cask install openemu
 brew cask install paragon-ntfs
 brew cask install qbittorrent
 brew cask install sequel-pro
+brew cask install slack
 brew cask install steam
 brew cask install sublime-text
 brew cask install teamviewer

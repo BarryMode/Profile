@@ -1,0 +1,136 @@
+[alias]
+
+  # Show the diff between the latest commit and the current state
+  d = !"git diff-index --quiet HEAD -- || clear; git --no-pager diff --patch-with-stat"
+
+  # Pull in remote changes for the current repository and all its submodules
+  p = !"git pull; git submodule foreach git pull origin master"
+
+  # Clone a repository including all submodules
+  c = clone --recursive
+
+  # Switch to a branch, creating it if necessary
+  go = "!f() { git checkout -b \"$1\" 2> /dev/null || git checkout \"$1\"; }; f"
+
+  # Show verbose output about tags, branches or remotes
+  tags = tag -l
+  branches = branch -a
+  remotes = remote -v
+
+  # List aliases
+  aliases = config --get-regexp alias
+
+  # Amend the currently staged files to the latest commit
+  amend = commit --amend --reuse-message=HEAD
+
+  # Interactive rebase with the given number of latest commits
+  reb = "!r() { git rebase -i HEAD~$1; }; r"
+
+  # Resign every commit with a new key up to a certain point in history
+  # enter the hash of the first commit you want to resign
+  # ex. git resign 1234567
+  resign = "!re() { git rebase --exec 'git commit --amend --no-edit -n -S' -i $1; }; re"
+
+  # List contributors with number of commits
+  contributors = shortlog --summary --numbered
+
+  # Merge GitHub pull request on top of the current branch or,
+  # if a branch name is specified, on top of the specified branch
+  mpr = "!f() { \
+  declare currentBranch=\"$(git symbolic-ref --short HEAD)\"; \
+  declare branch=\"${2:-$currentBranch}\"; \
+  if [ $(printf \"%s\" \"$1\" | grep '^[0-9]\\+$' > /dev/null; printf $?) -eq 0 ]; then \
+  git fetch origin refs/pull/$1/head:pr/$1 && \
+  git checkout -B $branch && \
+  git rebase $branch pr/$1 && \
+  git checkout -B $branch && \
+  git merge pr/$1 && \
+  git branch -D pr/$1 && \
+  git commit --amend -m \"$(git log -1 --pretty=%B)\n\nCloses #$1.\"; \
+  fi \
+  }; f"
+
+  # Go back x numbers of commits
+  undo = "!f() { git reset --soft HEAD~$1; }; f"
+
+  # Remove all commits
+  squash = update-ref -d HEAD
+
+  # Fix HEAD branch issue
+  fix = "!f() { git commit -s -m "Publish." && git push --force; }; f"
+
+  # Add remote upstream
+  source = "!f() { git remote add upstream https://github.com/$1.git; }; f"
+
+  # Commit updates from remote
+  update = "!f() { git fetch upstream && git checkout master && git rebase upstream/master; }; f"
+
+  # Force push
+  publish = push --force
+
+[core]
+
+  editor = subl
+  # Use custom `.gitignore` and `.gitattributes`
+  excludesfile = ~/.gitignore
+  attributesfile = ~/.gitattributes
+
+  # Make `git rebase` safer on macOS
+  # More info: <http://www.git-tower.com/blog/make-git-rebase-safe-on-osx/>
+  trustctime = false
+
+  # Prevent showing files whose names contain non-ASCII symbols as unversioned.
+  # http://michael-kuehnel.de/git/2014/11/21/git-mac-osx-and-german-umlaute.html
+  precomposeunicode = false
+
+[color]
+  diff = auto
+  status = auto
+[color "branch"]
+  current = cyan
+  local = green
+  remote = red
+[color "diff"]
+  meta = yellow
+  frag = magenta
+  old = red
+  new = green
+[color "status"]
+  added = cyan
+  branch = cyan
+  changed = magenta
+  deleted = red
+  untracked = yellow
+
+[apply]
+  # Detect whitespace errors when applying a patch
+  whitespace = fix
+
+[gpg]
+  # Path to GPG
+  program = /usr/local/bin/gpg
+
+[commit]
+  # https://help.github.com/articles/generating-a-gpg-key/
+  # Use "gpg2 --full-generate-key" for a full featured key generation dialog.
+  gpgsign = true
+
+[diff]
+  # Detect copies as well as renames
+  renames = copies
+
+  # Enable an experimental heuristic that shifts the hunk boundary in an
+  # attempt to make the resulting patch easier to read.
+  compactionHeuristic = true
+  indentHeuristic = true
+
+[help]
+  # Automatically correct and execute mistyped commands
+  autocorrect = 1
+
+[merge]
+  # Include summaries of merged commits in newly created merge commit messages
+  log = true
+
+[push]
+  default = simple

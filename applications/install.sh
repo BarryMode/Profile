@@ -16,3 +16,7 @@ chmod 755 gem.sh
 # https://www.npmjs.com
 chmod 755 npm.sh
 ./npm.sh
+
+# PIP - The PyPA recommended tool for installing Python packages
+chmod 755 pip.sh
+./pip.sh

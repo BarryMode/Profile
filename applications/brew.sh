@@ -59,6 +59,7 @@ brew install imagemagick --with-webp
 brew install ghostscript
 brew install node
 brew install p7zip
+brew install python
 brew install qt5
 brew install rename
 brew install ssh-copy-id

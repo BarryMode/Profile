@@ -54,3 +54,13 @@ case ${answer:0:1} in
   ~/prime/applications/install.sh
   ;;
 esac
+
+echo; echo ---; echo
+
+read -p 'Install Hosts? (y/n) ' answer
+case ${answer:0:1} in
+  y )
+  echo 'Installing Hosts…'
+  python ~/prime/hosts/install.py --auto --replace
+  ;;
+esac

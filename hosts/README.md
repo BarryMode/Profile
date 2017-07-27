@@ -8,12 +8,12 @@ The unified `hosts` file is extensible. You manage extensions by curating the `e
 
 ## Generate your own unified `hosts` file
 
-The `updateHostsFile.py` script will generate a unified `hosts` file based on the sources in the local `data/` subfolder. The script will prompt you whether it should fetch updated versions (from locations defined by the `update.json` text file in each source's folder), otherwise it will use the `hosts` file that's already there.
+The `install.py` script will generate a unified `hosts` file based on the sources in the local `data/` subfolder. The script will prompt you whether it should fetch updated versions (from locations defined by the `update.json` text file in each source's folder), otherwise it will use the `hosts` file that's already there.
 
 ### Usage
 
 ```bash
-python updateHostsFile.py [--auto] [--replace] [--ip nnn.nnn.nnn.nnn] [--extensions ext1 ext2 ext3]
+python install.py [--auto] [--replace] [--ip nnn.nnn.nnn.nnn] [--extensions ext1 ext2 ext3]
 ```
 
 #### Command line options:

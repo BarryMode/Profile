@@ -36,6 +36,9 @@ fi;
 # Install `wget`
 brew install wget
 
+# Install GPG and pinentry to enable PGP-signing commits in GitHub Desktop.
+brew install gpg pinentry-mac
+
 # Install more recent versions of some macOS tools.
 brew install vim --with-override-system-vi
 brew install homebrew/dupes/grep
@@ -54,7 +57,6 @@ brew install ack
 brew install ffmpeg
 brew install gcc
 brew install git
-brew install gpg pinentry-mac
 brew install imagemagick --with-webp
 brew install ghostscript
 brew install node

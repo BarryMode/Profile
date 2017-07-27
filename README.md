@@ -2,7 +2,7 @@
 
 Personal guide to tailor my Mac.
 
-## [Dotfiles](https://github.com/barrymode/macos-prime/tree/master/dotfiles), [macOS Preferences](https://github.com/barrymode/macos-prime/blob/master/dotfiles/.macos), and [Applications](https://github.com/barrymode/macos-prime/tree/master/applications)
+## [Dotfiles](https://github.com/barrymode/macos-prime/tree/master/dotfiles), [macOS Preferences](https://github.com/barrymode/macos-prime/blob/master/dotfiles/.macos), [Applications](https://github.com/barrymode/macos-prime/tree/master/applications), and [Hosts](https://github.com/barrymode/macos-prime/tree/master/hosts)
 
 ### One-line install
 
@@ -25,6 +25,7 @@ ln -s ~/Projects/GitHub/macos-prime ~/prime
 1. Install Dotfiles `prime/dotfiles/install.sh`
 1. Install macOS Preferences `./.macos`
 1. Install Applications `prime/applications/install.sh`
+1. Install Hosts `prime/hosts/install.py`
 
 ## Other Applications
 

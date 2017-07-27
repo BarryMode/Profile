@@ -91,7 +91,7 @@ brew cask install dolphin
 brew cask install dropbox
 brew cask install easyfind
 brew cask install electron
-brew cask install filebot
+brew cask install filebot # this is CLI only
 brew cask install firefox
 brew cask install gemini
 brew cask install ghost

@@ -2,7 +2,7 @@
 
 Personal guide to tailor my Mac.
 
-## [Dotfiles](https://github.com/barrymode/dotfiles), [macOS Preferences](https://github.com/barrymode/dotfiles/blob/master/.macos), and [Applications](https://github.com/barrymode/macos-prime/tree/master/applications)
+## [Dotfiles](https://github.com/barrymode/macos-prime/tree/master/dotfiles), [macOS Preferences](https://github.com/barrymode/macos-prime/blob/master/dotfiles/.macos), and [Applications](https://github.com/barrymode/macos-prime/tree/master/applications)
 
 ### One-line install
 
@@ -16,7 +16,6 @@ git clone https://github.com/barrymode/macos-prime.git ~/Projects/GitHub/macos-p
 
 ```bash
 git clone https://github.com/barrymode/macos-prime.git ~/Projects/GitHub/macos-prime
-git clone https://github.com/barrymode/dotfiles.git ~/Projects/GitHub/macos-prime/dotfiles
 ln -s ~/Projects/GitHub/macos-prime ~/prime
 ```
 

@@ -3,6 +3,8 @@
 # macOS Prime
 echo 'Welcome to macOS Prime.'
 
+# clone_check: check if you have a repo
+# example: clone_check https://github.com/user/repo.git ~/Projects/GitHub/repo
 function clone_check() {
   REPOSRC=$1
   LOCALREPO=$2
@@ -13,13 +15,14 @@ function clone_check() {
   fi
 }
 
+# link_check: check if a symlink exists
+# example: link_check ~/Projects/GitHub/repo ~/repo
 function link_check() {
   if [ ! -h $2 ]; then
     ln -s $1 $2
   fi
 }
 
-clone_check https://github.com/itssohma/dotfiles.git ~/Projects/GitHub/macos-prime/dotfiles
 link_check ~/Projects/GitHub/macos-prime ~/prime
 
 echo; echo ---; echo

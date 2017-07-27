@@ -8,23 +8,21 @@
 
 ### Using Git and the install script
 
-You can clone the repository wherever you want. I like to keep it in `~/Projects/GitHub/macos-prime/dotfiles`.
+The `dotfiles` subdir can be used without any `macos-prime` files. Store it anywhere. I keep it in `~/Projects/GitHub/macos-prime/dotfiles`, though.
 
-```bash
-git clone https://github.com/barrymode/dotfiles.git && cd dotfiles && source install.sh
-```
-
-To update, `cd` into your local `dotfiles` repository and then:
+`dotfiles` serves as a working directory to track your customizations. When you're ready to use them, `cd` into your local `dotfiles` repository and then:
 
 ```bash
 source install.sh
 ```
 
-Alternatively, to update while avoiding the confirmation prompt:
+Alternatively, avoid the confirmation prompt:
 
 ```bash
 set -- -f; source install.sh
 ```
+
+Everytime you make changes in `dotfiles`, you'll have to run the install script again to update.
 
 ### Specify the `$PATH`
 
@@ -58,7 +56,7 @@ git config --global user.signingkey "$GIT_SIGNING_KEY"
 
 You could also use `~/.extra` to override settings, functions and aliases from my dotfiles repository. It’s probably better to [fork this repository](https://github.com/mathiasbynens/dotfiles/fork) instead, though.
 
-### Sensible macOS defaults
+### macOS Preferences
 
 When setting up a new Mac, you may want to set some sensible macOS defaults:
 

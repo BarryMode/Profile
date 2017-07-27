@@ -64,15 +64,9 @@ When setting up a new Mac, you may want to set some sensible macOS defaults:
 ./.macos
 ```
 
-## Author
-
-| [![BarryMode](https://avatars3.githubusercontent.com/u/5648875?v=2&s=70)](https://twitter.com/barrymode "Follow @BarryMode on Twitter") |
-|---|
-| [BarryMode](https://barrymode.github.io) |
-
 ## Thanks
 
 * [Aaron Weiss](http://aaronweiss.us) and his [dotfiles repository](https://github.com/aatxe/dotfiles)
-* [Eduardo Lundgren](http://eduardo.io/) and his [dotfiles repository](https://github.com/eduardolundgren/dotfiles)
-* [Lauri ‘Lri’ Ranta](http://lri.me/) for sharing [loads of hidden preferences](http://osxnotes.net/defaults.html)
-* [Mathias Bynens](https://mathiasbynens.be/) and his [dotfiles repository](https://github.com/mathiasbynens/dotfiles)
+* [Eduardo Lundgren](http://eduardo.io) and his [dotfiles repository](https://github.com/eduardolundgren/dotfiles)
+* [Lauri ‘Lri’ Ranta](http://lri.me) for sharing [loads of hidden preferences](http://osxnotes.net/defaults.html)
+* [Mathias Bynens](https://mathiasbynens.be) and his [dotfiles repository](https://github.com/mathiasbynens/dotfiles)

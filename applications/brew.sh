@@ -96,7 +96,7 @@ brew cask install firefox
 brew cask install gemini
 brew cask install ghost
 brew cask install github-desktop
-brew cask install google-drive
+brew cask install google-backup-and-sync
 brew cask install handbrake
 brew cask install jdownloader
 brew cask install keybase

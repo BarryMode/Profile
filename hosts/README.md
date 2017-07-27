@@ -1,14 +1,14 @@
 # Unified hosts
 
-This repository consolidates several reputable `hosts` files, and merges them into one file with duplicates removed. By default, all generated `hosts` files have base extensions that block adware and malware. These unified hosts files should serve all devices, regardless of OS.
+This repository consolidates several reputable `hosts` files, and merges them into one file with duplicates removed. By default, all generated `hosts` files have base extensions that block adware and malware.
 
 ## Extensions
 
-The unified `hosts` file is extensible. You manage extensions by curating the `extensions/` folder tree. See the `fakenews`, `gambling`, `social`, and `porn` extension folders.
+The unified `hosts` file is extensible. You manage extensions by curating the `extensions/` folder tree. See the [extensions README](https://github.com/BarryMode/macos-prime/blob/master/hosts/extensions/readme.md) for examples of customizing your hosts file (more command line options below).
 
-## Generate your own unified hosts file
+## Generate your own unified `hosts` file
 
-The `updateHostsFile.py` script will generate a unified hosts file based on the sources in the local `data/` subfolder. The script will prompt you whether it should fetch updated versions (from locations defined by the `update.json` text file in each source's folder), otherwise it will use the `hosts` file that's already there.
+The `updateHostsFile.py` script will generate a unified `hosts` file based on the sources in the local `data/` subfolder. The script will prompt you whether it should fetch updated versions (from locations defined by the `update.json` text file in each source's folder), otherwise it will use the `hosts` file that's already there.
 
 ### Usage
 
@@ -24,11 +24,11 @@ python updateHostsFile.py [--auto] [--replace] [--ip nnn.nnn.nnn.nnn] [--extensi
 
 * Hosts data sources, including extensions, are updated.
 * No extensions are included by default. Use the `--extensions` or `-e` flag to include any you want.
-* Your active hosts file is *not* replaced unless you include the `--replace` flag.
+* Your active `hosts` file is *not* replaced unless you include the `--replace` flag.
 
-`--backup`, or `-b`: Make a backup of existing hosts file(s) as you generate over them.
+`--backup`, or `-b`: Make a backup of existing `hosts` file(s) as you generate over them.
 
-`--extensions <ext1> <ext2> <ext3>`, or `-e <ext1> <ext2> <ext3>`: the names of subfolders below the `extensions` folder containing additional category-specific hosts files to include in the amalgamation. Example: `--extensions porn` or `-e social porn`.
+`--extensions <ext1> <ext2> <ext3>`, or `-e <ext1> <ext2> <ext3>`: the names of subfolders below the `extensions` folder containing additional category-specific `hosts` files to include in the amalgamation. Example: `--extensions porn` or `-e social porn`.
 
 `--flush-dns-cache`, or `-f`: skip the prompt for flushing the DNS cache. Only active when `--replace` is also active.
 
@@ -42,11 +42,9 @@ python updateHostsFile.py [--auto] [--replace] [--ip nnn.nnn.nnn.nnn] [--extensi
 
 `--output <subfolder>`, or `-o <subfolder>`: place the generated source file in a subfolder. If the subfolder does not exist, it will be created.
 
-`--replace`, or `-r`: trigger replacing your active hosts
+`--replace`, or `-r`: trigger replacing your active `hosts`
 
 `--skipstatichosts`, or `-s`: `false` (default) or `true`, omit the standard section at the top, containing lines like `127.0.0.1 localhost`. This is useful for configuring proximate DNS services on the local network.
-
-`--zip`, or `-z`: `false` (default) or `true`, additionally create a zip archive of the hosts file named `hosts.zip`.
 
 ## How do I control which sources are unified?
 
@@ -104,13 +102,13 @@ Using `0.0.0.0` is empirically faster, possibly because there's no wait for a ti
 
 We tried that. Using `0` doesn't work universally.
 
-## Location of your hosts file
+## Location of your `hosts` file
 
 To modify your current `hosts` file, look for it in `/etc/hosts` and modify it with a text editor.
 
-## Reloading hosts file
+## Reloading `hosts` file
 
-Your operating system will cache DNS lookups. You can either reboot or run the following commands to manually flush your DNS cache once the new hosts file is in place.
+Your operating system will cache DNS lookups. You can either reboot or run the following commands to manually flush your DNS cache once the new `hosts` file is in place.
 
 ### macOS
 
@@ -120,7 +118,7 @@ Open a Terminal and run:
 sudo dscacheutil -flushcache;sudo killall -HUP mDNSResponder
 ```
 
-## Goals of this unified hosts file
+## Goals of this unified `hosts` file
 
 The goals of this repo are to:
 
@@ -129,11 +127,11 @@ The goals of this repo are to:
 3. de-dupe the resultant combined list,
 4. and keep the resultant file reasonably sized.
 
-A high-quality source is defined here as one that is actively curated. A hosts source should be frequently updated by its maintainers with both additions and removals. The larger the hosts file, the higher the level of curation is expected.
+A high-quality source is defined here as one that is actively curated. A hosts source should be frequently updated by its maintainers with both additions and removals. The larger the `hosts` file, the higher the level of curation is expected.
 
-For example, the (huge) hosts file from [hosts-file.net](http://hosts-file.net) is **not** included here because it is very large (300,000+ entries) and doesn't currently display a corresponding high level of curation activity.
+For example, the (huge) `hosts` file from [hosts-file.net](http://hosts-file.net) is **not** included here because it is very large (300,000+ entries) and doesn't currently display a corresponding high level of curation activity.
 
-It is expected that this unified hosts file will serve both desktop and mobile devices under a variety of operating systems.
+It is expected that this unified `hosts` file should serve all devices, regardless of OS.
 
 ## Thanks
 

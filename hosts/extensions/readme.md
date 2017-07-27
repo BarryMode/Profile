@@ -1,6 +1,6 @@
 # Extensions
 
-Use subfolders under the `extensions` folder to house extensions to the final unified hosts file.
+Use subfolders under the `extensions` folder to house extensions to the final unified `hosts` file.
 
 Currently this repo includes four extensions:
 
@@ -26,6 +26,3 @@ or, in short form:
 or, in short form:
 
     python updateHostsFile.py -a -e porn social gambling
-
-
-More built-in extensions are coming soon.

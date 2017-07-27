@@ -8,4 +8,4 @@ npm install -g moment
 npm install -g nativefier
 npm install -g oboe
 
-nativefier --disable-context-menu --disable-dev-tools --name "Trello" --icon "../icons/Trello.icns" "https://trello.com" "/Applications"
+nativefier --disable-context-menu --disable-dev-tools --name "Trello" --icon "./icons/Trello.icns" "https://trello.com" "/Applications"

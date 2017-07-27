@@ -14,8 +14,4 @@ Thumbs.db
 .Trashes
 
 # Other Dotfiles
-.extra
 .noindex
-.ssh/config
-.ssh/*_rsa*
-!.ssh/example_rsa*

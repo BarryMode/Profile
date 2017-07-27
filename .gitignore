@@ -1,0 +1,10 @@
+dotfiles/.extra
+dotfiles/.ssh/config
+dotfiles/.ssh/*_rsa*
+dotfiles/!.ssh/example_rsa*
+
+hosts
+hosts-*
+hosts/myhosts
+hosts/blacklist
+hosts/whitelist

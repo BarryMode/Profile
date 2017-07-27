@@ -41,33 +41,22 @@ brew install gpg pinentry-mac
 
 # Install more recent versions of some macOS tools.
 brew install vim --with-override-system-vi
-brew install homebrew/dupes/grep
-brew install homebrew/dupes/openssh
-brew install homebrew/dupes/screen
-brew install homebrew/php/php56 --with-gmp
-
-# Install font tools.
-brew tap bramstein/webfonttools
-brew install sfnt2woff
-brew install sfnt2woff-zopfli
-brew install woff2
+brew install grep
+brew install openssh
+brew install screen
 
 # Install other useful binaries.
 brew install ack
 brew install ffmpeg
 brew install gcc
 brew install git
-brew install imagemagick --with-webp
-brew install ghostscript
+brew install imagemagick --with-webp ghostscript
 brew install node
 brew install p7zip
 brew install python
 brew install qt5
 brew install rename
-brew install ssh-copy-id
-brew install testssl
 brew install tree
-brew install webkit2png
 
 # Enter the Caskroom
 brew tap caskroom/cask

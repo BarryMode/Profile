@@ -1,16 +1,14 @@
-# Unified hosts file with base extensions
+# Unified hosts
 
-This repository consolidates several reputable `hosts` files, and merges them into a unified hosts file with duplicates removed. A variety of tailored hosts files are provided.
-
-**Expectation**: These unified hosts files should serve all devices, regardless of OS.
+This repository consolidates several reputable `hosts` files, and merges them into one file with duplicates removed. By default, all generated `hosts` files have base extensions that block adware and malware. These unified hosts files should serve all devices, regardless of OS.
 
 ## Extensions
 
-The unified hosts file is extensible. You manage extensions by curating the `extensions/` folder tree. See the `social`, `gambling`, and `porn` extension folders.
+The unified `hosts` file is extensible. You manage extensions by curating the `extensions/` folder tree. See the `fakenews`, `gambling`, `social`, and `porn` extension folders.
 
 ## Generate your own unified hosts file
 
-The `updateHostsFile.py` script, which is python 2.7 and Python 3-compatible, will generate a unified hosts file based on the sources in the local `data/` subfolder. The script will prompt you Whether it should fetch updated versions (from locations defined by the `update.json` text file in each source's folder), otherwise it will use the `hosts` file that's already there.
+The `updateHostsFile.py` script will generate a unified hosts file based on the sources in the local `data/` subfolder. The script will prompt you whether it should fetch updated versions (from locations defined by the `update.json` text file in each source's folder), otherwise it will use the `hosts` file that's already there.
 
 ### Usage
 

@@ -120,5 +120,9 @@ brew linkapps
 # Recreate all symlinks, add --force to also process keg-only formula
 # brew list -1 | while read line; do brew unlink $line; brew link $line; done
 
+# Remove dead symlinks
+brew prune
+
 # Check for errors
 brew doctor
+brew cask doctor

@@ -33,6 +33,7 @@ The following apps will eventually be automated if they aren't replaced first. A
 
 - Adobe Suite (Creative Cloud has me wanting to find alternatives)
 - Byword (MAS)
+- FileBot (MAS)
 - Melodyne
 - Microsoft Remote Desktop (MAS)
 - Pastebot (MAS)

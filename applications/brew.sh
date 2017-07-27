@@ -9,10 +9,11 @@ brew update
 # Upgrade any already-installed formulae.
 brew upgrade
 
-# Tap so you don't have to think about it
+# Tap dependencies
 brew tap homebrew/bundle
 brew tap homebrew/core
 brew tap homebrew/services
+brew tap caskroom/cask
 
 # Install GNU core utilities (those that come with macOS are outdated)
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`
@@ -57,9 +58,6 @@ brew install python
 brew install qt5
 brew install rename
 brew install tree
-
-# Enter the Caskroom
-brew tap caskroom/cask
 
 # Install Java
 brew cask install java
@@ -112,7 +110,7 @@ brew cask install tunnelbear
 brew cask install vlc
 brew cask install yacreader
 
-# Remove outdated versions from the cellar.
+# Clean the "Cellar" removing any older versions of installed formulae and clearing old downloads
 brew cleanup
 brew cask cleanup
 

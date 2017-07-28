@@ -1,6 +1,4 @@
 #!/usr/bin/env bash
 
-sudo -v
-
-# required for hosts project: https://github.com/StevenBlack/hosts
+# required for hosts if using Python 2
 pip install mock

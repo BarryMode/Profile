@@ -29,15 +29,7 @@ ln -s ~/Projects/GitHub/macos-prime ~/prime
 
 ## Other Applications
 
-The following apps will eventually be automated if they aren't replaced first. A tool to help in this process is [MAS](https://github.com/mas-cli/mas), a CLI for the [App Store](https://en.wikipedia.org/wiki/App_Store_(iOS)).
-
 - Adobe Suite (Creative Cloud has me wanting to find alternatives)
-- Byword (MAS)
-- FileBot (MAS)
-- Melodyne
-- Microsoft Remote Desktop (MAS)
-- Pastebot (MAS)
-- Spark (MAS)
 - iShowU Audio Capture
 
   ```bash

@@ -52,6 +52,7 @@ brew install ffmpeg
 brew install gcc
 brew install git
 brew install imagemagick --with-webp ghostscript
+brew install mas
 brew install node
 brew install p7zip
 brew install python

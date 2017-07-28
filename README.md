@@ -12,14 +12,10 @@ git clone https://github.com/barrymode/macos-prime.git ~/Projects/GitHub/macos-p
 
 ### OR do it manually
 
-#### Ready, Set…
-
 ```bash
 git clone https://github.com/barrymode/macos-prime.git ~/Projects/GitHub/macos-prime
 ln -s ~/Projects/GitHub/macos-prime ~/prime
 ```
-
-#### Go!
 
 1. Open Home Folder `cd ~`
 1. Install Dotfiles `prime/dotfiles/install.sh`
@@ -36,35 +32,28 @@ ln -s ~/Projects/GitHub/macos-prime ~/prime
   wget https://downloads.shinywhitebox.com/driver/latest/
   ```
 
-## User Files
+## User files
 
-### 1st Backup: Local
+### Backups
 
-- Blind Tiger [WD My Book](https://support.wdc.com/cat_products.aspx?ID=2)
-  - Holmes Time Machine
+#### Local
 
-- Adler [Synology NAS](https://www.synology.com/en-us/products) [RAID 1](https://en.wikipedia.org/wiki/Standard_RAID_levels#RAID_1)
-  - Movies
+1. Varia Time Machine [WD My Book](https://support.wdc.com/cat_products.aspx?ID=2)
+1. Adler [Synology NAS](https://www.synology.com/en-us/products) [RAID 1](https://en.wikipedia.org/wiki/Standard_RAID_levels#RAID_1)
 
-### 2nd Backup: Cloud
+#### Cloud
 
-- [Dropbox](https://dropbox.com) is empty
-- [Google Drive](https://drive.google.com/)
-  - Books
-  - Movies
-- [iCloud](https://www.icloud.com)
-  - App Data
-    - Automator
-    - Byword
-    - Calendars
-    - Contacts
-    - Keychain
-    - Notes
-    - Safari
-    - Spark
-    - Transmit
-
-Note: Pictures, Games, Music, and Projects do not currently have a 2nd backup.
+1. [Dropbox](https://dropbox.com) is empty
+1. [Google Drive](https://drive.google.com)
+  - Plex
+1. [iCloud](https://www.icloud.com)
+  - App documents and data
+  - Calendars
+  - Contacts
+  - Keychain
+  - Notes
+  - Reminders
+  - Safari
 
 ## Author
 

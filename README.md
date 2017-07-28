@@ -19,7 +19,7 @@ ln -s ~/Projects/GitHub/macos-prime ~/prime
 
 1. Open Home Folder `cd ~`
 1. Install Dotfiles `prime/dotfiles/install.sh`
-1. Install macOS Preferences `./.macos`
+1. Install macOS Preferences `prime/dotfiles/.macos`
 1. Install Applications `prime/applications/install.sh`
 1. Install Hosts `prime/hosts/install.py`
 

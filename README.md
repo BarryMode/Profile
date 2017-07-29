@@ -2,7 +2,7 @@
 
 Personal guide to tailor my Mac.
 
-## [Dotfiles](https://github.com/barrymode/macos-prime/tree/master/dotfiles), [macOS Preferences](https://github.com/barrymode/macos-prime/blob/master/dotfiles/.macos), [Applications](https://github.com/barrymode/macos-prime/tree/master/applications), and [Hosts](https://github.com/barrymode/macos-prime/tree/master/hosts)
+## [Dot Files](https://github.com/barrymode/macos-prime/tree/master/dotfiles), [macOS Preferences](https://github.com/barrymode/macos-prime/blob/master/dotfiles/.macos), [Applications](https://github.com/barrymode/macos-prime/tree/master/applications), and [Hosts](https://github.com/barrymode/macos-prime/tree/master/hosts)
 
 ### One-line install
 
@@ -32,21 +32,25 @@ ln -s ~/Projects/GitHub/macos-prime ~/prime
   wget https://downloads.shinywhitebox.com/driver/latest/
   ```
 
-## User files
+## User Files
 
 ### Backups
 
 #### Local
 
-1. Varia Time Machine [WD My Book](https://support.wdc.com/cat_products.aspx?ID=2)
-1. Adler [Synology NAS](https://www.synology.com/en-us/products) [RAID 1](https://en.wikipedia.org/wiki/Standard_RAID_levels#RAID_1)
+- Varia Time Machine [WD My Book](https://support.wdc.com/cat_products.aspx?ID=2)
+- Adler [Synology NAS](https://www.synology.com/en-us/products) [RAID 1](https://en.wikipedia.org/wiki/Standard_RAID_levels#RAID_1)
 
 #### Cloud
 
-1. [Dropbox](https://dropbox.com) is empty
-1. [Google Drive](https://drive.google.com)
+- [Dropbox](https://dropbox.com) is empty
+- [Google Drive](https://drive.google.com)
+  - Archive
+  - Books
+  - Documents
   - Plex
-1. [iCloud](https://www.icloud.com)
+  - Projects
+- [iCloud](https://www.icloud.com)
   - App documents and data
   - Calendars
   - Contacts

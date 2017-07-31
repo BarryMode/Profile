@@ -11,9 +11,9 @@ brew upgrade
 
 # Tap dependencies
 brew tap homebrew/bundle
+brew tap caskroom/cask
 brew tap homebrew/core
 brew tap homebrew/services
-brew tap caskroom/cask
 
 # Install GNU core utilities (those that come with macOS are outdated)
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`
@@ -48,6 +48,7 @@ brew install screen
 
 # Install other useful binaries.
 brew install ack
+brew install composer
 brew install ffmpeg
 brew install gcc
 brew install git
@@ -55,6 +56,7 @@ brew install imagemagick --with-webp ghostscript
 brew install mas
 brew install node
 brew install p7zip
+brew install php71
 brew install python
 brew install qt5
 brew install rename
@@ -118,6 +120,9 @@ brew cask cleanup
 
 # Create symlinks for unlinked apps
 brew linkapps
+
+# Update ruby path to the brew version
+brew link --overwrite ruby
 
 # Recreate all symlinks, add --force to also process keg-only formula
 # brew list -1 | while read line; do brew unlink $line; brew link $line; done

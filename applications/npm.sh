@@ -2,7 +2,6 @@
 
 sudo -v
 
-npm install -g lazysizes
 npm install -g lodash
 npm install -g moment
 npm install -g nativefier

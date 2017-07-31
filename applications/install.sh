@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 cd ~/prime/applications/
-chmod 755 *
+chmod 755 *.sh
 
 # Brew: The missing package manager for macOS
 # http://brew.sh

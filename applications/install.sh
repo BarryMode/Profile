@@ -10,6 +10,9 @@ chmod 755 *.sh
 # MAS: Mac App Store command line interface
 ./mas.sh
 
+# Composer: Dependency Manager for PHP
+./composer.sh
+
 # RubyGems: a package management framework for Ruby
 # https://rubygems.org
 ./gem.sh

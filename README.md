@@ -38,8 +38,8 @@ ln -s ~/Projects/GitHub/macos-prime ~/prime
 
 #### Local
 
-- Varia Time Machine [WD My Book](https://support.wdc.com/cat_products.aspx?ID=2)
-- Adler [Synology NAS](https://www.synology.com/en-us/products) [RAID 1](https://en.wikipedia.org/wiki/Standard_RAID_levels#RAID_1)
+- Varia [Time Machine](https://support.apple.com/en-us/HT201250) on [WD My Book](https://support.wdc.com/cat_products.aspx?ID=2)
+- Adler [RAID 1](https://en.wikipedia.org/wiki/Standard_RAID_levels#RAID_1) on [Synology NAS](https://www.synology.com/en-us/products)
 
 #### Cloud
 

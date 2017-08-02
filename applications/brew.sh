@@ -60,6 +60,7 @@ brew install php71
 brew install python
 brew install qt5
 brew install rename
+brew install ruby
 brew install tree
 brew install youtube-dl
 

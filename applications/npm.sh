@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 
-sudo -v
 # Install latest NPM
 npm install npm -g
 

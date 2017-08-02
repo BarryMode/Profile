@@ -1,6 +1,11 @@
 #!/usr/bin/env bash
 
 sudo -v
+# Install latest NPM
+npm install npm -g
+
+# Update already installed Node packages
+npm update -g
 
 npm install -g lodash
 npm install -g moment

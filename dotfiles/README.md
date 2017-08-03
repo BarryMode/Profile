@@ -1,6 +1,7 @@
 # Barry’s dotfiles
 
-![Screenshot of my shell prompt](https://user-images.githubusercontent.com/5648875/28853780-868ae394-76f8-11e7-8016-10965c9d0c2a.png)
+<img alt="Screenshot of my shell prompt" src="https://user-images.githubusercontent.com/5648875/28853780-868ae394-76f8-11e7-8016-10965c9d0c2a.png" width="275">
+
 ## Installation
 
 **Warning:** If you want to give these dotfiles a try, you should first fork this repository, review the code, and remove things you don’t want or need. Don’t blindly use my settings unless you know what that entails. Use at your own risk!

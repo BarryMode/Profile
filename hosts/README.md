@@ -90,17 +90,9 @@ For example, to nullify requests to some doubleclick.net servers, adding these l
 # etc...
 ```
 
-## We recommend using `0.0.0.0` instead of `127.0.0.1`
+## Use `0.0.0.0` instead of `127.0.0.1` or `0`
 
-Traditionally most host files use `127.0.0.1`, the *loopback address*, to establish an IP connection to the local machine.
-
-We prefer to use `0.0.0.0`, which is defined as a non-routable meta-address used to designate an invalid, unknown, or non applicable target.
-
-Using `0.0.0.0` is empirically faster, possibly because there's no wait for a timeout resolution. It also does not interfere with a web server that may be running on the local PC.
-
-## Why not use just `0` instead of `0.0.0.0`?
-
-We tried that. Using `0` doesn't work universally.
+Traditional host files use `127.0.0.1`, the *loopback address*, to establish an IP connection to the local machine. I prefer to use `0.0.0.0`, which is defined as a non-routable meta-address used to designate an invalid, unknown, or non applicable target. Using `0.0.0.0` is empirically faster, possibly because there's no wait for a timeout resolution. It also does not interfere with a web server that may be running on the local PC. Also, don't use `0`, because it doesn't work universally.
 
 ## Location of your `hosts` file
 
@@ -110,9 +102,7 @@ To modify your current `hosts` file, look for it in `/etc/hosts` and modify it w
 
 Your operating system will cache DNS lookups. You can either reboot or run the following commands to manually flush your DNS cache once the new `hosts` file is in place.
 
-### macOS
-
-Open a Terminal and run:
+Run this in your shell:
 
 ```bash
 sudo dscacheutil -flushcache;sudo killall -HUP mDNSResponder

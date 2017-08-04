@@ -48,6 +48,7 @@ brew install screen
 
 # Install other useful binaries.
 brew install ack
+brew install cmake
 brew install composer
 brew install ffmpeg
 brew install gcc

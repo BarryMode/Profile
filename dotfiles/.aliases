@@ -165,7 +165,7 @@ alias map="xargs -n1"
 alias mergepdf='/System/Library/Automator/Combine\ PDF\ Pages.action/Contents/Resources/join.py'
 
 # Open programs
-alias grabber='open ~/^/imgbrd-grabber/gui/build/release/Grabber.app'
+alias grabber='open ~/^/Grabber.app'
 alias ccg='/Applications/LackeyCCG/LackeyCCG.app/Contents/MacOS/LackeyCCG'
 alias carrots='~/^/carrots.sh'
 

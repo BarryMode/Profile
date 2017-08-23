@@ -58,6 +58,7 @@ brew install mas
 brew install node
 brew install p7zip
 brew install php71
+brew install pup
 brew install python
 brew install qt5
 brew install rename

@@ -47,24 +47,25 @@ brew install openssh
 brew install screen
 
 # Install other useful binaries.
-brew install ack
+brew install ack # a tool like grep, optimized for programmers
 brew install cmake
-brew install composer
+brew install composer # for php packages
 brew install ffmpeg
 brew install gcc
 brew install git
 brew install imagemagick --with-webp ghostscript
-brew install mas
+brew install mas # Mac App Store command line interface
 brew install node
 brew install p7zip
 brew install php71
-brew install pup
+brew install pup # Parsing HTML at the command line
 brew install python
-brew install qt5
-brew install rename
+brew install qt5 # for Grabber
+brew install rename # This program renames files according to modification rules specified on the command line
 brew install ruby
+brew install sdl2 # for OpenJK
 brew install tree
-brew install youtube-dl
+brew install youtube-dl # Command-line program to download videos from YouTube.com and other video sites
 
 # Install Java
 brew cask install java

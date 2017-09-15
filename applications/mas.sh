@@ -6,4 +6,5 @@ mas install 905384638  # FileBot
 mas install 1179623856 # Pastebot
 mas install 715768417  # Microsoft Remote Desktop
 mas install 1176895641 # Spark
+mas install 1278508951 # Trello
 mas install 497799835  # Xcode

@@ -63,6 +63,7 @@ case ${answer:0:1} in
   echo 'Installing Hosts…'
   cd ~/prime/hosts
   python ~/prime/hosts/install.py --auto --replace
+  rm -rf ~/prime/hosts/hosts
   ;;
 esac
 

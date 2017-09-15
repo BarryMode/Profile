@@ -23,3 +23,6 @@ chmod 755 *.sh
 
 # PIP: The PyPA recommended tool for installing Python packages
 ./pip.sh
+
+# Yarn: Fast, reliable, and secure dependency management
+./yarn.sh

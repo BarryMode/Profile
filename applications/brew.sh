@@ -65,6 +65,7 @@ brew install rename # This program renames files according to modification rules
 brew install ruby
 brew install sdl2 # for OpenJK
 brew install tree
+brew install yarn --without-node # Fast, reliable, and secure dependency management
 brew install youtube-dl # Command-line program to download videos from YouTube.com and other video sites
 
 # Install Java

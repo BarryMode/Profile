@@ -61,6 +61,9 @@ read -p 'Install Hosts? (y/n) ' answer
 case ${answer:0:1} in
   y )
   echo 'Installing Hosts…'
+  cd ~/prime/hosts
   python ~/prime/hosts/install.py --auto --replace
   ;;
 esac
+
+cd ~

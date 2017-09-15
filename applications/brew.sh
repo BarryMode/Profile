@@ -64,6 +64,7 @@ brew install qt5 # for Grabber
 brew install rename # This program renames files according to modification rules specified on the command line
 brew install ruby
 brew install sdl2 # for OpenJK
+brew install tag # A command line tool to manipulate tags on Mac OS X files, and to query for files with those tags
 brew install tree
 brew install yarn --without-node # Fast, reliable, and secure dependency management
 brew install youtube-dl # Command-line program to download videos from YouTube.com and other video sites

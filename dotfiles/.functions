@@ -115,17 +115,17 @@ function md5() { echo -n "$1" | openssl md5; }
 # Convert string to SHA1
 function sha1() { echo -n "$1" | openssl sha1; }
 
-# smartresize: Optimal settings for resizing images
+# resize: Optimal settings for resizing images
 # Parameters - file, size, outputdir
-# smartresize "file.ext" 300 outputdir/
-function smartresize() {
-  mogrify -path $3 -filter Triangle -define filter:support=2 -thumbnail $2 -unsharp 0.25x0.08+8.3+0.045 -dither None -posterize 136 -quality 82 -define jpeg:fancy-upsampling=off -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -define png:exclude-chunk=all -interlace line -colorspace sRGB $1
+# resize "file.ext" 300 outputdir/
+function resize() {
+  mogrify -path $3 -resize $2 *.jpg -quality 85 -strip $1
 }
 
-# crush: it's smartresize in batch form
+# crush: it's resize in batch form
 # Parameters: size, outputdir
 # crush 300 out
-function crush() { for f in $(pwd)/* ; do smartresize "$f" $1 $2/; done }
+function crush() { for f in $(pwd)/* ; do resize "$f" $1 $2/; done }
 
 # mget: Download music with `youtube-dl`
 function mget() { youtube-dl --extract-audio --audio-format mp3 -l "$1"; }

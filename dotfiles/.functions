@@ -116,10 +116,10 @@ function md5() { echo -n "$1" | openssl md5; }
 function sha1() { echo -n "$1" | openssl sha1; }
 
 # resize: Optimal settings for resizing images
-# Parameters - file, size, outputdir
-# resize "file.ext" 300 outputdir/
+# Parameters - size, file, outputdir
+# resize 300 "file.ext" outputdir/
 function resize() {
-  mogrify -path $3 -resize $2 *.jpg -quality 85 -strip $1
+  mogrify -path $3 -resize $1 -quality 85 -density 72 -strip $2
 }
 
 # crush: it's resize in batch form

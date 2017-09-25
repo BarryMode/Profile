@@ -4,13 +4,15 @@ cd ~/prime/applications/
 chmod 755 *.sh
 
 # Brew: The missing package manager for macOS
-# http://brew.sh
+# https://brew.sh
 ./brew.sh
 
 # MAS: Mac App Store command line interface
+# https://github.com/mas-cli/mas
 ./mas.sh
 
 # Composer: Dependency Manager for PHP
+# https://getcomposer.org
 ./composer.sh
 
 # RubyGems: a package management framework for Ruby
@@ -22,7 +24,9 @@ chmod 755 *.sh
 ./npm.sh
 
 # PIP: The PyPA recommended tool for installing Python packages
+# https://pypi.python.org/pypi/pip
 ./pip.sh
 
 # Yarn: Fast, reliable, and secure dependency management
+# https://yarnpkg.com/en/
 ./yarn.sh

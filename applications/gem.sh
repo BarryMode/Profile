@@ -5,5 +5,3 @@ gem update --system
 
 # Update already installed gems
 gem update
-
-gem install jekyll

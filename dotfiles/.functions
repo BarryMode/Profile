@@ -125,7 +125,7 @@ function resize() {
 # crush: it's resize in batch form
 # Parameters: size, outputdir
 # crush 300 out
-function crush() { for f in $(pwd)/* ; do resize "$f" $1 $2/; done }
+function crush() { for f in $(pwd)/* ; do resize $1 "$f" $2/; done }
 
 # mget: Download music with `youtube-dl`
 function mget() { youtube-dl --extract-audio --audio-format mp3 -l "$1"; }

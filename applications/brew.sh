@@ -86,7 +86,6 @@ brew cask install crossover
 brew cask install cryptomator
 brew cask install cyberduck
 brew cask install discord
-brew cask install disk-drill
 brew cask install dolphin
 brew cask install dropbox
 brew cask install easyfind

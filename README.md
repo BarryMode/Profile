@@ -38,18 +38,27 @@ ln -s ~/Projects/GitHub/macos-prime ~/prime
 
 #### Local
 
-- Varia [Time Machine](https://support.apple.com/en-us/HT201250) on [WD My Book](https://support.wdc.com/cat_products.aspx?ID=2)
-- Adler [RAID 1](https://en.wikipedia.org/wiki/Standard_RAID_levels#RAID_1) on [Synology NAS](https://www.synology.com/en-us/products)
+- Varia [Time Machine](https://support.apple.com/en-us/HT201250) on [WD Caviar Green 2TB](http://amzn.to/2zfBSAt)
+- Adler [RAID 1](https://en.wikipedia.org/wiki/Standard_RAID_levels#RAID_1) on [Synology NAS](http://amzn.to/2gvsjVY)
 
 #### Cloud
 
 - [Dropbox](https://dropbox.com) is empty
 - [Google Drive](https://drive.google.com)
-  - Archive
-  - Books
-  - Documents
-  - Plex
-  - Projects
+  - Varia
+    - Archive
+    - Books
+    - Desktop
+    - Documents
+    - Downloads
+    - Games
+    - Music
+    - Pictures
+    - Projects
+    - Sites
+    - Videos
+  - Adler
+    - Plex
 - [iCloud](https://www.icloud.com)
   - App documents and data
   - Calendars

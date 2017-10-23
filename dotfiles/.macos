@@ -113,7 +113,7 @@ if [[ mac ]]; then
   defaults write com.apple.universalaccess closeViewZoomFollowsFocus -bool false
 
   # General: enable press-and-hold for keys and the character access menu
-  defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool true
+  defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 
   # Set a blazingly fast keyboard repeat rate
   defaults write NSGlobalDomain KeyRepeat -int 1

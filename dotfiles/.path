@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
 export PATH="$PATH:/usr/local/sbin";
-export PATH="$PATH:/usr/local/Cellar/qt/5.9.1/bin";
+export PATH="$PATH:/usr/local/Cellar/qt/$(brew list --versions qt5 | sed 's/qt //g')/bin";
 export OPENSSL_ROOT_DIR="/usr/local/opt/openssl";

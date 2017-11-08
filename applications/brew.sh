@@ -95,7 +95,6 @@ brew cask install filebot # this is CLI only
 brew cask install firefox
 brew cask install flash-player
 brew cask install gemini
-brew cask install ghost
 brew cask install github-desktop
 brew cask install google-backup-and-sync
 brew cask install handbrake

@@ -1,6 +1,6 @@
 # [macOS Prime](https://github.com/barrymode/macos-prime)
 
-Personal guide to tailor my Mac.
+Automatically tailor my Mac
 
 ## [Dot Files](https://github.com/barrymode/macos-prime/tree/master/dotfiles), [macOS Preferences](https://github.com/barrymode/macos-prime/blob/master/dotfiles/.macos), [Applications](https://github.com/barrymode/macos-prime/tree/master/applications), and [Hosts](https://github.com/barrymode/macos-prime/tree/master/hosts)
 

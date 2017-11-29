@@ -50,6 +50,8 @@ GIT_AUTHOR_EMAIL="username@users.noreply.github.com"
 GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
 git config --global user.email "$GIT_AUTHOR_EMAIL"
 # Use "gpg --list-secret-keys --keyid-format LONG" to find the signing key
+# For users with 2 factor authentication enabled: if git asks you to sign in, use an access token as your password
+# Get an access token here: https://github.com/settings/tokens
 GIT_SIGNING_KEY="hahahahahahahaha"
 git config --global user.signingkey "$GIT_SIGNING_KEY"
 ```

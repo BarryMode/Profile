@@ -49,8 +49,8 @@ git config --global user.name "$GIT_AUTHOR_NAME"
 GIT_AUTHOR_EMAIL="username@users.noreply.github.com"
 GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
 git config --global user.email "$GIT_AUTHOR_EMAIL"
-# Use "gpg --list-secret-keys --keyid-format SHORT" to find the signing key
-GIT_SIGNING_KEY="hahahaha"
+# Use "gpg --list-secret-keys --keyid-format LONG" to find the signing key
+GIT_SIGNING_KEY="hahahahahahahaha"
 git config --global user.signingkey "$GIT_SIGNING_KEY"
 ```
 

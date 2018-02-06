@@ -115,7 +115,6 @@ brew cask install slack
 brew cask install steam
 brew cask install sublime-text
 brew cask install teamviewer
-brew cask install telegram-desktop
 brew cask install the-unarchiver
 brew cask install tunnelbear
 brew cask install vlc

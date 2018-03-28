@@ -143,7 +143,7 @@ function remux_all_aac() { for i in *."$1"; do ffmpeg -i "$i" -ac 2 -c:v copy -c
 # remux_all_merge: `remux_all_merge mkv` would combine all files into 1
 function remux_all_merge() { ffmpeg -f concat -i <(for f in ./*."$1"; do echo "file '$PWD/$f'"; done) -c copy "output.${1}"; }
 
-# plex: convert videos for use with Plex
-function plex() { ffmpeg -i "$1" -map 0:0 -map 0:"$2" -ac 2 -c:v libx264 -c:a:"$2" aac "$3"; }
-function plex_all() { for i in *."$1"; do ffmpeg -i "$i" -ac 2 -c:v libx264 -c:a aac "${i/${i##*.}/mp4}"; done }
-function plex_all_mp4() { for i in *."mp4"; do ffmpeg -i "$i" -ac 2 -c:v libx264 -c:a aac "../${i/${i##*.}/mp4}"; done }
+# atv: convert videos for use with Apple TV
+function atv() { ffmpeg -i "$1" -map 0:0 -map 0:"$2" -ac 2 -c:v libx264 -c:a:"$2" aac "$3"; }
+function atv_all() { for i in *."$1"; do ffmpeg -i "$i" -ac 2 -c:v libx264 -c:a aac "${i/${i##*.}/mp4}"; done }
+function atv_all_mp4() { for i in *."mp4"; do ffmpeg -i "$i" -ac 2 -c:v libx264 -c:a aac "../${i/${i##*.}/mp4}"; done }

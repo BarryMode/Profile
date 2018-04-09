@@ -102,7 +102,7 @@ alias tree='tree -C'
 ###############
 
 # Get macOS Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
-alias update='softwareupdate -i -a; brew update; brew upgrade; brew cu; brew cleanup; brew cask cleanup; brew prune; gem update --system; gem update; gem cleanup; npm update -g; npm i -g npm; pip install --upgrade pip'
+alias update='softwareupdate -i -a; brew update; brew upgrade; brew cu; brew cleanup; brew cask cleanup; brew prune; gem update --system; gem update; gem cleanup; npm update -g; npm i -g npm; pip install --upgrade pip; lscleanup; dscleanup; emptyclipboard; emptytrash;'
 
 # Update dotfiles
 alias update_dotfiles='~/prime/dotfiles/install.sh'

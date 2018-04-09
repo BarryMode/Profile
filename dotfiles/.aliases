@@ -113,6 +113,9 @@ alias lscleanup="/System/Library/Frameworks/CoreServices.framework/Frameworks/La
 # Recursively delete `.DS_Store` files
 alias dscleanup="find . -type f -name '*.DS_Store' -ls -delete"
 
+# Clear clipboard
+alias emptyclipboard="pbcopy < /dev/null"
+
 # Empty the Trash on all mounted volumes and the main HDD.
 # Also, clear Apple’s System Logs to improve shell startup speed.
 # Finally, clear download history from quarantine.

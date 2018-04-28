@@ -80,7 +80,6 @@ brew cask install qlvideo
 
 # Install GUI Apps
 brew cask install audio-hijack
-brew cask install basictex
 brew cask install carbon-copy-cloner
 brew cask install cleanmymac
 brew cask install controlplane

@@ -43,22 +43,6 @@ ln -s ~/Projects/GitHub/macos-prime ~/prime
 
 #### Cloud
 
-- [Dropbox](https://dropbox.com) is empty
-- [Google Drive](https://drive.google.com)
-  - Varia
-    - Archive
-    - Books
-    - Desktop
-    - Documents
-    - Downloads
-    - Games
-    - Music
-    - Pictures
-    - Projects
-    - Sites
-    - Videos
-  - Adler
-    - Plex
 - [iCloud](https://www.icloud.com)
   - App documents and data
   - Calendars

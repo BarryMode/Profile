@@ -98,6 +98,7 @@ brew cask install gemini
 brew cask install github-desktop
 brew cask install google-backup-and-sync
 brew cask install handbrake
+brew cask install iina
 brew cask install jdownloader
 brew cask install keybase
 brew cask install malwarebytes-anti-malware
@@ -116,7 +117,6 @@ brew cask install sublime-text
 brew cask install teamviewer
 brew cask install the-unarchiver
 brew cask install tunnelbear
-brew cask install vlc
 brew cask install yacreader
 
 # Clean the "Cellar" removing any older versions of installed formulae and clearing old downloads

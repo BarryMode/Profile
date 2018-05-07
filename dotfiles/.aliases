@@ -178,6 +178,3 @@ alias carrots='~/^/carrots.sh'
 # Alias for 'youtube-dl'
 # alias vget='youtube-dl'
 alias vget="youtube-dl -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4'"
-
-# Adds input to VLC media player playlist
-alias vlc='/Applications/VLC.app/Contents/MacOS/VLC'

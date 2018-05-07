@@ -140,6 +140,7 @@ function remux_aac() { ffmpeg -i "$1" -ac 2 -map 0:0 -map 0:"$2" -c:v copy -c:a:
 # remux_all: `remux_all mkv` would remux all mkvs to mp4 in the dir
 function remux_all() { for i in *."$1"; do ffmpeg -i "$i" -ac 2 -codec copy "${i/${i##*.}/mp4}"; done }
 function remux_all_aac() { for i in *."$1"; do ffmpeg -i "$i" -ac 2 -c:v copy -c:a aac "${i/${i##*.}/mp4}"; done }
+function remux_all_aac_mp4() { for i in *."mp4"; do ffmpeg -i "$i" -ac 2 -c:v copy -c:a aac "../${i/${i##*.}/mp4}"; done }
 # remux_all_merge: `remux_all_merge mkv` would combine all files into 1
 function remux_all_merge() { ffmpeg -f concat -i <(for f in ./*."$1"; do echo "file '$PWD/$f'"; done) -c copy "output.${1}"; }
 

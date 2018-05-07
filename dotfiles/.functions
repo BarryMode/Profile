@@ -130,8 +130,8 @@ function crush() { for f in $(pwd)/* ; do resize $1 "$f" $2/; done }
 # mget: Download music with `youtube-dl`
 function mget() { youtube-dl --extract-audio --audio-format mp3 -l "$1"; }
 
-# v_info: show video information
-function vinfo() { ffmpeg -i "$1"; }
+# codecs: return video and audio codecs
+function codecs() { ffprobe "$1" 2>&1 >/dev/null |grep Stream.*Video | sed -e 's/.*Video: //' -e 's/[, ].*//'; ffprobe "$1" 2>&1 >/dev/null |grep Stream.*Audio | sed -e 's/.*Audio: //' -e 's/[, ].*//'; }
 
 # remux: `remux input.mkv 1 output.mp4` makes output.mp4 with audio track 1
 function remux() { ffmpeg -i "$1" -ac 2 -map 0:0 -map 0:"$2" -c:v copy -c:a:"$2" copy "$3"; }

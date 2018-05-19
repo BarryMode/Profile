@@ -14,6 +14,7 @@ brew tap homebrew/bundle
 brew tap homebrew/core
 brew tap homebrew/services
 brew tap caskroom/cask
+brew tap caskroom/fonts
 brew tap buo/cask-upgrade
 
 # Install GNU core utilities (those that come with macOS are outdated)
@@ -72,6 +73,9 @@ brew install youtube-dl # Command-line program to download videos from YouTube.c
 
 # Install Java
 brew cask install java
+
+# Install fonts
+brew cask install font-days-one
 
 # Markdown support for Quick Look
 brew cask install qlmarkdown

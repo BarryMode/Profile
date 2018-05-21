@@ -57,6 +57,7 @@ brew install gcc
 brew install git
 brew install imagemagick --with-webp ghostscript
 brew install mas # Mac App Store command line interface
+brew install megatools
 brew install node
 brew install p7zip
 brew install php71

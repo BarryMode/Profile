@@ -105,6 +105,7 @@ brew cask install google-backup-and-sync
 brew cask install handbrake
 brew cask install iina
 brew cask install jdownloader
+brew cask install keka
 brew cask install keybase
 brew cask install malwarebytes-anti-malware
 brew cask install mamp
@@ -120,7 +121,6 @@ brew cask install slack
 brew cask install steam
 brew cask install sublime-text
 brew cask install teamviewer
-brew cask install the-unarchiver
 brew cask install tunnelbear
 brew cask install yacreader
 

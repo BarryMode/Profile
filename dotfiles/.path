@@ -3,4 +3,3 @@
 export PATH="$PATH:/usr/local/sbin";
 export PATH="$PATH:/usr/local/opt/node@8/bin";
 export PATH="$PATH:$(find /usr/local/Cellar/qt/* -maxdepth 0 -type d | head -1)/bin";
-export OPENSSL_ROOT_DIR="/usr/local/opt/openssl";

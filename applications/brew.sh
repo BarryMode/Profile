@@ -116,10 +116,10 @@ brew cask install openemu
 brew cask install paparazzi
 brew cask install paragon-ntfs
 brew cask install qbittorrent
-brew cask install rambox
 brew cask install sequel-pro
 brew cask install skype
 brew cask install slack
+brew cask install station
 brew cask install steam
 brew cask install sublime-text
 brew cask install teamviewer

@@ -116,6 +116,7 @@ brew cask install openemu
 brew cask install paparazzi
 brew cask install paragon-ntfs
 brew cask install qbittorrent
+brew cask install rambox
 brew cask install sequel-pro
 brew cask install skype
 brew cask install slack

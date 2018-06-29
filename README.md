@@ -26,11 +26,6 @@ ln -s ~/Projects/GitHub/macos-prime ~/prime
 ## Other Applications
 
 - Adobe Suite (Creative Cloud has me wanting to find alternatives)
-- iShowU Audio Capture
-
-  ```bash
-  wget https://downloads.shinywhitebox.com/driver/latest/
-  ```
 
 ## User Files
 

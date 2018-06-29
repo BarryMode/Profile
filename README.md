@@ -46,6 +46,7 @@ ln -s ~/Projects/GitHub/macos-prime ~/prime
   - Notes
   - Reminders
   - Safari
+  - Siri
 
 ## Author
 

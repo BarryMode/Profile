@@ -11,7 +11,10 @@ chmod 755 *.sh
 # https://github.com/mas-cli/mas
 ./mas.sh
 
-# Composer: Dependency Manager for PHP
+# Wget: a computer program that retrieves content from web servers
+./wget.sh
+
+# Composer: dependency manager for PHP
 # https://getcomposer.org
 ./composer.sh
 
@@ -27,6 +30,6 @@ chmod 755 *.sh
 # https://pypi.python.org/pypi/pip
 ./pip.sh
 
-# Yarn: Fast, reliable, and secure dependency management
+# Yarn: fast, reliable, and secure dependency management
 # https://yarnpkg.com/en/
 ./yarn.sh

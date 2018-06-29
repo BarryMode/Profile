@@ -39,9 +39,9 @@ ln -s ~/Projects/GitHub/macos-prime ~/prime
 #### Cloud
 
 - [iCloud](https://www.icloud.com)
-  - App documents and data
   - Calendars
   - Contacts
+  - iCloud Drive
   - Keychain
   - Notes
   - Reminders

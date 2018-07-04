@@ -91,7 +91,6 @@ brew cask install controlplane
 brew cask install crossover
 brew cask install cryptomator
 brew cask install cyberduck
-brew cask install discord
 brew cask install dolphin
 brew cask install dropbox
 brew cask install easyfind
@@ -118,7 +117,6 @@ brew cask install paragon-ntfs
 brew cask install qbittorrent
 brew cask install sequel-pro
 brew cask install skype
-brew cask install slack
 brew cask install station
 brew cask install steam
 brew cask install sublime-text

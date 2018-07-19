@@ -16,6 +16,7 @@ brew tap homebrew/services
 brew tap caskroom/cask
 brew tap caskroom/fonts
 brew tap buo/cask-upgrade
+brew tap josegonzalez/homebrew-php
 
 # Install GNU core utilities (those that come with macOS are outdated)
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`
@@ -69,6 +70,7 @@ brew install ruby
 brew install sdl2 # for OpenJK
 brew install tag # A command line tool to manipulate tags on Mac OS X files, and to query for files with those tags
 brew install tree
+brew install wp-cli
 brew install yarn --without-node # Fast, reliable, and secure dependency management
 brew install youtube-dl # Command-line program to download videos from YouTube.com and other video sites
 

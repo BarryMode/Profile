@@ -112,11 +112,14 @@ function codecs() { ffprobe "$1" 2>&1 >/dev/null |grep Stream.*Video | sed -e 's
 
 # remux_all: `remux_all mkv` would remux all mkvs to mp4 in the dir
 function remux_all() { for i in *."$1"; do ffmpeg -i "$i" -ac 2 -codec copy "${i/${i##*.}/mp4}"; done }
+# audio only
 function remux_all_aac() { for i in *."$1"; do ffmpeg -i "$i" -ac 2 -c:v copy -c:a aac "${i/${i##*.}/mp4}"; done }
+# audio only for MP4s
 function remux_all_aac_mp4() { for i in *."mp4"; do ffmpeg -i "$i" -ac 2 -c:v copy -c:a aac "../${i/${i##*.}/mp4}"; done }
 # remux_all_merge: `remux_all_merge mkv` would combine all files into 1
 function remux_all_merge() { ffmpeg -f concat -i <(for f in ./*."$1"; do echo "file '$PWD/$f'"; done) -c copy "output.${1}"; }
 
 # atv: convert videos for use with Apple TV
 function atv_all() { for i in *."$1"; do ffmpeg -i "$i" -ac 2 -c:v libx264 -c:a aac "${i/${i##*.}/mp4}"; done }
+# for MP4s
 function atv_all_mp4() { for i in *."mp4"; do ffmpeg -i "$i" -ac 2 -c:v libx264 -c:a aac "../${i/${i##*.}/mp4}"; done }

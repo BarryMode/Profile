@@ -7,6 +7,7 @@ npm install npm -g
 npm update -g
 
 npm install -g ghost-cli
+npm install -g gulp
 npm install -g lodash
 npm install -g moment
 npm install -g oboe

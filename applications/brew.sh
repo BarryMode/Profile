@@ -67,7 +67,6 @@ brew install python
 brew install qt5 # for Grabber
 brew install rename # This program renames files according to modification rules specified on the command line
 brew install ruby
-brew install sdl2 # for OpenJK
 brew install tag # A command line tool to manipulate tags on Mac OS X files, and to query for files with those tags
 brew install tree
 brew install wp-cli

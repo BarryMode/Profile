@@ -124,5 +124,5 @@ function atv_all() { for i in *."$1"; do ffmpeg -i "$i" -ac 2 -c:v libx264 -c:a 
 # for MP4s
 function atv_all_mp4() { for i in *."mp4"; do ffmpeg -i "$i" -ac 2 -c:v libx264 -c:a aac "../${i/${i##*.}/mp4}"; done }
 
-# ringtone: convert mp3 to m4r
+# ringtone: convert mp3 to m4r and change the length to 30 seconds
 function ringtone() { ffmpeg -i "$1" -t 30 -c:a aac -f ipod -b:a 96k "$(basename "$1" .mp3).m4r"; }

@@ -13,9 +13,6 @@ function doIt() {
   --exclude "README.md" \
   -avh --no-perms . ~;
   source ~/.bash_profile;
-
-  # Install Sublime Text settings
-  cp init/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings;
 }
 
 if [ "$1" == "--force" -o "$1" == "-f" ]; then

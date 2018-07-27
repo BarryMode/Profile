@@ -1,0 +1,34 @@
+"*":
+  "bracket-matcher":
+    highlightMatchingLineNumber: true
+  core:
+    ignoredNames: [
+      ".git"
+      ".hg"
+      ".svn"
+      ".DS_Store"
+      "._*"
+      "Thumbs.db"
+      "desktop.ini"
+      ".Trashes"
+      "node_modules"
+    ]
+    projectHome: "/Users/Barry/Projects/GitHub"
+    telemetryConsent: "no"
+    themes: [
+      "one-dark-ui"
+      "monokai"
+    ]
+  editor:
+    showInvisibles: true
+  "exception-reporting":
+    userId: "0eb2aaee-386d-490c-a70a-d47f6e128d0b"
+  "find-and-replace":
+    autocompleteSearches: true
+  "markdown-preview":
+    useGitHubStyle: true
+  notifications: {}
+  "tree-view":
+    hideIgnoredNames: true
+  welcome:
+    showOnStartup: false

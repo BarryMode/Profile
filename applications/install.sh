@@ -2,6 +2,9 @@
 
 cd ~/prime/applications/
 chmod 755 *.sh
+# apm: Atom Package Manager
+# https://github.com/atom/apm
+./apm.sh
 
 # Brew: The missing package manager for macOS
 # https://brew.sh

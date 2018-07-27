@@ -85,6 +85,7 @@ brew cask install qlmarkdown
 brew cask install qlvideo
 
 # Install GUI Apps
+brew cask install atom
 brew cask install audio-hijack
 brew cask install carbon-copy-cloner
 brew cask install cleanmymac
@@ -119,7 +120,6 @@ brew cask install qbittorrent
 brew cask install sequel-pro
 brew cask install station
 brew cask install steam
-brew cask install sublime-text
 brew cask install teamviewer
 brew cask install tunnelbear
 brew cask install yacreader

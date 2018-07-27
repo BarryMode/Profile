@@ -1,13 +1,14 @@
 #!/usr/bin/env bash
 
 cd ~/prime/applications/
-chmod 755 *.sh
+chmod +x *.sh
+
 # apm: Atom Package Manager
 # https://github.com/atom/apm
 ./apm.sh
 
 # Brew: The missing package manager for macOS
-# https://brew.sh
+# https://github.com/Homebrew/brew
 ./brew.sh
 
 # MAS: Mac App Store command line interface
@@ -15,24 +16,25 @@ chmod 755 *.sh
 ./mas.sh
 
 # Wget: a computer program that retrieves content from web servers
+# https://github.com/mirror/wget
 ./wget.sh
 
 # Composer: dependency manager for PHP
-# https://getcomposer.org
+# https://github.com/composer/composer
 ./composer.sh
 
 # RubyGems: a package management framework for Ruby
-# https://rubygems.org
+# https://github.com/rubygems/rubygems
 ./gem.sh
 
 # NPM: the package manager for JavaScript
-# https://www.npmjs.com
+# https://github.com/npm/cli
 ./npm.sh
 
 # PIP: The PyPA recommended tool for installing Python packages
-# https://pypi.python.org/pypi/pip
+# https://github.com/pypa/pip
 ./pip.sh
 
 # Yarn: fast, reliable, and secure dependency management
-# https://yarnpkg.com/en/
+# https://github.com/yarnpkg/yarn
 ./yarn.sh

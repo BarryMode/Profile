@@ -66,6 +66,7 @@ brew install pup # Parsing HTML at the command line
 brew install python
 brew install qt5 # for Grabber
 brew install rename # This program renames files according to modification rules specified on the command line
+brew install ripgrep
 brew install ruby
 brew install tag # A command line tool to manipulate tags on Mac OS X files, and to query for files with those tags
 brew install tree

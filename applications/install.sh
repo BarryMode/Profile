@@ -3,10 +3,6 @@
 cd ~/prime/applications/
 chmod +x *.sh
 
-# apm: Atom Package Manager
-# https://github.com/atom/apm
-./apm.sh
-
 # Brew: The missing package manager for macOS
 # https://github.com/Homebrew/brew
 ./brew.sh
@@ -18,6 +14,10 @@ chmod +x *.sh
 # Wget: a computer program that retrieves content from web servers
 # https://github.com/mirror/wget
 ./wget.sh
+
+# apm: Atom Package Manager
+# https://github.com/atom/apm
+./apm.sh
 
 # Composer: dependency manager for PHP
 # https://github.com/composer/composer

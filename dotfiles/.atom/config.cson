@@ -20,11 +20,15 @@
       "monokai"
     ]
   editor:
-    showInvisibles: true
+    showIndentGuide: true
   "exception-reporting":
     userId: "0eb2aaee-386d-490c-a70a-d47f6e128d0b"
   "find-and-replace":
     autocompleteSearches: true
+  "goto-definition":
+    performanceMode: true
+  hyperclick:
+    darwinTriggerKeys: "shiftKey,metaKey"
   "markdown-preview":
     useGitHubStyle: true
   notifications: {}

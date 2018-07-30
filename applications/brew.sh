@@ -118,6 +118,7 @@ brew cask install obs
 brew cask install openemu
 brew cask install paparazzi
 brew cask install paragon-ntfs
+brew cask install plex-media-player
 brew cask install qbittorrent
 brew cask install sequel-pro
 brew cask install station

@@ -45,13 +45,13 @@ alias hide="chflags hidden"
 alias lock="chflags uchg"
 alias unlock="chflags nouchg"
 # Show, hide, lock, or unlock files recursively
-alias show-all="chflags -R nohidden"
-alias hide-all="chflags -R hidden"
-alias lock-all="chflags -R uchg"
-alias unlock-all="chflags -R nouchg"
+alias show_all="chflags -R nohidden"
+alias hide_all="chflags -R hidden"
+alias lock_all="chflags -R uchg"
+alias unlock_all="chflags -R nouchg"
 # Show/hide symlinks without hiding the destination
-alias show-alias="chflags -h nohidden"
-alias hide-alias="chflags -h hidden"
+alias show_alias="chflags -h nohidden"
+alias hide_alias="chflags -h hidden"
 # Show/hide hidden files in Finder
 alias showfiles="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
 alias hidefiles="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
@@ -105,7 +105,7 @@ alias tree='tree -C'
 alias update='softwareupdate -i -a; brew update; brew upgrade; brew cu -ay; brew cleanup; brew cask cleanup; brew prune; apm upgrade; gem update --system; gem update; gem cleanup; npm update -g; npm i -g npm; pip install --upgrade pip; emptyclipboard; emptytrash;'
 
 # Update dotfiles
-alias update-dotfiles='~/prime/dotfiles/install.sh'
+alias update_dotfiles='~/prime/dotfiles/install.sh'
 
 # Clean up LaunchServices to remove duplicates in the “Open With” menu
 alias lscleanup="/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder"

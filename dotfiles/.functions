@@ -108,24 +108,24 @@ function crush() { for f in $(pwd)/* ; do resize $1 "$f" $2/; done }
 function mget() { youtube-dl --extract-audio --audio-format mp3 -l "$1"; }
 
 # wp-plugin-dl: Download the latest version of any WordPress plugin by slug
-function wp-plugin-dl() { wget -P $directory_prefix "https://downloads.wordpress.org/plugin/$1.latest-stable.zip"; }
+function wp_plugin_dl() { wget -P $directory_prefix "https://downloads.wordpress.org/plugin/$1.latest-stable.zip"; }
 
 # codecs: return video and audio codecs
 function codecs() { ffprobe "$1" 2>&1 >/dev/null |grep Stream.*Video | sed -e 's/.*Video: //' -e 's/[, ].*//'; ffprobe "$1" 2>&1 >/dev/null |grep Stream.*Audio | sed -e 's/.*Audio: //' -e 's/[, ].*//'; }
 
 # remux_all: `remux_all mkv` would remux all mkvs to mp4 in the dir
-function remux-all() { for i in *."$1"; do ffmpeg -i "$i" -ac 2 -codec copy "${i/${i##*.}/mp4}"; done }
+function remux_all() { for i in *."$1"; do ffmpeg -i "$i" -ac 2 -codec copy "${i/${i##*.}/mp4}"; done }
 # audio only
-function remux-all-audio() { for i in *."$1"; do ffmpeg -i "$i" -ac 2 -c:v copy -c:a aac "${i/${i##*.}/mp4}"; done }
+function remux_all_audio() { for i in *."$1"; do ffmpeg -i "$i" -ac 2 -c:v copy -c:a aac "${i/${i##*.}/mp4}"; done }
 # audio only for MP4s
-function remux-all-audio_mp4() { for i in *."mp4"; do ffmpeg -i "$i" -ac 2 -c:v copy -c:a aac "../${i/${i##*.}/mp4}"; done }
+function remux_all_audio_mp4() { for i in *."mp4"; do ffmpeg -i "$i" -ac 2 -c:v copy -c:a aac "../${i/${i##*.}/mp4}"; done }
 # remux_all_merge: `remux_all_merge mkv` would combine all files into 1
-function remux-all-merge() { ffmpeg -f concat -i <(for f in ./*."$1"; do echo "file '$PWD/$f'"; done) -c copy "output.${1}"; }
+function remux_all_merge() { ffmpeg -f concat -i <(for f in ./*."$1"; do echo "file '$PWD/$f'"; done) -c copy "output.${1}"; }
 
 # atv: convert videos for use with Apple TV
-function atv-all() { for i in *."$1"; do ffmpeg -i "$i" -ac 2 -c:v libx264 -c:a aac "${i/${i##*.}/mp4}"; done }
+function atv_all() { for i in *."$1"; do ffmpeg -i "$i" -ac 2 -c:v libx264 -c:a aac "${i/${i##*.}/mp4}"; done }
 # for MP4s
-function atv-all-mp4() { for i in *."mp4"; do ffmpeg -i "$i" -ac 2 -c:v libx264 -c:a aac "../${i/${i##*.}/mp4}"; done }
+function atv_all_mp4() { for i in *."mp4"; do ffmpeg -i "$i" -ac 2 -c:v libx264 -c:a aac "../${i/${i##*.}/mp4}"; done }
 
 # ringtone: convert mp3 to m4r and change the length to 30 seconds
 function ringtone() { ffmpeg -i "$1" -t 30 -c:a aac -f ipod -b:a 96k "$(basename "$1" .mp3).m4r"; }

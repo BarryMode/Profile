@@ -101,8 +101,8 @@ alias tree='tree -C'
 # Maintenance #
 ###############
 
-# Get macOS Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
-alias update='softwareupdate -i -a; brew update; brew upgrade; brew cu -ay; brew cleanup; brew cask cleanup; brew prune; apm upgrade; gem update --system; gem update; gem cleanup; npm update -g; npm i -g npm; pip install --upgrade pip; emptyclipboard; emptytrash;'
+# update: Get macOS Software Updates, update packages, and general cleanup
+alias update='softwareupdate -i -a; update_dotfiles --force; brew update; brew upgrade; brew missing; brew cu -ay; brew cleanup; brew cask cleanup; brew prune; apm update --no-confirm; gem update --system; gem update --force; gem cleanup; npm update -g; npm i -g npm; pip install --upgrade pip; clearclipboard; clearlogs; emptytrash';
 
 # Update dotfiles
 alias update_dotfiles='~/prime/dotfiles/install.sh'
@@ -114,12 +114,14 @@ alias lscleanup="/System/Library/Frameworks/CoreServices.framework/Frameworks/La
 alias dscleanup="find . -type f -name '*.DS_Store' -ls -delete"
 
 # Clear clipboard
-alias emptyclipboard="pbcopy < /dev/null"
+alias clearclipboard="pbcopy < /dev/null"
+
+# Also, clear Apple’s System Logs to improve shell startup speed.
+# Clear download history from quarantine.
+alias clearlogs="sudo rm -rfv /private/var/log/asl/*.asl; sqlite3 ~/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV* 'delete from LSQuarantineEvent'"
 
 # Empty the Trash on all mounted volumes and the main HDD.
-# Also, clear Apple’s System Logs to improve shell startup speed.
-# Finally, clear download history from quarantine.
-alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl; emptyclipboard; sqlite3 ~/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV* 'delete from LSQuarantineEvent'"
+alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash;"
 
 # Delete all empty subdirectories
 alias ded='find . -type d -empty -delete'

@@ -32,6 +32,8 @@
   "markdown-preview":
     useGitHubStyle: true
   notifications: {}
+  "tabs-to-spaces":
+    onSave: "untabify"
   "tree-view":
     hideIgnoredNames: true
   welcome:

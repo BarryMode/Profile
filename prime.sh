@@ -22,7 +22,7 @@ function link_check() {
   fi
 }
 
-link_check ~/Projects/GitHub/macos-prime ~/prime
+link_check ~/Projects/BarryMode/macos-prime ~/prime
 
 echo; echo ---; echo
 

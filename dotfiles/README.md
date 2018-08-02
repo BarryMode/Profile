@@ -8,7 +8,7 @@
 
 ### Using Git and the install script
 
-The `dotfiles` subdir can be used without any `macos-prime` files. Store it anywhere. I keep it in `~/Projects/GitHub/macos-prime/dotfiles`, though.
+The `dotfiles` subdir can be used without any `macos-prime` files. Store it anywhere. I keep it in `~/Projects/BarryMode/macos-prime/dotfiles`, though.
 
 `dotfiles` serves as a working directory to track your customizations. When you're ready to use them, `cd` into your local `dotfiles` repository and then:
 

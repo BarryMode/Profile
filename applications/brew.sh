@@ -125,6 +125,7 @@ brew cask install station
 brew cask install steam
 brew cask install teamviewer
 brew cask install tunnelbear
+brew cask install virtualbox && brew cask install local-by-flywheel
 brew cask install yacreader
 
 # Clean the "Cellar" removing any older versions of installed formulae and clearing old downloads

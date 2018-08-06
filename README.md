@@ -25,7 +25,10 @@ ln -s ~/Projects/BarryMode/macos-prime ~/prime
 
 ## Other Applications
 
-- Adobe Suite (Creative Cloud has me wanting to find alternatives)
+- Adobe Suite
+- Celemony Melodyne
+- Cinemagraph Pro
+- Renamer
 
 ## User Files
 

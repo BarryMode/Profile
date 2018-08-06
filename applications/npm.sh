@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Install latest NPM
-npm install npm -g
+npm install -g npm@latest
 
 # Update already installed Node packages
 npm update -g

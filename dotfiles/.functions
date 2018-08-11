@@ -54,7 +54,7 @@ function zipd() { zip -r "$1".zip "$1"; }
 
 # 7zip the directory
 function 7zip() {
-	7z a "$1" "$1"/*;
+  7z a "$1" "$1"/*;
 }
 
 # Example - findreplace searchText replacementText
@@ -86,10 +86,10 @@ function extract() {
   fi
 }
 
-# Convert string to MD5
+# Encode MD5
 function md5() { echo -n "$1" | openssl md5; }
 
-# Convert string to SHA1
+# Encode SHA1
 function sha1() { echo -n "$1" | openssl sha1; }
 
 # resize: Optimal settings for resizing images

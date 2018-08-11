@@ -86,6 +86,12 @@ function extract() {
   fi
 }
 
+# Encode Base64
+function base64_encode() { echo -n "$1" | openssl base64; }
+
+# Decode Base64
+function base64_decode() { echo -n "$1" | base64 --decode; }
+
 # Encode MD5
 function md5() { echo -n "$1" | openssl md5; }
 

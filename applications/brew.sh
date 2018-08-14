@@ -111,7 +111,6 @@ brew cask install keka
 brew cask install keybase
 brew cask install malwarebytes-anti-malware
 brew cask install mamp
-brew cask install mountain-duck
 brew cask install lackeyccg
 brew cask install obs
 brew cask install openemu

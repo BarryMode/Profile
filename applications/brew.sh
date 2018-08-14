@@ -53,7 +53,7 @@ brew install screen
 brew install ack # a tool like grep, optimized for programmers
 brew install cmake
 brew install composer # for php packages
-brew install ffmpeg
+brew install ffmpeg --with-x265
 brew install gcc
 brew install git
 brew install imagemagick --with-webp ghostscript

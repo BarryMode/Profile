@@ -98,8 +98,8 @@ function md5() { echo -n "$1" | openssl md5; }
 # Encode SHA1
 function sha1() { echo -n "$1" | openssl sha1; }
 
-# resize: Optimal settings for resizing images
-# Parameters - size, file, outputdir
+# resize: optimal settings for resizing images
+# parameters - size, file, outputdir
 # resize 300 "file.ext" outputdir/
 function resize() {
   mogrify -path $3 -resize $1 -quality 85 -density 72 -strip $2
@@ -119,19 +119,22 @@ function wp_plugin_dl() { wget -P $directory_prefix "https://downloads.wordpress
 # codecs: return video and audio codecs
 function codecs() { ffprobe "$1" 2>&1 >/dev/null |grep Stream.*Video | sed -e 's/.*Video: //' -e 's/[, ].*//'; ffprobe "$1" 2>&1 >/dev/null |grep Stream.*Audio | sed -e 's/.*Audio: //' -e 's/[, ].*//'; }
 
-# remux_all: `remux_all mkv` would remux all mkvs to mp4 in the dir
-function remux_all() { for i in *."$1"; do ffmpeg -i "$i" -ac 2 -codec copy "${i/${i##*.}/mp4}"; done }
-# audio only
-function remux_all_audio() { for i in *."$1"; do ffmpeg -i "$i" -ac 2 -c:v copy -c:a aac "${i/${i##*.}/mp4}"; done }
-# audio only for MP4s
-function remux_all_audio_mp4() { for i in *."mp4"; do ffmpeg -i "$i" -ac 2 -c:v copy -c:a aac "../${i/${i##*.}/mp4}"; done }
-# remux_all_merge: `remux_all_merge mkv` would combine all files into 1
-function remux_all_merge() { ffmpeg -f concat -i <(for f in ./*."$1"; do echo "file '$PWD/$f'"; done) -c copy "output.${1}"; }
+# video_encode:
+# parameters: filetype, video codec, audio codec
+# `video_encode` remux all videos in the current directory to mp4
+# `video_encode mkv libx265 aac` encode all videos to mkv with x265 and aac codecs
+function video_encode() {
+  filetype=${1:-mp4}
+  video_codec=${2:-copy}
+  audio_codec=${3:-copy}
+  for i in *.mkv *.webm *.flv *.vob *.ogg *.ogv *.drc *gifv *.mng *.avi$ *.mov *.qt *.wmv *.yuv *.rm *.rmvb *.asf *.amv *.mp4$ *.m4v *.mp *.m?v *.svi *.3gp *.flv *.f4v;
+  do
+    ffmpeg -i "$i" -map 0 -c:v $video_codec -c:a $audio_codec -nostats -loglevel 0 "./output/${i/${i##*.}/$filetype}";
+  done
+}
 
-# atv: convert videos for use with Apple TV
-function atv_all() { for i in *."$1"; do ffmpeg -i "$i" -ac 2 -c:v libx264 -c:a aac "${i/${i##*.}/mp4}"; done }
-# for MP4s
-function atv_all_mp4() { for i in *."mp4"; do ffmpeg -i "$i" -ac 2 -c:v libx264 -c:a aac "../${i/${i##*.}/mp4}"; done }
+# video_merge: `video_merge` combine all video files in the current directory into 1
+function video_merge() { ffmpeg -f concat -i <(for f in *.mkv *.webm *.flv *.vob *.ogg *.ogv *.drc *gifv *.mng *.avi$ *.mov *.qt *.wmv *.yuv *.rm *.rmvb *.asf *.amv *.mp4$ *.m4v *.mp *.m?v *.svi *.3gp *.flv *.f4v; do echo "file '$PWD/$f'"; done) -c copy -nostats -loglevel 0 "output.${1}"; }
 
 # ringtone: convert mp3 to m4r and change the length to 30 seconds
 function ringtone() { ffmpeg -i "$1" -t 30 -c:a aac -f ipod -b:a 96k "$(basename "$1" .mp3).m4r"; }

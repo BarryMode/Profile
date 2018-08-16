@@ -78,7 +78,6 @@ brew install youtube-dl # Command-line program to download videos from YouTube.c
 brew cask install java
 
 # Install fonts
-brew cask install font-days-one # Subnautica font
 
 # Markdown support for Quick Look
 brew cask install qlmarkdown

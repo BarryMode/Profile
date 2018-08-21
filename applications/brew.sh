@@ -117,13 +117,13 @@ brew cask install openemu
 brew cask install paparazzi
 brew cask install paragon-ntfs
 brew cask install plex-media-player
+brew cask install protonvpn
 brew cask install qbittorrent
 brew cask install sequel-pro
 brew cask install spectacle
 brew cask install station
 brew cask install steam
 brew cask install teamviewer
-brew cask install tunnelbear
 brew cask install virtualbox && brew cask install local-by-flywheel
 brew cask install yacreader
 

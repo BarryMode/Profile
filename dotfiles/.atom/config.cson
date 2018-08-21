@@ -2,6 +2,10 @@
   "bracket-matcher":
     highlightMatchingLineNumber: true
   core:
+    customFileTypes:
+      "source.shell": [
+        "gitignore"
+      ]
     ignoredNames: [
       ".git"
       ".hg"

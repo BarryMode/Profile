@@ -108,7 +108,7 @@ brew cask install iina
 brew cask install jdownloader
 brew cask install keka
 brew cask install keybase
-brew cask install malwarebytes-anti-malware
+brew cask install malwarebytes
 brew cask install mamp
 brew cask install lackeyccg
 brew cask install obs

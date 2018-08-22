@@ -31,6 +31,7 @@ ln -s ~/Projects/BarryMode/macos-prime ~/prime
 - Logic Pro X
 - Paw
 - Renamer
+- Transmit
 
 ## User Files
 

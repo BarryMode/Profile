@@ -28,6 +28,7 @@ ln -s ~/Projects/BarryMode/macos-prime ~/prime
 - Adobe Suite
 - Celemony Melodyne
 - Cinemagraph Pro
+- Logic Pro X
 - Paw
 - Renamer
 

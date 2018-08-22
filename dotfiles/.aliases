@@ -28,7 +28,6 @@ alias mkdir="mkdir -p"
 alias c='clear'
 alias g='git'
 alias edit='atom'
-alias plistbuddy="/usr/libexec/PlistBuddy"
 
 # Make Symlinks
 alias shortcut="ln -s"

@@ -89,6 +89,7 @@ brew cask install qlvideo
 brew cask install 1clipboard
 brew cask install atom
 brew cask install audio-hijack
+brew cask install authy
 brew cask install avast-security
 brew cask install bitwarden
 brew cask install carbon-copy-cloner

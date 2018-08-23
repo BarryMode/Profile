@@ -46,3 +46,7 @@ complete -W "NSGlobalDomain" defaults;
 
 # Add `killall` tab completion for common apps
 complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes SystemUIServer Terminal" killall;
+
+# Add timestamps to history
+# Date/time formatting: http://www.acehints.com/2012/07/histtimeformat-how-to-see-linux.html
+HISTTIMEFORMAT="|  %F  |  %r  |  "

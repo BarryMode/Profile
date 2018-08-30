@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
-directory_prefix='~/downloads/'
+WGET_DL_DIR='~/downloads/'
 
 # iShowU Audio Capture
-wget -P $directory_prefix https://downloads.shinywhitebox.com/driver/latest/
+wget -P $WGET_DL_DIR https://downloads.shinywhitebox.com/driver/latest/
 
 # ProtonVPN
-wget -P $directory_prefix https://protonvpn.com/download/ProtonVPN.dmg
+wget -P $WGET_DL_DIR https://protonvpn.com/download/ProtonVPN.dmg

@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2017<br>
+Copyright (c) 2018<br>
 Steven Black <http://stevenblack.com><br>
 BarryMode <https://barrymode.github.io>
 

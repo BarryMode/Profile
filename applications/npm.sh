@@ -11,3 +11,4 @@ npm install -g gulp
 npm install -g lodash
 npm install -g moment
 npm install -g oboe
+npm install -g plex-dl

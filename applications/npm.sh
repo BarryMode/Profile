@@ -6,6 +6,7 @@ npm install -g npm@latest
 # Update already installed Node packages
 npm update -g
 
+npm install -g crypto-js
 npm install -g ghost-cli
 npm install -g gulp
 npm install -g lodash

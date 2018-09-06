@@ -58,4 +58,4 @@ ln -s ~/Projects/BarryMode/macos-prime ~/prime
 
 | [![BarryMode](https://avatars3.githubusercontent.com/u/5648875?v=2&s=70)](https://twitter.com/barrymode "Follow @BarryMode on Twitter") |
 |---|
-| [BarryMode](https://barrymode.github.io) |
+| [BarryMode](https://barrymode.com) |

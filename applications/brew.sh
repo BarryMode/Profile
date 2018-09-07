@@ -91,10 +91,8 @@ brew cask install alfred
 brew cask install atom
 brew cask install audio-hijack
 brew cask install authy
-brew cask install avast-security
 brew cask install bitwarden
 brew cask install carbon-copy-cloner
-brew cask install cleanmymac
 brew cask install crossover
 brew cask install cryptomator
 brew cask install cyberduck
@@ -111,7 +109,6 @@ brew cask install iina
 brew cask install jdownloader
 brew cask install keka
 brew cask install keybase
-brew cask install malwarebytes
 brew cask install mamp
 brew cask install lackeyccg
 brew cask install obs

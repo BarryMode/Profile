@@ -35,6 +35,7 @@ ln -s ~/Projects/BarryMode/macos-prime ~/prime
 - Paw
 - Renamer
 - Transmit
+- Typeface
 
 ## User Files
 

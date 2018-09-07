@@ -87,6 +87,7 @@ brew cask install qlvideo
 
 # Install GUI Apps
 brew cask install 1clipboard
+brew cask install alfred
 brew cask install atom
 brew cask install audio-hijack
 brew cask install authy

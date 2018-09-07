@@ -101,7 +101,7 @@ alias tree='tree -C'
 ###############
 
 # update: Get macOS Software Updates, update packages, and general cleanup
-alias update='softwareupdate -i -a; update_dotfiles --force; brew update-reset; brew update; brew upgrade; brew missing; brew cu -ay; brew cleanup; brew cask cleanup; brew prune; apm update --no-confirm; gem update --system; gem update --force; gem cleanup; npm update -g; npm i -g npm; pip install --upgrade pip; cp ~/.atom/*.* ~/prime/dotfiles/.atom/; clearclipboard; clearlogs; emptytrash';
+alias update='softwareupdate -i -a; update_dotfiles --force; brew update-reset; brew update; brew upgrade; brew missing; brew cask upgrade; brew cleanup; brew cask cleanup; brew prune; apm update --no-confirm; gem update --system; gem update --force; gem cleanup; npm update -g; npm i -g npm; pip install --upgrade pip; cp ~/.atom/*.* ~/prime/dotfiles/.atom/; clearclipboard; clearlogs; emptytrash';
 
 # Update dotfiles
 alias update_dotfiles='~/prime/dotfiles/install.sh'

@@ -26,7 +26,9 @@ ln -s ~/Projects/BarryMode/macos-prime ~/prime
 ## Other Applications
 
 - Adobe Suite
+- Alfred Powerpack
 - Celemony Melodyne
+- CleanMyMac
 - Cinemagraph Pro
 - Logic Pro X
 - Paw

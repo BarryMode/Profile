@@ -79,6 +79,7 @@ brew cask install java
 
 # Install fonts
 brew cask install font-open-sans
+brew cask install font-raleway
 
 # Markdown support for Quick Look
 brew cask install qlmarkdown

@@ -56,7 +56,6 @@ ln -s ~/Projects/BarryMode/macos-prime ~/prime
   - Notes
   - Reminders
   - Safari
-  - Siri
 
 ## Author
 

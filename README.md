@@ -30,6 +30,7 @@ ln -s ~/Projects/BarryMode/macos-prime ~/prime
 - Celemony Melodyne
 - CleanMyMac
 - Cinemagraph Pro
+- FileBot
 - Logic Pro X
 - Paw
 - Renamer

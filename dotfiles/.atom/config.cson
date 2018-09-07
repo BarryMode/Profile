@@ -24,6 +24,7 @@
       "monokai"
     ]
   editor:
+    maxScreenLineLength: 5000
     showIndentGuide: true
   "exception-reporting":
     userId: "0eb2aaee-386d-490c-a70a-d47f6e128d0b"

@@ -31,7 +31,7 @@ ln -s ~/Projects/BarryMode/macos-prime ~/prime
 - CleanMyMac
 - Cinemagraph Pro
 - FileBot
-- Logic Pro X
+- FL Studio
 - Paw
 - Renamer
 - Transmit

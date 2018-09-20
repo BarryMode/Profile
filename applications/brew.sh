@@ -125,10 +125,6 @@ brew cask install teamviewer
 brew cask install virtualbox && brew cask install local-by-flywheel
 brew cask install yacreader
 
-# Clean the "Cellar" removing any older versions of installed formulae and clearing old downloads
-brew cleanup
-brew cask cleanup
-
 # Create symlinks for unlinked apps
 brew linkapps
 
@@ -140,6 +136,9 @@ brew link --overwrite ruby
 
 # Remove dead symlinks
 brew prune
+
+# Clean the "Cellar" removing any older versions of installed formulae and clearing old downloads
+brew cleanup
 
 # Check for errors
 brew doctor

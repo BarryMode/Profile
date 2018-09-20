@@ -140,6 +140,9 @@ brew prune
 # Clean the "Cellar" removing any older versions of installed formulae and clearing old downloads
 brew cleanup
 
+# Remove all unused services
+brew services cleanup
+
 # Check for errors
 brew doctor
 brew cask doctor

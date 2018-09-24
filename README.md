@@ -30,6 +30,7 @@ ln -s ~/Projects/BarryMode/macos-prime ~/prime
 - Celemony Melodyne
 - CleanMyMac
 - Cinemagraph Pro
+- Disk Drill
 - FileBot
 - FL Studio
 - Paw

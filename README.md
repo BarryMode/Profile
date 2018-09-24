@@ -52,7 +52,10 @@ ln -s ~/Projects/BarryMode/macos-prime ~/prime
 - [iCloud](https://www.icloud.com)
   - Calendars
   - Contacts
+  - Find My Mac
   - Keychain
+  - Photos > Shared Albums
+  - News
   - Notes
   - Reminders
   - Safari

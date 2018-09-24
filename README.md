@@ -26,7 +26,6 @@ ln -s ~/Projects/BarryMode/macos-prime ~/prime
 ## Other Applications
 
 - Adobe Suite
-- Celemony Melodyne
 - CleanMyMac
 - Cinemagraph Pro
 - Disk Drill

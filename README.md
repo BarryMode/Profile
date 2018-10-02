@@ -52,9 +52,9 @@ ln -s ~/Projects/BarryMode/macos-prime ~/prime
   - Contacts
   - Find My Mac
   - Keychain
-  - Photos > Shared Albums
   - News
   - Notes
+  - Photos > Shared Albums
   - Reminders
   - Safari
 

@@ -7,5 +7,6 @@ npm install -g npm@latest
 npm update -g
 
 npm install -g ghost-cli
+npm install -g ionic
 npm install -g lodash
 npm install -g moment

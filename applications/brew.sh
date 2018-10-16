@@ -93,6 +93,7 @@ brew cask install audio-hijack
 brew cask install authy
 brew cask install bitwarden
 brew cask install carbon-copy-cloner
+brew cask install controlplane
 brew cask install crossover
 brew cask install cryptomator
 brew cask install cyberduck

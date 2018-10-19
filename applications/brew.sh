@@ -11,6 +11,7 @@ brew upgrade
 
 # Tap dependencies
 brew tap homebrew/bundle
+brew tap homebrew/cask-versions
 brew tap homebrew/core
 brew tap homebrew/services
 brew tap caskroom/cask

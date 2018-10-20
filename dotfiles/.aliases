@@ -172,9 +172,7 @@ alias map="xargs -n1"
 alias mergepdf='/System/Library/Automator/Combine\ PDF\ Pages.action/Contents/Resources/join.py'
 
 # Open programs
-alias carrots='~/^/carrots.sh'
 alias ccg='/Applications/LackeyCCG/LackeyCCG.app/Contents/MacOS/LackeyCCG'
-alias grabber='open ~/^/images/Grabber.app'
 
 # Alias for 'youtube-dl'
 # alias vget='youtube-dl'

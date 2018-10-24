@@ -57,7 +57,6 @@ brew install composer # for php packages
 brew install ffmpeg --with-x265
 brew install gcc
 brew install git
-brew install imagemagick --with-webp ghostscript
 brew install mas # Mac App Store command line interface
 brew install megatools
 brew install node

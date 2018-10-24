@@ -107,6 +107,7 @@ brew cask install ghost
 brew cask install github-desktop
 brew cask install handbrake
 brew cask install iina
+brew cask install imageoptim
 brew cask install jdownloader
 brew cask install keka
 brew cask install keybase

@@ -124,6 +124,7 @@ brew cask install sequel-pro
 brew cask install spectacle
 brew cask install station
 brew cask install steam
+brew cask install sublime-merge
 brew cask install sublime-text
 brew cask install teamviewer
 brew cask install virtualbox && brew cask install local-by-flywheel

@@ -12,3 +12,4 @@ npm install -g gulp-cli
 npm install -g ionic
 npm install -g lodash
 npm install -g moment
+npm install -g video.js

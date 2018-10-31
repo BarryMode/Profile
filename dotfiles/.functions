@@ -98,6 +98,18 @@ function md5() { echo -n "$1" | openssl md5; }
 # Encode SHA1
 function sha1() { echo -n "$1" | openssl sha1; }
 
+# resize: optimal settings for resizing images
+# parameters - size (width in pixels, height is automatic), file, outputdir
+# resize 300 "file.ext" outputdir/
+function resize() {
+  mogrify -path $3 -resize $1 -quality 85 -density 72 -strip $2
+}
+
+# crush: it's resize in batch form
+# Parameters: size (width in pixels, height is automatic), outputdir
+# crush 300 out
+function crush() { for f in $(pwd)/* ; do resize $1 "$f" $2/; done }
+
 # mget: Download music with `youtube-dl`
 function mget() { youtube-dl --extract-audio --audio-format mp3 -l "$1"; }
 

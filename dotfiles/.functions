@@ -106,9 +106,18 @@ function resize() {
 }
 
 # crush: it's resize in batch form
-# Parameters: size (width in pixels, height is automatic), outputdir
+# parameters: size (width in pixels, height is automatic), outputdir
 # crush 300 out
 function crush() { for f in $(pwd)/* ; do resize $1 "$f" $2/; done }
+
+# dimensions: get the dimensions of an image or directory of images
+# parameters: file(s)
+# dimensions file.jpg
+# dimensions *
+function dimensions() { identify -ping -format '%w\x%h\n' $@; }
+function dimensions_json() { dimensions=$(identify -ping -format '{\n  "filename": "%f",\n  "width": "%w",\n  "height": "%h"\n},\n' $@); echo ${dimensions::-1}; }
+#vdimensions: get the dimensions of a video
+function vdimensions() { ffprobe -v error -select_streams v:0 -show_entries stream=width,height -of csv=s=x:p=0 $1; }
 
 # mget: Download music with `youtube-dl`
 function mget() { youtube-dl --extract-audio --audio-format mp3 -l "$1"; }

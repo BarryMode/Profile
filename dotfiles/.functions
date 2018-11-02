@@ -122,8 +122,8 @@ function vdimensions() { ffprobe -v error -select_streams v:0 -show_entries stre
 # mget: Download music with `youtube-dl`
 function mget() { youtube-dl --extract-audio --audio-format mp3 -l "$1"; }
 
-# wp-plugin-dl: Download the latest version of any WordPress plugin by slug
-function wp_plugin_dl() { wget -P $directory_prefix "https://downloads.wordpress.org/plugin/$1.latest-stable.zip"; }
+# wp_plugin_dl: Download the latest version of any WordPress plugin by slug
+function wp_plugin_dl() { wget -P "~/downloads/" "https://downloads.wordpress.org/plugin/$1.latest-stable.zip"; }
 
 # codecs: return video and audio codecs
 function codecs() { ffprobe "$1" 2>&1 >/dev/null |grep Stream.*Video | sed -e 's/.*Video: //' -e 's/[, ].*//'; ffprobe "$1" 2>&1 >/dev/null |grep Stream.*Audio | sed -e 's/.*Audio: //' -e 's/[, ].*//'; }

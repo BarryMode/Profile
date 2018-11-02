@@ -122,6 +122,9 @@ function vdimensions() { ffprobe -v error -select_streams v:0 -show_entries stre
 # mget: Download music with `youtube-dl`
 function mget() { youtube-dl --extract-audio --audio-format mp3 -l "$1"; }
 
+# wpcd
+function wpcd { cd ~/Projects/Rokusek/$1/app/public/wp-content/themes/; }
+
 # wp_plugin_dl: Download the latest version of any WordPress plugin by slug
 function wp_plugin_dl() { wget -P "~/downloads/" "https://downloads.wordpress.org/plugin/$1.latest-stable.zip"; }
 

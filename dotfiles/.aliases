@@ -11,7 +11,7 @@ alias sudo='sudo '
 alias f='open -a Finder ./'
 
 # Count non-hidden files in this directory
-alias f#='echo $(ls -1 | wc -l)'
+alias f\#='echo $(ls -1 | wc -l)'
 
 # Easier navigation
 alias ..="cd .."

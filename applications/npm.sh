@@ -7,6 +7,7 @@ npm install -g npm@latest
 npm update -g
 
 npm install -g @angular/cli
+npm install -g corsproxy-https
 npm install -g ghost-cli@latest
 npm install -g gulp-cli
 npm install -g ionic

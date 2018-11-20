@@ -27,6 +27,7 @@ ln -s ~/Projects/BarryMode/macos-prime ~/prime
 
 - Adobe Suite
 - Arq
+- Citra
 - CleanMyMac
 - Cinemagraph Pro
 - Disk Drill

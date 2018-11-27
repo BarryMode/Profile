@@ -34,6 +34,7 @@ ln -s ~/Projects/BarryMode/macos-prime ~/prime
 - FileBot
 - FL Studio
 - Paw
+- Querious
 - Renamer
 - Sketch
 - Transmit

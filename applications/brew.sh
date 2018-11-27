@@ -76,6 +76,7 @@ brew install yarn --without-node # Fast, reliable, and secure dependency managem
 brew install youtube-dl # Command-line program to download videos from YouTube.com and other video sites
 
 # Install Java
+# brew cask install homebrew/cask-versions/java8 # version 8
 brew cask install java
 
 # Install fonts

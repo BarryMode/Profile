@@ -30,7 +30,6 @@ ln -s ~/Projects/BarryMode/macos-prime ~/prime
 - Citra
 - CleanMyMac
 - Cinemagraph Pro
-- Disk Drill
 - FileBot
 - FL Studio
 - Paw

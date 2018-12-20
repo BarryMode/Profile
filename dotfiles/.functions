@@ -99,7 +99,7 @@ function md5() { echo -n "$1" | openssl md5; }
 function sha1() { echo -n "$1" | openssl sha1; }
 
 # wpcd: cd into a WordPress project themes directory
-function wpcd() { cd ~/Projects/Rokusek/$1/app/public/wp-content/themes/; }
+function wpcd() { cd ~/Projects/Rokusek/Sites/$1/; }
 
 # wp_plugin_dl: Download the latest version of any WordPress plugin by slug
 function wp_plugin_dl() { wget -P "~/downloads/" "https://downloads.wordpress.org/plugin/$1.latest-stable.zip"; }

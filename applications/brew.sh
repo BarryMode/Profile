@@ -122,6 +122,7 @@ brew cask install paragon-ntfs
 brew cask install plex-media-player
 brew cask install protonvpn
 brew cask install qbittorrent
+brew cask install sequel-pro
 brew cask install spectacle
 brew cask install station
 brew cask install steam

@@ -26,7 +26,6 @@ ln -s ~/Projects/BarryMode/macos-prime ~/prime
 ## Other Applications
 
 - Adobe Suite
-- Arq
 - Citra
 - CleanMyMac
 - Cinemagraph Pro

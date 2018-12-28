@@ -33,7 +33,6 @@ ln -s ~/Projects/BarryMode/macos-prime ~/prime
 - FL Studio
 - Paw
 - Renamer
-- Sketch
 - Transmit
 - Typeface
 

@@ -29,6 +29,7 @@ ln -s ~/Projects/BarryMode/macos-prime ~/prime
 - Citra
 - CleanMyMac
 - Cinemagraph Pro
+- EdgeView 2
 - FileBot
 - FL Studio
 - Paw

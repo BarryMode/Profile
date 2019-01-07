@@ -33,7 +33,6 @@ ln -s ~/Projects/BarryMode/macos-prime ~/prime
 - FileBot
 - FL Studio
 - Paw
-- Permute
 - Renamer
 - Transmit
 - Typeface

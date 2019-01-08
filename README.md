@@ -7,14 +7,14 @@ Automatically tailor my Mac
 ### One-line install
 
 ```bash
-git clone https://github.com/barrymode/macos-prime.git ~/Projects/BarryMode/macos-prime && cd ~/Projects/BarryMode/macos-prime && ./prime.sh
+git clone https://github.com/barrymode/macos-prime.git ~/Projects/macos-prime && cd ~/Projects/macos-prime && ./prime.sh
 ```
 
 ### OR do it manually
 
 ```bash
-git clone https://github.com/barrymode/macos-prime.git ~/Projects/BarryMode/macos-prime
-ln -s ~/Projects/BarryMode/macos-prime ~/prime
+git clone https://github.com/barrymode/macos-prime.git ~/Projects/macos-prime
+ln -s ~/Projects/macos-prime ~/prime
 ```
 
 1. Open Home Folder `cd ~`

@@ -32,6 +32,7 @@ ln -s ~/Projects/macos-prime ~/prime
 - EdgeView 2
 - FileBot
 - FL Studio
+- Navicat
 - Paw
 - Renamer
 - Transmit

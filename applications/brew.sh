@@ -95,6 +95,7 @@ brew cask install atom
 brew cask install audio-hijack
 brew cask install authy
 brew cask install bitwarden
+brew cask install brave-browser
 brew cask install carbon-copy-cloner
 brew cask install controlplane
 brew cask install crossover

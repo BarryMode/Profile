@@ -1,7 +1,15 @@
 #!/usr/bin/env bash
 
-export PATH="$PATH:/usr/local/sbin";
-export PATH="$PATH:~/.composer/vendor/bin";
-export PATH="$PATH:/usr/local/opt/node@8/bin";
-export PATH="$PATH:$(find /usr/local/Cellar/qt/* -maxdepth 0 -type d | head -1)/bin";# autojump path
+export PATH="$PATH:/usr/local/sbin"
+
+# autojump path
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
+
+# Composer path
+export PATH="$PATH:~/.composer/vendor/bin"
+
+# Node path
+export PATH="$PATH:/usr/local/opt/node@8/bin"
+
+# QT path
+export PATH="$PATH:$(find /usr/local/Cellar/qt/* -maxdepth 0 -type d | head -1)/bin"

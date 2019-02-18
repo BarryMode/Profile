@@ -26,7 +26,6 @@ ln -s ~/Projects/macos-prime ~/prime
 ## Other Applications
 
 - Adobe Suite
-- Citra
 - CleanMyMac
 - Cinemagraph Pro
 - EdgeView 2

@@ -116,7 +116,6 @@ brew cask install iina
 brew cask install imageoptim
 brew cask install jdownloader
 brew cask install keka
-brew cask install keybase
 brew cask install lackeyccg
 brew cask install mamp
 brew cask install obs

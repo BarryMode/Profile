@@ -34,7 +34,6 @@ ln -s ~/Projects/macos-prime ~/prime
 - Icons8
 - Navicat
 - Paw
-- Renamer
 - Transmit
 - Typeface
 

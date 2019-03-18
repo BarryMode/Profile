@@ -113,6 +113,7 @@ brew cask install github-desktop
 brew cask install grandperspective
 brew cask install handbrake
 brew cask install iina
+brew cask install image2icon
 brew cask install imageoptim
 brew cask install jdownloader
 brew cask install keka

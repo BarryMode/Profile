@@ -115,6 +115,7 @@ brew cask install handbrake
 brew cask install iina
 brew cask install image2icon
 brew cask install imageoptim
+brew cask install integrity
 brew cask install jdownloader
 brew cask install keka
 brew cask install lackeyccg

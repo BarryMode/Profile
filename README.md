@@ -32,6 +32,8 @@ ln -s ~/Projects/macos-prime ~/prime
 - FileBot
 - FL Studio
 - Icons8
+- Microsoft Excel
+- Microsoft Word
 - Navicat
 - Paw
 - Transmit

@@ -118,6 +118,7 @@ brew cask install imageoptim
 brew cask install jdownloader
 brew cask install keka
 brew cask install lackeyccg
+brew cask install malwarebytes
 brew cask install mamp
 brew cask install obs
 brew cask install openemu

@@ -37,7 +37,6 @@ ln -s ~/Projects/macos-prime ~/prime
 - Navicat
 - Paw
 - Transmit
-- Typeface
 
 ## User Files
 

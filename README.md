@@ -32,6 +32,7 @@ ln -s ~/Projects/macos-prime ~/prime
 - FileBot
 - FL Studio
 - Icons8
+- Luminar 3
 - Microsoft Excel
 - Microsoft Word
 - Navicat

@@ -36,6 +36,7 @@ ln -s ~/Projects/macos-prime ~/prime
 - Microsoft Word
 - Navicat
 - Paw
+- SkyFonts
 - Transmit
 
 ## User Files

@@ -52,13 +52,23 @@ ln -s ~/Projects/macos-prime ~/prime
 #### Cloud
 
 - [iCloud](https://www.icloud.com)
+  - iCloud Drive
+    - Automator
+    - Byword
+    - Preview
+    - System Preferences
+    - Terminal
+    - TextEdit
+    - Voice Memos
+    - Weather
+  - Photos
+    - Shared Albums
   - Calendars
   - Contacts
   - Find My Mac
   - Keychain
   - News
   - Notes
-  - Photos > Shared Albums
   - Reminders
   - Safari
 

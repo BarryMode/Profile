@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2018<br>
+Copyright (c) 2019<br>
 mathiasbynens <https://mathiasbynens.be><br>
 BarryMode <https://barrymode.com>
 

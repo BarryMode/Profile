@@ -90,6 +90,7 @@ brew cask install qlcolorcode    # Preview source code files with syntax highlig
 brew cask install qlimagesize    # Display image size and resolution
 brew cask install qlmarkdown     # Preview Markdown files
 brew cask install qlvideo        # Preview most types of video files, as well as their thumbnails, cover art and metadata
+brew cask install quicklook-json # Preview JSON files
 
 # Install GUI Apps
 brew cask install 1clipboard

@@ -100,7 +100,18 @@ alias tree='tree -C'
 ###############
 
 # update: Get macOS Software Updates, update packages, and general cleanup
-alias update='softwareupdate -i -a; update_dotfiles --force; brew update-reset; brew update; brew upgrade; brew missing; brew cask upgrade; brew cleanup; brew prune; apm update --no-confirm; gem update --system; gem update --force; gem cleanup; npm update -g; npm i -g npm; pip install --upgrade pip; yarn cache clean; cp ~/.atom/*.* ~/prime/dotfiles/.atom/; clearclipboard; clearlogs; emptytrash';
+alias update="(
+  softwareupdate -i -a;
+  update_dotfiles --force;
+  brew update-reset; brew update; brew upgrade; brew missing; brew cask upgrade; brew cleanup; brew prune;
+  apm update --no-confirm;
+  gem update --system; gem update --force; gem cleanup;
+  npm update -g; npm i -g npm; npm cache clean --force;
+  pip install --upgrade pip;
+  yarn cache clean;
+  cp ~/.atom/*.* ~/prime/dotfiles/.atom/;
+  clearclipboard; clearcache; clearlogs; emptytrash
+)"
 
 # Update dotfiles
 alias update_dotfiles='~/prime/dotfiles/install.sh'
@@ -113,6 +124,14 @@ alias dscleanup="find . -type f -name '*.DS_Store' -ls -delete"
 
 # Clear clipboard
 alias clearclipboard="pbcopy < /dev/null"
+
+# Clear cache
+alias clearcache="(
+  rm -rf .cache;
+  rm -rf .composer/cache;
+  rm -rf .expo/*cache;
+  rm -rf .gradle/caches
+)"
 
 # Clear Apple's System Logs to improve shell startup speed.
 # Clear download history from quarantine.

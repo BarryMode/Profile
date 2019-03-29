@@ -85,12 +85,11 @@ brew cask install java
 brew cask install font-open-sans
 brew cask install font-raleway
 
-# Markdown support for Quick Look
-brew cask install qlmarkdown
-# Video support for Quick Look
-brew cask install qlvideo
+# Quick Look plugins (https://github.com/sindresorhus/quick-look-plugins)
 brew cask install qlcolorcode    # Preview source code files with syntax highlighting
 brew cask install qlimagesize    # Display image size and resolution
+brew cask install qlmarkdown     # Preview Markdown files
+brew cask install qlvideo        # Preview most types of video files, as well as their thumbnails, cover art and metadata
 
 # Install GUI Apps
 brew cask install 1clipboard

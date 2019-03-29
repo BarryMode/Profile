@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-# Make Atom the default editor.
-export EDITOR='atom -nw';
+# Make Sublime Text the default editor.
+export EDITOR='subl -nw';
 
 # Enable persistent REPL history for `node`.
 export NODE_REPL_HISTORY=~/.node_history;

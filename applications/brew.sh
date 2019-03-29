@@ -90,6 +90,7 @@ brew cask install qlmarkdown
 # Video support for Quick Look
 brew cask install qlvideo
 brew cask install qlcolorcode    # Preview source code files with syntax highlighting
+brew cask install qlimagesize    # Display image size and resolution
 
 # Install GUI Apps
 brew cask install 1clipboard

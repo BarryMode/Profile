@@ -136,9 +136,11 @@ function video_encode() {
   filetype=${1:-mp4}
   video_codec=${2:-copy}
   audio_codec=${3:-copy}
+  output=${4:-output}
+  mkdir -p $output
   for i in *.mkv *.webm *.flv *.vob *.ogg *.ogv *.drc *gifv *.mng *.avi *.mov *.qt *.wmv *.yuv *.rm *.rmvb *.asf *.amv *.mp4 *.m4v *.mp *.m?v *.svi *.3gp *.flv *.f4v;
   do
-    ffmpeg -i "$i" -map 0 -c:v $video_codec -c:a $audio_codec -nostats -loglevel 0 "./output/${i/${i##*.}/$filetype}";
+    ffmpeg -i "$i" -map 0 -c:v $video_codec -c:a $audio_codec -nostats -loglevel 0 "./$output/${i/${i##*.}/$filetype}";
   done
 }
 

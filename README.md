@@ -26,13 +26,13 @@ ln -s ~/Projects/macos-prime ~/prime
 ## Other Applications
 
 - Adobe Suite
-- CleanMyMac
 - Cinemagraph Pro
-- EdgeView 2
+- CleanMyMac
+- EdgeView
 - FileBot
 - FL Studio
 - Icons8
-- Luminar 3
+- Luminar
 - Microsoft Excel
 - Microsoft Word
 - Navicat

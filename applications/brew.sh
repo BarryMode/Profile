@@ -94,7 +94,6 @@ brew cask install quicklook-json # Preview JSON files
 brew cask install webpquicklook  # Preview WebP images
 
 # Install GUI Apps
-brew cask install 1clipboard
 brew cask install audio-hijack
 brew cask install authy
 brew cask install bitwarden

@@ -54,14 +54,7 @@ ln -s ~/Projects/macos-prime ~/prime
 
 - [iCloud](https://www.icloud.com)
   - iCloud Drive
-    - Automator
-    - Byword
-    - Preview
-    - System Preferences
-    - Terminal
-    - TextEdit
-    - Voice Memos
-    - Weather
+    - App Files
   - Photos
     - Shared Albums
   - Calendars

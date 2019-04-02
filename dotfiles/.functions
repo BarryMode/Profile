@@ -99,7 +99,7 @@ function md5() { echo -n "$1" | openssl md5; }
 function sha1() { echo -n "$1" | openssl sha1; }
 
 # wp_plugin_dl: Download the latest version of any WordPress plugin by slug
-function wp_plugin_dl() { wget -P "~/downloads/" "https://downloads.wordpress.org/plugin/$1.latest-stable.zip"; }
+function wp_plugin_dl() { wget -P ~/downloads/ "https://downloads.wordpress.org/plugin/$1.latest-stable.zip"; }
 
 # resize: optimal settings for resizing images
 # parameters - size (width in pixels, height is automatic), file, outputdir

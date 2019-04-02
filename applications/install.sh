@@ -15,10 +15,6 @@ chmod +x *.sh
 # https://github.com/mirror/wget
 ./wget.sh
 
-# apm: Atom Package Manager
-# https://github.com/atom/apm
-./apm.sh
-
 # Composer: dependency manager for PHP
 # https://github.com/composer/composer
 ./composer.sh

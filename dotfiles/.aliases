@@ -19,7 +19,6 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias ~.="cd ~"
-alias -- -="cd -"
 
 # Make directories recursively (ex. `my/tree` will make both folders)
 alias mkdir="mkdir -p"

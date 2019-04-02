@@ -36,6 +36,7 @@ ln -s ~/Projects/macos-prime ~/prime
 - Microsoft Excel
 - Microsoft Word
 - Navicat
+- Paste
 - Paw
 - Transmit
 

@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+# sbin path | added to validate `brew doctor`
 export PATH="$PATH:/usr/local/sbin"
 
 # autojump path
@@ -11,5 +12,5 @@ export PATH="$PATH:~/.composer/vendor/bin"
 # Node path
 export PATH="$PATH:/usr/local/opt/node@8/bin"
 
-# QT path
+# QT path | for building QT apps
 export PATH="$PATH:$(find /usr/local/Cellar/qt/* -maxdepth 0 -type d | head -1)/bin"

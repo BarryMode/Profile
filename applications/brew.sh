@@ -66,7 +66,6 @@ brew install p7zip
 brew install php
 brew install pup # Parsing HTML at the command line
 brew install python
-brew install qt5 # for Grabber
 brew install rename # This program renames files according to modification rules specified on the command line
 brew install ripgrep
 brew install ruby

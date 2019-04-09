@@ -52,8 +52,8 @@ brew install screen
 # Install other useful binaries.
 brew install autojump # A cd command that learns - easily navigate directories from the command line
 brew install cmake
-brew install composer # for php packages
 brew install ffmpeg --with-x265
+brew install composer # Composer - Dependency Manager for PHP
 brew install gcc
 brew install git
 brew install hub

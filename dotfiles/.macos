@@ -20,11 +20,6 @@ if [[ mac ]]; then
   sudo scutil --set LocalHostName "varia"
   sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "varia"
 
-  # Control usr/local
-  sudo chown -R $(whoami):admin /usr/local
-  # Control Ruby/Gems
-  sudo chown -R $(whoami):admin /Library/Ruby/Gems
-
   # Allow all apps to be installed
   sudo spctl --master-disable
 

@@ -61,7 +61,6 @@ brew install imagemagick ghostscript
 brew install lynx # Text-based Web Browser
 brew install mas # Mac App Store command line interface
 brew install megatools
-brew install node
 brew install p7zip
 brew install php
 brew install pup # Parsing HTML at the command line
@@ -72,7 +71,7 @@ brew install ruby
 brew install tag # A command line tool to manipulate tags on Mac OS X files, and to query for files with those tags
 brew install tree
 brew install wp-cli
-brew install yarn --without-node # Fast, reliable, and secure dependency management
+brew install yarn # Fast, reliable, and secure dependency management
 brew install youtube-dl # Command-line program to download videos from YouTube.com and other video sites
 
 # Install Java

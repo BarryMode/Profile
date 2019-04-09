@@ -135,18 +135,6 @@ brew cask install virtualbox && brew cask install local-by-flywheel
 brew cask install xmind-zen
 brew cask install yacreader
 
-# Create symlinks for unlinked apps
-brew linkapps
-
-# Update ruby path to the brew version
-brew link --overwrite ruby
-
-# Recreate all symlinks, add --force to also process keg-only formula
-# brew list -1 | while read line; do brew unlink $line; brew link $line; done
-
-# Remove dead symlinks
-brew prune
-
 # Clean the "Cellar" removing any older versions of installed formulae and clearing old downloads
 brew cleanup
 

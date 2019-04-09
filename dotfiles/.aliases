@@ -4,7 +4,7 @@
 # System #
 ##########
 
-# Enable aliases to be sudo’ed
+# Enable aliases to be sudoed
 alias sudo='sudo '
 
 # Opens current directory in Finder
@@ -165,7 +165,7 @@ alias flush="dscacheutil -flushcache && killall -HUP mDNSResponder"
 # Terminal #
 ############
 
-# Ring the terminal bell, and put a badge on Terminal.app’s Dock icon
+# Ring the terminal bell, and put a badge on Terminal.app's Dock icon
 # (useful when executing time-consuming commands)
 alias badge="tput bel"
 

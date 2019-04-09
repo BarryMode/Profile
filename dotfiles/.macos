@@ -3,7 +3,7 @@
 mac=$(test "`uname`" == "Darwin")
 
 if [[ mac ]]; then
-  # Close any open System Preferences panes, to prevent them from overriding settings we’re about to change
+  # Close any open System Preferences panes, to prevent them from overriding settings we're about to change
   osascript -e 'tell application "System Preferences" to quit'
   # Ask for the administrator password upfront
   sudo -v
@@ -64,16 +64,16 @@ if [[ mac ]]; then
   # General: never go into computer sleep mode
   sudo systemsetup -setcomputersleep Off > /dev/null
 
-  # Disable automatic capitalization as it’s annoying when typing code
+  # Disable automatic capitalization as it's annoying when typing code
   defaults write NSGlobalDomain NSAutomaticCapitalizationEnabled -bool false
 
-  # General: enable smart dashes as they’re annoying when typing code
+  # General: enable smart dashes as they're annoying when typing code
   defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
 
-  # Disable automatic period substitution as it’s annoying when typing code
+  # Disable automatic period substitution as it's annoying when typing code
   defaults write NSGlobalDomain NSAutomaticPeriodSubstitutionEnabled -bool false
 
-  # Disable smart quotes as they’re annoying when typing code
+  # Disable smart quotes as they're annoying when typing code
   defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
 
   # Disable auto-correct
@@ -90,7 +90,7 @@ if [[ mac ]]; then
   sudo rm /private/var/vm/sleepimage
   # Create a zero-byte file instead…
   sudo touch /private/var/vm/sleepimage
-  # …and make sure it can’t be rewritten
+  # …and make sure it can't be rewritten
   sudo chflags uchg /private/var/vm/sleepimage
 
   ###############################################################################
@@ -125,7 +125,7 @@ if [[ mac ]]; then
   defaults write com.apple.BezelServices kDimTime -int 300
 
   # Set language and text formats
-  # Note: if you’re in the US, replace `EUR` with `USD`, `Centimeters` with
+  # Note: if you're in the US, replace `EUR` with `USD`, `Centimeters` with
   # `Inches`, `en_GB` with `en_US`, and `true` with `false`.
   defaults write NSGlobalDomain AppleLanguages -array "en" "us"
   defaults write NSGlobalDomain AppleLocale -string "en_US@currency=USD"
@@ -274,7 +274,7 @@ if [[ mac ]]; then
   # Finder: show the /Volumes folder
   sudo chflags nohidden /Volumes
 
-  # Finder: remove Dropbox’s green checkmark icons
+  # Finder: remove Dropbox's green checkmark icons
   file=/Applications/Dropbox.app/Contents/Resources/emblem-dropbox-uptodate.icns
   [ -e "${file}" ] && mv -f "${file}" "${file}.bak"
 
@@ -303,7 +303,7 @@ if [[ mac ]]; then
   # General: change minimize/maximize window effect (`genie`, `suck`, `scale`)
   defaults write com.apple.dock mineffect -string "genie"
 
-  # Dock: minimize windows into their application’s icon
+  # Dock: minimize windows into their application's icon
   defaults write com.apple.dock minimize-to-application -bool true
 
   # Dock: enable spring loading for all Dock items
@@ -384,7 +384,7 @@ if [[ mac ]]; then
   # Privacy: enable “Do Not Track”
   defaults write com.apple.Safari SendDoNotTrackHTTPHeader -bool true
 
-  # Privacy: don’t send search queries to Apple
+  # Privacy: don't send search queries to Apple
   defaults write com.apple.Safari UniversalSearchEnabled -bool false
   defaults write com.apple.Safari SuppressSearchSuggestions -bool true
 
@@ -395,10 +395,10 @@ if [[ mac ]]; then
   # Safari: Show the full URL in the address bar (note: this still hides the scheme)
   defaults write com.apple.Safari ShowFullURLInSmartSearchField -bool true
 
-  # Set Safari’s home page to `about:blank` for faster loading
+  # Set Safari's home page to `about:blank` for faster loading
   # defaults write com.apple.Safari HomePage -string "about:blank"
 
-  # Safari: automatically open ‘safe’ files after downloading
+  # Safari: automatically open 'safe' files after downloading
   defaults write com.apple.Safari AutoOpenSafeDownloads -bool false
 
   # Safari: hit the backspace key to go to the previous page in history
@@ -647,7 +647,7 @@ EOD
   # Disable automatic emoji substitution (i.e. use plain text smilies)
   defaults write com.apple.messageshelper.MessageController SOInputLineSettings -dict-add "automaticEmojiSubstitutionEnablediMessage" -bool false
 
-  # Disable smart quotes as it’s annoying for messages that contain code
+  # Disable smart quotes as it's annoying for messages that contain code
   defaults write com.apple.messageshelper.MessageController SOInputLineSettings -dict-add "automaticQuoteSubstitutionEnabled" -bool false
 
   # Disable continuous spell checking

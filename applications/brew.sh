@@ -61,6 +61,7 @@ brew install imagemagick ghostscript
 brew install lynx # Text-based Web Browser
 brew install mas # Mac App Store command line interface
 brew install megatools
+brew install n # Node version management
 brew install p7zip
 brew install php
 brew install pup # Parsing HTML at the command line

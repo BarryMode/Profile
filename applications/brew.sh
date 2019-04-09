@@ -50,7 +50,6 @@ brew install openssh
 brew install screen
 
 # Install other useful binaries.
-brew install ack # a tool like grep, optimized for programmers
 brew install autojump # A cd command that learns - easily navigate directories from the command line
 brew install cmake
 brew install composer # for php packages

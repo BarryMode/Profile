@@ -643,7 +643,6 @@ EOD
   ###############################################################################
 
 for app in "Activity Monitor" \
-  "Address Book" \
   "Calendar" \
   "cfprefsd" \
   "Contacts" \

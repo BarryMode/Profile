@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 
-# sbin path | added to validate `brew doctor`
 export PATH="$PATH:/usr/local/sbin"
+# sbin path - added to validate `brew doctor`
 
+# composer path
 
-# Composer path
 export PATH="$PATH:~/.composer/vendor/bin"
 
-# Node path
 export PATH="$PATH:/usr/local/opt/node@8/bin"
 
+# ruby path - Use brew version

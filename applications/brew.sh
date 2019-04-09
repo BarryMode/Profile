@@ -56,7 +56,7 @@ brew install composer # Composer - Dependency Manager for PHP
 brew install ffmpeg
 brew install gcc
 brew install git
-brew install hub
+brew install hub # A command-line tool that makes git easier to use with GitHub.
 brew install imagemagick ghostscript
 brew install lynx # Text-based Web Browser
 brew install mas # Mac App Store command line interface

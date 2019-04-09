@@ -4,7 +4,6 @@
 export PATH="/usr/local/sbin:$PATH"
 
 # composer path
-export PATH="$PATH:/usr/local/opt/node@8/bin"
 # export PATH="~/.composer/vendor/bin:$PATH"
 
 # ruby path - Use brew version

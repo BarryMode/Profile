@@ -653,8 +653,7 @@ for app in "Activity Monitor" \
   "Photos" \
   "Safari" \
   "SystemUIServer" \
-  "Terminal" \
-  "iCal"; do
+  "Terminal"; do
   killall "${app}" &> /dev/null
   done
   echo "Done."

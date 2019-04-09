@@ -9,7 +9,7 @@ npm update -g
 npm install -g @angular/cli
 npm install -g bower
 npm install -g corsproxy-https
-npm install -g ghost-cli@latest
+npm install -g ghost-cli
 npm install -g grunt-cli
 npm install -g gulp-cli
 npm install -g ionic

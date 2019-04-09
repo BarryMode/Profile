@@ -3,8 +3,6 @@
 # sbin path | added to validate `brew doctor`
 export PATH="$PATH:/usr/local/sbin"
 
-# autojump path
-[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
 
 # Composer path
 export PATH="$PATH:~/.composer/vendor/bin"

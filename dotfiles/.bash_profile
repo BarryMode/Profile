@@ -9,6 +9,10 @@ for file in ~/.{path,bash_prompt,exports,aliases,functions,extra}; do
 done;
 unset file;
 
+# autojump - a faster way to navigate your filesystem
+# https://github.com/wting/autojump
+[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
+
 # Case-insensitive globbing (used in pathname expansion)
 shopt -s nocaseglob;
 

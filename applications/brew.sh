@@ -57,7 +57,7 @@ brew install ffmpeg
 brew install gcc
 brew install git
 brew install hub
-brew install imagemagick --with-webp ghostscript
+brew install imagemagick ghostscript
 brew install lynx # Text-based Web Browser
 brew install mas # Mac App Store command line interface
 brew install megatools

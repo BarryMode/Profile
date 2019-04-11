@@ -3,13 +3,13 @@
 cd ~/prime/applications/
 chmod +x *.sh
 
-# Brew - The missing package manager for macOS
-# https://github.com/Homebrew/brew
-./brew.sh
-
 # MAS - Mac App Store command line interface
 # https://github.com/mas-cli/mas
 ./mas.sh
+
+# Brew - The missing package manager for macOS
+# https://github.com/Homebrew/brew
+./brew.sh
 
 # Wget - A computer program that retrieves content from web servers
 # https://github.com/mirror/wget

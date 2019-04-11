@@ -321,9 +321,6 @@ if [[ mac ]]; then
   # General: disable Dashboard
   defaults write com.apple.dashboard mcx-disabled -bool true
 
-  # General: enable Dashboard as an overlay
-  defaults write com.apple.dock dashboard-in-overlay -bool true
-
   # General: automatically rearrange Spaces based on most recent use
   defaults write com.apple.dock mru-spaces -bool false
 

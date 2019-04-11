@@ -643,6 +643,13 @@ EOD
   defaults write com.apple.TextEdit PlainTextEncodingForWrite -int 4
 
   ###############################################################################
+  # Sublime Text                                                                #
+  ###############################################################################
+
+  # Install Sublime Text settings
+  cp -r init/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text*/Packages/User/Preferences.sublime-settings 2> /dev/null
+
+  ###############################################################################
   # Kill affected applications                                                  #
   ###############################################################################
 
@@ -655,6 +662,7 @@ for app in "Activity Monitor" \
   "Messages" \
   "Photos" \
   "Safari" \
+  "Sublime Text" \
   "SystemUIServer" \
   "Terminal"; do
   killall "${app}" &> /dev/null

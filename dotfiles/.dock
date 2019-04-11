@@ -36,8 +36,14 @@ function reset_dock {
 # WARNING: permanently clears existing dock
 clear_dock
 
-add_app_to_dock "System Preferences"
-add_app_to_dock "Activity Monitor"
+add_app_to_dock "Firefox"
+add_app_to_dock "News"
+add_app_to_dock "IINA"
+add_app_to_dock "Plex Media Player"
+add_app_to_dock "Notes"
+add_app_to_dock "Sublime Text"
+add_app_to_dock "Terminal"
+add_app_to_dock "JDownloader2"
 add_spacer_to_dock
 
 killall Dock

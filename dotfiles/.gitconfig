@@ -134,4 +134,5 @@
   log = true
 
 [push]
+  # https://git-scm.com/docs/git-config#git-config-pushdefault
   default = simple

@@ -355,6 +355,7 @@ if [[ mac ]]; then
   # 10: Put display to sleep
   # 11: Launchpad
   # 12: Notification Center
+  # 13: Lock Screen
   # Top left screen corner → Disabled
   defaults write com.apple.dock wvous-tl-corner -int 0
   defaults write com.apple.dock wvous-tl-modifier -int 0

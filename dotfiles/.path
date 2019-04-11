@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
-# sbin path - added to validate `brew doctor`
+# sbin - added to validate `brew doctor`
 export PATH="/usr/local/sbin:$PATH"
 
-# composer path
+# composer
 # export PATH="~/.composer/vendor/bin:$PATH"
 
-# ruby path - Use brew version
+# ruby
 export PATH="/usr/local/opt/ruby/bin:$PATH"

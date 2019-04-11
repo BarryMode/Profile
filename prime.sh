@@ -51,6 +51,8 @@ case ${answer:0:1} in
   y )
   echo 'Installing Applications…'
   ~/prime/applications/install.sh
+  echo 'Assembling Dock…'
+  ~/.dock
   ;;
 esac
 

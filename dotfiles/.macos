@@ -373,7 +373,7 @@ if [[ mac ]]; then
   # Safari & WebKit                                                             #
   ###############################################################################
 
-  # Privacy: enable “Do Not Track”
+  # Privacy: enable "Do Not Track"
   defaults write com.apple.Safari SendDoNotTrackHTTPHeader -bool true
 
   # Deny location services access from websites

@@ -9,6 +9,9 @@ brew update
 # Upgrade any already-installed formulae.
 brew upgrade
 
+# Homebrew's installed location.
+BREW_PREFIX=$(brew --prefix)
+
 # Tap dependencies
 brew tap homebrew/bundle
 brew tap homebrew/cask-versions
@@ -32,9 +35,9 @@ brew install gnu-sed --with-default-names
 brew install bash
 brew install bash-completion2
 # Switch to using brew-installed bash as default shell
-if ! fgrep -q '/usr/local/bin/bash' /etc/shells; then
-  echo '/usr/local/bin/bash' | sudo tee -a /etc/shells;
-  chsh -s /usr/local/bin/bash;
+if ! fgrep -q "${BREW_PREFIX}/bin/bash" /etc/shells; then
+  echo "${BREW_PREFIX}/bin/bash" | sudo tee -a /etc/shells;
+  chsh -s "${BREW_PREFIX}/bin/bash";
 fi;
 
 # Install `wget`

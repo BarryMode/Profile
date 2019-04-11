@@ -151,7 +151,7 @@ if [[ mac ]]; then
   ###############################################################################
 
   # General: disable download history
-  ln -s /dev/null ~/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV2
+  ln -sf /dev/null ~/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV2
 
   # General: disable recent places list, the integer is the number of items stored in the list
   defaults write -g NSNavRecentPlacesLimit -int 0

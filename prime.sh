@@ -2,7 +2,7 @@
 
 # macOS Prime
 echo 'macOS Prime'
-ln -s ~/Projects/macos-prime ~/prime
+ln -sf ~/Projects/macos-prime ~/prime
 
 echo; echo ---; echo
 

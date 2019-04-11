@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
 # macOS Prime
-echo 'Welcome to macOS Prime.'
 
 # clone_check: check if you have a repo
 # example: clone_check https://github.com/user/repo.git ~/Projects/GitHub/repo
@@ -23,9 +22,11 @@ function link_check() {
 }
 
 link_check ~/Projects/macos-prime ~/prime
+echo 'macOS Prime'
 
 echo; echo ---; echo
 
+# Dot Files
 read -p 'Install Dotfiles? (y/n) ' answer
 case ${answer:0:1} in
   y )
@@ -37,6 +38,7 @@ esac
 echo; echo ---; echo
 
 read -p 'Install macOS Preferences? (y/n) ' answer
+# Applications
 case ${answer:0:1} in
   y )
   echo 'Installing macOS Preferences…'
@@ -47,6 +49,7 @@ esac
 echo; echo ---; echo
 
 read -p 'Install Applications? (y/n) ' answer
+# macOS Preferences
 case ${answer:0:1} in
   y )
   echo 'Installing Applications…'
@@ -58,6 +61,7 @@ esac
 
 echo; echo ---; echo
 
+# Hosts
 read -p 'Install Hosts? (y/n) ' answer
 case ${answer:0:1} in
   y )

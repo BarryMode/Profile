@@ -435,8 +435,9 @@ if [[ mac ]]; then
   defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2PluginsEnabled -bool true
 
   # Safari: enable Java
-  defaults write com.apple.Safari WebKitJavaEnabled -bool true
-  defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2JavaEnabled -bool true
+  defaults write com.apple.Safari WebKitJavaEnabled -bool false
+  defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2JavaEnabled -bool false
+  defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2JavaEnabledForLocalFiles -bool false
 
   # Safari: warn about fraudulent websites
   defaults write com.apple.Safari WarnAboutFraudulentWebsites -bool true

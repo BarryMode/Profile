@@ -31,7 +31,7 @@ brew install findutils
 # Install GNU `sed`, overwriting the built-in `sed`.
 brew install gnu-sed
 
-# Install Bash 4
+# Install Bash
 brew install bash
 brew install bash-completion2
 # Switch to using brew-installed bash as default shell

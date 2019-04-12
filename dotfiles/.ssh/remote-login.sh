@@ -27,10 +27,14 @@ dseditgroup -o create -q com.apple.access_ssh
 dseditgroup -o edit -a admin -t group com.apple.access_ssh
 
 # Presets for sshd_config
-sed -i 's/#Port 22/Port 22/g' /etc/ssh/sshd_config
-sed -i 's/#PasswordAuthentication no/PasswordAuthentication no/g' /etc/ssh/sshd_config
-sed -i 's/#PermitEmptyPasswords no/PermitEmptyPasswords no/g' /etc/ssh/sshd_config
-sed -i 's/#AllowTcpForwarding yes/AllowTcpForwarding yes/g' /etc/ssh/sshd_config
+  sed -i 's/#Port 22/Port 22/g' /etc/ssh/sshd_config
+  # Enable password authentication
+  sed -i 's/#PasswordAuthentication no/PasswordAuthentication yes/g' /etc/ssh/sshd_config
+  # Allow empty passwords
+  sed -i 's/#PermitEmptyPasswords no/PermitEmptyPasswords no/g' /etc/ssh/sshd_config
+  # Allow tcp forwarding
+  sed -i 's/#AllowTcpForwarding yes/AllowTcpForwarding yes/g' /etc/ssh/sshd_config
+
 # Restart ssh
 launchctl unload -w /System/Library/LaunchDaemons/ssh.plist
 launchctl load -w /System/Library/LaunchDaemons/ssh.plist
@@ -40,8 +44,8 @@ launchctl load -w /System/Library/LaunchDaemons/ssh.plist
 ############
 
 # Enable firewall port 22
-# sed -i '' -e '$a\pass in proto tcp from any to any port 22' /etc/pf.conf; pfctl -vnf /etc/pf.conf
+sed -i '' -e '$a\pass in proto tcp from any to any port 22' /etc/pf.conf; pfctl -vnf /etc/pf.conf
 
 # Restart firewall
-# launchctl unload -w /System/Library/LaunchDaemons/com.apple.pfctl.plist
-# launchctl load -w /System/Library/LaunchDaemons/com.apple.pfctl.plist
+launchctl unload -w /System/Library/LaunchDaemons/com.apple.pfctl.plist
+launchctl load -w /System/Library/LaunchDaemons/com.apple.pfctl.plist

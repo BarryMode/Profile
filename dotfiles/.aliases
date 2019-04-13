@@ -102,7 +102,7 @@ alias update="(
   sudo -v
   update_dotfiles --force;
   mas upgrade;
-  brew update-reset; brew upgrade; brew missing; brew cask upgrade; brew cleanup; brew prune;
+  brew update-reset; brew upgrade; brew missing; brew cask upgrade; brew cleanup;
   gem update --system; gem update --force; gem cleanup;
   npm update -g; npm i -g npm; npm cache clean --force;
   pip install --upgrade pip;

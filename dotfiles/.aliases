@@ -107,6 +107,7 @@ alias update="(
   npm update -g; npm i -g npm; npm cache clean --force;
   pip install --upgrade pip;
   yarn upgrade; yarn cache clean;
+  cp ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/*.sublime-settings ~/prime/dotfiles/init/;
   softwareupdate -i -a
   clearclipboard; clearcache; clearlogs; emptytrash
 )"

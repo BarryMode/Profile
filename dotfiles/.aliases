@@ -192,6 +192,5 @@ alias mergepdf='/System/Library/Automator/Combine\ PDF\ Pages.action/Contents/Re
 # Open programs
 alias ccg='/Applications/LackeyCCG/LackeyCCG.app/Contents/MacOS/LackeyCCG'
 
-# Alias for 'youtube-dl'
-# alias vget='youtube-dl'
+# Alias for `youtube-dl`
 alias vget="youtube-dl -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4'"

@@ -1,18 +1,10 @@
 #!/usr/bin/env bash
 
-# Install latest NPM
-npm install -g npm@latest
+# Install NPM
+npm install -g npm
 
 # Update already installed Node packages
 npm update -g
 
-npm install -g @angular/cli
-npm install -g bower
-npm install -g corsproxy-https
-npm install -g ghost-cli
-npm install -g grunt-cli
-npm install -g gulp-cli
+npm install -g cordova # for building with ionic (at least v1)
 npm install -g ionic
-npm install -g lodash
-npm install -g moment
-npm install -g video.js

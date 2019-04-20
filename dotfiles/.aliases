@@ -194,3 +194,6 @@ alias ccg='/Applications/LackeyCCG/LackeyCCG.app/Contents/MacOS/LackeyCCG'
 
 # Alias for `youtube-dl`
 alias vget="youtube-dl -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4'"
+
+# When audio isn't working
+alias reset_audio='sudo killall coreaudiod'

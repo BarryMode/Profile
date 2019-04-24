@@ -38,9 +38,6 @@ if ! fgrep -q "${BREW_PREFIX}/bin/bash" /etc/shells; then
   chsh -s "${BREW_PREFIX}/bin/bash";
 fi;
 
-# Install `wget`
-brew install wget
-
 # Install GPG and pinentry to enable PGP-signing commits in GitHub Desktop.
 brew install gpg pinentry-mac
 
@@ -72,6 +69,7 @@ brew install ripgrep # ripgrep recursively searches directories for a regex patt
 brew install ruby
 brew install tag # A command line tool to manipulate tags on Mac OS X files, and to query for files with those tags
 brew install tree
+brew install wget
 brew install wp-cli
 brew install yarn # Fast, reliable, and secure dependency management
 brew install youtube-dl # Command-line program to download videos from YouTube.com and other video sites

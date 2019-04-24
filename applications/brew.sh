@@ -14,10 +14,10 @@ BREW_PREFIX=$(brew --prefix)
 
 # Tap dependencies
 brew tap homebrew/bundle
+brew tap homebrew/cask-fonts
 brew tap homebrew/cask-versions
 brew tap homebrew/core
 brew tap homebrew/services
-brew tap caskroom/fonts
 
 # Install GNU core utilities (those that come with macOS are outdated)
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`

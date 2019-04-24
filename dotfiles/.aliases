@@ -109,7 +109,8 @@ alias update="(
   yarn upgrade; yarn cache clean;
   cp ~/Library/Application\ Support/Sublime\ Text*/Packages/User/*.sublime-settings ~/prime/dotfiles/init/;
   softwareupdate -i -a
-  clearclipboard; clearcache; clearlogs; emptytrash
+  clearclipboard; clearcache; clearlogs; emptytrash;
+  j --purge
 )"
 
 # Update dotfiles

@@ -38,9 +38,6 @@ if ! fgrep -q "${BREW_PREFIX}/bin/bash" /etc/shells; then
   chsh -s "${BREW_PREFIX}/bin/bash";
 fi;
 
-# Install GPG and pinentry to enable PGP-signing commits in GitHub Desktop.
-brew install gpg pinentry-mac
-
 # Install more recent versions of some macOS tools.
 brew install vim
 brew install grep
@@ -54,6 +51,7 @@ brew install composer # Composer - Dependency Manager for PHP
 brew install ffmpeg
 brew install gcc
 brew install git
+brew install gpg pinentry-mac # Install GPG and pinentry to enable PGP-signing commits in GitHub Desktop
 brew install hub # A command-line tool that makes git easier to use with GitHub.
 brew install imagemagick ghostscript
 brew install lynx # Text-based Web Browser

@@ -15,10 +15,10 @@ if [[ mac ]]; then
   ###############################################################################
 
   # Set computer name (as done via System Preferences → Sharing)
-  sudo scutil --set ComputerName "Varia"
-  sudo scutil --set HostName "varia"
-  sudo scutil --set LocalHostName "varia"
-  sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "varia"
+  sudo scutil --set ComputerName "Tallon IV"
+  sudo scutil --set HostName "tallon iv"
+  sudo scutil --set LocalHostName "tallon iv"
+  sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "tallon iv"
 
   # Allow all apps to be installed
   sudo spctl --master-disable

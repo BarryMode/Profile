@@ -26,9 +26,7 @@ alias mkdir="mkdir -p"
 alias c='clear'
 alias g='git'
 alias m='exiftool'
-
-# Make Symlinks
-alias shortcut="ln -s"
+alias s='ln -s'
 
 # Print each PATH entry on a separate line
 alias path='echo -e ${PATH//:/\\n}'

@@ -25,6 +25,7 @@ alias mkdir="mkdir -p"
 # Shortcuts
 alias c='clear'
 alias g='git'
+alias m='exiftool'
 
 # Make Symlinks
 alias shortcut="ln -s"

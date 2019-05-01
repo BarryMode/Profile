@@ -49,6 +49,7 @@ brew install autojump # A cd command that learns - easily navigate directories f
 brew install awk
 brew install cmake
 brew install composer # Composer - Dependency Manager for PHP
+brew install exiftool
 brew install ffmpeg
 brew install gcc
 brew install git

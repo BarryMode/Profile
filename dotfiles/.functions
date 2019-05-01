@@ -34,9 +34,6 @@ function fs() {
   fi;
 }
 
-# Filter metadata
-function metadata() { mdls -raw "$1" -name "$2"; }
-
 # Opens any file in MacOS Quicklook Preview
 function ql() { qlmanage -p "$*" >& /dev/null; }
 

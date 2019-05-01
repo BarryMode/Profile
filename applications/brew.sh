@@ -130,6 +130,7 @@ brew cask install steam
 brew cask install sublime-text
 brew cask install teamviewer
 brew cask install virtualbox && brew cask install local-by-flywheel
+brew cask install vlc
 brew cask install webtorrent
 brew cask install xmind-zen
 brew cask install yacreader

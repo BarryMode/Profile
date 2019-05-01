@@ -61,9 +61,6 @@ alias spotoff="sudo mdutil -a -i off"
 # Enable Spotlight indexing
 alias spoton="sudo mdutil -a -i on"
 
-# Make Grunt print stack traces by default
-command -v grunt > /dev/null && alias grunt="grunt --stack"
-
 ##########
 # Colors #
 ##########

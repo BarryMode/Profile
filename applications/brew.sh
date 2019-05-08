@@ -99,6 +99,7 @@ brew cask install carbon-copy-cloner
 brew cask install controlplane
 brew cask install crossover
 brew cask install cryptomator
+brew cask install discord
 brew cask install dolphin
 brew cask install easyfind
 brew cask install firefox

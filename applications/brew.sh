@@ -48,6 +48,7 @@ brew install screen
 brew install autojump # A cd command that learns - easily navigate directories from the command line
 brew install awk
 brew install cmake
+brew install cmatrix # matrix movie style green text
 brew install composer # Composer - Dependency Manager for PHP
 brew install exiftool
 brew install ffmpeg

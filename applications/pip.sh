@@ -8,3 +8,6 @@ pip install --upgrade pip
 
 # https://github.com/vn-ki/anime-downloader
 pip3 install --upgrade anime-downloader
+
+# https://github.com/mikf/gallery-dl
+pip3 install --upgrade gallery-dl

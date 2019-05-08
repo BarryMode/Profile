@@ -1,4 +1,4 @@
-# [macOS Prime](https://github.com/barrymode/macos-prime)
+# macOS Prime
 
 Automatically tailor my Mac
 

@@ -58,6 +58,10 @@ ln -s ~/Projects/macos-prime ~/prime
   - Reminders
   - Safari
 
+- [Keybase](https://keybase.io)
+  - Documents
+  - Music
+  - Pictures
 
 ### Backups
 

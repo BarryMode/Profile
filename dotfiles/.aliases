@@ -96,23 +96,23 @@ alias tree='tree -C'
 # update: Get macOS Software Updates, update packages, and general cleanup
 alias update="(
   sudo -v
-  update_dotfiles --force;
-  mas upgrade;
-  brew update-reset; brew upgrade; brew missing; brew cask upgrade; brew cleanup;
-  gem update --system; gem update --force; gem cleanup;
-  npm update -g; npm i -g npm; npm cache clean --force;
-  pip install --upgrade pip;
-  yarn upgrade; yarn cache clean;
-  cp ~/Library/Application\ Support/Sublime\ Text*/Packages/User/*.sublime-settings ~/prime/dotfiles/init/;
+  update_dotfiles --force
+  mas upgrade
+  brew update-reset; brew upgrade; brew missing; brew cask upgrade; brew cleanup
+  gem update --system; gem update --force; gem cleanup
+  npm update -g; npm i -g npm; npm cache clean --force
+  pip install --upgrade pip
+  yarn upgrade; yarn cache clean
+  cp ~/Library/Application\ Support/Sublime\ Text*/Packages/User/*.sublime-settings ~/prime/dotfiles/init/
   softwareupdate -i -a
-  clearclipboard; clearcache; clearlogs; emptytrash;
+  clearclipboard; clearcache; clearlogs; emptytrash
   j --purge
 )"
 
 # Update dotfiles
 alias update_dotfiles='~/prime/dotfiles/install.sh'
 
-# Clean up LaunchServices to remove duplicates in the “Open With” menu
+# Clean up LaunchServices to remove duplicates in the "Open With" menu
 alias lscleanup="/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder"
 
 # Recursively delete `.DS_Store` files
@@ -123,9 +123,9 @@ alias clearclipboard="pbcopy < /dev/null"
 
 # Clear cache
 alias clearcache="(
-  rm -rf .cache;
-  rm -rf .composer/cache;
-  rm -rf .expo/*cache;
+  rm -rf .cache
+  rm -rf .composer/cache
+  rm -rf .expo/*cache
   rm -rf .gradle/caches
 )"
 
@@ -134,7 +134,7 @@ alias clearcache="(
 alias clearlogs="sudo rm -rfv /private/var/log/asl/*.asl; sqlite3 ~/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV* 'delete from LSQuarantineEvent'"
 
 # Empty the Trash on all mounted volumes and the main HDD.
-alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash;"
+alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash"
 
 # Delete all empty subdirectories
 alias ded='find . -type d -empty -delete'
@@ -193,4 +193,4 @@ alias ccg='/Applications/LackeyCCG/LackeyCCG.app/Contents/MacOS/LackeyCCG'
 alias vget="youtube-dl -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4'"
 
 # When audio isn't working
-alias reset_audio='sudo killall coreaudiod'
+alias fix_audio='sudo killall coreaudiod'

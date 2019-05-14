@@ -17,12 +17,12 @@ esac
 
 echo; echo ---; echo
 
-# Applications
-read -p 'Install Applications? (y/n) ' answer
+# Packages
+read -p 'Install Packages? (y/n) ' answer
 case ${answer:0:1} in
   y )
-  echo 'Installing Applications…'
-  ~/prime/applications/install.sh
+  echo 'Installing Packages…'
+  ~/prime/packages/install.sh
   ;;
 esac
 

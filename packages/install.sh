@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-cd ~/prime/applications/
+cd ~/prime/packages/
 chmod +x *.sh
 
 # MAS - Mac App Store command line interface

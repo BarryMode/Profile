@@ -35,6 +35,7 @@ ln -s ~/Projects/macos-prime ~/prime
 - iMazing
 - Microsoft Excel
 - Microsoft Word
+- Mosaic
 - Navicat
 - Paste
 - Paw

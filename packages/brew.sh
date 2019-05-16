@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
 
 #=====================================#
-#  H O M E B R E W
+#  HOMEBREW
 #=====================================#
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew update && brew upgrade
 
 #=====================================#
-#  T A P  D E P E N D E N C I E S
+#  TAPS
 #=====================================#
 brew tap homebrew/bundle
 brew tap homebrew/cask-fonts
@@ -16,7 +16,7 @@ brew tap homebrew/core
 brew tap homebrew/services
 
 #=====================================#
-#  B A S H
+#  BASH
 #=====================================#
 brew install bash
 brew install bash-completion@2
@@ -28,7 +28,7 @@ if ! fgrep -q "${BREW_PREFIX}/bin/bash" /etc/shells; then
 fi;
 
 #=====================================#
-#  G N U
+#  GNU TOOLS
 #=====================================#
 brew install coreutils # Install GNU core utilities (those that come with macOS are outdated)
 brew install moreutils # Install some other useful utilities like `sponge`
@@ -36,7 +36,7 @@ brew install findutils # Install GNU `find`, `locate`, `updatedb`, and `xargs`, 
 brew install gnu-sed   # Install GNU `sed`, overwriting the built-in `sed`
 
 #=====================================#
-#  M A C O S  T O O L S
+#  MACOS TOOLS
 #=====================================#
 brew install vim
 brew install grep
@@ -44,7 +44,7 @@ brew install openssh
 brew install screen
 
 #=====================================#
-#  O T H E R  B I N A R I E S
+#  OTHER BINARIES
 #=====================================#
 brew install autojump # A cd command that learns - easily navigate directories from the command line
 brew install awk
@@ -78,13 +78,13 @@ brew install yarn # Fast, reliable, and secure dependency management
 brew install youtube-dl # Command-line program to download videos from YouTube.com and other video sites
 
 #=====================================#
-#  F O N T S
+#  FONTS
 #=====================================#
 brew cask install font-open-sans
 brew cask install font-raleway
 
 #=====================================#
-#  Q U I C K L O O K
+#  QUICKLOOK PLUGINS
 #=====================================#
 brew cask install qlcolorcode    # Preview source code files with syntax highlighting
 brew cask install qlimagesize    # Display image size and resolution
@@ -93,7 +93,7 @@ brew cask install qlvideo        # Preview most types of video files, as well as
 brew cask install quicklook-json # Preview JSON files
 
 #=====================================#
-#  A P P S
+#  APPS
 #=====================================#
 brew cask install audio-hijack
 brew cask install authy

@@ -89,7 +89,6 @@ brew cask install qlimagesize    # Display image size and resolution
 brew cask install qlmarkdown     # Preview Markdown files
 brew cask install qlvideo        # Preview most types of video files, as well as their thumbnails, cover art and metadata
 brew cask install quicklook-json # Preview JSON files
-brew cask install webpquicklook  # Preview WebP images
 
 # Install GUI Apps
 brew cask install audio-hijack

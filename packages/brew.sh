@@ -1,50 +1,51 @@
 #!/usr/bin/env bash
 
-# Install Homebrew
+#=====================================#
+#  H O M E B R E W
+#=====================================#
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+brew update && brew upgrade
 
-# Make sure we're using the latest Homebrew.
-brew update
-
-# Upgrade any already-installed formulae.
-brew upgrade
-
-# Homebrew's installed location.
-BREW_PREFIX=$(brew --prefix)
-
-# Tap dependencies
+#=====================================#
+#  T A P  D E P E N D E N C I E S
+#=====================================#
 brew tap homebrew/bundle
 brew tap homebrew/cask-fonts
 brew tap homebrew/cask-versions
 brew tap homebrew/core
 brew tap homebrew/services
 
-# Install GNU core utilities (those that come with macOS are outdated)
-# Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`
-brew install coreutils
-# Install some other useful utilities like `sponge`
-brew install moreutils
-# Install GNU `find`, `locate`, `updatedb`, and `xargs`, `g`-prefixed
-brew install findutils
-# Install GNU `sed`, overwriting the built-in `sed`.
-brew install gnu-sed
-
-# Install Bash
+#=====================================#
+#  B A S H
+#=====================================#
 brew install bash
-brew install bash-completion2
+brew install bash-completion@2
 # Switch to using brew-installed bash as default shell
+BREW_PREFIX=$(brew --prefix) # Homebrew's installed location
 if ! fgrep -q "${BREW_PREFIX}/bin/bash" /etc/shells; then
   echo "${BREW_PREFIX}/bin/bash" | sudo tee -a /etc/shells;
   chsh -s "${BREW_PREFIX}/bin/bash";
 fi;
 
-# Install more recent versions of some macOS tools.
+#=====================================#
+#  G N U
+#=====================================#
+brew install coreutils # Install GNU core utilities (those that come with macOS are outdated)
+brew install moreutils # Install some other useful utilities like `sponge`
+brew install findutils # Install GNU `find`, `locate`, `updatedb`, and `xargs`, `g`-prefixed
+brew install gnu-sed   # Install GNU `sed`, overwriting the built-in `sed`
+
+#=====================================#
+#  M A C O S  T O O L S
+#=====================================#
 brew install vim
 brew install grep
 brew install openssh
 brew install screen
 
-# Install other useful binaries.
+#=====================================#
+#  O T H E R  B I N A R I E S
+#=====================================#
 brew install autojump # A cd command that learns - easily navigate directories from the command line
 brew install awk
 brew install cmake
@@ -60,6 +61,7 @@ brew install imagemagick ghostscript
 brew install lynx # Text-based Web Browser
 brew install mas # Mac App Store command line interface
 brew install megatools
+brew install mysql
 brew install node
 brew install p7zip
 brew install php
@@ -75,22 +77,24 @@ brew install wp-cli
 brew install yarn # Fast, reliable, and secure dependency management
 brew install youtube-dl # Command-line program to download videos from YouTube.com and other video sites
 
-# Install Java
-# brew cask install homebrew/cask-versions/java8 # version 8
-brew cask install java
-
-# Install fonts
+#=====================================#
+#  F O N T S
+#=====================================#
 brew cask install font-open-sans
 brew cask install font-raleway
 
-# Quick Look plugins (https://github.com/sindresorhus/quick-look-plugins)
+#=====================================#
+#  Q U I C K L O O K
+#=====================================#
 brew cask install qlcolorcode    # Preview source code files with syntax highlighting
 brew cask install qlimagesize    # Display image size and resolution
 brew cask install qlmarkdown     # Preview Markdown files
 brew cask install qlvideo        # Preview most types of video files, as well as their thumbnails, cover art and metadata
 brew cask install quicklook-json # Preview JSON files
 
-# Install GUI Apps
+#=====================================#
+#  A P P S
+#=====================================#
 brew cask install audio-hijack
 brew cask install authy
 brew cask install bitwarden
@@ -114,12 +118,12 @@ brew cask install iina
 brew cask install image2icon
 brew cask install imageoptim
 brew cask install integrity
+brew cask install java
 brew cask install jdownloader
 brew cask install keka
 brew cask install keybase
 brew cask install lackeyccg
 brew cask install malwarebytes
-brew cask install mamp
 brew cask install obs
 brew cask install openemu
 brew cask install paparazzi
@@ -130,18 +134,15 @@ brew cask install station
 brew cask install steam
 brew cask install sublime-text
 brew cask install teamviewer
+brew cask install vanilla
 brew cask install virtualbox && brew cask install local-by-flywheel
 brew cask install vlc
 brew cask install webtorrent
 brew cask install xmind-zen
 brew cask install yacreader
 
-# Clean the "Cellar" removing any older versions of installed formulae and clearing old downloads
-brew cleanup
-
-# Remove all unused services
-brew services cleanup
-
-# Check for errors
-brew doctor
-brew cask doctor
+#=====================================#
+#  HOMEBREW MAINTENANCE
+#=====================================#
+brew cleanup && brew services cleanup
+brew doctor && brew cask doctor

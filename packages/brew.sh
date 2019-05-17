@@ -61,7 +61,13 @@ brew install imagemagick ghostscript
 brew install lynx # Text-based Web Browser
 brew install mas # Mac App Store command line interface
 brew install megatools
+
+# mySQL 8 does not work out of the box. You have to manually set a password even if it's blank. Here's how:
+# 1. mysqld_safe --skip-grant-tables &
+# 2. use mysql;
+# 3. UPDATE user SET authentication_string='' WHERE user='root';
 brew install mysql
+
 brew install node
 brew install p7zip
 brew install php

@@ -6,3 +6,4 @@ npm install -g npm
 # Update already installed Node packages
 npm update -g
 
+npm install -g n

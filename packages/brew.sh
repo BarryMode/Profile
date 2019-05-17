@@ -136,7 +136,6 @@ brew cask install paparazzi
 brew cask install paragon-ntfs
 brew cask install plex-media-player
 brew cask install protonvpn
-brew cask install rocket
 brew cask install station
 brew cask install steam
 brew cask install sublime-text

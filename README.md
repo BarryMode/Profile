@@ -61,8 +61,11 @@ ln -s ~/Projects/macos-prime ~/prime
 
 - [Keybase](https://keybase.io)
   - Documents
+  - Games
   - Music
   - Pictures
+  - Projects
+    - Archive
 
 ### Backups
 

@@ -130,6 +130,7 @@ brew cask install keka
 brew cask install keybase
 brew cask install lackeyccg
 brew cask install malwarebytes
+brew cask install megasync
 brew cask install obs
 brew cask install openemu
 brew cask install paparazzi

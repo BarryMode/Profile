@@ -140,6 +140,7 @@ brew cask install station
 brew cask install steam
 brew cask install sublime-text
 brew cask install teamviewer
+brew cask install telegram
 brew cask install vanilla
 brew cask install virtualbox && brew cask install local-by-flywheel
 brew cask install vlc

@@ -2,7 +2,7 @@
 
 Automatically tailor my Mac
 
-## [Dot Files](https://github.com/barrymode/macos-prime/tree/master/dotfiles), [Applications](https://github.com/barrymode/macos-prime/tree/master/applications), [macOS Preferences](https://github.com/barrymode/macos-prime/blob/master/dotfiles/.macos), and [Hosts](https://github.com/barrymode/macos-prime/tree/master/hosts)
+## [Dot Files](https://github.com/barrymode/macos-prime/tree/master/dotfiles), [Packages](https://github.com/BarryMode/macos-prime/tree/master/packages), [macOS Preferences](https://github.com/barrymode/macos-prime/blob/master/dotfiles/.macos), and [Hosts](https://github.com/barrymode/macos-prime/tree/master/hosts)
 
 ### One-line install
 
@@ -18,8 +18,8 @@ ln -s ~/Projects/macos-prime ~/prime
 ```
 
 1. Open Home Folder `cd ~`
-1. Install Applications `prime/packages/install.sh`
 1. Install Dot Files `prime/dotfiles/install.sh`
+1. Install Packages `prime/packages/install.sh`
 1. Install macOS Preferences `prime/dotfiles/.macos`
 1. Assemble Dock `prime/dotfiles/.dock`
 1. Install Hosts `prime/hosts/install.sh`

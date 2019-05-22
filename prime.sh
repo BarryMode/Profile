@@ -7,10 +7,10 @@ ln -sf ~/Projects/macos-prime ~/prime
 echo; echo ---; echo
 
 # Dot Files
-read -p 'Install Dotfiles? (y/n) ' answer
+read -p 'Install Dot Files? (y/n) ' answer
 case ${answer:0:1} in
   y )
-  echo 'Installing Dotfiles…'
+  echo 'Installing Dot Files…'
   ~/prime/dotfiles/install.sh
   ;;
 esac

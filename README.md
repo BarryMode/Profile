@@ -39,6 +39,7 @@ ln -s ~/Projects/macos-prime ~/prime
 - Navicat
 - Paste
 - Paw
+- Sketch
 - Transmit
 
 ## User Files

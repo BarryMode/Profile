@@ -51,6 +51,7 @@ brew install awk
 brew install cmake
 brew install cmatrix # matrix movie style green text
 brew install composer # Composer - Dependency Manager for PHP
+brew install deno # A secure JavaScript/TypeScript runtime built with V8, Rust, and Tokio
 brew install exiftool
 brew install ffmpeg
 brew install gcc

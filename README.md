@@ -29,6 +29,7 @@ ln -s ~/Projects/macos-prime ~/prime
 - Adobe Suite
 - Cinemagraph Pro
 - CleanMyMac
+- CloudMounter
 - FileBot
 - FL Studio
 - Icons8

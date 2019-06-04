@@ -27,6 +27,7 @@ ln -s ~/Projects/macos-prime ~/prime
 ## Other Applications
 
 - Adobe Suite
+- Atomic
 - Cinemagraph Pro
 - CleanMyMac
 - CloudMounter

@@ -68,8 +68,7 @@ ln -s ~/Projects/macos-prime ~/prime
   - Games
   - Music
   - Pictures
-  - Projects
-    - Archive
+  - Projects > Archive
 
 ### Backups
 

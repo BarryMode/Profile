@@ -73,7 +73,7 @@ ln -s ~/Projects/macos-prime ~/prime
 ### Backups
 
 - Tallon IV [Time Machine](https://support.apple.com/en-us/HT201250) on [WD Caviar Green 2TB](http://amzn.to/2zfBSAt)
-- Adler [RAID 1](https://en.wikipedia.org/wiki/Standard_RAID_levels#RAID_1) on [Synology NAS](http://amzn.to/2gvsjVY)
+- Adler [JBOD](https://en.wikipedia.org/wiki/Non-RAID_drive_architectures#JBOD) on [Synology NAS](http://amzn.to/2gvsjVY)
 
 ## Author
 

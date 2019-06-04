@@ -42,6 +42,7 @@ ln -s ~/Projects/macos-prime ~/prime
 - Paste
 - Paw
 - Sketch
+- Smart JSON Editor
 - Transmit
 
 ## User Files

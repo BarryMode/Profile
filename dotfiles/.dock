@@ -38,7 +38,6 @@ clear_dock
 
 add_app_to_dock "Firefox"
 add_app_to_dock "JDownloader2"
-add_app_to_dock "News"
 add_app_to_dock "Notes"
 add_app_to_dock "IINA"
 add_app_to_dock "Plex Media Player"

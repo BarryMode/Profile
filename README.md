@@ -37,7 +37,6 @@ ln -s ~/Projects/macos-prime ~/prime
 - Icons8
 - Microsoft Excel
 - Microsoft Word
-- Mosaic
 - Navicat
 - Paste
 - Paw

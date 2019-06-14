@@ -51,16 +51,13 @@ ln -s ~/Projects/macos-prime ~/prime
 - [iCloud](https://www.icloud.com)
   - iCloud Drive
     - App Files
-  - Photos
-    - Shared Albums
-  - Calendars
   - Contacts
-  - Find My Mac
-  - Keychain
-  - News
-  - Notes
+  - Calendars
   - Reminders
-  - Safari
+  - Notes
+  - Keychain
+  - Find My Mac
+  - News
 
 - [Keybase](https://keybase.io)
   - Documents

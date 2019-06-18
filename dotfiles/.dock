@@ -36,14 +36,14 @@ function reset_dock {
 # WARNING: permanently clears existing dock
 clear_dock
 
-add_app_to_dock "Firefox"
-add_app_to_dock "JDownloader2"
-add_app_to_dock "Notes"
-add_app_to_dock "IINA"
-add_app_to_dock "Plex Media Player"
-add_app_to_dock "Sublime Text"
-add_app_to_dock "GitHub Desktop"
-add_app_to_dock "Terminal"
-add_spacer_to_dock
+# add_app_to_dock "Firefox"
+# add_app_to_dock "JDownloader2"
+# add_app_to_dock "Notes"
+# add_app_to_dock "IINA"
+# add_app_to_dock "Plex Media Player"
+# add_app_to_dock "Sublime Text"
+# add_app_to_dock "GitHub Desktop"
+# add_app_to_dock "Terminal"
+# add_spacer_to_dock
 
 killall Dock

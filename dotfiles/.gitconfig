@@ -65,23 +65,9 @@
   # Force push
   publish = push --force
 
-[core]
-  editor = subl
-  # Use custom `.gitignore` and `.gitattributes`
-  excludesfile = ~/.gitignore
-  attributesfile = ~/.gitattributes
-
-  # Make `git rebase` safer on macOS
-  # More info: <http://www.git-tower.com/blog/make-git-rebase-safe-on-osx/>
-  trustctime = false
-
-  # Prevent showing files whose names contain non-ASCII symbols as unversioned.
-  # http://michael-kuehnel.de/git/2014/11/21/git-mac-osx-and-german-umlaute.html
-  precomposeunicode = false
-
-  # Speed up commands involving untracked files such as `git status`.
-  # https://git-scm.com/docs/git-update-index#_untracked_cache
-  untrackedCache = true
+[apply]
+  # Detect whitespace errors when applying a patch
+  whitespace = fix
 
 [color]
   diff = auto
@@ -102,18 +88,28 @@
   deleted = red
   untracked = yellow
 
-[apply]
-  # Detect whitespace errors when applying a patch
-  whitespace = fix
-
-[gpg]
-  # Path to GPG
-  program = /usr/local/bin/gpg
-
 [commit]
   # https://help.github.com/articles/generating-a-gpg-key/
   # Use "gpg2 --full-generate-key" for a full featured key generation dialog.
   gpgsign = true
+
+[core]
+  editor = subl
+  # Use custom `.gitignore` and `.gitattributes`
+  excludesfile = ~/.gitignore
+  attributesfile = ~/.gitattributes
+
+  # Make `git rebase` safer on macOS
+  # More info: <http://www.git-tower.com/blog/make-git-rebase-safe-on-osx/>
+  trustctime = false
+
+  # Prevent showing files whose names contain non-ASCII symbols as unversioned.
+  # http://michael-kuehnel.de/git/2014/11/21/git-mac-osx-and-german-umlaute.html
+  precomposeunicode = false
+
+  # Speed up commands involving untracked files such as `git status`.
+  # https://git-scm.com/docs/git-update-index#_untracked_cache
+  untrackedCache = true
 
 [diff]
   # Detect copies as well as renames
@@ -123,6 +119,10 @@
   # attempt to make the resulting patch easier to read.
   compactionHeuristic = true
   indentHeuristic = true
+
+[gpg]
+  # Path to GPG
+  program = /usr/local/bin/gpg
 
 [help]
   # Automatically correct and execute mistyped commands

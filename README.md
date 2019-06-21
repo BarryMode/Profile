@@ -31,7 +31,6 @@ ln -s ~/Projects/macos-prime ~/prime
 - Cinemagraph Pro
 - CleanMyMac
 - CloudMounter
-- EdgeView
 - FileBot
 - FL Studio
 - Icons8

@@ -29,19 +29,10 @@ ln -s ~/Projects/macos-prime ~/prime
 - Adobe Suite
 - Atomic
 - Cinemagraph Pro
-- CleanMyMac
-- CloudMounter
 - FileBot
-- FL Studio
-- Icons8
 - Microsoft Excel
 - Microsoft Word
-- Navicat
-- Paste
-- Paw
-- Sketch
 - Smart JSON Editor
-- Transmit
 
 ## User Files
 

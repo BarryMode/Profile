@@ -107,12 +107,15 @@ brew cask install authy
 brew cask install bitwarden
 brew cask install brave-browser
 brew cask install carbon-copy-cloner
+brew cask install cleanmymac
+brew cask install cloudmounter
 brew cask install controlplane
 brew cask install crossover
 brew cask install discord
 brew cask install dolphin
 brew cask install easyfind
 brew cask install firefox
+brew cask install fl-studio
 brew cask install flash-player
 brew cask install gemini
 brew cask install ghost
@@ -120,6 +123,7 @@ brew cask install github-desktop
 brew cask install grandperspective
 brew cask install handbrake
 brew cask install hex-fiend
+brew cask install icons8
 brew cask install iina
 brew cask install image2icon
 brew cask install imageoptim
@@ -130,17 +134,22 @@ brew cask install keybase
 brew cask install lackeyccg
 brew cask install malwarebytes
 brew cask install megasync
+brew cask install navicat-premium
 brew cask install obs
 brew cask install openemu
 brew cask install paparazzi
 brew cask install paragon-ntfs
+brew cask install paste
+brew cask install paw
 brew cask install plex-media-player
 brew cask install protonvpn
+brew cask install sketch
 brew cask install station
 brew cask install steam
 brew cask install sublime-text
 brew cask install teamviewer
 brew cask install telegram
+brew cask install transmit
 brew cask install virtualbox && brew cask install local-by-flywheel
 brew cask install vlc
 brew cask install webtorrent

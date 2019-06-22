@@ -26,6 +26,7 @@ ln -s ~/Projects/macos-prime ~/prime
 
 ## Other Applications
 
+- Adobe Camera Raw
 - Adobe Suite
 - Atomic
 - Cinemagraph Pro

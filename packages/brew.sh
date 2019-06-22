@@ -102,6 +102,7 @@ brew cask install quicklook-json # Preview JSON files
 #=====================================#
 #  APPS
 #=====================================#
+brew cask install alfred
 brew cask install audio-hijack
 brew cask install authy
 brew cask install bitwarden

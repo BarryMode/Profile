@@ -56,3 +56,7 @@ complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes Syste
 # Add timestamps to history
 # Date/time formatting: http://www.acehints.com/2012/07/histtimeformat-how-to-see-linux.html
 HISTTIMEFORMAT="|  %F  |  %r  |  "
+
+# Tell SSH how to access gpg-agent by changing the value of SSH_AUTH_SOCK
+export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
+gpgconf --launch gpg-agent

@@ -77,6 +77,7 @@ brew install python
 brew install rename # This program renames files according to modification rules specified on the command line
 brew install ripgrep # ripgrep recursively searches directories for a regex pattern
 brew install ruby
+brew install ssh-copy-id
 brew install tag # A command line tool to manipulate tags on Mac OS X files, and to query for files with those tags
 brew install tree
 brew install wget

@@ -102,7 +102,6 @@ alias update="(
   gem update --system; gem update --force; gem cleanup
   npm update -g; npm i -g npm; npm cache clean --force
   pip install --upgrade pip
-  yarn upgrade; yarn cache clean
   cp ~/Library/Application\ Support/Sublime\ Text*/Packages/User/*.sublime-settings ~/prime/dotfiles/init/
   softwareupdate -i -a
   clearclipboard; clearcache; clearlogs; emptytrash

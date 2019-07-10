@@ -82,7 +82,6 @@ brew install tag # A command line tool to manipulate tags on Mac OS X files, and
 brew install tree
 brew install wget
 brew install wp-cli
-brew install yarn # Fast, reliable, and secure dependency management
 brew install youtube-dl # Command-line program to download videos from YouTube.com and other video sites
 
 #=====================================#

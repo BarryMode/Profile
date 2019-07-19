@@ -107,9 +107,6 @@ function dimensions_json() { dimensions=$(identify -ping -format '{\n  "filename
 #vdimensions: get the dimensions of a video
 function vdimensions() { ffprobe -v error -select_streams v:0 -show_entries stream=width,height -of csv=s=x:p=0 $1; }
 
-# Alias for base64 encoded links
-function b64get() { megadl $(base64_decode $1); }
-
 # mget: Download music with `youtube-dl`
 function mget() { youtube-dl --extract-audio --audio-format mp3 -l "$1"; }
 

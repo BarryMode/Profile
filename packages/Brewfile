@@ -1,0 +1,169 @@
+tap "homebrew/cask"
+tap "homebrew/cask-fonts"
+tap "homebrew/cask-versions"
+tap "homebrew/core"
+tap "homebrew/services"
+# SSL/TLS cryptography library
+brew "openssl"
+# Shell extension to jump to frequently used directories
+brew "autojump"
+# Tool for generating GNU Standards-compliant Makefiles
+brew "automake"
+# Text processing scripting language
+brew "awk"
+# Bourne-Again SHell, a UNIX command interpreter
+brew "bash"
+# Programmable completion for Bash 4.1+
+brew "bash-completion@2"
+# Fish completion for brew-cask
+brew "brew-cask-completion"
+# Interpreted, interactive, object-oriented programming language
+brew "python"
+# Cross-platform make
+brew "cmake"
+# Console Matrix
+brew "cmatrix"
+# Get a file from an HTTP, HTTPS or FTP server
+brew "curl"
+# Command-line JavaScript / TypeScript engine
+brew "deno"
+# Perl lib for reading and writing EXIF metadata
+brew "exiftool"
+# Simple, fast and user-friendly alternative to find
+brew "fd"
+# Play, record, convert, and stream audio and video
+brew "ffmpeg"
+# Generic library support script
+brew "libtool"
+# Gatsby command-line interface
+brew "gatsby-cli"
+# GNU compiler collection
+brew "gcc"
+# Interpreter for PostScript and PDF
+brew "ghostscript"
+# Distributed revision control system
+brew "git"
+# GNU implementation of the famous stream editor
+brew "gnu-sed"
+# GNU Pretty Good Privacy (PGP) package
+brew "gnupg"
+# GNU grep, egrep and fgrep
+brew "grep"
+# Add GitHub support to git on the command-line
+brew "hub"
+# Tools and libraries to manipulate images in many formats
+brew "imagemagick"
+# Handy way to save and run project-specific commands
+brew "just"
+# Text-based web browser
+brew "lynx"
+# Mac App Store command-line interface
+brew "mas"
+# Command-line client for Mega.co.nz
+brew "megatools"
+# Open source relational database management system
+# mySQL 8 does not work out of the box. You have to manually set a password even if it's blank. Here's how:
+# 1. mysqld_safe --skip-grant-tables &
+# 2. use mysql;
+# 3. UPDATE user SET authentication_string='' WHERE user='root';
+brew "mysql", restart_service: true
+# Node version management
+brew "n"
+# OpenBSD freely-licensed SSH connectivity tools
+brew "openssh"
+# 7-Zip (high compression file archiver) implementation
+brew "p7zip"
+# Pinentry for GPG on Mac
+brew "pinentry-mac"
+# Parse HTML at the command-line
+brew "pup"
+# Cross-platform application and UI framework
+brew "qt"
+# Perl-powered file rename script with many helpful built-ins
+brew "rename"
+# Search tool like grep and The Silver Searcher
+brew "ripgrep"
+# Add a public key to a remote machine's authorized_keys file
+brew "ssh-copy-id"
+# Manipulate and query tags on Mavericks files
+brew "tag"
+# Display directories as trees (with optional color/HTML output)
+brew "tree"
+# Internet file retriever
+brew "wget"
+# Command-line interface for WordPress
+brew "wp-cli"
+# Bash completion for Wpcli
+brew "wp-cli-completion"
+# Download YouTube videos from the command-line
+brew "youtube-dl"
+cask "alfred"
+cask "audio-hijack"
+cask "authy"
+cask "bitwarden"
+cask "brave-browser"
+cask "carbon-copy-cloner"
+cask "cleanmymac"
+cask "cloudmounter"
+cask "controlplane"
+cask "crossover"
+cask "discord"
+cask "dolphin"
+cask "easyfind"
+cask "firefox"
+cask "fl-studio"
+cask "flash-player"
+cask "font-open-sans"
+cask "font-raleway"
+cask "gemini"
+cask "ghost"
+cask "github-desktop"
+cask "grandperspective"
+cask "handbrake"
+cask "hex-fiend"
+cask "icons8"
+cask "iina"
+cask "imageoptim"
+cask "integrity"
+cask "java"
+cask "java8"
+cask "jdownloader"
+cask "keka"
+cask "keybase"
+cask "lackeyccg"
+cask "local-by-flywheel"
+cask "malwarebytes"
+cask "megasync"
+cask "navicat-premium"
+cask "obs"
+cask "openemu"
+cask "paparazzi"
+cask "paste"
+cask "paw"
+cask "plex-media-player"
+cask "protonvpn"
+cask "qlcolorcode"
+cask "qlimagesize"
+cask "qlmarkdown"
+cask "qlvideo"
+cask "quicklook-json"
+cask "sketch"
+cask "slack"
+cask "steam"
+cask "sublime-merge"
+cask "sublime-text"
+cask "teamviewer"
+cask "telegram"
+cask "the-unarchiver"
+cask "virtualbox"
+cask "vlc"
+cask "webtorrent"
+cask "xmind-zen"
+cask "yacreader"
+mas "Byword", id: 420212497
+mas "GIF Brewery 3", id: 1081413713
+mas "Microsoft Remote Desktop", id: 1295203466
+mas "PiPer", id: 1421915518
+mas "SiteSucker", id: 442168834
+mas "Smart JSON Editor", id: 1268962404
+mas "Xcode", id: 497799835

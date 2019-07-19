@@ -30,6 +30,7 @@ ln -s ~/Projects/macos-prime ~/prime
 - Adobe Suite
 - Atomic
 - Cinemagraph Pro
+- CodeSigner
 - FileBot
 - Microsoft Excel
 - Microsoft Word

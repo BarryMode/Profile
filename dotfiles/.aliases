@@ -99,8 +99,6 @@ alias update="(
   update_dotfiles --force
   mas upgrade
   brew update-reset; brew upgrade; brew missing; brew cask upgrade; brew cleanup
-  gem update --system; gem update --force; gem cleanup
-  npm update -g; npm i -g npm; npm cache clean --force
   pip install --upgrade pip
   cp ~/Library/Application\ Support/Sublime\ Text*/Packages/User/*.sublime-settings ~/prime/dotfiles/init/
   softwareupdate -i -a

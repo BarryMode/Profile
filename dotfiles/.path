@@ -3,8 +3,6 @@
 # sbin - added to validate `brew doctor`
 export PATH="/usr/local/sbin:$PATH"
 
-# composer - for laravel
-export PATH="~/.composer/vendor/bin:$PATH"
 
 # php
 export PATH="/usr/local/opt/php@7.1/bin:$PATH"

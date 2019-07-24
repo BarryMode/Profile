@@ -96,15 +96,25 @@ alias tree='tree -C'
 # update: Get macOS Software Updates, update packages, and general cleanup
 alias update="(
   sudo -v
+  # update dotfiles
   update_dotfiles --force
+  # update mas
   mas upgrade
+  # update brew
   brew update-reset; brew upgrade; brew missing; brew cask upgrade; brew cleanup
+  # update npm
   npm update -g; npm cache clean --force
+  # update pip
   pip3 install --upgrade pip
+  # backup sublime text settings
   cp ~/Library/Application\ Support/Sublime\ Text*/Packages/User/*.sublime-settings ~/prime/dotfiles/init/
+  # apple updates
   softwareupdate -i -a
+  # cleanup
   clearclipboard; clearcache; clearlogs; emptytrash
+  # abc order and remove duplicates from ssh known_hosts
   cat ~/.ssh/known_hosts | sort | uniq > ~/.ssh/known_hosts2; mv ~/.ssh/known_hosts2 ~/.ssh/known_hosts
+  # remove dead links from autojump
   j --purge
 )"
 

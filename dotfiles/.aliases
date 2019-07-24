@@ -104,6 +104,7 @@ alias update="(
   cp ~/Library/Application\ Support/Sublime\ Text*/Packages/User/*.sublime-settings ~/prime/dotfiles/init/
   softwareupdate -i -a
   clearclipboard; clearcache; clearlogs; emptytrash
+  cat ~/.ssh/known_hosts | sort | uniq > ~/.ssh/known_hosts2; mv ~/.ssh/known_hosts2 ~/.ssh/known_hosts
   j --purge
 )"
 

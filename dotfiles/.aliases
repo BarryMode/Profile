@@ -26,7 +26,7 @@ alias mkdir="mkdir -p"
 alias c="printf '\033c\e[3J'"
 alias g='git'
 alias m='exiftool'
-alias s='ln -s'
+alias s='subl'
 
 # Print each PATH entry on a separate line
 alias path='echo -e ${PATH//:/\\n}'

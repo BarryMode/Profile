@@ -23,7 +23,7 @@ alias .....="cd ../../../.."
 alias mkdir="mkdir -p"
 
 # Shortcuts
-alias c='clear'
+alias c="printf '\033c\e[3J'"
 alias g='git'
 alias m='exiftool'
 alias s='ln -s'

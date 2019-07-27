@@ -15,7 +15,7 @@ if [[ mac ]]; then
   ###############################################################################
 
   # Set computer name (as done via System Preferences → Sharing)
-  sudo scutil --set ComputerName "holmes"
+  sudo scutil --set ComputerName "Holmes"
   sudo scutil --set HostName "holmes"
   sudo scutil --set LocalHostName "holmes"
   sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "holmes"

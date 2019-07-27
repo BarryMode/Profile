@@ -32,7 +32,7 @@ function fs() {
 }
 
 # Find and Replace: findreplace searchText replacementText
-function findreplace() { ack "$1" -la --print0 | xargs -0 -n 1 sed -i "s/$1/$2/";
+function findreplace() { ack "$1" -la --print0 | xargs -0 -n 1 sed -i "s/$1/$2/"; }
 
 # Opens any file in MacOS Quicklook Preview
 function ql() { qlmanage -p "$*" >& /dev/null; }

@@ -1,38 +1,38 @@
 #!/usr/bin/env bash
 
 # List directory contents with cd
-function cd() { builtin cd "$@"; ls; }
+function cd() { builtin cd "$@" && ls; }
+
+# Create a new directory and enter it
+function mkcd() { mkdir -p "$@" && cd "$_"; }
 
 # Go up N directories
 function up() {
   str=""
   count=0
-  while [ "$count" -lt "$1" ];
-  do
+  while [ "$count" -lt "$1" ]; do
     str=$str"../"
     let count=count+1
   done
   cd $str
 }
 
-# Create a new directory and enter it
-function mkcd() {
-  mkdir -p "$@" && cd "$_";
-}
-
 # Determine size of a file or total size of a directory
 function fs() {
   if du -b /dev/null > /dev/null 2>&1; then
-    local arg=-sbh;
+    local arg=-sbh
   else
-    local arg=-sh;
+    local arg=-sh
   fi
   if [[ -n "$@" ]]; then
-    du $arg -- "$@";
+    du $arg -- "$@"
   else
-    du $arg .[^.]* ./*;
-  fi;
+    du $arg .[^.]* ./*
+  fi
 }
+
+# Find and Replace: findreplace searchText replacementText
+function findreplace() { ack "$1" -la --print0 | xargs -0 -n 1 sed -i "s/$1/$2/";
 
 # Opens any file in MacOS Quicklook Preview
 function ql() { qlmanage -p "$*" >& /dev/null; }
@@ -41,33 +41,28 @@ function ql() { qlmanage -p "$*" >& /dev/null; }
 function zipd() { zip -r "$1".zip "$1"; }
 
 # 7zip the directory
-function 7zip() {
-  7z a "$1" "$1"/*;
-}
-
-# Example - findreplace searchText replacementText
-function findreplace() { ack "$1" -la --print0 | xargs -0 -n 1 sed -i "s/$1/$2/"; }
+function 7zip() { 7z a "$1" "$1"/*; }
 
 # Extract most known archives with one command
 function extract() {
-  if [ -f $1 ] ; then
+  if [ -f $1 ]; then
     case $1 in
-      *.tar.bz2)  tar xvjf $1    ;;
-      *.tar.gz)   tar xvzf $1    ;;
-      *.tar.xz)   tar xvJf $1    ;;
-      *.lzma)     unlzma $1      ;;
-      *.bz2)      bunzip2 $1     ;;
-      *.rar)      unrar x -ad $1 ;;
-      *.gz)       gunzip $1      ;;
-      *.tar)      tar xvf $1     ;;
-      *.tbz2)     tar xvjf $1    ;;
-      *.tgz)      tar xvzf $1    ;;
-      *.zip)      unzip $1       ;;
-      *.Z)        uncompress $1  ;;
-      *.7z)       7z x $1        ;;
-      *.xz)       unxz $1        ;;
-      *.exe)      cabextract $1  ;;
-      *)          echo "extract: '$1' - unknown archive method" ;;
+      *.tar.bz2) tar xvjf $1    ;;
+      *.tar.gz)  tar xvzf $1    ;;
+      *.tar.xz)  tar xvJf $1    ;;
+      *.lzma)    unlzma $1      ;;
+      *.bz2)     bunzip2 $1     ;;
+      *.rar)     unrar x -ad $1 ;;
+      *.gz)      gunzip $1      ;;
+      *.tar)     tar xvf $1     ;;
+      *.tbz2)    tar xvjf $1    ;;
+      *.tgz)     tar xvzf $1    ;;
+      *.zip)     unzip $1       ;;
+      *.Z)       uncompress $1  ;;
+      *.7z)      7z x $1        ;;
+      *.xz)      unxz $1        ;;
+      *.exe)     cabextract $1  ;;
+      *)         echo "extract: '$1' - unknown archive method" ;;
     esac
   else
     echo "$1 - file does not exist"
@@ -89,9 +84,7 @@ function sha1() { echo -n "$1" | openssl sha1; }
 # resize: optimal settings for resizing images
 # parameters - size (width in pixels, height is automatic), file, outputdir
 # resize 300 "file.ext" outputdir/
-function resize() {
-  mogrify -path $3 -resize $1 -quality 85 -density 72 -strip $2
-}
+function resize() { mogrify -path $3 -resize $1 -quality 85 -density 72 -strip $2; }
 
 # crush: it's resize in batch form
 # parameters: size (width in pixels, height is automatic), outputdir
@@ -123,9 +116,8 @@ function video_encode() {
   audio_codec=${3:-copy}
   output=${4:-output}
   mkdir -p $output
-  for i in *.mkv *.webm *.flv *.vob *.ogg *.ogv *.drc *gifv *.mng *.avi *.mov *.qt *.wmv *.yuv *.rm *.rmvb *.asf *.amv *.mp4 *.m4v *.mp *.m?v *.svi *.3gp *.flv *.f4v;
-  do
-    ffmpeg -i "$i" -map 0 -c:v $video_codec -c:a $audio_codec -nostats -loglevel 0 "./$output/${i/${i##*.}/$filetype}";
+  for i in *.mkv *.webm *.flv *.vob *.ogg *.ogv *.drc *gifv *.mng *.avi *.mov *.qt *.wmv *.yuv *.rm *.rmvb *.asf *.amv *.mp4 *.m4v *.mp *.m?v *.svi *.3gp *.flv *.f4v; do
+    ffmpeg -i "$i" -map 0 -c:v $video_codec -c:a $audio_codec -nostats -loglevel 0 "./$output/${i/${i##*.}/$filetype}"
   done
 }
 

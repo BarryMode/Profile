@@ -183,9 +183,6 @@ alias reload="exec $SHELL -l"
 # Other #
 #########
 
-# Canonical hex dump; some systems have this symlinked
-command -v hd > /dev/null || alias hex="hexdump -C"
-
 # Intuitive map function
 # For example, to list all directories that contain a certain file:
 # find . -name .gitattributes | map dirname

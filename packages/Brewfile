@@ -62,10 +62,6 @@ brew "mas"
 # Command-line client for Mega.co.nz
 brew "megatools"
 # Open source relational database management system
-# mySQL 8 does not work out of the box. You have to manually set a password even if it's blank. Here's how:
-# 1. mysqld_safe --skip-grant-tables &
-# 2. use mysql;
-# 3. UPDATE user SET authentication_string='' WHERE user='root';
 brew "mysql", restart_service: true
 # Node version management
 brew "n"

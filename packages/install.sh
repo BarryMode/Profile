@@ -21,12 +21,12 @@ fi;
 
 # NPM: The package manager for JavaScript
 # https://github.com/npm/cli
-npm install -g $(cat Npmfile)
+npm install -g $(cat npmfile)
 npm update -g
 
 # PIP: The PyPA recommended tool for installing Python packages
 # https://github.com/pypa/pip
-pip3 install --upgrade $(cat Pipfile)
+pip3 install --upgrade $(cat pipfile)
 
 # Wget - A computer program that retrieves content from web servers
 # https://github.com/mirror/wget

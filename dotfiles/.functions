@@ -69,17 +69,23 @@ function extract() {
   fi
 }
 
-# Encode Base64
-function base64_encode() { echo -n "$1" | openssl base64; }
+# to ascii
+function decode() {
+  if   [[ $1 = 'base64' ]]; then shift 1; echo -n "$@" | base64 --decode
+  elif [[ $1 = 'binary' ]]; then shift 1; echo -n "$@" | perl -lpe '$_=pack"B*",$_'
+  elif [[ $1 = 'hex'    ]]; then shift 1; echo -n "0x$@" | xxd -r
+  fi
+}
 
-# Decode Base64
-function base64_decode() { echo -n "$1" | base64 --decode; }
-
-# Encode MD5
-function md5() { echo -n "$1" | openssl md5; }
-
-# Encode SHA1
-function sha1() { echo -n "$1" | openssl sha1; }
+# from ascii
+function encode() {
+  if   [[ $1 = 'base64' ]]; then shift 1; echo -n "$@" | openssl base64
+  elif [[ $1 = 'binary' ]]; then shift 1; echo -n "$@" | perl -lpe '$_=unpack"B*"'
+  elif [[ $1 = 'hex'    ]]; then shift 1; echo -n "$@" | xxd -p
+  elif [[ $1 = 'md5'    ]]; then shift 1; echo -n "$@" | openssl md5
+  elif [[ $1 = 'sha1'   ]]; then shift 1; echo -n "$@" | openssl sha1
+  fi
+}
 
 # resize: optimal settings for resizing images
 # parameters - size (width in pixels, height is automatic), file, outputdir

@@ -175,9 +175,6 @@ alias mirror='wget -cmkEpnp'
 # Flush Directory Service cache
 alias flush="dscacheutil -flushcache && killall -HUP mDNSResponder"
 
-# Ring the terminal bell, and put a badge on Terminal.app's Dock icon
-# (useful when executing time-consuming commands)
-alias badge="tput bel"
 #=============================================================================#
 # Terminal
 #=============================================================================#

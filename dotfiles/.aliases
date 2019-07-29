@@ -132,7 +132,7 @@ alias update_dotfiles='~/prime/dotfiles/install.sh'
 alias lscleanup="/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder"
 
 # Recursively delete `.DS_Store` files
-alias dscleanup="find . -type f -name '*.DS_Store' -ls -delete"
+alias dscleanup="sudo find . -type f -name '.DS_Store' -ls -delete; killall Finder"
 
 # Clear clipboard
 alias clearclipboard="pbcopy < /dev/null"

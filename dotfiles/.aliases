@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
-##########
-# System #
-##########
+#=============================================================================#
+# System
+#=============================================================================#
 
 # Enable aliases to be sudoed
 alias sudo='sudo '
@@ -59,9 +59,13 @@ alias spotoff="sudo mdutil -a -i off"
 # Enable Spotlight indexing
 alias spoton="sudo mdutil -a -i on"
 
-##########
-# Colors #
-##########
+#=============================================================================#
+# Shortcuts
+#=============================================================================#
+
+#=============================================================================#
+# Colors
+#=============================================================================#
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then
@@ -89,9 +93,9 @@ alias egrep='egrep --color=auto'
 # Always enable colored tree
 alias tree='tree -C'
 
-###############
-# Maintenance #
-###############
+#=============================================================================#
+# Maintenance
+#=============================================================================#
 
 # update: Get macOS Software Updates, update packages, and general cleanup
 alias update="(
@@ -148,9 +152,9 @@ alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash"
 # Delete all empty subdirectories
 alias ded='find . -type d -empty -delete'
 
-############
-# Internet #
-############
+#=============================================================================#
+# Internet
+#=============================================================================#
 
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
@@ -168,20 +172,19 @@ alias mirror='wget -cmkEpnp'
 # Flush Directory Service cache
 alias flush="dscacheutil -flushcache && killall -HUP mDNSResponder"
 
-############
-# Terminal #
-############
-
 # Ring the terminal bell, and put a badge on Terminal.app's Dock icon
 # (useful when executing time-consuming commands)
 alias badge="tput bel"
+#=============================================================================#
+# Terminal
+#=============================================================================#
 
 # Reload the shell (i.e. invoke as a login shell)
 alias reload="exec $SHELL -l"
 
-#########
-# Other #
-#########
+#=============================================================================#
+# Other
+#=============================================================================#
 
 # Intuitive map function
 # For example, to list all directories that contain a certain file:

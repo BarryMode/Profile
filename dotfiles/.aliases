@@ -22,12 +22,6 @@ alias .....="cd ../../../.."
 # Make directories recursively (ex. `my/tree` will make both folders)
 alias mkdir="mkdir -p"
 
-# Shortcuts
-alias c="printf '\033c\e[3J'"
-alias g='git'
-alias m='exiftool'
-alias s='subl'
-
 # Print each PATH entry on a separate line
 alias path='echo -e ${PATH//:/\\n}'
 
@@ -62,6 +56,15 @@ alias spoton="sudo mdutil -a -i on"
 #=============================================================================#
 # Shortcuts
 #=============================================================================#
+
+# ⌘K
+alias c="printf '\033c\e[3J'"
+# git
+alias g='git'
+# m stands for metadata
+alias m='exiftool'
+# sublime text
+alias s='subl'
 
 #=============================================================================#
 # Colors

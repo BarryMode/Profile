@@ -138,7 +138,7 @@ alias update_repos='find . -type d -depth 1 -exec git --git-dir={}/.git --work-t
 alias lscleanup="/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder"
 
 # Recursively delete `.DS_Store` files
-alias dscleanup="sudo find . -type f -name '.DS_Store' -ls -delete; killall Finder"
+alias dscleanup="find . -type f -name '.DS_Store' -ls -delete; killall Finder"
 
 # Clear clipboard
 alias clearclipboard="pbcopy < /dev/null"

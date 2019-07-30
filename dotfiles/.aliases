@@ -131,6 +131,9 @@ alias update="(
 # Update dotfiles
 alias update_dotfiles='~/prime/dotfiles/install.sh'
 
+# Update all git repos in this directory
+alias update_repos='find . -type d -depth 1 -exec git --git-dir={}/.git --work-tree=$PWD/{} pull origin master \;'
+
 # Clean up LaunchServices to remove duplicates in the "Open With" menu
 alias lscleanup="/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder"
 

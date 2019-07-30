@@ -176,8 +176,12 @@ alias map="xargs -n1"
 # Usage: `mergepdf -o output.pdf input{1,2,3}.pdf`
 alias mergepdf='/System/Library/Automator/Combine\ PDF\ Pages.action/Contents/Resources/join.py'
 
+# Convert plist files to xml or binary
 alias plist_to_xml='plutil -convert xml1'
 alias plist_to_binary='plutil -convert binary1'
+
+# Relink all brew links
+alias brew_relink="brew list -1 | while read line; do brew unlink $line; brew link $line; done"
 
 # Open programs
 alias ccg='/Applications/LackeyCCG/LackeyCCG.app/Contents/MacOS/LackeyCCG'

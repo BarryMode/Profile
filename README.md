@@ -2,23 +2,22 @@
 
 Automatically tailor my Mac
 
-## [Dot Files](https://github.com/barrymode/macos-prime/tree/master/dotfiles), [Packages](https://github.com/BarryMode/macos-prime/tree/master/packages), [macOS Preferences](https://github.com/barrymode/macos-prime/blob/master/dotfiles/.macos), and [Hosts](https://github.com/barrymode/macos-prime/tree/master/hosts)
+## [Dotfiles](https://github.com/barrymode/macos-prime/tree/master/dotfiles), [Packages](https://github.com/BarryMode/macos-prime/tree/master/packages), [Preferences](https://github.com/barrymode/macos-prime/blob/master/dotfiles/.macos), and [Hosts](https://github.com/barrymode/macos-prime/tree/master/hosts)
 
 ### One-line install
 
 ```bash
-git clone https://github.com/barrymode/macos-prime.git ~/Projects/macos-prime && cd ~/Projects/macos-prime && ./prime.sh
+git clone https://github.com/barrymode/macos-prime.git ~/prime && cd ~/prime && ./prime.sh
 ```
 
 ### OR do it manually
 
 ```bash
-git clone https://github.com/barrymode/macos-prime.git ~/Projects/macos-prime
-ln -s ~/Projects/macos-prime ~/prime
+git clone https://github.com/barrymode/macos-prime.git ~/prime
 ```
 
 1. Open Home Folder `cd ~`
-1. Install Dot Files `prime/dotfiles/install.sh`
+1. Install Dotfiles `prime/dotfiles/install.sh`
 1. Install Packages `prime/packages/install.sh`
 1. Install macOS Preferences `prime/dotfiles/.macos`
 1. Assemble Dock `prime/dotfiles/.dock`

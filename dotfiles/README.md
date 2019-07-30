@@ -4,11 +4,9 @@
 
 ## Installation
 
-**Warning:** If you want to give these dotfiles a try, you should first fork this repository, review the code, and remove things you don't want or need. Don't blindly use my settings unless you know what that entails. Use at your own risk!
+**Warning:** If you want to give these dotfiles a try, you should first fork this repository, review the code, and remove things you don't want or need. Don't blindly use my settings. Use at your own risk!
 
 ### Using Git and the install script
-
-The `dotfiles` subdir can be used without any `macos-prime` files. Store it anywhere. I keep it in `~/Projects/macos-prime/dotfiles`, though.
 
 `dotfiles` serves as a working directory to track your customizations. When you're ready to use them, `cd` into your local `dotfiles` repository and then:
 

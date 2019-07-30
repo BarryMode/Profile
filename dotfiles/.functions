@@ -38,10 +38,10 @@ function findreplace() { ack "$1" -la --print0 | xargs -0 -n 1 sed -i "s/$1/$2/"
 function ql() { qlmanage -p "$*" >& /dev/null; }
 
 # Zip the directory
-function zipd() { zip -r "$1".zip "$1"; }
+function zd() { zip -r "$1".zip "$1"; }
 
 # 7zip the directory
-function 7zip() { 7z a "$1" "$1"/*; }
+function 7zd() { 7z a "$1" "$1"/*; }
 
 # Extract most known archives with one command
 function extract() {

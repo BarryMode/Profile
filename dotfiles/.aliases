@@ -144,12 +144,12 @@ alias dscleanup="find . -type f -name '.DS_Store' -ls -delete; killall Finder"
 alias clearclipboard="pbcopy < /dev/null"
 
 # Clear cache
-alias clearcache="(
+alias clearcache="
   rm -rf .cache
   rm -rf .composer/cache
   rm -rf .expo/*cache
   rm -rf .gradle/caches
-)"
+"
 
 # Clear Apple's System Logs to improve shell startup speed.
 # Clear download history from quarantine.

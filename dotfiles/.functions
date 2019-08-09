@@ -87,6 +87,14 @@ function encode() {
   fi
 }
 
+# ss: convert spreadsheets to different formats (ex. xml, xls, xlsx)
+# ss xlsx xml
+function ss() { /Applications/LibreOffice.app/Contents/MacOS/soffice --convert-to $2 *.$1 --headless; }
+
+#==============================================================================#
+# Media: images, audio, video
+#==============================================================================#
+
 # resize: optimal settings for resizing images
 # parameters - size (width in pixels, height is automatic), file, outputdir
 # resize 300 "file.ext" outputdir/
@@ -109,6 +117,9 @@ function vdimensions() { ffprobe -v error -select_streams v:0 -show_entries stre
 # mget: Download music with `youtube-dl`
 function mget() { youtube-dl --extract-audio --audio-format mp3 -l "$1"; }
 
+# ringtone: convert mp3 to m4r and change the length to 30 seconds
+function ringtone() { ffmpeg -i "$1" -t 30 -c:a aac -f ipod -b:a 96k "$(basename "$1" .mp3).m4r"; }
+
 # codecs: return video and audio codecs
 function codecs() { ffprobe "$1" 2>&1 >/dev/null |grep Stream.*Video | sed -e 's/.*Video: //' -e 's/[, ].*//'; ffprobe "$1" 2>&1 >/dev/null |grep Stream.*Audio | sed -e 's/.*Audio: //' -e 's/[, ].*//'; }
 
@@ -130,8 +141,80 @@ function video_encode() {
 # video_merge: `video_merge` combine all video files in the current directory into 1
 function video_merge() { ffmpeg -f concat -i <(for f in *.mkv *.webm *.flv *.vob *.ogg *.ogv *.drc *gifv *.mng *.avi *.mov *.qt *.wmv *.yuv *.rm *.rmvb *.asf *.amv *.mp4 *.m4v *.mp *.m?v *.svi *.3gp *.flv *.f4v; do echo "file '$PWD/$f'"; done) -c copy -nostats -loglevel 0 "output.${1}"; }
 
-# ringtone: convert mp3 to m4r and change the length to 30 seconds
-function ringtone() { ffmpeg -i "$1" -t 30 -c:a aac -f ipod -b:a 96k "$(basename "$1" .mp3).m4r"; }
+# converts HH:MM:SS.sss to fractional seconds
+timeToSeconds() (
+  local hh=${1%%:*}
+  local rest=${1#*:}
+  local mm=${rest%%:*}
+  local ss=${rest#*:}
+  printf "%s" $(bc <<< "$hh * 60 * 60 + $mm * 60 + $ss")
+)
+
+# converts fractional seconds to HH:MM:SS.sss
+secondsToTime() (
+  local seconds=$1
+  local hh=$(bc <<< "scale=0; $seconds / 3600")
+  local remainder=$(bc <<< "$seconds % 3600")
+  local mm=$(bc <<< "scale=0; $remainder / 60")
+  local ss=$(bc <<< "$remainder % 60")
+  printf "%02d:%02d:%06.3f" "$hh" "$mm" "$ss"
+)
+
+# finds the difference between two HH:MM:SS.sss times
+timeDifference() (
+  local t1sec=$(timeToSeconds "$1")
+  local t2sec=$(timeToSeconds "$2")
+  printf "%s" $(bc <<< "$t2sec - $t1sec")
+)
+
+# vget_range: https://www.youtube.com/watch?v=id 00:15:00 00:45:00
+function vget_range() {
+  if [[ $1 = 'range' ]]; then shift 1
+    # variables
+    vurl=$1
+    startTime=$2
+    endTime=$3
+    title="${4:-video}"
+    duration=$(($(timeDifference $startTime $endTime)/60)) # duration in seconds
+
+    # start
+    ffmpeg
+
+    # URL
+    # input file url
+    -i $(youtube-dl -f 22 --get-url "$vurl")
+
+    # Start Time
+    # Seeks in this input file to position.
+    # Note that in most formats it is not possible to seek exactly, so ffmpeg will seek to the closest seek point before position. When transcoding and -accurate_seek is enabled (the default), this extra segment between the seek point and position will be decoded and discarded. When doing stream copy or when -noaccurate_seek is used, it will be preserved.
+    -ss $startTime
+
+    # Duration
+    # Limit the duration of data read from the input file.
+    -t $duration
+
+    # Frames Per Second
+    # Set frame rate (Hz value, fraction or abbreviation).
+    -r 30
+
+    # Constant Rate Factor
+    # The range of the CRF scale is 0–51, where 0 is lossless, 23 is the default, and 51 is worst quality possible.
+    # A lower value generally leads to higher quality, and a subjectively sane range is 17–28. Consider 17 or 18 to be visually lossless or nearly so; it should look the same or nearly the same as the input but it isn't technically lossless.
+    -crf 15.0
+
+    # Video Codec
+    -vcodec libx264
+
+    # Audio Codec
+    -acodec aac
+
+    # Overwrite output files. (-y for yes, -n for no)
+    -n
+
+    # Output Dir
+    "$title.mp4"
+  fi
+}
 
 #==============================================================================#
 # Maintenance
@@ -157,7 +240,7 @@ function update() {
   echo '================================================================================'
   echo
   echo 'Updating brew packages…'
-  brew update-reset > /dev/null; brew upgrade; brew missing; brew cask upgrade; brew cleanup
+  brew update-reset > /dev/null; brew upgrade; brew missing; brew cask upgrade; brew cleanup; brew services cleanup
   echo
   echo 'NPM'
   echo '================================================================================'

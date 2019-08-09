@@ -157,7 +157,6 @@ cask "vlc"
 cask "webtorrent"
 cask "xmind-zen"
 cask "yacreader"
-mas "Byword", id: 420212497
 mas "GIF Brewery 3", id: 1081413713
 mas "Microsoft Remote Desktop", id: 1295203466
 mas "PiPer", id: 1421915518

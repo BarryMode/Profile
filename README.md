@@ -16,6 +16,7 @@ git clone https://github.com/barrymode/macos-prime.git ~/prime && cd ~/prime && 
 - Atomic
 - Cinemagraph Pro
 - CodeSigner
+- Drop
 - FileBot
 - Microsoft Excel
 - Microsoft Word

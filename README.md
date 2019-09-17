@@ -18,9 +18,12 @@ git clone https://github.com/barrymode/macos-prime.git ~/prime && cd ~/prime && 
 - CodeSigner
 - Drop
 - FileBot
+- Grabber
 - Microsoft Excel
 - Microsoft Word
+- Pixave
 - Smart JSON Editor
+- SnippetsLab
 
 ## User Files
 
@@ -47,7 +50,7 @@ git clone https://github.com/barrymode/macos-prime.git ~/prime && cd ~/prime && 
 ### Backups
 
 - Tallon IV [Time Machine](https://support.apple.com/en-us/HT201250) on [WD Caviar Green 2TB](http://amzn.to/2zfBSAt)
-- Adler [JBOD](https://en.wikipedia.org/wiki/Non-RAID_drive_architectures#JBOD) on [Synology NAS](http://amzn.to/2gvsjVY)
+- Adler [Raid 0](https://en.wikipedia.org/wiki/Standard_RAID_levels#RAID_0) on [Synology NAS](http://amzn.to/2gvsjVY)
 
 ## Author
 

@@ -224,6 +224,12 @@ function vget_range() {
 function update() {
   sama
   echo
+  echo 'Symlinks'
+  echo '================================================================================'
+  echo
+  echo 'Updating symlinks…'
+  update_symlinks
+  echo
   echo 'Dotfiles'
   echo '================================================================================'
   echo
@@ -270,10 +276,10 @@ function update() {
   echo 'macOS'
   echo '================================================================================'
   echo
-  echo 'Running macOS software update…'
+  echo 'Running macOS update…'
   softwareupdate -i -a
   echo
-  echo 'Clean'
+  echo 'Cleaning'
   echo '================================================================================'
   echo
   echo 'Sorting and deduping ssh known hosts…'
@@ -288,5 +294,6 @@ function update() {
   clearlogs
   echo 'Empty trash…'
   emptytrash
+  echo
   echo 'Everything is up to date!'
 }

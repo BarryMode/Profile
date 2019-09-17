@@ -36,7 +36,7 @@ echo
 echo 'Preferences'
 echo '================================================================================'
 echo
-echo 'Assembling Dock…'
-~/.dock
 echo 'Installing Preferences…'
 ~/.macos
+echo 'Assembling Dock…'
+~/.dock

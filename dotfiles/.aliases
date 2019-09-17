@@ -65,6 +65,7 @@ alias c="printf '\033c\e[3J'"
 # git
 alias g='git'
 # m stands for metadata
+# m -j file # outputs json
 alias m='exiftool'
 # sublime text
 alias s='subl'

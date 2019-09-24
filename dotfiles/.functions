@@ -297,3 +297,5 @@ function update() {
   echo
   echo 'Everything is up to date!'
 }
+
+function fget() { open https://github.com/search?q=extension%3Attf+extension%3Aotf+filename%3A%22$1%22&type=Code; }

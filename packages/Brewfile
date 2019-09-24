@@ -159,6 +159,8 @@ cask "xmind-zen"
 cask "yacreader"
 mas "GIF Brewery 3", id: 1081413713
 mas "Gifski", id: 1351639930
+mas "Microsoft Excel", id: 462058435
+mas "Microsoft Word", id: 462054704
 mas "Microsoft Remote Desktop", id: 1295203466
 mas "PiPer", id: 1421915518
 mas "SiteSucker", id: 442168834

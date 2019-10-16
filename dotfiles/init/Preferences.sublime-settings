@@ -1,10 +1,9 @@
 {
-	"bold_folder_labels": true,
-	"color_scheme": "Packages/Material Monokai/MaterialMonokaiDark.tmTheme",
+	"bold_folder_labels": false,
+	"color_scheme": "Packages/Theme - Monokai Pro/Monokai Classic.sublime-color-scheme",
 	"default_encoding": "UTF-8",
 	"default_line_ending": "unix",
 	"detect_indentation": true,
-	"disable_custom_title_bar": true,
 	"ensure_newline_at_eof_on_save": true,
 	"fade_fold_buttons": false,
 	"folder_exclude_patterns":
@@ -14,28 +13,18 @@
 	],
 	"font_face": "Source Code Pro",
 	"font_size": 15,
+	"highlight_line": true,
 	"hot_exit": true,
-	"ignored_packages":
-	[
-		"Vintage"
-	],
-	"indent_guide_options":
-	[
-		"draw_normal",
-		"draw_active"
-	],
 	"line_padding_bottom": 2,
 	"line_padding_top": 2,
+	"monokai_pro_label_font_size": 14,
+	"monokai_pro_sidebar_font_size": 14,
+	"monokai_pro_small_scrollbar": true,
 	"remember_open_files": true,
 	"show_encoding": true,
 	"show_line_endings": true,
-	"spacegray_color_expanded_folder": true,
-	"spacegray_sidebar_font_xlarge": true,
-	"spacegray_sidebar_tree_large": true,
-	"spacegray_tabs_font_xlarge": true,
-	"spacegray_tabs_xlarge": true,
 	"tab_size": 2,
-	"theme": "Spacegray Eighties.sublime-theme",
+	"theme": "Monokai Classic.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_automatic_white_space": true,
 	"trim_trailing_white_space_on_save": true,

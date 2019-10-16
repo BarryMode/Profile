@@ -5,13 +5,10 @@
 	],
 	"installed_packages":
 	[
-		"A File Icon",
 		"Jasonette Completions",
 		"jQuery",
-		"Material Monokai",
 		"Package Control",
 		"Sass",
-		"SyncedSideBar",
-		"Theme - Spacegray"
+		"Theme - Monokai Pro"
 	]
 }

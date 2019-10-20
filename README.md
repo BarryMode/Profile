@@ -23,7 +23,6 @@ git clone https://github.com/barrymode/macos-prime.git ~/prime && cd ~/prime && 
 - Microsoft Excel
 - Microsoft Word
 - Pixave
-- Smart JSON Editor
 - SnippetsLab
 
 ## User Files

@@ -21,6 +21,8 @@ brew "python"
 brew "cmake"
 # Console Matrix
 brew "cmatrix"
+# GNU File, Shell, and Text utilities
+brew "coreutils"
 # Get a file from an HTTP, HTTPS or FTP server
 brew "curl"
 # Command-line JavaScript / TypeScript engine

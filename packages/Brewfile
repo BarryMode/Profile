@@ -15,8 +15,6 @@ brew "bash"
 brew "bash-completion@2"
 # Fish completion for brew-cask
 brew "brew-cask-completion"
-# Interpreted, interactive, object-oriented programming language
-brew "python"
 # Cross-platform make
 brew "cmake"
 # Console Matrix
@@ -49,14 +47,12 @@ brew "gnu-sed"
 brew "gnupg"
 # GNU grep, egrep and fgrep
 brew "grep"
-# Add GitHub support to git on the command-line
-brew "hub"
 # Tools and libraries to manipulate images in many formats
 brew "imagemagick"
+# Lightweight and flexible command-line JSON processor
+brew "jq"
 # Handy way to save and run project-specific commands
 brew "just"
-# Text-based web browser
-brew "lynx"
 # Mac App Store command-line interface
 brew "mas"
 # Command-line client for Mega.co.nz
@@ -67,12 +63,18 @@ brew "mysql", restart_service: true
 brew "n"
 # OpenBSD freely-licensed SSH connectivity tools
 brew "openssh"
+# SSL/TLS cryptography library
+brew "openssl"
 # 7-Zip (high compression file archiver) implementation
 brew "p7zip"
+# Command-line tool to generate, analyze, convert and manipulate colors
+brew "pastel"
 # Pinentry for GPG on Mac
 brew "pinentry-mac"
 # Parse HTML at the command-line
 brew "pup"
+# Interpreted, interactive, object-oriented programming language
+brew "python"
 # Cross-platform application and UI framework
 brew "qt"
 # Perl-powered file rename script with many helpful built-ins
@@ -160,4 +162,5 @@ mas "Microsoft Excel", id: 462058435
 mas "Microsoft Word", id: 462054704
 mas "Microsoft Remote Desktop", id: 1295203466
 mas "PiPer", id: 1421915518
+mas "Termius", id: 1176074088
 mas "Xcode", id: 497799835

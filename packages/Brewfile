@@ -61,8 +61,6 @@ brew "lynx"
 brew "mas"
 # Command-line client for Mega.co.nz
 brew "megatools"
-# Modern and intuitive terminal-based text editor
-brew "micro"
 # Open source relational database management system
 brew "mysql", restart_service: true
 # Node version management

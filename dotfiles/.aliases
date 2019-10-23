@@ -46,6 +46,7 @@ alias unlock_all="chflags -R nouchg"
 alias show_alias="chflags -h nohidden"
 alias hide_alias="chflags -h hidden"
 # Show/hide hidden files in Finder
+# The files remain technically hidden but you can see the "hidden" files in Finder
 alias showfiles="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
 alias hidefiles="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
 # Show/hide all desktop icons (useful when presenting)

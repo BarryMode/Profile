@@ -37,7 +37,7 @@ alias hide="chflags hidden"
 alias lock="chflags uchg"
 alias unlock="chflags nouchg"
 # Show, hide, lock, or unlock files recursively
-# ex. `hide_all folder` would hide the folder and all files within it
+# `hide_all folder` would hide the folder and all files within it
 alias show_all="chflags -R nohidden"
 alias hide_all="chflags -R hidden"
 alias lock_all="chflags -R uchg"
@@ -64,11 +64,16 @@ alias spoton="sudo mdutil -a -i on"
 
 # ⌘K
 alias c="printf '\033c\e[3J'"
+
 # git
 alias g='git'
+
 # m stands for metadata
-# m -j file # outputs json
+# `m -j file` outputs json
 alias m='exiftool'
+
+# youtube-dl looking for an mp4 with the best video and audio
+alias vget="youtube-dl -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4'"
 
 #==============================================================================#
 # Colors
@@ -171,11 +176,11 @@ alias r="reload"
 
 # Intuitive map function
 # For example, to list all directories that contain a certain file:
-# find . -name .gitattributes | map dirname
+# `find . -name .gitattributes | map dirname`
 alias map="xargs -n1"
 
 # Merge PDF files
-# Usage: `mergepdf -o output.pdf input{1,2,3}.pdf`
+# `mergepdf -o output.pdf input{1,2,3}.pdf`
 alias mergepdf='/System/Library/Automator/Combine\ PDF\ Pages.action/Contents/Resources/join.py'
 
 # Convert plist files to xml or binary

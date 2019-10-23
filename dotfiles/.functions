@@ -298,4 +298,6 @@ function update() {
   echo 'Everything is up to date!'
 }
 
+# open a GitHub search for font files
+# `fget arial`
 function fget() { open https://github.com/search?q=extension%3Attf+extension%3Aotf+filename%3A%22$1%22&type=Code; }

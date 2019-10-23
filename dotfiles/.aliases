@@ -163,6 +163,7 @@ alias flush="dscacheutil -flushcache && killall -HUP mDNSResponder"
 
 # Reload the shell (i.e. invoke as a login shell)
 alias reload="exec $SHELL -l"
+alias r="reload"
 
 #==============================================================================#
 # Other

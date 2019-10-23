@@ -64,16 +64,11 @@ alias spoton="sudo mdutil -a -i on"
 
 # ⌘K
 alias c="printf '\033c\e[3J'"
-# micro
-alias e='micro'
-alias edit='micro'
 # git
 alias g='git'
 # m stands for metadata
 # m -j file # outputs json
 alias m='exiftool'
-# sublime text
-alias s='subl'
 
 #==============================================================================#
 # Colors

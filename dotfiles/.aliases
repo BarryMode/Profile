@@ -37,6 +37,7 @@ alias hide="chflags hidden"
 alias lock="chflags uchg"
 alias unlock="chflags nouchg"
 # Show, hide, lock, or unlock files recursively
+# ex. `hide_all folder` would hide the folder and all files within it
 alias show_all="chflags -R nohidden"
 alias hide_all="chflags -R hidden"
 alias lock_all="chflags -R uchg"

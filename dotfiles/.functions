@@ -282,8 +282,8 @@ function update() {
   echo 'Cleaning'
   echo '================================================================================'
   echo
-  echo 'Sorting and deduping ssh known hosts…'
-  cat ~/.ssh/known_hosts | sort | uniq > ~/.ssh/known_hosts2; mv ~/.ssh/known_hosts2 ~/.ssh/known_hosts
+  echo 'Deduping ssh known hosts…'
+  cat ~/.ssh/known_hosts | uniq > ~/.ssh/known_hosts2; mv ~/.ssh/known_hosts2 ~/.ssh/known_hosts # add "| sort" to list in abc order
   echo 'Purge dead links from autojump…'
   j --purge
   echo 'Clear cache…'

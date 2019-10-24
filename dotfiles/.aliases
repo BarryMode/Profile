@@ -72,9 +72,6 @@ alias g='git'
 # `m -j file` outputs json
 alias m='exiftool'
 
-# youtube-dl looking for an mp4 with the best video and audio
-alias vget="youtube-dl -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4'"
-
 #==============================================================================#
 # Colors
 #==============================================================================#

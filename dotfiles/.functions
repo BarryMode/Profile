@@ -222,6 +222,7 @@ function vget() {
 # update: Get macOS Software Updates, update packages, and general cleanup
 function update() {
   sama
+  cd ~
   echo
   echo 'Symlinks'
   echo '================================================================================'
@@ -246,6 +247,9 @@ function update() {
   echo
   echo 'Updating brew packages…'
   brew update-reset > /dev/null; brew upgrade; brew missing; brew cask upgrade; brew cleanup; brew services cleanup
+  cd ~/prime/packages/
+  brew bundle dump --force --describe
+  cd ~
   echo
   echo 'NPM'
   echo '================================================================================'

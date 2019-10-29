@@ -162,8 +162,8 @@ cask "zoomus"
 mas "GIF Brewery 3", id: 1081413713
 mas "Gifski", id: 1351639930
 mas "Microsoft Excel", id: 462058435
-mas "Microsoft Word", id: 462054704
 mas "Microsoft Remote Desktop", id: 1295203466
 mas "PiPer", id: 1421915518
+mas "Microsoft Word", id: 462054704
 mas "Termius", id: 1176074088
 mas "Xcode", id: 497799835

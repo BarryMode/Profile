@@ -4,6 +4,12 @@ tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "homebrew/services"
+# Interpreted, interactive, object-oriented programming language
+brew "python"
+# Core application library for C
+brew "glib"
+# SSL/TLS cryptography library
+brew "openssl"
 # Shell extension to jump to frequently used directories
 brew "autojump"
 # Tool for generating GNU Standards-compliant Makefiles
@@ -64,8 +70,6 @@ brew "mysql", restart_service: true
 brew "n"
 # OpenBSD freely-licensed SSH connectivity tools
 brew "openssh"
-# SSL/TLS cryptography library
-brew "openssl"
 # 7-Zip (high compression file archiver) implementation
 brew "p7zip"
 # Command-line tool to generate, analyze, convert and manipulate colors
@@ -74,8 +78,6 @@ brew "pastel"
 brew "pinentry-mac"
 # Parse HTML at the command-line
 brew "pup"
-# Interpreted, interactive, object-oriented programming language
-brew "python"
 # Cross-platform application and UI framework
 brew "qt"
 # Perl-powered file rename script with many helpful built-ins
@@ -84,7 +86,7 @@ brew "rename"
 brew "ripgrep"
 # Add a public key to a remote machine's authorized_keys file
 brew "ssh-copy-id"
-# Manipulate and query tags on Mavericks files
+# Manipulate and query tags on macOS files
 brew "tag"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"

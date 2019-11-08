@@ -48,6 +48,8 @@ brew "libtool"
 brew "gatsby-cli"
 # GNU compiler collection
 brew "gcc"
+# Google Drive CLI Client
+brew "gdrive"
 # Interpreter for PostScript and PDF
 brew "ghostscript"
 # Distributed revision control system

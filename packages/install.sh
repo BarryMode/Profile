@@ -27,8 +27,3 @@ npm update -g
 # PIP: The PyPA recommended tool for installing Python packages
 # https://github.com/pypa/pip
 pip3 install --upgrade $(cat pipfile)
-
-# Wget - A computer program that retrieves content from web servers
-# https://github.com/mirror/wget
-# iShowU Audio Capture
-# wget -P '~/downloads/' https://downloads.shinywhitebox.com/driver/latest/

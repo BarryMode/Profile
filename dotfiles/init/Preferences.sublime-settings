@@ -1,6 +1,6 @@
 {
 	"bold_folder_labels": false,
-	"color_scheme": "Packages/Theme - Monokai Pro/Monokai Classic.sublime-color-scheme",
+	"color_scheme": "Packages/Color Scheme - Default/Monokai.sublime-color-scheme",
 	"default_encoding": "UTF-8",
 	"default_line_ending": "unix",
 	"detect_indentation": true,

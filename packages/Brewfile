@@ -20,6 +20,8 @@ brew "awk"
 brew "bash"
 # Programmable completion for Bash 4.1+
 brew "bash-completion@2"
+# Clone of cat(1) with syntax highlighting and Git integration
+brew "bat"
 # Fish completion for brew-cask
 brew "brew-cask-completion"
 # Cross-platform make

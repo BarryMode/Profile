@@ -2,6 +2,8 @@
 	"extensions":
 	[
 		".gitconfig",
-		".dock"
+		".dock",
+		"known_hosts",
+		"ps1"
 	]
 }

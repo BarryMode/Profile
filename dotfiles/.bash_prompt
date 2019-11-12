@@ -1,21 +1,23 @@
 #!/usr/bin/env bash
 
-# Colors
 function text() {
+  # Colors
   if [[ $1 = 'color' ]]; then
-    if   [[ $2 = 'black' ]];   then tput setaf 0
-    elif [[ $2 = 'red' ]];     then tput setaf 1
-    elif [[ $2 = 'green' ]];   then tput setaf 2
-    elif [[ $2 = 'yellow' ]];  then tput setaf 3
-    elif [[ $2 = 'blue' ]];    then tput setaf 4
-    elif [[ $2 = 'magenta' ]]; then tput setaf 5
-    elif [[ $2 = 'cyan' ]];    then tput setaf 6
-    elif [[ $2 = 'white' ]];   then tput setaf 7
+    if   [[ $2 = 'black' ]];   then echo -e "\033[0;30m"
+    elif [[ $2 = 'red' ]];     then echo -e "\033[0;31m"
+    elif [[ $2 = 'green' ]];   then echo -e "\033[0;32m"
+    elif [[ $2 = 'yellow' ]];  then echo -e "\033[0;33m"
+    elif [[ $2 = 'blue' ]];    then echo -e "\033[0;34m"
+    elif [[ $2 = 'magenta' ]]; then echo -e "\033[0;35m"
+    elif [[ $2 = 'cyan' ]];    then echo -e "\033[0;36m"
+    elif [[ $2 = 'white' ]];   then echo -e "\033[0;37m"
     fi
+  # Format
   elif [[ $1 = 'bold' ]];      then tput bold
   elif [[ $1 = 'underline' ]]; then tput smul
   elif [[ $1 = 'invert' ]];    then tput rev
-  elif [[ $1 = '' ]];          then tput init
+  # Reset
+  elif [[ $1 = '' ]];          then echo -e "\033[0m"
   fi
 }
 
@@ -23,10 +25,5 @@ function text() {
 title="\u@\h: \w"
 titlebar="\[\033]0;"$title"\007\]"
 
-# Git branch
-git_branch() {
-  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)\ /';
-}
-
 # Custom bash prompt - "➜ ~ (master) "
-export PS1="$(text)${titlebar}$(text color green)➜ $(text color blue)\W $(text color cyan)$(git_branch)$(text)"
+export PS1="$(text)${titlebar}$(text color green)➜ $(text color blue)\W $(text)"

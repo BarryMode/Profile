@@ -47,7 +47,7 @@ git clone https://github.com/barrymode/macos-prime.git ~/prime && cd ~/prime && 
 
 ### Backups
 
-- Tallon IV [Time Machine](https://support.apple.com/en-us/HT201250) on [WD Caviar Green 2TB](http://amzn.to/2zfBSAt)
+- Mycroft [Time Machine](https://support.apple.com/en-us/HT201250) on [WD Caviar Green 2TB](http://amzn.to/2zfBSAt)
 - Adler [Raid 0](https://en.wikipedia.org/wiki/Standard_RAID_levels#RAID_0) on [Synology NAS](http://amzn.to/2gvsjVY)
 
 ## Author

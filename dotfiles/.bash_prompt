@@ -3,21 +3,21 @@
 function text() {
   # Colors
   if [[ $1 = 'color' ]]; then
-    if   [[ $2 = 'black' ]];   then echo -e "\033[0;30m"
-    elif [[ $2 = 'red' ]];     then echo -e "\033[0;31m"
-    elif [[ $2 = 'green' ]];   then echo -e "\033[0;32m"
-    elif [[ $2 = 'yellow' ]];  then echo -e "\033[0;33m"
-    elif [[ $2 = 'blue' ]];    then echo -e "\033[0;34m"
-    elif [[ $2 = 'magenta' ]]; then echo -e "\033[0;35m"
-    elif [[ $2 = 'cyan' ]];    then echo -e "\033[0;36m"
-    elif [[ $2 = 'white' ]];   then echo -e "\033[0;37m"
+    if   [[ $2 = 'black' ]];   then echo -e "\[\033[0;30m\]"
+    elif [[ $2 = 'red' ]];     then echo -e "\[\033[0;31m\]"
+    elif [[ $2 = 'green' ]];   then echo -e "\[\033[0;32m\]"
+    elif [[ $2 = 'yellow' ]];  then echo -e "\[\033[0;33m\]"
+    elif [[ $2 = 'blue' ]];    then echo -e "\[\033[0;34m\]"
+    elif [[ $2 = 'magenta' ]]; then echo -e "\[\033[0;35m\]"
+    elif [[ $2 = 'cyan' ]];    then echo -e "\[\033[0;36m\]"
+    elif [[ $2 = 'white' ]];   then echo -e "\[\033[0;37m\]"
     fi
   # Format
-  elif [[ $1 = 'bold' ]];      then tput bold
-  elif [[ $1 = 'underline' ]]; then tput smul
-  elif [[ $1 = 'invert' ]];    then tput rev
+  elif [[ $1 = 'bold' ]];      then "\[$(tput bold)\]"
+  elif [[ $1 = 'underline' ]]; then "\[$(tput smul)\]"
+  elif [[ $1 = 'invert' ]];    then "\[$(tput rev)\]"
   # Reset
-  elif [[ $1 = '' ]];          then echo -e "\033[0m"
+  elif [[ $1 = '' ]];          then echo -e "\[\033[0m\]\[$(tput sgr0)\]"
   fi
 }
 
@@ -26,4 +26,4 @@ title="\u@\h: \w"
 titlebar="\[\033]0;"$title"\007\]"
 
 # Custom bash prompt - "➜ ~ (master) "
-export PS1="$(text)${titlebar}$(text color green)➜ $(text color blue)\W $(text)"
+export PS1="${titlebar}$(text color green)➜ $(text color blue)\W $(text)"

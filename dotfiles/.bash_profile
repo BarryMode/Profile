@@ -1,14 +1,6 @@
 # Add `~/bin` to the `$PATH`
 export PATH="$HOME/bin:$PATH";
 
-# Load the shell dotfiles, and then some:
-# * ~/.path can be used to extend `$PATH`.
-# * ~/.extra can be used for other settings you don't want to commit.
-for file in ~/.{path,bash_prompt,exports,aliases,functions,extra}; do
-  [ -r "$file" ] && [ -f "$file" ] && source "$file";
-done;
-unset file;
-
 # autojump - a faster way to navigate your filesystem
 # https://github.com/wting/autojump
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
@@ -55,3 +47,11 @@ HISTTIMEFORMAT="|  %F  |  %r  |  "
 # Tell SSH how to access gpg-agent by changing the value of SSH_AUTH_SOCK
 export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
 gpgconf --launch gpg-agent
+
+# Load the shell dotfiles, and then some:
+# * ~/.path can be used to extend `$PATH`.
+# * ~/.extra can be used for other settings you don't want to commit.
+for file in ~/.{path,exports,aliases,functions,extra,bash_prompt}; do
+  [ -r "$file" ] && [ -f "$file" ] && source "$file";
+done;
+unset file;

@@ -69,6 +69,30 @@ function extract() {
   fi
 }
 
+function text() {
+  # Colors
+  case $1 in
+    color)
+      case $2 in
+        black)   echo -e "\033[0;30m" ;;
+        red)     echo -e "\033[0;31m" ;;
+        green)   echo -e "\033[0;32m" ;;
+        yellow)  echo -e "\033[0;33m" ;;
+        blue)    echo -e "\033[0;34m" ;;
+        magenta) echo -e "\033[0;35m" ;;
+        cyan)    echo -e "\033[0;36m" ;;
+        white)   echo -e "\033[0;37m" ;;
+      esac
+    ;;
+    # Format
+    bold)      tput bold ;;
+    underline) tput smul ;;
+    invert)    tput rev  ;;
+    # Reset
+    '') echo -e "\033[0m" ;;
+  esac
+}
+
 # to ascii
 function decode() {
   if   [[ $1 = 'base64' ]]; then shift 1; echo -n "$@" | base64 --decode
@@ -91,9 +115,9 @@ function encode() {
 # ss xlsx xml
 function ss() { /Applications/LibreOffice.app/Contents/MacOS/soffice --convert-to $2 *.$1 --headless; }
 
-#==============================================================================#
+#------------------------------------------------------------------------------#
 # Media: images, audio, video
-#==============================================================================#
+#------------------------------------------------------------------------------#
 
 # resize: optimal settings for resizing images
 # parameters - size (width in pixels, height is automatic), file, outputdir
@@ -215,9 +239,9 @@ function vget() {
   fi
 }
 
-#==============================================================================#
+#------------------------------------------------------------------------------#
 # Maintenance
-#==============================================================================#
+#------------------------------------------------------------------------------#
 
 # update: Get macOS Software Updates, update packages, and general cleanup
 function update() {

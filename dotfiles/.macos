@@ -9,9 +9,9 @@ osascript -e 'tell application "System Preferences" to quit'
 # Persistant sudo
 sudo -v; while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
-#==============================================================================#
+#------------------------------------------------------------------------------#
 # General System Preferences
-#==============================================================================#
+#------------------------------------------------------------------------------#
 
 # Set computer name (as done via System Preferences → Sharing)
 sudo scutil --set ComputerName "Mycroft"
@@ -50,17 +50,17 @@ defaults write com.apple.CrashReporter DialogType -string "none"
 # SSD-specific tweak - Disable hibernation (speeds up entering sleep mode)
 sudo pmset -a hibernatemode 0
 
-#==============================================================================#
+#------------------------------------------------------------------------------#
 # Menu Bar
-#==============================================================================#
+#------------------------------------------------------------------------------#
 
 # Menu Bar: Show battery percentage and time?
 defaults write com.apple.menuextra.battery ShowPercent -string "YES"
 defaults write com.apple.menuextra.battery ShowTime -string "NO"
 
-#==============================================================================#
+#------------------------------------------------------------------------------#
 # Window
-#==============================================================================#
+#------------------------------------------------------------------------------#
 
 # Window: Change minimize/maximize window effect: `genie`, `suck`, `scale`
 defaults write com.apple.dock mineffect -string "genie"
@@ -86,9 +86,9 @@ defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode2 -bool true
 defaults write NSGlobalDomain PMPrintingExpandedStateForPrint -bool true
 defaults write NSGlobalDomain PMPrintingExpandedStateForPrint2 -bool true
 
-#==============================================================================#
+#------------------------------------------------------------------------------#
 # Input, Mouse, Keyboard, & Bluetooth
-#==============================================================================#
+#------------------------------------------------------------------------------#
 
 # Input: Enable automatic capitalization?
 defaults write NSGlobalDomain NSAutomaticCapitalizationEnabled -bool false
@@ -134,9 +134,9 @@ defaults write com.apple.BezelServices kDimTime -int 300
 # Bluetooth: Increase sound quality for Bluetooth headphones/headsets
 defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int 40
 
-#==============================================================================#
+#------------------------------------------------------------------------------#
 # Screen
-#==============================================================================#
+#------------------------------------------------------------------------------#
 
 # Screen: Enable subpixel font rendering on non-Apple LCDsl
 defaults write NSGlobalDomain AppleFontSmoothing -int 1
@@ -157,9 +157,9 @@ defaults write com.apple.screencapture type -string "png"
 # Screen: Disable shadow in screenshots
 defaults write com.apple.screencapture disable-shadow -bool true
 
-#==============================================================================#
+#------------------------------------------------------------------------------#
 # Logs
-#==============================================================================#
+#------------------------------------------------------------------------------#
 
 # Logs: Disable download history
 ln -sf /dev/null ~/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV2
@@ -176,9 +176,9 @@ osascript -e 'tell application "System Events" to tell appearance preferences to
 # Logs: Number of recent items: Servers: None
 osascript -e 'tell application "System Events" to tell appearance preferences to set recent servers limit to 0'
 
-#==============================================================================#
+#------------------------------------------------------------------------------#
 # Finder
-#==============================================================================#
+#------------------------------------------------------------------------------#
 
 # Finder: Set Home as the default location for new windows
 defaults write com.apple.finder NewWindowTarget -string "PfLo"
@@ -250,9 +250,9 @@ defaults write com.apple.NetworkBrowser BrowseAllInterfaces -bool true
 file=/Applications/Dropbox.app/Contents/Resources/emblem-dropbox-uptodate.icns
 [ -e "${file}" ] && mv -f "${file}" "${file}.bak"
 
-#==============================================================================#
+#------------------------------------------------------------------------------#
 # Dock, Mission Control, Spaces, & Hot Corners
-#==============================================================================#
+#------------------------------------------------------------------------------#
 
 # Dock: Set the icon size of Dock items to 36 pixels
 defaults write com.apple.dock tilesize -int 36
@@ -321,9 +321,9 @@ defaults write com.apple.dock wvous-bl-modifier -int 0
 defaults write com.apple.dock wvous-br-corner -int 0
 defaults write com.apple.dock wvous-br-modifier -int 0
 
-#==============================================================================#
+#------------------------------------------------------------------------------#
 # Safari
-#==============================================================================#
+#------------------------------------------------------------------------------#
 
 # Safari: Enable "Do Not Track"?
 defaults write com.apple.Safari SendDoNotTrackHTTPHeader -bool true
@@ -401,9 +401,9 @@ defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebK
 # Safari: Update extensions automatically?
 defaults write com.apple.Safari InstallExtensionUpdatesAutomatically -bool true
 
-#==============================================================================#
+#------------------------------------------------------------------------------#
 # Spotlight
-#==============================================================================#
+#------------------------------------------------------------------------------#
 
 # Spotlight: Load new settings before rebuilding the index
 killall mds > /dev/null 2>&1
@@ -414,9 +414,9 @@ sudo mdutil -i on / > /dev/null
 # Spotlight: Rebuild the index from scratch
 sudo mdutil -E / > /dev/null
 
-#==============================================================================#
+#------------------------------------------------------------------------------#
 # Terminal
-#==============================================================================#
+#------------------------------------------------------------------------------#
 
 # Terminal: only use UTF-8 in Terminal.app
 defaults write com.apple.terminal StringEncodings -array 4
@@ -476,16 +476,16 @@ defaults write com.apple.Terminal ShowLineMarks -int 0
 # Terminal: Remove "you have mail"
 rm -rf /var/mail/*
 
-#==============================================================================#
+#------------------------------------------------------------------------------#
 # Time Machine
-#==============================================================================#
+#------------------------------------------------------------------------------#
 
 # Time Machine: Prevent the prompt to use new hard drives as a backup volume?
 defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
 
-#==============================================================================#
+#------------------------------------------------------------------------------#
 # Activity Monitor
-#==============================================================================#
+#------------------------------------------------------------------------------#
 
 # Activity Monitor: Show the main window when launching Activity Monitor?
 defaults write com.apple.ActivityMonitor OpenMainWindow -bool true
@@ -497,9 +497,9 @@ defaults write com.apple.ActivityMonitor IconType -int 5
 defaults write com.apple.ActivityMonitor SortColumn -string "CPUUsage"
 defaults write com.apple.ActivityMonitor SortDirection -int 0
 
-#==============================================================================#
+#------------------------------------------------------------------------------#
 # App Store
-#==============================================================================#
+#------------------------------------------------------------------------------#
 
 # App Store: Enable the automatic update check?
 defaults write com.apple.SoftwareUpdate AutomaticCheckEnabled -bool true
@@ -519,16 +519,16 @@ defaults write com.apple.commerce AutoUpdate -bool true
 # App Store: Allow the computer to reboot automatically on macOS updates?
 defaults write com.apple.commerce AutoUpdateRestartRequired -bool false
 
-#==============================================================================#
+#------------------------------------------------------------------------------#
 # Photos
-#==============================================================================#
+#------------------------------------------------------------------------------#
 
 # Photos: Prevent Photos from opening automatically when devices are plugged in?
 defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
 
-#==============================================================================#
+#------------------------------------------------------------------------------#
 # Messages
-#==============================================================================#
+#------------------------------------------------------------------------------#
 
 # Messages: Enable automatic emoji substitution?
 defaults write com.apple.messageshelper.MessageController SOInputLineSettings -dict-add "automaticEmojiSubstitutionEnablediMessage" -bool false
@@ -539,9 +539,9 @@ defaults write com.apple.messageshelper.MessageController SOInputLineSettings -d
 # Messages: Enable continuous spell checking?
 defaults write com.apple.messageshelper.MessageController SOInputLineSettings -dict-add "continuousSpellCheckingEnabled" -bool false
 
-#==============================================================================#
+#------------------------------------------------------------------------------#
 # TextEdit
-#==============================================================================#
+#------------------------------------------------------------------------------#
 
 # TextEdit: Use plain text mode
 defaults write com.apple.TextEdit RichText -int 0
@@ -550,16 +550,16 @@ defaults write com.apple.TextEdit RichText -int 0
 defaults write com.apple.TextEdit PlainTextEncoding -int 4
 defaults write com.apple.TextEdit PlainTextEncodingForWrite -int 4
 
-#==============================================================================#
+#------------------------------------------------------------------------------#
 # Sublime Text
-#==============================================================================#
+#------------------------------------------------------------------------------#
 
 # Sublime Text: Install Sublime Text settings
 cp init/*.sublime-settings ~/Library/Application\ Support/Sublime\ Text*/Packages/User/
 
-#==============================================================================#
+#------------------------------------------------------------------------------#
 # Kill affected applications
-#==============================================================================#
+#------------------------------------------------------------------------------#
 
 for app in         \
 "Activity Monitor" \

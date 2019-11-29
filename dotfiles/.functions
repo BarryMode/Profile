@@ -280,7 +280,7 @@ function update() {
   echo '--------------------------------------------------------------------------------'
   echo
   echo 'Backing up Sublime Text settings…'
-  cp ~/Library/Application\ Support/Sublime\ Text*/Packages/User/*.sublime-settings ~/prime/dotfiles/init/
+  cp ~/Library/Application\ Support/Sublime\ Text*/Packages/User/*.sublime-settings ~/prime/dotfiles/init/sublime-settings/
   echo
   echo 'Git Repositories'
   echo '--------------------------------------------------------------------------------'

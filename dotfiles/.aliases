@@ -7,15 +7,6 @@
 # Enable aliases to be sudoed
 alias sudo='sudo '
 
-# sama: Persistent sudo
-alias sama="sudo -v; while true; do sudo -n true; sleep 60; kill -0 \"$$\" || exit; done 2>/dev/null &"
-
-# Opens current directory in Finder
-alias f='open -a Finder ./'
-
-# Count non-hidden files in this directory
-alias f\#='echo $(ls -1 | wc -l)'
-
 # Easier navigation
 alias ..="cd .."
 alias ...="cd ../.."
@@ -25,8 +16,25 @@ alias .....="cd ../../../.."
 # Make directories recursively (ex. `my/tree` will make both folders)
 alias mkdir="mkdir -p"
 
-# Print each PATH entry on a separate line
-alias path='echo -e ${PATH//:/\\n}'
+#------------------------------------------------------------------------------#
+# Rust Replacements
+#------------------------------------------------------------------------------#
+
+alias ls="exa"
+alias cat="bat"
+alias find="fd"
+alias grep="ripgrep"
+alias tree="exa -T"
+
+#------------------------------------------------------------------------------#
+# General
+#------------------------------------------------------------------------------#
+
+# Persistent sudo
+alias sama="sudo -v; while true; do sudo -n true; sleep 60; kill -0 \"$$\" || exit; done 2>/dev/null &"
+
+# Opens current directory in Finder
+alias f="open -a Finder ./"
 
 # Lock the screen (when going AFK)
 alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
@@ -45,53 +53,6 @@ alias unlock_all="chflags -R nouchg"
 # Show/hide symlinks without hiding the destination
 alias show_alias="chflags -h nohidden"
 alias hide_alias="chflags -h hidden"
-# Show/hide hidden files in Finder
-# The files remain technically hidden but you can see the "hidden" files in Finder
-alias showfiles="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
-alias hidefiles="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
-# Show/hide all desktop icons (useful when presenting)
-alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
-alias hidedesktop="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
-
-# Disable Spotlight indexing
-alias spotoff="sudo mdutil -a -i off"
-# Enable Spotlight indexing
-alias spoton="sudo mdutil -a -i on"
-
-#==============================================================================#
-# Shortcuts
-#==============================================================================#
-
-# ⌘K
-alias c="printf '\033c\e[3J'"
-
-# m stands for metadata
-# `m -j file` outputs json
-alias m='exiftool'
-
-#==============================================================================#
-# Colors
-#==============================================================================#
-
-# LS Colors
-colorflag="-G"
-export LSCOLORS='BxBxhxDxfxhxhxhxhxcxcx'
-# List all files colorized in long format
-alias l="ls -lF ${colorflag}"
-# List all files colorized in long format, excluding . and ..
-alias la="ls -lAF ${colorflag}"
-# List only directories
-alias lsd="ls -lF ${colorflag} | grep --color=never '^d'"
-# Always use color output for `ls`
-alias ls="command ls ${colorflag}"
-
-# Always enable colored `grep` output
-alias grep='grep --color=auto'
-alias fgrep='fgrep --color=auto'
-alias egrep='egrep --color=auto'
-
-# Always enable colored tree
-alias tree='tree -C'
 
 #------------------------------------------------------------------------------#
 # Maintenance
@@ -156,7 +117,9 @@ alias flush="dscacheutil -flushcache && killall -HUP mDNSResponder"
 
 # Reload the shell (i.e. invoke as a login shell)
 alias reload="exec $SHELL -l"
-alias r="reload"
+
+# Print each PATH entry on a separate line
+alias path='echo -e ${PATH//:/\\n}'
 
 #------------------------------------------------------------------------------#
 # Other
@@ -184,3 +147,13 @@ alias fix_audio='sudo killall coreaudiod'
 #------------------------------------------------------------------------------#
 # Shortcuts
 #------------------------------------------------------------------------------#
+
+# ⌘K
+alias c="printf '\033c\e[3J'"
+
+# m stands for metadata
+# `m -j file` outputs json
+alias m='exiftool'
+
+# Reload
+alias r="reload"

@@ -4,6 +4,8 @@
 		".gitconfig",
 		".dock",
 		"known_hosts",
-		"ps1"
+		"ps1",
+		"bash_completion",
+		"fish_completion"
 	]
 }

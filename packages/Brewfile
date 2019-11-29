@@ -107,6 +107,7 @@ brew "wp-cli-completion"
 # Download YouTube videos from the command-line
 brew "youtube-dl"
 cask "alfred"
+cask "adobe-acrobat-reader"
 cask "authy"
 cask "bitwarden"
 cask "carbon-copy-cloner"

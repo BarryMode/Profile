@@ -17,20 +17,6 @@ function up() {
   cd $str
 }
 
-# Determine size of a file or total size of a directory
-function fs() {
-  if du -b /dev/null > /dev/null 2>&1; then
-    local arg=-sbh
-  else
-    local arg=-sh
-  fi
-  if [[ -n "$@" ]]; then
-    du $arg -- "$@"
-  else
-    du $arg .[^.]* ./*
-  fi
-}
-
 # Find and Replace: findreplace searchText replacementText
 function findreplace() { ack "$1" -la --print0 | xargs -0 -n 1 sed -i "s/$1/$2/"; }
 
@@ -95,20 +81,22 @@ function text() {
 
 # to ascii
 function decode() {
-  if   [[ $1 = 'base64' ]]; then shift 1; echo -n "$@" | base64 --decode
-  elif [[ $1 = 'binary' ]]; then shift 1; echo -n "$@" | perl -lpe '$_=pack"B*",$_'
-  elif [[ $1 = 'hex'    ]]; then shift 1; echo -n "0x$@" | xxd -r
-  fi
+  case $1 in
+    base64) shift 1; echo -n "$@" | base64 --decode            ;;
+    binary) shift 1; echo -n "$@" | perl -lpe '$_=pack"B*",$_' ;;
+    hex)    shift 1; echo -n "0x$@" | xxd -r                   ;;
+  esac
 }
 
 # from ascii
 function encode() {
-  if   [[ $1 = 'base64' ]]; then shift 1; echo -n "$@" | openssl base64
-  elif [[ $1 = 'binary' ]]; then shift 1; echo -n "$@" | perl -lpe '$_=unpack"B*"'
-  elif [[ $1 = 'hex'    ]]; then shift 1; echo -n "$@" | xxd -p
-  elif [[ $1 = 'md5'    ]]; then shift 1; echo -n "$@" | openssl md5
-  elif [[ $1 = 'sha1'   ]]; then shift 1; echo -n "$@" | openssl sha1
-  fi
+  case $1 in
+    base64) shift 1; echo -n "$@" | openssl base64            ;;
+    binary) shift 1; echo -n "$@" | perl -lpe '$_=unpack"B*"' ;;
+    hex)    shift 1; echo -n "$@" | xxd -p                    ;;
+    md5)    shift 1; echo -n "$@" | openssl md5               ;;
+    sha1)   shift 1; echo -n "$@" | openssl sha1              ;;
+  esac
 }
 
 # ss: convert spreadsheets to different formats (ex. xml, xls, xlsx)
@@ -249,25 +237,25 @@ function update() {
   cd ~
   echo
   echo 'Symlinks'
-  echo '================================================================================'
+  echo '--------------------------------------------------------------------------------'
   echo
   echo 'Updating symlinks…'
   update_symlinks
   echo
   echo 'Dotfiles'
-  echo '================================================================================'
+  echo '--------------------------------------------------------------------------------'
   echo
   echo 'Updating dotfiles…'
   update_dotfiles --force
   echo
   echo 'MAS'
-  echo '================================================================================'
+  echo '--------------------------------------------------------------------------------'
   echo
   echo 'Updating mas apps…'
   mas upgrade
   echo
   echo 'Homebrew'
-  echo '================================================================================'
+  echo '--------------------------------------------------------------------------------'
   echo
   echo 'Updating brew packages…'
   brew update-reset > /dev/null; brew upgrade; brew missing; brew cask upgrade; brew cleanup; brew services cleanup
@@ -276,38 +264,38 @@ function update() {
   cd ~
   echo
   echo 'NPM'
-  echo '================================================================================'
+  echo '--------------------------------------------------------------------------------'
   echo
   echo 'Updating npm modules…'
   npm update -g; npm cache clean --force
   echo
   echo 'PIP'
-  echo '================================================================================'
+  echo '--------------------------------------------------------------------------------'
   echo
   echo 'Updating python packages…'
   pip3 install --upgrade pip
   pip3 install -U $(pip freeze | cut -d '=' -f 1)
   echo
   echo 'Sublime Text'
-  echo '================================================================================'
+  echo '--------------------------------------------------------------------------------'
   echo
   echo 'Backing up Sublime Text settings…'
   cp ~/Library/Application\ Support/Sublime\ Text*/Packages/User/*.sublime-settings ~/prime/dotfiles/init/
   echo
   echo 'Git Repositories'
-  echo '================================================================================'
+  echo '--------------------------------------------------------------------------------'
   echo
   echo 'Updating git repos…'
   cd ~/Documents/Repos/ && update_repos; cd ~
   echo
   echo 'macOS'
-  echo '================================================================================'
+  echo '--------------------------------------------------------------------------------'
   echo
   echo 'Running macOS update…'
   softwareupdate -i -a
   echo
   echo 'Cleaning'
-  echo '================================================================================'
+  echo '--------------------------------------------------------------------------------'
   echo
   echo 'Deduping ssh known hosts…'
   cat ~/.ssh/known_hosts | uniq > ~/.ssh/known_hosts2; mv ~/.ssh/known_hosts2 ~/.ssh/known_hosts # add "| sort" to list in abc order

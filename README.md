@@ -15,7 +15,6 @@ git clone https://github.com/barrymode/macos-prime.git ~/prime && cd ~/prime && 
 - Adobe Suite
 - Atomic
 - Cinemagraph Pro
-- CodeSigner
 - DaVinci Resolve
 - Drop
 - FileBot

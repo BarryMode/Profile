@@ -31,6 +31,7 @@ git clone https://github.com/barrymode/macos-prime.git ~/prime && cd ~/prime && 
   - Calendars
   - Reminders
   - Notes
+  - Siri
   - Keychain
   - Find My Mac
   - News

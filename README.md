@@ -16,7 +16,6 @@ git clone https://github.com/barrymode/macos-prime.git ~/prime && cd ~/prime && 
 - Atomic
 - Cinemagraph Pro
 - DaVinci Resolve
-- Drop
 - FileBot
 - Grabber
 - Microsoft Excel

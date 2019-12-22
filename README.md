@@ -18,8 +18,6 @@ git clone https://github.com/barrymode/macos-prime.git ~/prime && cd ~/prime && 
 - DaVinci Resolve
 - FileBot
 - Grabber
-- Microsoft Excel
-- Microsoft Word
 
 ## User Files
 

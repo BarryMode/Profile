@@ -48,6 +48,8 @@ brew "exiftool"
 brew "fd"
 # Play, record, convert, and stream audio and video
 brew "ffmpeg"
+# User-friendly command-line shell for UNIX-like operating systems
+brew "fish"
 # Generic library support script
 brew "libtool"
 # Gatsby command-line interface

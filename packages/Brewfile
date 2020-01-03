@@ -106,8 +106,6 @@ brew "ssh-copy-id"
 brew "starship"
 # Manipulate and query tags on macOS files
 brew "tag"
-# Display directories as trees (with optional color/HTML output)
-brew "tree"
 # Internet file retriever
 brew "wget"
 # Command-line interface for WordPress

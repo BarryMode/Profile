@@ -13,7 +13,6 @@ git clone https://github.com/barrymode/macos-prime.git ~/prime && cd ~/prime && 
 ## Other Applications
 
 - Adobe Suite
-- Atomic Wallet
 - Cinemagraph Pro
 - DaVinci Resolve
 - FileBot

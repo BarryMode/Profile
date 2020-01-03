@@ -63,8 +63,3 @@ When setting up a new Mac, you may want to set some sensible macOS defaults:
 ```bash
 ./.macos
 ```
-
-## Thanks
-
-* [Eduardo Lundgren](http://eduardo.io) and his [dotfiles repository](https://github.com/eduardolundgren/dotfiles)
-* [Mathias Bynens](https://mathiasbynens.be) and his [dotfiles repository](https://github.com/mathiasbynens/dotfiles)

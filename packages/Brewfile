@@ -102,6 +102,8 @@ brew "rename"
 brew "ripgrep"
 # Add a public key to a remote machine's authorized_keys file
 brew "ssh-copy-id"
+# The cross-shell prompt for astronauts
+brew "starship"
 # Manipulate and query tags on macOS files
 brew "tag"
 # Display directories as trees (with optional color/HTML output)

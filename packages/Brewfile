@@ -28,6 +28,8 @@ brew "brew-cask-completion"
 brew "cmake"
 # Console Matrix
 brew "cmatrix"
+# Dependency Manager for PHP
+brew "composer"
 # GNU File, Shell, and Text utilities
 brew "coreutils"
 # Get a file from an HTTP, HTTPS or FTP server

@@ -5,6 +5,7 @@
 	],
 	"installed_packages":
 	[
+		"fish",
 		"Jasonette Completions",
 		"jQuery",
 		"Package Control",

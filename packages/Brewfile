@@ -40,6 +40,8 @@ brew "deno"
 brew "diskus"
 # More intuitive version of du in rust
 brew "dust"
+# Modern replacement for 'ls'
+brew "exa"
 # Perl lib for reading and writing EXIF metadata
 brew "exiftool"
 # Simple, fast and user-friendly alternative to find

@@ -6,6 +6,7 @@
 	"installed_packages":
 	[
 		"fish",
+		"Increment Selection",
 		"Jasonette Completions",
 		"jQuery",
 		"Package Control",

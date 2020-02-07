@@ -1,7 +1,10 @@
-# Add `~/bin` to the `$PATH`
-export PATH="$HOME/bin:$PATH";
-
+# Set prompt to Starship
 eval "$(starship init bash)"
+
+# Title bar - "user@host: ~"
+title="\u@\h: \w"
+titlebar="\[\033]0;"$title"\007\]"
+PS1="${titlebar}${PS1}"
 
 # autojump - a faster way to navigate your filesystem
 # https://github.com/wting/autojump

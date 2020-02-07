@@ -149,6 +149,9 @@ alias brew_relink="brew list -1 | while read line; do brew unlink $line; brew li
 # When audio isn't working
 alias fix_audio='sudo killall coreaudiod'
 
+# When an app tells you "This app is damaged and can't be opened. You should move it to the trash."
+alias fix_apps='xattr -rc'
+
 #------------------------------------------------------------------------------#
 # Shortcuts
 #------------------------------------------------------------------------------#

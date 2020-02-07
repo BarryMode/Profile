@@ -1,8 +1,0 @@
-#!/usr/bin/env bash
-
-# Title bar - "user@host: ~"
-title="\u@\h: \w"
-titlebar="\[\033]0;"$title"\007\]"
-
-# Custom bash prompwt - "➜ ~ "
-export PS1="${titlebar}\[$(text color green)\]➜ \[$(text color blue)\]\W \[$(text)\]\[$(tput sgr0)\]"

@@ -1,6 +1,8 @@
 # Add `~/bin` to the `$PATH`
 export PATH="$HOME/bin:$PATH";
 
+eval "$(starship init bash)"
+
 # autojump - a faster way to navigate your filesystem
 # https://github.com/wting/autojump
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
@@ -51,7 +53,7 @@ gpgconf --launch gpg-agent
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
 # * ~/.extra can be used for other settings you don't want to commit.
-for file in ~/.{path,exports,aliases,functions,extra,prompt}; do
+for file in ~/.{path,exports,aliases,functions,extra}; do
   [ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
 unset file;

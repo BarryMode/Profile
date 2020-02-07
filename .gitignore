@@ -8,6 +8,6 @@ hosts/*/*/hosts
 hosts/*/*/*/hosts
 hosts-*
 hosts/httpd-vhosts.conf
-hosts/myhosts
+hosts/.hosts
 hosts/blacklist
 hosts/whitelist

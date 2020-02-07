@@ -1,6 +1,6 @@
 # Unified hosts
 
-This repository consolidates several reputable `hosts` files, and merges them into one file with duplicates removed. By default, all generated `hosts` files have base extensions that block adware and malware.
+Consolidates several reputable `hosts` files, and merges them into one file with duplicates removed. By default, all generated `hosts` files have base extensions that block adware and malware.
 
 ## Extensions
 
@@ -16,7 +16,7 @@ The `generate.py` script will generate a unified `hosts` file based on the sourc
 python generate.py [--auto] [--replace] [--ip nnn.nnn.nnn.nnn] [--extensions ext1 ext2 ext3]
 ```
 
-For the purpose of this repository, I use `install.sh` with my own preconfiguration.
+For the purpose of this repo, I use `install.sh` with my own preconfiguration.
 
 #### Command line options:
 
@@ -60,9 +60,9 @@ Create an *optional* `blacklist` file. The contents of this file (containing a l
 
 ### How do I include my own custom domain mappings?
 
-If you have custom hosts records, place them in file `myhosts`. The contents of this file are prepended to the unified hosts file during the update process.
+If you have custom hosts records, place them in file `.hosts`. The contents of this file are prepended to the unified hosts file during the update process.
 
-The `myhosts` file is not tracked by git, so any changes you make won't be overridden when you `git pull` this repo from `origin` in the future.
+The `.hosts` file is not tracked by git, so any changes you make won't be overridden when you `git pull` this repo from `origin` in the future.
 
 ### How do I prevent domains from being included?
 
@@ -111,8 +111,6 @@ sudo dscacheutil -flushcache;sudo killall -HUP mDNSResponder
 ```
 
 ## Goals of this unified `hosts` file
-
-The goals of this repo are to:
 
 1. automatically combine high-quality lists of hosts,
 2. provide easy extensions,

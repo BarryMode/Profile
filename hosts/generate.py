@@ -658,7 +658,7 @@ def write_opening_header(final_file, **header_params):
 
         write_data(final_file, "\n")
 
-    preamble = path_join_robust(BASEDIR_PATH, "myhosts")
+    preamble = path_join_robust(BASEDIR_PATH, ".hosts")
 
     if os.path.isfile(preamble):
         with open(preamble, "r") as f:

@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
 
-# sbin - added to validate `brew doctor`
-export PATH="/usr/local/sbin:$PATH"
-
 # qt
 export PATH="$(find /usr/local/Cellar/qt/* -maxdepth 0 -type d | head -1)/bin:$PATH"
 export PATH="/usr/local/opt/openssl/:$PATH"

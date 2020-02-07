@@ -5,21 +5,6 @@ function cd() { builtin cd "$@" && ls; }
 
 # Create a new directory and enter it
 function mkcd() { mkdir -p "$@" && cd "$_"; }
-
-# Go up N directories
-function up() {
-  str=""
-  count=0
-  while [ "$count" -lt "$1" ]; do
-    str=$str"../"
-    let count=count+1
-  done
-  cd $str
-}
-
-# Find and Replace: findreplace searchText replacementText
-function findreplace() { ack "$1" -la --print0 | xargs -0 -n 1 sed -i "s/$1/$2/"; }
-
 # Opens any file in MacOS Quicklook Preview
 function ql() { qlmanage -p "$*" >& /dev/null; }
 

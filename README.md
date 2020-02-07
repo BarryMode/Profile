@@ -12,6 +12,7 @@ git clone https://github.com/barrymode/macos-prime.git ~/prime && cd ~/prime && 
 
 ## Other Applications
 
+- A Better Finder Rename
 - Adobe Suite
 - Cinemagraph Pro
 - DaVinci Resolve

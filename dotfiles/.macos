@@ -10,7 +10,27 @@ osascript -e 'tell application "System Preferences" to quit'
 sudo -v; while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 #------------------------------------------------------------------------------#
-# General System Preferences
+# Boot
+#------------------------------------------------------------------------------#
+
+# Disable the sound effects on boot
+sudo nvram SystemAudioVolume=" "
+
+# Restart automatically if the computer freezes?
+sudo systemsetup -setrestartfreeze on
+
+# Never go into computer sleep mode
+sudo systemsetup -setcomputersleep Off > /dev/null
+
+# SSD-specific tweak - Disable hibernation (speeds up entering sleep mode)
+sudo pmset -a hibernatemode 0
+
+# Require password immediately after sleep or screen saver begins
+defaults write com.apple.screensaver askForPassword -int 1
+defaults write com.apple.screensaver askForPasswordDelay -int 0
+
+#------------------------------------------------------------------------------#
+# System
 #------------------------------------------------------------------------------#
 
 # Set computer name (as done via System Preferences → Sharing)
@@ -29,26 +49,17 @@ defaults write NSGlobalDomain AppleMetricUnits -bool false
 # Allow all apps to be installed
 sudo spctl --master-disable
 
-# Disable the sound effects on boot
-sudo nvram SystemAudioVolume=" "
+# Prevent Photos from opening automatically when devices are plugged in?
+defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
 
-# Restart automatically if the computer freezes?
-sudo systemsetup -setrestartfreeze on
+# Save screenshots to the Downloads folder
+defaults write com.apple.screencapture location -string "${HOME}/Downloads"
 
-# Never go into computer sleep mode
-sudo systemsetup -setcomputersleep Off > /dev/null
+# Save screenshots in PNG format (other options: BMP, GIF, JPG, PDF, TIFF)
+defaults write com.apple.screencapture type -string "png"
 
-# Enable the "Are you sure you want to open this application?" dialog?
-defaults write com.apple.LaunchServices LSQuarantine -bool false
-
-# Enable save documents to iCloud?
-defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
-
-# Disable the crash reporter
-defaults write com.apple.CrashReporter DialogType -string "none"
-
-# SSD-specific tweak - Disable hibernation (speeds up entering sleep mode)
-sudo pmset -a hibernatemode 0
+# Disable shadow in screenshots
+defaults write com.apple.screencapture disable-shadow -bool true
 
 #------------------------------------------------------------------------------#
 # Menu Bar
@@ -59,32 +70,44 @@ defaults write com.apple.menuextra.battery ShowPercent -string "YES"
 defaults write com.apple.menuextra.battery ShowTime -string "NO"
 
 #------------------------------------------------------------------------------#
-# Window
+# Windows
 #------------------------------------------------------------------------------#
 
-# Window: Change minimize/maximize window effect: `genie`, `suck`, `scale`
+# Change minimize/maximize window effect: `genie`, `suck`, `scale`
 defaults write com.apple.dock mineffect -string "genie"
 
-# Window: Minimize windows into their application's icon?
+# Minimize windows into their application's icon?
 defaults write com.apple.dock minimize-to-application -bool true
 
-# Window: Set scrollbar visibility (`WhenScrolling`, `Automatic` or `Always`)
+# Set scrollbar visibility (`WhenScrolling`, `Automatic` or `Always`)
 defaults write NSGlobalDomain AppleShowScrollBars -string "WhenScrolling"
 
-# Window: Expand the following file Info panes
+# Expand the following file Info panes
 defaults write com.apple.finder FXInfoPanesExpanded -dict \
   General -bool true  \
   MetaData -bool true \
   OpenWith -bool true \
   Privileges -bool true
 
-# Window: Expand save panel by default?
+# Expand save panel by default?
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode2 -bool true
 
-# Window: Expand print panel by default?
+# Expand print panel by default?
 defaults write NSGlobalDomain PMPrintingExpandedStateForPrint -bool true
 defaults write NSGlobalDomain PMPrintingExpandedStateForPrint2 -bool true
+
+# Enable the "Are you sure you want to open this application?" dialog?
+defaults write com.apple.LaunchServices LSQuarantine -bool false
+
+# Disable the crash reporter
+defaults write com.apple.CrashReporter DialogType -string "none"
+
+# Prevent the prompt to use new hard drives as a backup volume?
+defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
+
+# Enable save documents to iCloud?
+defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
 
 #------------------------------------------------------------------------------#
 # Input, Mouse, Keyboard, & Bluetooth
@@ -143,19 +166,6 @@ defaults write NSGlobalDomain AppleFontSmoothing -int 1
 
 # Screen: Enable HiDPI display modes (requires restart)
 sudo defaults write /Library/Preferences/com.apple.windowserver DisplayResolutionEnabled -bool true
-
-# Screen: Require password immediately after sleep or screen saver begins
-defaults write com.apple.screensaver askForPassword -int 1
-defaults write com.apple.screensaver askForPasswordDelay -int 0
-
-# Screen: Save screenshots to the Downloads folder
-defaults write com.apple.screencapture location -string "${HOME}/Downloads"
-
-# Screen: Save screenshots in PNG format (other options: BMP, GIF, JPG, PDF, TIFF)
-defaults write com.apple.screencapture type -string "png"
-
-# Screen: Disable shadow in screenshots
-defaults write com.apple.screencapture disable-shadow -bool true
 
 #------------------------------------------------------------------------------#
 # Logs
@@ -251,7 +261,7 @@ defaults write com.apple.dock tilesize -int 36
 defaults write com.apple.dock magnification -bool false
 
 # Dock: Set magnification icon size to 48 pixels
-# defaults write com.apple.dock largesize -float 48
+defaults write com.apple.dock largesize -float 48
 
 # Dock: Show indicator lights for open applications in the Dock?
 defaults write com.apple.dock show-process-indicators -bool true
@@ -392,19 +402,6 @@ defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebK
 defaults write com.apple.Safari InstallExtensionUpdatesAutomatically -bool true
 
 #------------------------------------------------------------------------------#
-# Spotlight
-#------------------------------------------------------------------------------#
-
-# Spotlight: Load new settings before rebuilding the index
-killall mds > /dev/null 2>&1
-
-# Spotlight: Make sure indexing is enabled for the main volume
-sudo mdutil -i on / > /dev/null
-
-# Spotlight: Rebuild the index from scratch
-sudo mdutil -E / > /dev/null
-
-#------------------------------------------------------------------------------#
 # Terminal
 #------------------------------------------------------------------------------#
 
@@ -426,7 +423,7 @@ set initialOpenedWindows to id of every window
 (* Open the custom theme so that it gets added to the list
    of available terminal themes (note: this will open two
    additional terminal windows). *)
-do shell script "open '$HOME/init/" & themeName & ".terminal'"
+do shell script "open '~/prime/init/" & themeName & ".terminal'"
 
 (* Wait a little bit to ensure that the custom theme is added. *)
 delay 1
@@ -467,13 +464,6 @@ defaults write com.apple.Terminal ShowLineMarks -int 0
 rm -rf /var/mail/*
 
 #------------------------------------------------------------------------------#
-# Time Machine
-#------------------------------------------------------------------------------#
-
-# Time Machine: Prevent the prompt to use new hard drives as a backup volume?
-defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
-
-#------------------------------------------------------------------------------#
 # Activity Monitor
 #------------------------------------------------------------------------------#
 
@@ -510,13 +500,6 @@ defaults write com.apple.commerce AutoUpdate -bool true
 defaults write com.apple.commerce AutoUpdateRestartRequired -bool false
 
 #------------------------------------------------------------------------------#
-# Photos
-#------------------------------------------------------------------------------#
-
-# Photos: Prevent Photos from opening automatically when devices are plugged in?
-defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
-
-#------------------------------------------------------------------------------#
 # Messages
 #------------------------------------------------------------------------------#
 
@@ -545,7 +528,8 @@ defaults write com.apple.TextEdit PlainTextEncodingForWrite -int 4
 #------------------------------------------------------------------------------#
 
 # Sublime Text: Install Sublime Text settings
-cp init/*.sublime-settings ~/Library/Application\ Support/Sublime\ Text*/Packages/User/
+cp ~/prime/init/Package\ Control.sublime-settings ~/Library/Application\ Support/Sublime\ Text*/Packages/User/
+cp ~/prime/init/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text*/Packages/User/
 
 #------------------------------------------------------------------------------#
 # Kill affected applications

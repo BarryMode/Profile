@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+export PATH="~/.cargo/bin:$PATH"
+
 # qt
 export PATH="$(find /usr/local/Cellar/qt/* -maxdepth 0 -type d | head -1)/bin:$PATH"
 export PATH="/usr/local/opt/openssl/:$PATH"

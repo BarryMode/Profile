@@ -218,6 +218,7 @@ function vget() {
 #------------------------------------------------------------------------------#
 
 # update: Get macOS Software Updates, update packages, and general cleanup
+# TODO: implement this? https://github.com/fwartner/mac-cleanup/blob/master/cleanup.sh
 function update() {
   sama
   cd ~
@@ -266,7 +267,8 @@ function update() {
   echo '--------------------------------------------------------------------------------'
   echo
   echo 'Backing up Sublime Text settings…'
-  cp ~/Library/Application\ Support/Sublime\ Text*/Packages/User/*.sublime-settings ~/prime/dotfiles/init/sublime-settings/
+  cp ~/Library/Application\ Support/Sublime\ Text*/Packages/User/Package\ Control.sublime-settings ~/prime/init/
+  cp ~/Library/Application\ Support/Sublime\ Text*/Packages/User/Preferences.sublime-settings ~/prime/init/
   echo
   echo 'Git Repositories'
   echo '--------------------------------------------------------------------------------'

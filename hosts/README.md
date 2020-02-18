@@ -56,21 +56,15 @@ Add one or more *optional* extensions, which originate from subfolders of the `e
 
 Create an *optional* `blacklist` file. The contents of this file (containing a listing of additional domains in `hosts` file format) are appended to the unified hosts file during the update process. A sample `blacklist` is included, and may be modified as you desire.
 
-  * NOTE: The `blacklist` is not tracked by git, so any changes you make won't be overridden when you `git pull` this repo from `origin` in the future.
-
 ### How do I include my own custom domain mappings?
 
 If you have custom hosts records, place them in file `.hosts`. The contents of this file are prepended to the unified hosts file during the update process.
-
-The `.hosts` file is not tracked by git, so any changes you make won't be overridden when you `git pull` this repo from `origin` in the future.
 
 ### How do I prevent domains from being included?
 
 The domains you list in the `whitelist` file are excluded from the final hosts file.
 
 The `whitelist` uses partial matching. Therefore if you whitelist `google-analytics.com`, that domain and all its subdomains won't be merged into the final hosts file.
-
-The `whitelist` is not tracked by git, so any changes you make won't be overridden when you `git pull` this repo from `origin` in the future.
 
 ## What is a hosts file?
 

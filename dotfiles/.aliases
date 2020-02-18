@@ -85,7 +85,7 @@ alias clearcache="
   rm -rf .expo/*cache
   rm -rf .gradle/caches
   rm -rf ~/Library/Application\ Support/Keybase/kbfs_block_cache
-  rm -rf ~/Library/Application\ Support/Google/DriveFS
+  rm -rf ~/Library/Application\ Support/Google/DriveFS/cef_cache/Cache
   rm -rf ~/Library/Developer/CoreSimulator
 "
 

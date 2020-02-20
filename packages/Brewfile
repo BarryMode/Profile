@@ -102,6 +102,10 @@ brew "qt"
 brew "rename"
 # Search tool like grep and The Silver Searcher
 brew "ripgrep"
+# Safe, concurrent, practical language
+brew "rust"
+# The Rust toolchain installer
+brew "rustup-init"
 # Add a public key to a remote machine's authorized_keys file
 brew "ssh-copy-id"
 # The cross-shell prompt for astronauts

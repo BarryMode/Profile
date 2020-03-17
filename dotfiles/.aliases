@@ -67,7 +67,7 @@ alias update_dotfiles='~/prime/dotfiles/install.sh'
 alias update_repos='find . -type d -depth 1 -exec git --git-dir={}/.git --work-tree=$PWD/{} pull origin master \;'
 
 # Update custom symlinks
-alias update_symlinks='"/Volumes/Keybase (barry)/private/barrymode/Documents/Computer/Scripts/CreateSymlinks.sh"'
+alias update_symlinks='"/Volumes/GoogleDrive/My Drive/Documents/Computer/Scripts/CreateSymlinks.sh"'
 
 # Clean up LaunchServices to remove duplicates in the "Open With" menu
 alias lscleanup="/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder"

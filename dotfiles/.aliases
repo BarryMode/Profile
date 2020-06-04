@@ -147,7 +147,7 @@ alias plist_to_binary='plutil -convert binary1'
 alias brew_relink="brew list -1 | while read line; do brew unlink $line; brew link $line; done"
 
 # When audio isn't working
-alias fix_audio='sudo killall coreaudiod'
+alias fix_audio='sudo pkill coreaudiod'
 
 # When an app tells you "This app is damaged and can't be opened. You should move it to the trash."
 alias fix_apps='xattr -rc'

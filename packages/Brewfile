@@ -34,7 +34,7 @@ brew "composer"
 brew "coreutils"
 # Get a file from an HTTP, HTTPS or FTP server
 brew "curl"
-# Command-line JavaScript / TypeScript engine
+# Secure runtime for JavaScript and TypeScript
 brew "deno"
 # Minimal, fast alternative to 'du -sh'
 brew "diskus"
@@ -107,7 +107,7 @@ brew "rust"
 # The Rust toolchain installer
 brew "rustup-init"
 # Add a public key to a remote machine's authorized_keys file
-brew "ssh-copy-id"
+brew "ssh-copy-id", link: true
 # The cross-shell prompt for astronauts
 brew "starship"
 # Manipulate and query tags on macOS files

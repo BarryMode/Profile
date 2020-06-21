@@ -64,7 +64,7 @@ alias hide_alias="chflags -h hidden"
 alias update_dotfiles='~/prime/dotfiles/install.sh'
 
 # Update all git repos in this directory
-alias update_repos='find . -type d -depth 1 -exec git --git-dir={}/.git --work-tree=$PWD/{} pull origin master \;'
+alias update_repos='for d in *; do pushd $d && git pull && popd; done'
 
 # Update custom symlinks
 alias update_symlinks='"/Volumes/GoogleDrive/My Drive/Documents/Computer/Scripts/CreateSymlinks.sh"'

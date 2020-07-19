@@ -22,6 +22,7 @@ alias mkdir="mkdir -p"
 # Rust Replacements
 #------------------------------------------------------------------------------#
 
+alias du="dust"
 alias ls="exa"
 alias cat="bat"
 alias find="fd"

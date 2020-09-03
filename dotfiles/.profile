@@ -1,14 +1,12 @@
-# Set prompt to Starship
+# Set prompt to `starship`
 eval "$(starship init bash)"
+# Add `zoxide` to shell
+eval "$(zoxide init bash)"
 
 # Title bar - "user@host: ~"
 title="\u@\h: \w"
 titlebar="\[\033]0;"$title"\007\]"
 PS1="${titlebar}${PS1}"
-
-# autojump - a faster way to navigate your filesystem
-# https://github.com/wting/autojump
-[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
 
 # Enable some Bash 4 features when possible:
 # * `autocd`, e.g. `**/qux` will enter `./foo/bar/baz/qux`

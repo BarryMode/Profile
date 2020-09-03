@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-# TODO finish moving aliases to fish
-
 #------------------------------------------------------------------------------#
 # Defaults
 #------------------------------------------------------------------------------#
@@ -27,6 +25,8 @@ alias ls="exa"
 alias cat="bat"
 alias find="fd"
 alias grep="ripgrep"
+alias sed="sd"
+alias top="ytop"
 alias tree="exa -T"
 
 #------------------------------------------------------------------------------#
@@ -68,7 +68,7 @@ alias update_dotfiles='~/prime/dotfiles/install.sh'
 alias update_repos='for d in *; do pushd $d && git pull && popd; done'
 
 # Update custom symlinks
-alias update_symlinks='"/Volumes/GoogleDrive/My Drive/Documents/Computer/Scripts/CreateSymlinks.sh"'
+alias update_symlinks='"/Volumes/GoogleDrive/My Drive/Users/Barry/Documents/Components/Tasks/Create Symlinks.sh"'
 
 # Clean up LaunchServices to remove duplicates in the "Open With" menu
 alias lscleanup="/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder"
@@ -105,11 +105,6 @@ alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash"
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias hostip="dig +short"
 alias localip="ipconfig getifaddr en0"
-alias ips="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[0-9]\+\)\|[a-fA-F0-9:]\+\)' | awk '{ sub(/inet6? (addr:)? ?/, \"\"); print }'"
-# Show active network interfaces
-alias ifactive="ifconfig | pcregrep -M -o '^[^\t:]+:([^\n]|\n\t)*status: active'"
-# All listening connections
-alias openports='sudo lsof -i | grep LISTEN'
 # Downloads list of links from source input and preserves directory structure
 alias wgetlist="wget -r --no-remove-listing -i"
 # wget settings for mirroring
@@ -130,11 +125,6 @@ alias path='echo -e ${PATH//:/\\n}'
 #------------------------------------------------------------------------------#
 # Other
 #------------------------------------------------------------------------------#
-
-# Intuitive map function
-# For example, to list all directories that contain a certain file:
-# `find . -name .gitattributes | map dirname`
-alias map="xargs -n1"
 
 # Merge PDF files
 # `mergepdf -o output.pdf input{1,2,3}.pdf`

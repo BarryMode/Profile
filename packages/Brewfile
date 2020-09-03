@@ -1,24 +1,22 @@
+tap "cjbassi/ytop"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "homebrew/services"
-# Interpreted, interactive, object-oriented programming language
-brew "python"
+cask "xquartz"
+# Cryptography and SSL/TLS Toolkit
+brew "openssl@1.1"
 # Core application library for C
 brew "glib"
-# SSL/TLS cryptography library
-brew "openssl"
-# Shell extension to jump to frequently used directories
-brew "autojump"
 # Tool for generating GNU Standards-compliant Makefiles
 brew "automake"
 # Text processing scripting language
 brew "awk"
 # Bourne-Again SHell, a UNIX command interpreter
 brew "bash"
-# Programmable completion for Bash 4.1+
+# Programmable completion for Bash 4.2+
 brew "bash-completion@2"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
@@ -30,14 +28,8 @@ brew "cmake"
 brew "cmatrix"
 # Dependency Manager for PHP
 brew "composer"
-# GNU File, Shell, and Text utilities
-brew "coreutils"
 # Get a file from an HTTP, HTTPS or FTP server
 brew "curl"
-# Secure runtime for JavaScript and TypeScript
-brew "deno"
-# Minimal, fast alternative to 'du -sh'
-brew "diskus"
 # More intuitive version of du in rust
 brew "dust"
 # Modern replacement for 'ls'
@@ -50,12 +42,16 @@ brew "fd"
 brew "ffmpeg"
 # Generic library support script
 brew "libtool"
+# Platform built on V8 to build network applications
+brew "node"
 # Gatsby command-line interface
 brew "gatsby-cli"
 # GNU compiler collection
 brew "gcc"
 # Google Drive CLI Client
 brew "gdrive"
+# WebDriver <-> Marionette proxy
+brew "geckodriver"
 # Interpreter for PostScript and PDF
 brew "ghostscript"
 # Distributed revision control system
@@ -72,8 +68,6 @@ brew "grep"
 brew "imagemagick"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
-# Handy way to save and run project-specific commands
-brew "just"
 # Mac App Store command-line interface
 brew "mas"
 # Command-line client for Mega.co.nz
@@ -84,8 +78,6 @@ brew "mysql", restart_service: true
 brew "n"
 # Fast, highly customisable system info script
 brew "neofetch"
-# Modern shell for the GitHub era
-brew "nushell"
 # OpenBSD freely-licensed SSH connectivity tools
 brew "openssh"
 # 7-Zip (high compression file archiver) implementation
@@ -98,14 +90,14 @@ brew "pinentry-mac"
 brew "pup"
 # Cross-platform application and UI framework
 brew "qt"
-# Perl-powered file rename script with many helpful built-ins
-brew "rename"
 # Search tool like grep and The Silver Searcher
 brew "ripgrep"
 # Safe, concurrent, practical language
 brew "rust"
 # The Rust toolchain installer
 brew "rustup-init"
+# Intuitive find & replace CLI
+brew "sd"
 # Add a public key to a remote machine's authorized_keys file
 brew "ssh-copy-id", link: true
 # The cross-shell prompt for astronauts
@@ -120,8 +112,12 @@ brew "wp-cli"
 brew "wp-cli-completion"
 # Download YouTube videos from the command-line
 brew "youtube-dl"
-cask "alfred"
+# Shell extension to navigate your filesystem faster
+brew "zoxide"
+# A TUI system monitor written in Rust
+brew "cjbassi/ytop/ytop"
 cask "adobe-acrobat-reader"
+cask "adobe-creative-cloud-cleaner-tool"
 cask "authy"
 cask "bitwarden"
 cask "carbon-copy-cloner"
@@ -135,12 +131,14 @@ cask "discord"
 cask "dolphin"
 cask "easyfind"
 cask "edex-ui"
+cask "fedora-media-writer"
 cask "firefox"
 cask "fl-studio"
 cask "flash-player"
 cask "font-open-sans"
 cask "font-raleway"
 cask "gemini"
+cask "gifox"
 cask "google-drive-file-stream"
 cask "grandperspective"
 cask "handbrake"
@@ -150,13 +148,12 @@ cask "integrity"
 cask "java"
 cask "java8"
 cask "jdownloader"
+cask "kap"
 cask "keybase"
 cask "knockknock"
 cask "lackeyccg"
-cask "launchrocket"
 cask "loopback"
 cask "lulu"
-cask "malwarebytes"
 cask "megasync"
 cask "navicat-premium"
 cask "microsoft-edge"
@@ -180,16 +177,12 @@ cask "sublime-text"
 cask "suspicious-package"
 cask "teamviewer"
 cask "the-unarchiver"
-cask "tinypng4mac"
 cask "vlc"
 cask "webtorrent"
 cask "xmind-zen"
 cask "yacreader"
 cask "zoomus"
-mas "GIF Brewery 3", id: 1081413713
-mas "Gifski", id: 1351639930
 mas "Microsoft Excel", id: 462058435
 mas "Microsoft Remote Desktop", id: 1295203466
-mas "PiPer", id: 1421915518
 mas "Microsoft Word", id: 462054704
 mas "Xcode", id: 497799835

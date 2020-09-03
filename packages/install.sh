@@ -3,7 +3,7 @@
 cd ~/prime/packages/
 chmod +x *.sh
 
-# Brew - The missing package manager for macOS
+# Brew: The missing package manager for macOS
 # https://github.com/Homebrew/brew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew tap "homebrew/bundle"

@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+# brew
+export PATH="/usr/local/sbin:$PATH"
+
+# rust
 export PATH="~/.cargo/bin:$PATH"
 
 # qt

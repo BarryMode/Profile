@@ -5,8 +5,8 @@
 
   # Show verbose output about tags, branches or remotes
   tags = tag -l
-  branches = branch -a
-  remotes = remote -v
+  branches = branch --all
+  remotes = remote --verbose
 
   # List contributors with number of commits
   contributors = shortlog --summary --numbered

@@ -89,9 +89,9 @@ function encode() {
 # ss xlsx xml
 function ss() { /Applications/LibreOffice.app/Contents/MacOS/soffice --convert-to $2 *.$1 --headless; }
 
-#------------------------------------------------------------------------------#
+#==============================================================================#
 # Media: images, audio, video
-#------------------------------------------------------------------------------#
+#==============================================================================#
 
 # resize: optimal settings for resizing images
 # parameters - size (width in pixels, height is automatic), file, outputdir
@@ -218,9 +218,9 @@ function vget() {
   fi
 }
 
-#------------------------------------------------------------------------------#
+#==============================================================================#
 # Maintenance
-#------------------------------------------------------------------------------#
+#==============================================================================#
 
 # update: Get macOS Software Updates, update packages, and general cleanup
 # TODO: implement this? https://github.com/fwartner/mac-cleanup/blob/master/cleanup.sh

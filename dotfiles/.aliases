@@ -135,9 +135,9 @@ alias path='echo -e ${PATH//:/\\n}'
 # Other
 #==============================================================================#
 
-# Merge PDF files
+# Merge PDF files, preserving hyperlinks
 # `mergepdf -o output.pdf input{1,2,3}.pdf`
-alias mergepdf='/System/Library/Automator/Combine\ PDF\ Pages.action/Contents/Resources/join.py'
+alias mergepdf='gs -q -dNOPAUSE -dBATCH -sDEVICE=pdfwrite -sOutputFile=_merged.pdf'
 
 # Convert plist files to xml or binary
 alias plist_to_xml='plutil -convert xml1'

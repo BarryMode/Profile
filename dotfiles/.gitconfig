@@ -23,6 +23,9 @@
   # Force push
   publish = push --force
 
+  # Show the user email for the current repository.
+  whoami = config user.email
+
 [apply]
   # Detect whitespace errors when applying a patch
   whitespace = fix

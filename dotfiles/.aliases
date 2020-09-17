@@ -119,7 +119,7 @@ alias wgetlist="wget -r --no-remove-listing -i"
 # wget settings for mirroring
 alias mirror='wget -cmkEpnp'
 # Flush Directory Service cache
-alias flush="dscacheutil -flushcache && killall -HUP mDNSResponder"
+alias flush="sudo killall -HUP mDNSResponder;sudo killall mDNSResponderHelper;sudo dscacheutil -flushcache"
 
 #==============================================================================#
 # Terminal

@@ -25,25 +25,7 @@ git clone https://github.com/barrymode/macos-prime.git ~/ && cd ~/ && ./ru
 ### Cloud
 
 - [iCloud](https://www.icloud.com)
-  - iCloud Drive
-    - App Files
-  - Contacts
-  - Calendars
-  - Reminders
-  - Notes
-  - Siri
-  - Keychain
-  - Find My Mac
-  - News
-
-- [Keybase](https://keybase.io)
-  - Documents
-
 - [Google Drive](https://drive.google.com)
-  - Games
-  - Music
-  - Pictures
-  - Projects
 
 ### Backups
 

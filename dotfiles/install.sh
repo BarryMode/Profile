@@ -1,5 +1,14 @@
 #!/usr/bin/env bash
 
+# Hosts
+echo 'Hosts'
+echo '················································································'
+echo
+echo 'Updating Hosts…'
+chmod +x ~//dotfiles/.hosts/install.sh
+~//dotfiles/.hosts/install.sh
+echo
+
 cd "$(dirname "${BASH_SOURCE}")";
 
 git pull origin master;

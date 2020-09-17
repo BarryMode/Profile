@@ -22,20 +22,11 @@ chmod +x ~//packages/install.sh
 ~//packages/install.sh
 echo
 
-# Hosts
-echo 'Hosts'
-echo '················································································'
-echo
-echo 'Installing Hosts…'
-chmod +x ~//hosts/install.sh
-~//hosts/install.sh
-echo
-
 # Preferences
 echo 'Preferences'
 echo '················································································'
 echo
-echo 'Installing Preferences…'
+echo 'Setting Preferences…'
 ~/.macos
 echo 'Assembling Dock…'
 ~/.dock

@@ -119,7 +119,6 @@ brew "cjbassi/ytop/ytop"
 cask "adobe-acrobat-reader"
 cask "adobe-creative-cloud-cleaner-tool"
 cask "authy"
-cask "bitwarden"
 cask "carbon-copy-cloner"
 cask "cleanmymac"
 cask "cloudmounter"
@@ -182,6 +181,7 @@ cask "webtorrent"
 cask "xmind-zen"
 cask "yacreader"
 cask "zoomus"
+mas "Bitwarden", id: 1352778147
 mas "Microsoft Excel", id: 462058435
 mas "Microsoft Remote Desktop", id: 1295203466
 mas "Microsoft Word", id: 462054704

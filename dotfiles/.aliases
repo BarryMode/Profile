@@ -62,13 +62,13 @@ alias hide_alias="chflags -h hidden"
 #==============================================================================#
 
 # Update dotfiles
-alias update_dotfiles='~/prime/dotfiles/install.sh'
+alias update_dotfiles='~//dotfiles/install.sh'
 
 # Update all git repos in this directory
 alias update_repos='for d in *; do pushd $d && git pull && popd; done'
 
 # Update custom symlinks
-alias update_symlinks='"/Volumes/GoogleDrive/My Drive/Users/Barry/Documents/Components/Tasks/Create Symlinks.sh"'
+alias update_symlinks='"/Volumes/GoogleDrive/My Drive/Documents/Computers/Tasks/Create Symlinks.sh"'
 
 # Clean up LaunchServices to remove duplicates in the "Open With" menu
 alias lscleanup="/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder"

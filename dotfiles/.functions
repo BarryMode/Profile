@@ -246,7 +246,7 @@ function update() {
   echo
   echo 'Updating brew packages…'
   brew upgrade; brew missing; brew cask upgrade; brew cleanup; brew services cleanup
-  cd ~/prime/packages/
+  cd ~//packages/
   brew bundle dump --force --describe
   cd ~
   echo
@@ -267,8 +267,8 @@ function update() {
   echo '--------------------------------------------------------------------------------'
   echo
   echo 'Backing up Sublime Text settings…'
-  cp ~/Library/Application\ Support/Sublime\ Text*/Packages/User/Package\ Control.sublime-settings ~/prime/init/
-  cp ~/Library/Application\ Support/Sublime\ Text*/Packages/User/Preferences.sublime-settings ~/prime/init/
+  cp ~/Library/Application\ Support/Sublime\ Text*/Packages/User/Package\ Control.sublime-settings ~//init/
+  cp ~/Library/Application\ Support/Sublime\ Text*/Packages/User/Preferences.sublime-settings ~//init/
   echo
   echo 'Git Repositories'
   echo '--------------------------------------------------------------------------------'

@@ -7,7 +7,7 @@ Automatically tailor my Mac
 ### One-line install
 
 ```bash
-git clone https://github.com/barrymode/macos-prime.git ~/prime && cd ~/prime && ./prime.sh
+git clone https://github.com/barrymode/macos-prime.git ~/ && cd ~/ && ./run.sh
 ```
 
 ## Other Applications

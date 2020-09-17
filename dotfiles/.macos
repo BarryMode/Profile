@@ -423,7 +423,7 @@ set initialOpenedWindows to id of every window
 (* Open the custom theme so that it gets added to the list
    of available terminal themes (note: this will open two
    additional terminal windows). *)
-do shell script "open '~/prime/init/" & themeName & ".terminal'"
+do shell script "open '~//init/" & themeName & ".terminal'"
 
 (* Wait a little bit to ensure that the custom theme is added. *)
 delay 1
@@ -528,8 +528,8 @@ defaults write com.apple.TextEdit PlainTextEncodingForWrite -int 4
 #------------------------------------------------------------------------------#
 
 # Sublime Text: Install Sublime Text settings
-cp ~/prime/init/Package\ Control.sublime-settings ~/Library/Application\ Support/Sublime\ Text*/Packages/User/
-cp ~/prime/init/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text*/Packages/User/
+cp ~//init/Package\ Control.sublime-settings ~/Library/Application\ Support/Sublime\ Text*/Packages/User/
+cp ~//init/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text*/Packages/User/
 
 #------------------------------------------------------------------------------#
 # Kill affected applications

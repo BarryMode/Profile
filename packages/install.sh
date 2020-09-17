@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-cd ~/prime/packages/
+cd ~//packages/
 chmod +x *.sh
 
 # Brew: The missing package manager for macOS

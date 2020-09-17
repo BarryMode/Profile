@@ -48,8 +48,6 @@ brew "node"
 brew "gatsby-cli"
 # GNU compiler collection
 brew "gcc"
-# Google Drive CLI Client
-brew "gdrive"
 # WebDriver <-> Marionette proxy
 brew "geckodriver"
 # Interpreter for PostScript and PDF

@@ -6,16 +6,16 @@ echo
 
 # Dotfiles
 echo 'Dotfiles'
-echo '================================================================================'
+echo '················································································'
 echo
 echo 'Installing Dotfiles…'
 chmod +x ~//dotfiles/install.sh
-~//dotfiles/install.sh ==force
+~//dotfiles/install.sh --force
 echo
 
 # Packages
 echo 'Packages'
-echo '================================================================================'
+echo '················································································'
 echo
 echo 'Installing Packages…'
 chmod +x ~//packages/install.sh
@@ -24,7 +24,7 @@ echo
 
 # Hosts
 echo 'Hosts'
-echo '================================================================================'
+echo '················································································'
 echo
 echo 'Installing Hosts…'
 chmod +x ~//hosts/install.sh
@@ -33,7 +33,7 @@ echo
 
 # Preferences
 echo 'Preferences'
-echo '================================================================================'
+echo '················································································'
 echo
 echo 'Installing Preferences…'
 ~/.macos

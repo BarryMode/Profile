@@ -104,6 +104,8 @@ brew "ssh-copy-id", link: true
 brew "starship"
 # Manipulate and query tags on macOS files
 brew "tag"
+# Powerful free data recovery utility
+brew "testdisk"
 # Internet file retriever
 brew "wget"
 # Command-line interface for WordPress

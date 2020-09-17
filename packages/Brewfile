@@ -30,6 +30,8 @@ brew "cmatrix"
 brew "composer"
 # Get a file from an HTTP, HTTPS or FTP server
 brew "curl"
+# Terminal visual disk space navigator
+brew "diskonaut"
 # More intuitive version of du in rust
 brew "dust"
 # Modern replacement for 'ls'

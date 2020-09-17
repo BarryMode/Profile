@@ -64,6 +64,8 @@ brew "gnu-sed"
 brew "gnupg"
 # GNU grep, egrep and fgrep
 brew "grep"
+# Command-line hex viewer
+brew "hexyl"
 # Tools and libraries to manipulate images in many formats
 brew "imagemagick"
 # Lightweight and flexible command-line JSON processor

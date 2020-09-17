@@ -1,9 +1,8 @@
 #!/usr/bin/env bash
-
 mac=$(test "`uname`" == "Darwin")
 
 if [[ mac ]]; then
-# Close any open System Preferences panes, to prevent them from overriding settings we're about to change
+# Close System Preferences to prevent it from overriding the changes below
 osascript -e 'tell application "System Preferences" to quit'
 
 # Persistant sudo

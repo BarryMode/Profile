@@ -98,6 +98,14 @@ alias clearlogs="sudo rm -rfv /private/var/log/asl/*.asl; sqlite3 ~/Library/Pref
 alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash"
 
 #------------------------------------------------------------------------------#
+# Reset Gatekeeper Rules
+alias reset_gatekeeper="sudo spctl --reset-default"
+
+# Disable Gatekeeper
+alias disable_gatekeeper="sudo spctl --master-disable"
+
+# Enable Gatekeeper
+alias enable_gatekeeper="sudo spctl --master-enable"
 # Internet
 #------------------------------------------------------------------------------#
 

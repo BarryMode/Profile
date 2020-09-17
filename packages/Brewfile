@@ -78,6 +78,8 @@ brew "mysql", restart_service: true
 brew "n"
 # Fast, highly customisable system info script
 brew "neofetch"
+# Modern shell for the GitHub era
+brew "nushell"
 # OpenBSD freely-licensed SSH connectivity tools
 brew "openssh"
 # 7-Zip (high compression file archiver) implementation

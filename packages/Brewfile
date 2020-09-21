@@ -127,7 +127,7 @@ cask "authy"
 cask "carbon-copy-cloner"
 # cask "cleanmymac"
 cask "controlplane"
-cask "crossover"
+# cask "crossover"
 cask "cyberduck"
 cask "dhs"
 cask "discord"
@@ -188,4 +188,5 @@ mas "Bitwarden", id: 1352778147
 mas "Microsoft Excel", id: 462058435
 mas "Microsoft Remote Desktop", id: 1295203466
 mas "Microsoft Word", id: 462054704
+# mas "Pixelmator Pro", id: 1289583905
 mas "Xcode", id: 497799835

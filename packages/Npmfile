@@ -1,9 +1,9 @@
 cordova
 corsproxy-https
+dayjs
 ghost-cli
 gulp-cli
 ionic
 lodash
-moment
 npm
 video.js

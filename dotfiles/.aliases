@@ -16,6 +16,9 @@ alias .....="cd ../../../.."
 # Make directories recursively (ex. `my/tree` will make both folders)
 alias mkdir="mkdir -p"
 
+alias python=/usr/local/bin/python3
+alias pip=/usr/local/bin/pip3
+
 #==============================================================================#
 # Rust Replacements
 #==============================================================================#

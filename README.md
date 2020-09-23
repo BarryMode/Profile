@@ -1,8 +1,8 @@
-# macOS Prime
+# Profile
 
-Automatically tailor my Mac
+I use **Profile** to automatically tailor my Mac. This installs an extensive set of dotfiles, personalized macOS preferences, and handpicked packages (Apps, CLIs, and dev tools).
 
-## [Dotfiles](https://github.com/barrymode/macos-prime/tree/master/dotfiles), [Packages](https://github.com/BarryMode/macos-prime/tree/master/packages), [Preferences](https://github.com/barrymode/macos-prime/blob/master/dotfiles/.macos), and [Hosts](https://github.com/barrymode/macos-prime/tree/master/hosts)
+## [Dotfiles](https://github.com/barrymode/macos-prime/tree/master/dotfiles), and[Preferences](https://github.com/barrymode/macos-prime/blob/master/dotfiles/.macos), and [Packages](https://github.com/BarryMode/macos-prime/tree/master/packages)
 
 ### One-line install
 

@@ -1,28 +1,27 @@
 # Extensions
 
-Use subfolders under the `extensions` folder to house extensions to the final unified `hosts` file.
+Use subfolders under this `extensions` folder to house data sources for extensions to the default unified hosts file.
 
-Currently this repo includes four extensions:
+Currently, this repo includes data sources for four extensions:
 
-* `gambling` for common online betting sites,
-* `social` for common social media sites, and
-* `porn` for porn sites.
 * `fakenews` for fake news sites.
+* `gambling` for common online betting sites,
+* `porn` for porn sites, and
+* `social` for common social media sites,
+
 
 Here are some sample calls, which vary which extensions are included.
 
-**Using Python 3**:
+**Using the `updateHostsFile.py` script**:
 
-    python3 updateHostsFile.py --auto --extensions porn social gambling
+Create a hosts file that includes domain blocking for porn, social media, and gambling.
 
-or, in short form:
-
-    python3 updateHostsFile.py -a -e porn social gambling
-
-**Using Python 2.7**:
-
-    python updateHostsFile.py -auto --extensions porn social gambling
+```sh
+python3 updateHostsFile.py --auto --extensions porn social gambling
+```
 
 or, in short form:
 
-    python updateHostsFile.py -a -e porn social gambling
+```sh
+python3 updateHostsFile.py -a -e porn social gambling
+```

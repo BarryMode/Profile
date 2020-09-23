@@ -58,7 +58,7 @@ Create an *optional* `blacklist` file. The contents of this file (containing a l
 
 ### How do I include my own custom domain mappings?
 
-If you have custom hosts records, place them in file `.hosts`. The contents of this file are prepended to the unified hosts file during the update process.
+If you have custom hosts records, place them in file `myhosts`. The contents of this file are prepended to the unified hosts file during the update process.
 
 ### How do I prevent domains from being included?
 

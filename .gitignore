@@ -3,11 +3,9 @@ dotfiles/.ssh/config
 dotfiles/.ssh/*_rsa*
 dotfiles/!.ssh/example_rsa*
 
-hosts/hosts
-hosts/*/*/hosts
-hosts/*/*/*/hosts
-hosts-*
-hosts/httpd-vhosts.conf
-hosts/.hosts
-hosts/blacklist
-hosts/whitelist
+dotfiles/.hosts/hosts
+dotfiles/.hosts/*/*/hosts
+dotfiles/.hosts/*/*/*/hosts
+dotfiles/.hosts/myhosts
+dotfiles/.hosts/blacklist
+dotfiles/.hosts/whitelist

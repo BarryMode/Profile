@@ -36,7 +36,6 @@ function reset_dock {
 # WARNING: permanently clears existing dock
 clear_dock
 
-add_app_to_dock "Messages"
 add_app_to_dock "Firefox"
 
 killall Dock

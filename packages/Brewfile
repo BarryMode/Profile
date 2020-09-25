@@ -103,6 +103,8 @@ brew "sd"
 brew "ssh-copy-id", link: true
 # Cross-shell prompt for astronauts
 brew "starship"
+# Version control system designed to be a better CVS
+brew "subversion"
 # Manipulate and query tags on macOS files
 brew "tag"
 # Powerful free data recovery utility

@@ -25,10 +25,10 @@ alias pip=/usr/local/bin/pip3
 
 alias du="dust"
 alias ls="exa"
-alias cat="bat"
+# alias cat="bat"
 alias find="fd"
-alias grep="ripgrep"
-alias sed="sd"
+# alias grep="ripgrep"
+# alias sed="sd"
 alias top="ytop"
 alias tree="exa -T"
 

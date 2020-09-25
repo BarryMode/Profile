@@ -250,7 +250,7 @@ function update() {
   echo '················································································'
   echo
   echo 'Updating brew packages…'
-  brew upgrade; brew missing; brew cask upgrade; brew cleanup; brew services cleanup
+  brew upgrade; brew missing; brew upgrade --cask; brew cleanup; brew services cleanup
   cd ~//packages/
   brew bundle dump --force --describe
   cd ~

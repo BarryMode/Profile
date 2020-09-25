@@ -184,7 +184,6 @@ cask "vlc"
 cask "webtorrent"
 cask "xmind-zen"
 cask "yacreader"
-cask "zoomus"
 mas "Bitdefender Virus Scanner", id: 500154009
 mas "Bitwarden", id: 1352778147
 mas "Microsoft Excel", id: 462058435

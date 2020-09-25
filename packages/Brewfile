@@ -95,13 +95,13 @@ brew "qt"
 brew "ripgrep"
 # Safe, concurrent, practical language
 brew "rust"
-# The Rust toolchain installer
+# Rust toolchain installer
 brew "rustup-init"
 # Intuitive find & replace CLI
 brew "sd"
 # Add a public key to a remote machine's authorized_keys file
 brew "ssh-copy-id", link: true
-# The cross-shell prompt for astronauts
+# Cross-shell prompt for astronauts
 brew "starship"
 # Manipulate and query tags on macOS files
 brew "tag"

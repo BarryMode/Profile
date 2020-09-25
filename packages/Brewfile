@@ -182,6 +182,7 @@ cask "xmind-zen"
 cask "yacreader"
 mas "Bitdefender Virus Scanner", id: 500154009
 mas "Bitwarden", id: 1352778147
+mas "Honeygain", id: 1479049768
 mas "Microsoft Excel", id: 462058435
 mas "Microsoft Remote Desktop", id: 1295203466
 mas "Microsoft Word", id: 462054704

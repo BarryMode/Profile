@@ -55,8 +55,6 @@ brew "geckodriver"
 brew "ghostscript"
 # Distributed revision control system
 brew "git"
-# Alternative to top/htop
-brew "glances"
 # GNU implementation of the famous stream editor
 brew "gnu-sed"
 # GNU Pretty Good Privacy (PGP) package

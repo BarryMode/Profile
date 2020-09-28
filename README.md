@@ -18,7 +18,6 @@ git clone https://github.com/barrymode/macos-prime.git ~/ && cd ~/ && ./ru
 - DaVinci Resolve
 - FileBot
 - Grabber
-- New File Menu
 
 ## User Files
 

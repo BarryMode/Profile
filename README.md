@@ -2,9 +2,9 @@
 
 I use **Profile** to automatically tailor my Mac. This installs an extensive set of dotfiles, personalized macOS preferences, and handpicked packages (Apps, CLIs, and dev tools).
 
-## [Dotfiles](https://github.com/barrymode/macos-prime/tree/master/dotfiles), and[Preferences](https://github.com/barrymode/macos-prime/blob/master/dotfiles/.macos), and [Packages](https://github.com/BarryMode/macos-prime/tree/master/packages)
+## [Dotfiles](https://github.com/barrymode/macos-prime/tree/master/dotfiles), and [Preferences](https://github.com/barrymode/macos-prime/blob/master/dotfiles/.macos), and [Packages](https://github.com/BarryMode/macos-prime/tree/master/packages)
 
-### One-line install
+### Install
 
 ```bash
 git clone https://github.com/barrymode/macos-prime.git ~/ && cd ~/ && ./run.sh
@@ -12,8 +12,6 @@ git clone https://github.com/barrymode/macos-prime.git ~/ && cd ~/ && ./ru
 
 ## Other Applications
 
-- A Better Finder Rename
-- Adobe Suite
 - Cinemagraph Pro
 - DaVinci Resolve
 - FileBot

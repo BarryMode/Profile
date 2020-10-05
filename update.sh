@@ -9,13 +9,13 @@ echo 'Symlinks'
 echo '················································································'
 echo
 echo 'Updating symlinks…'
-update_symlinks
+~//update:symlinks.sh
 echo
 echo 'Dotfiles'
 echo '················································································'
 echo
 echo 'Updating dotfiles…'
-update_dotfiles --force
+~//dotfiles/install.sh --force
 echo
 echo 'MAS'
 echo '················································································'
@@ -56,7 +56,9 @@ echo 'Git Repositories'
 echo '················································································'
 echo
 echo 'Updating git repos…'
-cd ~/Documents/Repos/ && update_repos; cd ~
+cd ~/Documents/Computers/Repos/
+for d in *; do pushd $d && git pull && popd; done
+cd ~
 echo
 echo 'macOS'
 echo '················································································'
@@ -70,13 +72,19 @@ echo
 echo 'Deduping ssh known hosts…'
 cat ~/.ssh/known_hosts | uniq > ~/.ssh/known_hosts2; mv ~/.ssh/known_hosts2 ~/.ssh/known_hosts # add "| sort" to list in abc order
 echo 'Clear cache…'
-clearcache
+rm -rf .cache
+rm -rf .composer/cache
+rm -rf .expo/*cache
+rm -rf .gradle/caches
+rm -rf ~/Library/Application\ Support/Keybase/kbfs_block_cache
+rm -rf ~/Library/Application\ Support/Google/DriveFS/cef_cache/Cache
+rm -rf ~/Library/Developer/CoreSimulator
 echo 'Clear clipboard…'
-clearclipboard
+pbcopy < /dev/null
 echo 'Clear logs…'
-clearlogs
+sudo rm -rfv /private/var/log/asl/*.asl; sqlite3 ~/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV* 'delete from LSQuarantineEvent'
 echo 'Empty trash…'
-emptytrash
+sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash
 echo
 echo 'Setting Preferences…'
 ~/.macos

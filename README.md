@@ -26,8 +26,8 @@ git clone https://github.com/barrymode/macos-prime.git ~/ && cd ~/ && ./ru
 
 ### Backups
 
-- Mycroft [Time Machine](https://support.apple.com/en-us/HT201250) on [WD Caviar Green 2TB](http://amzn.to/2zfBSAt)
-- Adler [Raid 0](https://en.wikipedia.org/wiki/Standard_RAID_levels#RAID_0) on [Synology NAS](http://amzn.to/2gvsjVY)
+- Mycroft (MacBook Pro) [Time Machine](https://support.apple.com/en-us/HT201250) on Adler (Synology NAS)
+- Adler (Synology NAS) on External Drive
 
 ## Author
 

@@ -2,3 +2,5 @@ pip
 anime-downloader
 colorz
 gallery-dl
+lxml
+yandex-images-download

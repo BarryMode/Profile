@@ -5,6 +5,7 @@ tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "homebrew/services"
+tap "imxieyi/waifu2x"
 # Cryptography and SSL/TLS Toolkit
 brew "openssl@1.1"
 # Core application library for C
@@ -39,10 +40,12 @@ brew "exa"
 brew "exiftool"
 # Simple, fast and user-friendly alternative to find
 brew "fd"
-# Play, record, convert, and stream audio and video
-brew "ffmpeg"
 # Generic library support script
 brew "libtool"
+# Play, record, convert, and stream audio and video
+brew "ffmpeg"
+# Command-line fuzzy finder written in Go
+brew "fzf"
 # Platform built on V8 to build network applications
 brew "node"
 # Gatsby command-line interface
@@ -72,7 +75,7 @@ brew "mas"
 # Command-line client for Mega.co.nz
 brew "megatools"
 # Open source relational database management system
-brew "mysql", restart_service: true
+brew "mysql"
 # Node version management
 brew "n"
 # Fast, highly customisable system info script
@@ -125,9 +128,7 @@ cask "adobe-acrobat-reader"
 cask "adobe-creative-cloud-cleaner-tool"
 cask "authy"
 cask "carbon-copy-cloner"
-# cask "cleanmymac"
 cask "controlplane"
-# cask "crossover"
 cask "cyberduck"
 cask "dhs"
 cask "discord"
@@ -136,13 +137,11 @@ cask "easyfind"
 cask "edex-ui"
 cask "fedora-media-writer"
 cask "firefox"
-# cask "fl-studio"
 cask "flash-player"
 cask "font-open-sans"
 cask "font-raleway"
 cask "gemini"
 cask "gifox"
-cask "glance"
 cask "google-drive-file-stream"
 cask "handbrake"
 cask "hex-fiend"
@@ -157,35 +156,27 @@ cask "keybase"
 cask "knockknock"
 cask "lulu"
 cask "megasync"
-# cask "navicat-premium"
 cask "obs"
 cask "openemu"
 cask "paparazzi"
-# cask "paste"
-# cask "paw"
-# cask "parallels"
 cask "paragon-ntfs"
 cask "platypus"
 cask "plex"
 cask "protonvpn"
-cask "qview"
 cask "sloth"
 cask "steam"
 cask "sublime-merge"
 cask "sublime-text"
 cask "suspicious-package"
 cask "the-unarchiver"
-# cask "transmit"
 cask "vlc"
 cask "webtorrent"
 cask "xmind-zen"
 cask "yacreader"
 mas "Bitdefender Virus Scanner", id: 500154009
 mas "Bitwarden", id: 1352778147
-mas "Honeygain", id: 1479049768
 mas "Microsoft Excel", id: 462058435
 mas "Microsoft Remote Desktop", id: 1295203466
 mas "Microsoft Word", id: 462054704
-# mas "Pixelmator Pro", id: 1289583905
 mas "Step Two", id: 1448916662
 mas "Xcode", id: 497799835

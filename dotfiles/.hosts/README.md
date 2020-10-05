@@ -16,7 +16,7 @@ The `generate.py` script will generate a unified `hosts` file based on the sourc
 python generate.py [--auto] [--replace] [--ip nnn.nnn.nnn.nnn] [--extensions ext1 ext2 ext3]
 ```
 
-For the purpose of this repo, I use `install.sh` with my own preconfiguration.
+For the purpose of this repo, I use `install.sh` with my own preconfiguration. This also adds a symlink to the macOS system hosts file and it is called `index`.
 
 #### Command line options:
 

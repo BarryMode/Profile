@@ -71,7 +71,7 @@ alias update_dotfiles='~//dotfiles/install.sh'
 alias update_repos='for d in *; do pushd $d && git pull && popd; done'
 
 # Update custom symlinks
-alias update_symlinks='"/Volumes/GoogleDrive/My Drive/Documents/Computers/Tasks/Create Symlinks.sh"'
+alias update_symlinks='~//update:symlinks.sh'
 
 # Clean up LaunchServices to remove duplicates in the "Open With" menu
 alias lscleanup="/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder"
@@ -99,6 +99,10 @@ alias clearlogs="sudo rm -rfv /private/var/log/asl/*.asl; sqlite3 ~/Library/Pref
 
 # Empty the Trash on all mounted volumes and the main HDD.
 alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash"
+
+# update: Get macOS Software Updates, update packages, and general cleanup
+# TODO: implement this? https://github.com/fwartner/mac-cleanup/blob/master/cleanup.sh
+alias update='~//update.sh'
 
 # Reset Gatekeeper Rules
 alias reset_gatekeeper="sudo spctl --reset-default"

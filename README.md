@@ -7,7 +7,7 @@ I use **Profile** to automatically tailor my Mac. This installs an extensive set
 ### Install
 
 ```bash
-git clone https://github.com/barrymode/macos-prime.git ~/ && cd ~/ && ./run.sh
+git clone https://github.com/BarryMode/Profile.git ~/ && cd ~/ && ./run.sh
 ```
 
 ## Other Applications

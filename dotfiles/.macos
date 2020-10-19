@@ -24,10 +24,10 @@ defaults write com.apple.screensaver askForPasswordDelay -int 0
 #==============================================================================#
 
 # Set computer name (as done via System Preferences → Sharing)
-sudo scutil --set ComputerName "Mac"
-sudo scutil --set HostName "mac"
-sudo scutil --set LocalHostName "mac"
-sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "mac"
+sudo scutil --set ComputerName "Mycroft"
+sudo scutil --set HostName "mycroft"
+sudo scutil --set LocalHostName "mycroft"
+sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "mycroft"
 
 # Set language and text formats
 # Ex. `EUR` or `USD`, `Centimeters` or `Inches`, `en_GB` or `en_US`, `true` or `false`.

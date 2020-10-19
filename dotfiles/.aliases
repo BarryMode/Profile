@@ -26,7 +26,7 @@ alias pip=/usr/local/bin/pip3
 alias du="dust"
 alias ls="exa"
 # alias cat="bat"
-alias find="fd"
+# alias find="fd"
 # alias grep="ripgrep"
 # alias sed="sd"
 alias top="ytop"
@@ -100,6 +100,9 @@ alias clearcache="
 # Clear Apple's System Logs to improve shell startup speed.
 # Clear download history from quarantine.
 alias clearlogs="sudo rm -rfv /private/var/log/asl/*.asl; sqlite3 ~/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV* 'delete from LSQuarantineEvent'"
+
+# remove empty directories
+alias ded="find . -type d -empty -delete"
 
 # Empty the Trash on all mounted volumes and the main HDD.
 alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash"

@@ -4,7 +4,7 @@
 # Google Drive Symlinks
 #==============================================================================#
 if [ -d "/Volumes/GoogleDrive" ]; then
-  for dir in Applications Books Documents Documents/Computers Games Music Pictures Projects Projects/Mine Projects/YouTube Projects/YouTube/Assets Projects/YouTube/gsc; do
+  for dir in Applications Books Documents Documents/Computers Games Music Pictures Projects Projects/YouTube Projects/YouTube/Assets Projects/YouTube/gsc; do
     #------------------------------------------------------------------------------------#
     # Applications/Documents/Games/Music/Pictures/Projects: find type symlink and remove
     #------------------------------------------------------------------------------------#

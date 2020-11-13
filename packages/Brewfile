@@ -10,6 +10,10 @@ tap "imxieyi/waifu2x"
 brew "openssl@1.1"
 # Core application library for C
 brew "glib"
+# Generate introspection data for GObject libraries
+brew "gobject-introspection"
+# Library to render SVG files using Cairo
+brew "librsvg"
 # Tool for generating GNU Standards-compliant Makefiles
 brew "automake"
 # Text processing scripting language
@@ -30,8 +34,14 @@ brew "cmatrix"
 brew "composer"
 # Get a file from an HTTP, HTTPS or FTP server
 brew "curl"
+# Get a file from an HTTP, HTTPS or FTP server
+brew "curl-openssl"
 # Terminal visual disk space navigator
 brew "diskonaut"
+# Pack, ship and run any application as a lightweight container
+brew "docker"
+# Isolated development environments using Docker
+brew "docker-compose"
 # More intuitive version of du in rust
 brew "dust"
 # Modern replacement for 'ls'
@@ -42,8 +52,14 @@ brew "exiftool"
 brew "fd"
 # Generic library support script
 brew "libtool"
+# Validating, recursive, caching DNS resolver
+brew "unbound"
+# Secure Reliable Transport
+brew "srt"
 # Play, record, convert, and stream audio and video
 brew "ffmpeg"
+# Libraries to talk to Microsoft SQL Server and Sybase databases
+brew "freetds"
 # Command-line fuzzy finder written in Go
 brew "fzf"
 # Platform built on V8 to build network applications
@@ -62,14 +78,24 @@ brew "git"
 brew "gnu-sed"
 # GNU Pretty Good Privacy (PGP) package
 brew "gnupg"
+# Gnumeric spreadsheet program
+brew "goffice"
 # GNU grep, egrep and fgrep
 brew "grep"
 # Command-line hex viewer
 brew "hexyl"
 # Tools and libraries to manipulate images in many formats
 brew "imagemagick"
+# GNOME XML library
+brew "libxml2"
+# Make XML documents translatable through PO files
+brew "itstool"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
+# Provides library functionality for FIDO U2F & FIDO 2.0, including USB
+brew "libfido2"
+# Postgres C API library
+brew "libpq"
 # Mac App Store command-line interface
 brew "mas"
 # Command-line client for Mega.co.nz
@@ -84,16 +110,22 @@ brew "neofetch"
 brew "nushell"
 # OpenBSD freely-licensed SSH connectivity tools
 brew "openssh"
+# Multithreaded PNG optimizer written in Rust
+brew "oxipng"
 # 7-Zip (high compression file archiver) implementation
 brew "p7zip"
 # Command-line tool to generate, analyze, convert and manipulate colors
 brew "pastel"
+# General-purpose scripting language
+brew "php"
 # Pinentry for GPG on Mac
 brew "pinentry-mac"
 # Parse HTML at the command-line
 brew "pup"
 # Cross-platform application and UI framework
 brew "qt"
+# Rsync for cloud storage
+brew "rclone"
 # Search tool like grep and The Silver Searcher
 brew "ripgrep"
 # Safe, concurrent, practical language
@@ -102,12 +134,14 @@ brew "rust"
 brew "rustup-init"
 # Intuitive find & replace CLI
 brew "sd"
+# Tool to create intelligent and beautiful documentation
+brew "sphinx-doc"
 # Add a public key to a remote machine's authorized_keys file
 brew "ssh-copy-id", link: true
 # Cross-shell prompt for astronauts
 brew "starship"
 # Version control system designed to be a better CVS
-brew "subversion"
+brew "subversion", link: false
 # Manipulate and query tags on macOS files
 brew "tag"
 # Powerful free data recovery utility
@@ -134,6 +168,7 @@ cask "controlplane"
 cask "cyberduck"
 cask "dhs"
 cask "discord"
+cask "docker"
 cask "dolphin"
 cask "easyfind"
 cask "edex-ui"
@@ -160,6 +195,7 @@ cask "lulu"
 cask "megasync"
 cask "obs"
 cask "openemu"
+cask "openvpn-connect"
 cask "paparazzi"
 cask "paragon-ntfs"
 cask "platypus"

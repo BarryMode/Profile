@@ -20,7 +20,7 @@ export HISTFILESIZE="${HISTSIZE}";
 export HISTCONTROL='ignoreboth';
 
 # Specify your defaults in this environment variable
-export HOMEBREW_CASK_OPTS="--appdir=~/Applications" # --caskroom=/usr/local/Caskroom"
+export HOMEBREW_CASK_OPTS="--appdir=/Applications" # --caskroom=/usr/local/Caskroom"
 
 # Prefer US English and use UTF-8
 export LANG='en_US.UTF-8';

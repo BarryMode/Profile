@@ -128,8 +128,6 @@ alias hostip="dig +short"
 alias localip="ipconfig getifaddr en0"
 # Downloads list of links from source input and preserves directory structure
 alias wgetlist="wget -r --no-remove-listing -i"
-# wget settings for mirroring
-alias mirror='wget -cmkEpnp'
 # Flush Directory Service cache
 alias flush="sudo killall -HUP mDNSResponder;sudo killall mDNSResponderHelper;sudo dscacheutil -flushcache"
 

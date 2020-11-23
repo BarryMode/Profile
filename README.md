@@ -10,13 +10,6 @@ I use **Profile** to automatically tailor my Mac. This installs an extensive set
 git clone https://github.com/BarryMode/Profile.git ~/ && cd ~/ && ./run.sh
 ```
 
-## Other Applications
-
-- Cinemagraph Pro
-- DaVinci Resolve
-- FileBot
-- Grabber
-
 ## User Files
 
 ### Cloud

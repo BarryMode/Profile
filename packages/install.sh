@@ -27,3 +27,13 @@ npm update -g
 # PIP: The PyPA recommended tool for installing Python packages
 # https://github.com/pypa/pip
 pip3 install --upgrade $(cat pipfile)
+
+# Other Applications
+# Cinemagraph Pro
+echo 'Manually Install Cinemagraph Pro'
+# DaVinci Resolve
+echo 'Manually Install DaVinci Resolve'
+# FileBot
+echo 'Manually Install FileBot'
+# Grabber
+echo 'Manually Install Grabber'

@@ -211,10 +211,10 @@ cask "vlc"
 cask "webtorrent"
 cask "xmind-zen"
 cask "yacreader"
-mas "Bitdefender Virus Scanner", id: 500154009
 mas "Bitwarden", id: 1352778147
 mas "Microsoft Excel", id: 462058435
 mas "Microsoft Remote Desktop", id: 1295203466
 mas "Microsoft Word", id: 462054704
+mas "SiteSucker", id: 442168834
 mas "Step Two", id: 1448916662
 mas "Xcode", id: 497799835

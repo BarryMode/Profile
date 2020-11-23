@@ -2,7 +2,7 @@
 
 I use **Profile** to automatically tailor my Mac. This installs an extensive set of dotfiles, personalized macOS preferences, and handpicked packages (Apps, CLIs, and dev tools).
 
-## [Dotfiles](https://github.com/barrymode/macos-prime/tree/master/dotfiles), and [Preferences](https://github.com/barrymode/macos-prime/blob/master/dotfiles/.macos), and [Packages](https://github.com/BarryMode/macos-prime/tree/master/packages)
+## [Dotfiles](https://github.com/barrymode/macos-prime/tree/master/dotfiles) and [Packages](https://github.com/BarryMode/macos-prime/tree/master/packages)
 
 ### Install
 
@@ -27,7 +27,7 @@ git clone https://github.com/BarryMode/Profile.git ~/ && cd ~/ && ./run.sh
 ### Backups
 
 - Mycroft (MacBook Pro) [Time Machine](https://support.apple.com/en-us/HT201250) on External Drive
-- Adler (Synology NAS) on External Drive
+- Adler (Synology NAS) [Hyper Backup](https://www.synology.com/en-us/dsm/feature/hyper_backup) on External Drive
 
 ## Author
 

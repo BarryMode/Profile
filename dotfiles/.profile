@@ -4,9 +4,9 @@ eval "$(starship init bash)"
 eval "$(zoxide init bash)"
 
 # Title bar - "user@host: ~"
-title="\u@\h: \w"
-titlebar="\[\033]0;"$title"\007\]"
-PS1="${titlebar}${PS1}"
+# title="\u@\h: \w"
+# titlebar="\[\033]0;"$title"\007\]"
+# PS1="${titlebar}${PS1}"
 
 # Enable some Bash 4 features when possible:
 # * `autocd`, e.g. `**/qux` will enter `./foo/bar/baz/qux`

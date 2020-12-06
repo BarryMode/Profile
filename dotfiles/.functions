@@ -144,7 +144,10 @@ function video_encode() {
 }
 
 # video_merge: `video_merge` combine all video files in the current directory into 1
-function video_merge() { ffmpeg -f concat -i <(for f in *.mkv *.webm *.flv *.vob *.ogg *.ogv *.drc *gifv *.mng *.avi *.mov *.qt *.wmv *.yuv *.rm *.rmvb *.asf *.amv *.mp4 *.m4v *.mp *.m?v *.svi *.3gp *.flv *.f4v; do echo "file '$PWD/$f'"; done) -c copy -nostats -loglevel 0 "output.${1}"; }
+# ex. video_merge mkv
+function video_merge() {
+  ffmpeg -f concat -safe 0 -i <(for f in *.mkv *.webm *.flv *.vob *.ogg *.ogv *.drc *gifv *.mng *.avi *.mov *.qt *.wmv *.yuv *.rm *.rmvb *.asf *.amv *.mp4 *.m4v *.mp *.m?v *.svi *.3gp *.flv *.f4v; do echo "file '$PWD/$f'"; done) -c copy "output.${1}"
+}
 
 # converts HH:MM:SS.sss to fractional seconds
 timeToSeconds() (

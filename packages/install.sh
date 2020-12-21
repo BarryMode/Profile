@@ -29,10 +29,6 @@ npm update -g
 pip3 install --upgrade $(cat pipfile)
 
 # Other Applications
-# Cinemagraph Pro
-echo 'Manually Install Cinemagraph Pro'
-# DaVinci Resolve
-echo 'Manually Install DaVinci Resolve'
 # FileBot
 echo 'Manually Install FileBot'
 # Grabber

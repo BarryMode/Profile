@@ -285,8 +285,8 @@ defaults write com.apple.finder OpenWindowForNewRemovableDisk -bool false
 # Dock, Mission Control, Spaces, & Hot Corners
 #==============================================================================#
 
-# Dock: Set the icon size of Dock items to 36 pixels
-defaults write com.apple.dock tilesize -int 36
+# Dock: Set the icon size of Dock items to 72 pixels
+defaults write com.apple.dock tilesize -int 72
 
 # Dock: Enable magnification?
 defaults write com.apple.dock magnification -bool false

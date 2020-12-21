@@ -34,8 +34,6 @@ brew "cmatrix"
 brew "composer"
 # Get a file from an HTTP, HTTPS or FTP server
 brew "curl"
-# Get a file from an HTTP, HTTPS or FTP server
-brew "curl-openssl"
 # Terminal visual disk space navigator
 brew "diskonaut"
 # Pack, ship and run any application as a lightweight container
@@ -90,6 +88,8 @@ brew "imagemagick"
 brew "libxml2"
 # Make XML documents translatable through PO files
 brew "itstool"
+# Duplicate file finder and an enhanced fork of 'fdupes'
+brew "jdupes"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
 # Provides library functionality for FIDO U2F & FIDO 2.0, including USB
@@ -122,8 +122,6 @@ brew "php"
 brew "pinentry-mac"
 # Parse HTML at the command-line
 brew "pup"
-# Cross-platform application and UI framework
-brew "qt"
 # Rsync for cloud storage
 brew "rclone"
 # Search tool like grep and The Silver Searcher
@@ -141,7 +139,7 @@ brew "ssh-copy-id", link: true
 # Cross-shell prompt for astronauts
 brew "starship"
 # Version control system designed to be a better CVS
-brew "subversion", link: false
+brew "subversion"
 # Manipulate and query tags on macOS files
 brew "tag"
 # Powerful free data recovery utility
@@ -152,19 +150,19 @@ brew "wget"
 brew "wp-cli"
 # Bash completion for Wpcli
 brew "wp-cli-completion"
+# JavaScript package manager
+brew "yarn"
 # Download YouTube videos from the command-line
 brew "youtube-dl"
 # Shell extension to navigate your filesystem faster
 brew "zoxide"
 # A TUI system monitor written in Rust
 brew "cjbassi/ytop/ytop"
-cask "a-better-finder-rename"
 cask "adobe-acrobat-reader"
 cask "adobe-creative-cloud"
 cask "adobe-creative-cloud-cleaner-tool"
 cask "authy"
 cask "carbon-copy-cloner"
-cask "controlplane"
 cask "cyberduck"
 cask "dhs"
 cask "discord"

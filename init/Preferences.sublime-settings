@@ -11,7 +11,7 @@
 		".git",
 		"node_modules"
 	],
-	"font_face": "Source Code Pro",
+	// "font_face": "Source Code Pro",
 	"font_size": 15,
 	"highlight_line": true,
 	"hot_exit": true,

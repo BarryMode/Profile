@@ -5,3 +5,6 @@ export PATH="/usr/local/sbin:$PATH"
 
 # rust
 export PATH="~/.cargo/bin:$PATH"
+
+# gnu-sed
+# export PATH="$(brew --prefix)/opt/gnu-sed/libexec/gnubin:$PATH"

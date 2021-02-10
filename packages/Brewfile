@@ -26,6 +26,8 @@ brew "bash-completion@2"
 brew "bat"
 # Fish completion for brew-cask
 brew "brew-cask-completion"
+# Decentralized dependency manager for Cocoa
+brew "carthage"
 # Cross-platform make
 brew "cmake"
 # Console Matrix
@@ -37,9 +39,9 @@ brew "curl"
 # Terminal visual disk space navigator
 brew "diskonaut"
 # Pack, ship and run any application as a lightweight container
-brew "docker"
+brew "docker", link: false
 # Isolated development environments using Docker
-brew "docker-compose"
+brew "docker-compose", link: false
 # More intuitive version of du in rust
 brew "dust"
 # Modern replacement for 'ls'
@@ -61,13 +63,15 @@ brew "freetds"
 # Command-line fuzzy finder written in Go
 brew "fzf"
 # Platform built on V8 to build network applications
-brew "node"
+brew "node", link: false
 # Gatsby command-line interface
 brew "gatsby-cli"
 # GNU compiler collection
 brew "gcc"
 # WebDriver <-> Marionette proxy
 brew "geckodriver"
+# GitHub command-line tool
+brew "gh"
 # Interpreter for PostScript and PDF
 brew "ghostscript"
 # Distributed revision control system
@@ -158,16 +162,27 @@ brew "youtube-dl"
 brew "zoxide"
 # A TUI system monitor written in Rust
 brew "cjbassi/ytop/ytop"
+# View, print, and comment on PDF documents
 cask "adobe-acrobat-reader"
+# Collection of apps and services for photography, design, video, web, and UX
 cask "adobe-creative-cloud"
+# Utility to clean up corrupted installations of Adobe software
 cask "adobe-creative-cloud-cleaner-tool"
+# Two-factor authentication software
 cask "authy"
+# Hard disk backup and cloning utility
 cask "carbon-copy-cloner"
+# Server and cloud storage browser
 cask "cyberduck"
 cask "dhs"
+# Voice and text chat software
 cask "discord"
+cask "dissenter-browser"
+# App to build and share containerized applications and microservices
 cask "docker"
+# Emulator to play GameCube and Wii games
 cask "dolphin"
+# Find files, folders, or contents in any file
 cask "easyfind"
 cask "edex-ui"
 cask "fedora-media-writer"
@@ -175,39 +190,68 @@ cask "firefox"
 cask "flash-player"
 cask "font-lato"
 cask "font-open-sans"
+# Elegant sans-serif font family, now 9 weights and italic style
 cask "font-raleway"
+# Disk space cleaner that finds and deletes duplicated and similar files
 cask "gemini"
+# App to record the screen
 cask "gifox"
 cask "google-drive-file-stream"
+# Open-source video transcoder
 cask "handbrake"
+# Hex editor focussing on speed
 cask "hex-fiend"
 cask "hyper"
+# Backup data from a Synology NAS
 cask "hyperbackupexplorer"
+# Free and open-source media player
 cask "iina"
+# Tool to optimize images to a smaller size
 cask "imageoptim"
 cask "java"
 cask "jdownloader"
+# End-to-end encryption software
 cask "keybase"
+# Tool to show what is persistently installed on the computer
 cask "knockknock"
+# Open-source firewall to block unknown outgoing connections
 cask "lulu"
+# Warns about malware, adware and spyware
 cask "malwarebytes"
+# Syncs files between computers and MEGA Cloud drives
 cask "megasync"
+# Open-source software for live streaming and screen recording
 cask "obs"
+# Retro video game emulation
 cask "openemu"
+# Client program for the OpenVPN Access Server
 cask "openvpn-connect"
+# Utility to take screenshots of webpages
 cask "paparazzi"
 cask "paragon-ntfs"
+# Tool to create native applications from command-line scripts
 cask "platypus"
+# Home media server
 cask "plex"
+# VPN client focusing on security
 cask "protonvpn"
+# Displays all open files and sockets in use by all running processes
 cask "sloth"
+# Video game digital distribution service
 cask "steam"
+# Git client
 cask "sublime-merge"
+# Text editor for code, markup and prose
 cask "sublime-text"
+# Application for inspecting installer packages
 cask "suspicious-package"
+# Unpacks archive files
 cask "the-unarchiver"
+# Multimedia player
 cask "vlc"
+# Torrent streaming application
 cask "webtorrent"
+# Mindmap and brainstorming app
 cask "xmind-zen"
 cask "yacreader"
 mas "Bitwarden", id: 1352778147

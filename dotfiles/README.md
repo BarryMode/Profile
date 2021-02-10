@@ -54,7 +54,7 @@ GIT_SIGNING_KEY="hahahahahahahaha"
 git config --global user.signingkey "$GIT_SIGNING_KEY"
 ```
 
-You could also use `~/.extra` to override settings, functions and aliases from my dotfiles repository. It's probably better to [fork this repository](https://github.com/mathiasbynens/dotfiles/fork) instead, though.
+You could also use `~/.extra` to override settings, functions, and aliases from my dotfiles repository. It's probably better to [fork this repository](https://github.com/barrymode/profile/fork) instead, though.
 
 ### macOS Preferences
 

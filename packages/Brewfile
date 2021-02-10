@@ -1,3 +1,4 @@
+tap "bionus/imgbrd-grabber"
 tap "cjbassi/ytop"
 tap "homebrew/bundle"
 tap "homebrew/cask"
@@ -132,6 +133,8 @@ brew "rclone"
 brew "ripgrep"
 # Safe, concurrent, practical language
 brew "rust"
+# Modern Day Portscanner
+brew "rustscan"
 # Rust toolchain installer
 brew "rustup-init"
 # Intuitive find & replace CLI
@@ -184,10 +187,10 @@ cask "docker"
 cask "dolphin"
 # Find files, folders, or contents in any file
 cask "easyfind"
-cask "edex-ui"
+# Tool to write Fedora images to portable media files
 cask "fedora-media-writer"
+# Web browser
 cask "firefox"
-cask "flash-player"
 cask "font-lato"
 cask "font-open-sans"
 # Elegant sans-serif font family, now 9 weights and italic style
@@ -201,13 +204,13 @@ cask "google-drive-file-stream"
 cask "handbrake"
 # Hex editor focussing on speed
 cask "hex-fiend"
-cask "hyper"
 # Backup data from a Synology NAS
 cask "hyperbackupexplorer"
 # Free and open-source media player
 cask "iina"
 # Tool to optimize images to a smaller size
 cask "imageoptim"
+cask "ios-app-signer"
 cask "java"
 cask "jdownloader"
 # End-to-end encryption software
@@ -255,9 +258,12 @@ cask "webtorrent"
 cask "xmind-zen"
 cask "yacreader"
 mas "Bitwarden", id: 1352778147
+mas "Ghostery Lite", id: 1436953057
+mas "Honey", id: 1472777122
 mas "Microsoft Excel", id: 462058435
 mas "Microsoft Remote Desktop", id: 1295203466
 mas "Microsoft Word", id: 462054704
+mas "PiPer", id: 1421915518
 mas "SiteSucker", id: 442168834
 mas "Step Two", id: 1448916662
 mas "Xcode", id: 497799835

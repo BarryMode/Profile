@@ -197,6 +197,7 @@ sudo pmset -a hibernatemode 0
 # Remove the sleep image file to save disk space
 sudo rm /private/var/vm/sleepimage
 # Create a zero-byte file instead…
+# Needs fixing: touch: /private/var/vm/sleepimage: Operation not permitted
 sudo touch /private/var/vm/sleepimage
 # …and make sure it can’t be rewritten
 sudo chflags uchg /private/var/vm/sleepimage
@@ -212,12 +213,15 @@ ln -sf /dev/null ~/Library/Preferences/com.apple.LaunchServices.QuarantineEvents
 defaults write -g NSNavRecentPlacesLimit -int 0
 
 # Logs: Number of recent items: Applications: None
+# Needs fixing: execution error: Not authorized to send Apple events to System Events.
 osascript -e 'tell application "System Events" to tell appearance preferences to set recent applications limit to 0'
 
 # Logs: Number of recent items: Documents: None
+# Needs fixing: execution error: Not authorized to send Apple events to System Events.
 osascript -e 'tell application "System Events" to tell appearance preferences to set recent documents limit to 0'
 
 # Logs: Number of recent items: Servers: None
+# Needs fixing: execution error: Not authorized to send Apple events to System Events.
 osascript -e 'tell application "System Events" to tell appearance preferences to set recent servers limit to 0'
 
 #==============================================================================#
@@ -457,7 +461,7 @@ set initialOpenedWindows to id of every window
 (* Open the custom theme so that it gets added to the list
    of available terminal themes (note: this will open two
    additional terminal windows). *)
-do shell script "open '~//resources/" & themeName & ".terminal'"
+do shell script "open 'resources/" & themeName & ".terminal'"
 
 (* Wait a little bit to ensure that the custom theme is added. *)
 delay 1

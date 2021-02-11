@@ -11,7 +11,6 @@ brew bundle
 brew cleanup
 brew services cleanup
 brew doctor
-brew cask doctor
 # Switch to using brew-installed bash as default shell
 BREW_PREFIX=$(brew --prefix) # Homebrew's installed location
 if ! fgrep -q "${BREW_PREFIX}/bin/bash" /etc/shells; then

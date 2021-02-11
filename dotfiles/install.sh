@@ -8,6 +8,7 @@ function install:dotfiles() {
       stow --target ~          # Target directory
            --ignore .DS_Store  # Ignore files ending in this Perl regex
            --ignore install.sh # Ignore files ending in this Perl regex
+           --ignore LICENSE.md # Ignore files ending in this Perl regex
            --restow            # prunes dead links
            --verbose 1 $file   # Options 0-5
            # --simulate        # use for testing

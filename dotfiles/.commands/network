@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+function network() {
+  case "$1" in
+    # `network ip` | Get Public IP Address
+    "ip") dig +short myip.opendns.com @resolver1.opendns.com ;;
+    # `network ip:local` | Get local IP Address
+    "ip:local") ifconfig | grep "inet " | grep -Fv 127.0.0.1 | awk '{print $2}' ;;
+    # `network dns:flush` or `flush` | Flush Directory Service cache
+    "dns:flush") sudo killall -HUP mDNSResponder; sudo killall mDNSResponderHelper; sudo dscacheutil -flushcache ;;
+    # `network speed` | Run a speedtest via fast.com's fast-cli
+    "speed") fast -u ;;
+  esac
+}
+
+alias flush="network dns:flush"

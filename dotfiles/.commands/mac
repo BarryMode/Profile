@@ -1,0 +1,150 @@
+#!/usr/bin/env bash
+
+function mac() {
+  case "$1" in
+
+    #==============================================================================#
+    # system preferences and apple menu
+    #==============================================================================#
+
+    # `mac about` | Get info about this Mac
+    "about") neofetch ;;
+
+    # `mac uptime`
+    "uptime") echo " macOS Uptime"; uptime ;;
+
+    # `mac screensaver` | Start screen saver
+    "screensaver") open -a ScreenSaverEngine ;;
+
+    # `mac display:off`
+    "display:off") pmset displaysleepnow ;;
+
+    # `mac sleep`
+    "sleep") pmset sleepnow ;;
+
+    # `mac restart`
+    "restart") osascript -e 'tell app "loginwindow" to «event aevtrrst»' ;;
+
+    # `mac shutdown`
+    "shutdown") osascript -e 'tell app "loginwindow" to «event aevtrsdn»' ;;
+
+    # `mac eject:all`
+    "eject:all") osascript -e 'tell application "Finder" to eject (every disk whose ejectable is true)' ;;
+
+    # `mac battery`
+    "battery") pmset -g batt ;;
+
+    #==============================================================================#
+    # bluetooth
+    #==============================================================================#
+
+    # `mac bluetooth`
+    "bluetooth") defaults read /Library/Preferences/com.apple.Bluetooth ControllerPowerState | awk '{ if($1 != 0) {print "Bluetooth: ON"} else { print "Bluetooth: OFF" }  }' ;;
+
+    # `mac bluetooth:on`
+    "bluetooth:on")
+      echo "$(text color green)Bluetooth Enabled{NC}$(text)"
+      sudo defaults write /Library/Preferences/com.apple.Bluetooth ControllerPowerState -int 1
+    ;;
+
+    # `mac bluetooth:off`
+      "bluetooth:off")
+      echo "$(text color green)Bluetooth Disabled$(text)"
+      sudo defaults write /Library/Preferences/com.apple.Bluetooth ControllerPowerState -int 0
+    ;;
+
+    #==============================================================================#
+    # spotlight
+    #==============================================================================#
+
+    # `mac spotlight` | Check spotlight status
+    "spotlight") mdutil -s / ;;
+
+    # `mac spotlight:on` | Turn on Spotlight indexing
+    "spotlight:on")
+      echo "$(text color green)Spotlight Enabled$(text)"
+      sudo mdutil -a -i on
+    ;;
+
+    # `mac spotlight:off` | Turn off Spotlight indexing
+    "spotlight:off")
+      echo "$(text color green)Spotlight Disabled$(text)"
+      sudo mdutil -a -i off
+    ;;
+
+    # `mac spotlight:reindex` | Reindex Spotlight from scratch
+    "spotlight:reindex")
+      # Load new settings before rebuilding the index
+      killall mds > /dev/null 2>&1
+      # Make sure indexing is enabled for the main volume
+      sudo mdutil -i on / > /dev/null
+      # Rebuild the index from scratch
+      sudo mdutil -E / > /dev/null
+    ;;
+
+    #==============================================================================#
+    # wifi
+    #==============================================================================#
+
+    # `mac wifi`
+    "wifi")
+      echo "$(text color green)Wi-Fi:$(text)"
+      /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport -I
+    ;;
+
+    # `mac wifi:scan`
+    "wifi:scan") /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport -s ;;
+
+    # `mac wifi:on`
+    "wifi:on")
+      echo "$(text color green)Wi-Fi Enabled$(text)"
+      networksetup -setairportpower ${_W_DEVICE} on
+    ;;
+
+    # `mac wifi:off`
+    "wifi:off")
+      echo "$(text color green)Wi-Fi Disabled$(text)"
+      networksetup -setairportpower ${_W_DEVICE} off
+    ;;
+
+    # `mac wifi:password`
+    "wifi:password")
+      if [ -z "$1" ]
+        then
+          ssid="`/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport -I | awk '/ SSID/ {print substr($0, index($0, $2))}'`"
+        else
+          ssid=$1
+      fi
+      echo "$(text color green)Wi-Fi Password:$(text)"
+      security find-generic-password -D "AirPort network password" -a "$ssid" -gw
+    ;;
+
+    #==============================================================================#
+    # gatekeeper
+    #==============================================================================#
+
+    # `mac gatekeeper` | Get status of Gatekeeper
+    "gatekeeper")
+      echo "$(text color green)Gatekeeper Status:$(text)"
+      sudo spctl --status
+    ;;
+
+    # `mac gatekeeper:on` | Enable Gatekeeper
+    "gatekeeper:on")
+      echo "$(text color green)Gatekeeper Enabled$(text)"
+      sudo spctl --master-enable
+    ;;
+
+    # `mac gatekeeper:off` | Disable Gatekeeper
+    "gatekeeper:off")
+      echo "$(text color green)Gatekeeper Eisabled$(text)"
+      sudo spctl --master-disable
+    ;;
+
+    # `mac gatekeeper:reset` | Reset Gatekeeper Rules
+    "gatekeeper:reset") sudo spctl --reset-default ;;
+
+  esac
+}
+
+alias afk="mac lock"

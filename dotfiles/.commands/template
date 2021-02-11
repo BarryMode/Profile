@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+# function new_plugin_template() {
+#   case "$1" in
+#     *)
+#       echo 'Hello world!'
+#     ;;
+#   esac
+# }

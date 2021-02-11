@@ -1,11 +1,9 @@
-dotfiles/.extra
-dotfiles/.ssh/config
-dotfiles/.ssh/*_rsa*
-dotfiles/!.ssh/example_rsa*
+Dotfiles/.private
+Dotfiles/.gnupg
+Dotfiles/!.gnupg/gpg-agent.conf
+Dotfiles/!.gnupg/gpg.conf
+Dotfiles/.ssh
+Dotfiles/.ssh/*_rsa*
+Dotfiles/!.ssh/example_rsa*
 
-dotfiles/.hosts/hosts
-dotfiles/.hosts/*/*/hosts
-dotfiles/.hosts/*/*/*/hosts
-dotfiles/.hosts/myhosts
-dotfiles/.hosts/blacklist
-dotfiles/.hosts/whitelist
+Resources/hosts

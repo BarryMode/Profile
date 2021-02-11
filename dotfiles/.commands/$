@@ -1,0 +1,65 @@
+#!/usr/bin/env bash
+
+alias whereami="hostname"
+
+# `clear` or `c` | Same as ⌘K
+alias clear="printf '\033c\e[3J'"
+alias c="clear"
+
+# `reload` or `r` | Reload the shell (i.e. invoke as a login shell)
+alias reload="exec $SHELL -l"
+alias r="reload"
+
+# Print each PATH entry on a separate line
+alias path='echo -e ${PATH//:/\\n}'
+
+# ss: convert spreadsheets to different formats (ex. xml, xls, xlsx)
+# ss xlsx xml
+function ss() { /Applications/LibreOffice.app/Contents/MacOS/soffice --convert-to $2 *.$1 --headless; }
+
+# `diskonaut`
+
+# admin
+#-------#
+
+# `sudo` | Enable aliases to be sudoed
+alias sudo='sudo '
+# `sama` | Persistent sudo
+alias sama="sudo -v; while true; do sudo -n true; sleep 60; kill -0 \"$$\" || exit; done 2>/dev/null &"
+
+# rust replacements
+#-------------------#
+
+# `du`
+alias du="dust"
+# `ls`
+alias ls="exa"
+# `cat`
+# alias cat="bat"
+# `find`
+# alias find="fd"
+# `grep`
+# alias grep="ripgrep"
+# `nmap`
+alias nmap="rustscan"
+# `sed`
+# alias sed="sd"
+# `top`
+alias top="ytop"
+# `tree`
+alias tree="exa -T"
+
+# navigation
+#------------#
+
+# Easier navigation
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+# `cd` | List directory contents with cd
+function cd() { builtin cd "$@" && ls; }
+# `mkcd` | Create a new directory and enter it
+function mkcd() { mkdir -p "$@" && cd "$_"; }
+# `mkdir` | Make directories recursively (ex. `my/tree` will make both folders)
+alias mkdir="mkdir -p"

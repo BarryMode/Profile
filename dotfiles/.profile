@@ -1,12 +1,8 @@
 # Set prompt to `starship`
 eval "$(starship init bash)"
+
 # Add `zoxide` to shell
 eval "$(zoxide init bash)"
-
-# Title bar - "user@host: ~"
-# title="\u@\h: \w"
-# titlebar="\[\033]0;"$title"\007\]"
-# PS1="${titlebar}${PS1}"
 
 # Enable some Bash 4 features when possible:
 # * `autocd`, e.g. `**/qux` will enter `./foo/bar/baz/qux`
@@ -37,9 +33,6 @@ fi;
 # You could just use `-g` instead, but I like being explicit
 complete -W "NSGlobalDomain" defaults;
 
-# Add `killall` tab completion for common apps
-complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari Music SystemUIServer Terminal" killall;
-
 # Append to the Bash history file, rather than overwriting it
 shopt -s histappend;
 
@@ -52,9 +45,10 @@ export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
 gpgconf --launch gpg-agent
 
 # Load the shell dotfiles, and then some:
-# * ~/.path can be used to extend `$PATH`.
-# * ~/.extra can be used for other settings you don't want to commit.
-for file in ~/.{path,exports,aliases,functions,extra}; do
-  [ -r "$file" ] && [ -f "$file" ] && source "$file";
+# ~/.path can be used to extend `$PATH`.
+# ~/.commands is where you can put custom aliases and functions.
+# ~/.private can be used for other settings you don't want to commit.
+for file in ~/.{path,exports,commands/*,private}; do
+  [ -r "$file" ] && [ -f "$file" ] && source "$file"
 done;
 unset file;

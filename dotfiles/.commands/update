@@ -1,0 +1,164 @@
+#!/usr/bin/env bash
+
+function update() {
+  case "$1" in
+
+    # `update brew`
+    "brew")
+      brew upgrade; brew missing; brew cleanup; brew services cleanup
+      cd ~//packages/
+      brew bundle dump --force --describe
+      cd -
+    ;;
+
+    # `update dotfiles`
+    "dotfiles") ~//dotfiles/install.sh -f ;;
+
+    # `update repos` | In current directory
+    "repos") for d in *; do pushd $d && git pull && popd; done ;;
+
+    # `update symlinks`
+    "symlinks")
+      #==============================================================================#
+      # Google Drive Symlinks
+      #==============================================================================#
+      if [ -d "/Volumes/GoogleDrive" ]; then
+        for dir in Books Documents/Computers Games Music Pictures Projects Projects/YouTube Projects/YouTube/Applications Projects/YouTube/Applications/gsc; do
+
+          # Documents/Games/Music/Pictures/Projects: find type symlink and remove
+          #-----------------------------------------------------------------------#
+          cd ~/$dir
+          fd --type l --exec rm
+
+          # Documents/Games/Music/Pictures/Projects: find type directory and create symlinks
+          #----------------------------------------------------------------------------------#
+          cd "/Volumes/GoogleDrive/My Drive/$dir"
+          fd --type d --max-depth 1 --exec ln -s "$(pwd)/{}" ~/$dir
+        done
+      fi
+
+      #==============================================================================#
+      # Adler Symlinks
+      #==============================================================================#
+      if [ -d "/Volumes/Adler" ]; then
+        for dir in Documents Documents/Computers Pictures; do
+
+          # Documents/Pictures: find type symlink and remove
+          #--------------------------------------------------#
+          # cd ~/$dir
+          # fd --type l --exec rm
+
+          # Documents/Pictures: find type directory and create symlinks
+          #-------------------------------------------------------------#
+          cd "/Volumes/Adler/$dir"
+          fd --type d --max-depth 1 --exec ln -s "$(pwd)/{}" ~/$dir
+        done
+
+        # Videos: find type symlink and remove
+        #--------------------------------------#
+        cd ~/Movies
+        fd --type l --exec rm
+
+        # Videos: find type directory and create symlinks
+        #-------------------------------------------------#
+        cd "/Volumes/Adler/Videos"
+        fd --type d --max-depth 1 --exec ln -s "$(pwd)/{}" ~/Movies
+      fi
+    ;;
+
+    # `update` | Get macOS Software Updates, update packages, and general cleanup
+    # TODO: implement this? https://github.com/fwartner/mac-cleanup/blob/master/cleanup.sh
+    "")
+      echo
+      echo ':update'
+      echo
+      sama
+      cd ~
+      echo
+      echo 'Symlinks'
+      echo '················································································'
+      echo
+      echo 'Updating symlinks…'
+      update symlinks
+      echo
+      echo 'Dotfiles'
+      echo '················································································'
+      echo
+      echo 'Updating dotfiles…'
+      update dotfiles
+      echo
+      echo 'MAS'
+      echo '················································································'
+      echo
+      echo 'Updating mas apps…'
+      mas upgrade
+      echo
+      echo 'Homebrew'
+      echo '················································································'
+      echo
+      echo 'Updating brew packages…'
+      update brew
+      echo
+      echo 'NPM'
+      echo '················································································'
+      echo
+      echo 'Updating npm modules…'
+      npm update -g; npm cache clean --force
+      echo
+      echo 'PIP'
+      echo '················································································'
+      echo
+      echo 'Updating python packages…'
+      pip3 install --upgrade pip
+      pip3 install -U $(pip freeze | cut -d '=' -f 1)
+      echo
+      echo 'Sublime Text'
+      echo '················································································'
+      echo
+      echo 'Backing up Sublime Text settings…'
+      cp ~/Library/Application\ Support/Sublime\ Text*/Packages/User/Package\ Control.sublime-settings ~//resources/
+      cp ~/Library/Application\ Support/Sublime\ Text*/Packages/User/Preferences.sublime-settings ~//resources/
+      echo
+      echo 'Git Repositories'
+      echo '················································································'
+      echo
+      echo 'Updating git repos…'
+      cd ~/Documents/Computers/Repos/
+      update repos
+      cd ~
+      echo
+      echo 'macOS'
+      echo '················································································'
+      echo
+      echo 'Running macOS update…'
+      softwareupdate -i -a
+      echo
+      echo 'Cleaning'
+      echo '················································································'
+      echo
+      echo 'Deduping ssh known hosts…'
+      cat ~//dotfiles/.ssh/known_hosts | uniq > ~//dotfiles/.ssh/known_hosts2; mv ~//dotfiles/.ssh/known_hosts2 ~//dotfiles/.ssh/known_hosts # add "| sort" to list in abc order
+      echo 'Clear cache…'
+      rm -rf .cache
+      rm -rf .composer/cache
+      rm -rf .expo/*cache
+      rm -rf .gradle/caches
+      rm -rf ~/Library/Application\ Support/Keybase/kbfs_block_cache
+      rm -rf ~/Library/Application\ Support/Google/DriveFS/cef_cache/Cache
+      rm -rf ~/Library/Developer/CoreSimulator
+      echo 'Clear clipboard…'
+      pbcopy < /dev/null
+      echo 'Clear logs…'
+      sudo rm -rfv /private/var/log/asl/*.asl; sqlite3 ~/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV* 'delete from LSQuarantineEvent'
+      echo 'Empty trash…'
+      sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash
+      echo
+      echo 'Setting Preferences…'
+      ~//prime
+      ~//dock
+      echo
+      echo 'COMPLETE'
+    ;;
+
+  esac
+}

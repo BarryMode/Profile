@@ -1,5 +1,4 @@
 [alias]
-
   # Switch to a branch, creating it if necessary
   go = "!f() { git checkout -b \"$1\" 2> /dev/null || git checkout \"$1\"; }; f"
 
@@ -23,12 +22,16 @@
   # Force push
   publish = push --force
 
-  # Show the user email for the current repository.
+  # Show the user email for the current repository
   whoami = config user.email
 
 [apply]
   # Detect whitespace errors when applying a patch
   whitespace = fix
+
+[branch]
+  # Show most recently changed branches first
+  sort = -committerdate
 
 [color]
   diff = auto
@@ -51,7 +54,7 @@
 
 [commit]
   # https://help.github.com/articles/generating-a-gpg-key/
-  # Use "gpg2 --full-generate-key" for a full featured key generation dialog.
+  # Use "gpg2 --full-generate-key" for a full featured key generation dialog
   gpgsign = true
 
 [core]
@@ -68,7 +71,7 @@
   # http://michael-kuehnel.de/git/2014/11/21/git-mac-osx-and-german-umlaute.html
   precomposeunicode = false
 
-  # Speed up commands involving untracked files such as `git status`.
+  # Speed up commands involving untracked files such as `git status`
   # https://git-scm.com/docs/git-update-index#_untracked_cache
   untrackedCache = true
 
@@ -77,7 +80,7 @@
   renames = copies
 
   # Enable an experimental heuristic that shifts the hunk boundary in an
-  # attempt to make the resulting patch easier to read.
+  # attempt to make the resulting patch easier to read
   compactionHeuristic = true
   indentHeuristic = true
 
@@ -100,6 +103,7 @@
 [push]
   # https://git-scm.com/docs/git-config#git-config-pushdefault
   default = simple
-
-[init]
-  defaultBranch = main
+[user]
+	name = Barry
+	email = 5648875+BarryMode@users.noreply.github.com
+	signingkey = EC65B0DC5C078AB0

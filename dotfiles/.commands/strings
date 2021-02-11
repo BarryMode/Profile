@@ -1,0 +1,46 @@
+#!/usr/bin/env bash
+
+# `text color x`
+function text() {
+  # Colors
+  case $1 in
+    color)
+      case $2 in
+        black)   echo -e "\033[0;30m" ;;
+        red)     echo -e "\033[0;31m" ;;
+        green)   echo -e "\033[0;32m" ;;
+        yellow)  echo -e "\033[0;33m" ;;
+        blue)    echo -e "\033[0;34m" ;;
+        magenta) echo -e "\033[0;35m" ;;
+        cyan)    echo -e "\033[0;36m" ;;
+        white)   echo -e "\033[0;37m" ;;
+      esac
+    ;;
+    # Format
+    bold)      tput bold ;;
+    underline) tput smul ;;
+    invert)    tput rev  ;;
+    # Reset
+    '') echo -e "\033[0m" ;;
+  esac
+}
+
+# `text decode:base64 "x"`
+function decode() {
+  case $1 in
+    base64) shift 1; echo -n "$@" | base64 --decode            ;;
+    binary) shift 1; echo -n "$@" | perl -lpe '$_=pack"B*",$_' ;;
+    hex)    shift 1; echo -n "0x$@" | xxd -r                   ;;
+  esac
+}
+
+# `text encode:base64 "x"`
+function encode() {
+  case $1 in
+    base64) shift 1; echo -n "$@" | openssl base64            ;;
+    binary) shift 1; echo -n "$@" | perl -lpe '$_=unpack"B*"' ;;
+    hex)    shift 1; echo -n "$@" | xxd -p                    ;;
+    md5)    shift 1; echo -n "$@" | openssl md5               ;;
+    sha1)   shift 1; echo -n "$@" | openssl sha1              ;;
+  esac
+}

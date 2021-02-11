@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+source ~//dotfiles/.commands/dock
+
+dock clear
+dock add "Firefox"
+
+killall Dock

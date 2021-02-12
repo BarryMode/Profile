@@ -3,6 +3,7 @@
 # `quicklook x` or `ql x` | Open with macOS Quicklook Preview
 function quicklook() { qlmanage -p "$*" >& /dev/null; }
 alias ql="quicklook"
+complete quicklook ql
 
 # `finder` or `f`
 function finder() {
@@ -75,6 +76,8 @@ alias hide="f hide"
 alias lock="f lock"
 alias unlock="f unlock"
 
+complete -W "list tree count count:all counter:all:r size dimensions metadata new remove remove:empty show hide lock unlock show:r hide:r lock:r unlock:r" finder f
+
 # `extract file.zip` | Extract most known archives with one command
 function extract() {
   if [ -f $1 ]; then
@@ -101,6 +104,8 @@ function extract() {
   fi
 }
 
+complete extract
+
 # `compress folder` | Compress a folder using zip or 7zip
 function compress() {
   if [ ! -z $2 ] && [ -d $2 ]; then
@@ -116,8 +121,12 @@ function compress() {
   fi
 }
 
+complete compress
+
 # `codecs` | Return video and audio codecs
 function codecs() { ffprobe "$1" 2>&1 >/dev/null |grep Stream.*Video | sed -e 's/.*Video: //' -e 's/[, ].*//'; ffprobe "$1" 2>&1 >/dev/null |grep Stream.*Audio | sed -e 's/.*Audio: //' -e 's/[, ].*//'; }
+complete codecs
 
 # `mergepdf -o output.pdf input{1,2,3}.pdf` | Merge PDF files, preserving hyperlinks
 alias mergepdf='gs -q -dNOPAUSE -dBATCH -sDEVICE=pdfwrite -sOutputFile=_merged.pdf'
+complete mergepdf

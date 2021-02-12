@@ -29,3 +29,5 @@ function video() {
 
   esac
 }
+
+complete -W "encode merge" video

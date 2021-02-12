@@ -15,6 +15,8 @@ function fix() {
   esac
 }
 
+complete -W "audio app launchservices" fix
+
 function remove() {
   case "$1" in
 
@@ -50,3 +52,5 @@ function remove() {
 
   esac
 }
+
+complete -W "cache clipboard logs ds_store launchpad_icon trash" remove

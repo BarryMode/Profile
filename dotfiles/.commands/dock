@@ -23,3 +23,5 @@ function dock() {
     "reset") defaults write com.apple.dock; killall Dock ;;
   esac
 }
+
+complete -W "add add:spacer clear reset" dock

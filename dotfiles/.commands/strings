@@ -30,3 +30,4 @@ function text() {
   esac
 }
 
+complete -W "black red green yellow blue magenta cyan white bold underline invert encode:base64 encode:binary encode:hex encode:md5 encode:sha1 decode:base64 decode:binary decode:hex" text

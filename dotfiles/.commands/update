@@ -162,3 +162,5 @@ function update() {
 
   esac
 }
+
+complete -W "brew dotfiles repos symlinks" update

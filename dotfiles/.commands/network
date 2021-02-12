@@ -14,3 +14,5 @@ function network() {
 }
 
 alias flush="network dns:flush"
+
+complete -W "ip ip:local dns:flush speed" network

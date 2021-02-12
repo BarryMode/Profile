@@ -147,3 +147,4 @@ function mac() {
   esac
 }
 
+complete -W "about uptime screensaver display:off sleep restart shutdown eject:all battery bluetooth bluetooth:on bluetooth:off spotlight spotlight:on spotlight:off spotlight:reindex wifi wifi:scan wifi:on wifi:off wifi:password gatekeeper gatekeeper:on gatekeeper:off gatekeeper:reset" mac

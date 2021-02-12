@@ -16,3 +16,5 @@ function images() {
     "resize") shift 1; for f in "$(pwd)/*" ; do image resize $1 "${f}" $2/; done ;;
   esac
 }
+
+complete -W "resize" image images

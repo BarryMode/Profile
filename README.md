@@ -38,7 +38,7 @@ Here's what I've got in there for you:
 - [`maintenance`](https://github.com/BarryMode/mac-prime/blob/master/dotfiles/.commands/maintenance): Common fixes and system maintenance
 - [`network`](https://github.com/BarryMode/mac-prime/blob/master/dotfiles/.commands/network): Get IP addresses and flush your dns
 - [`ringtone`](https://github.com/BarryMode/mac-prime/blob/master/dotfiles/.commands/ringtone): Turn any mp3 into a ringtone for your phone
-- [`strings`](https://github.com/BarryMode/mac-prime/blob/master/dotfiles/.commands/strings): Format text and encode/decode in base64, binary, hex, md5, and sha1
+- [`text`](https://github.com/BarryMode/mac-prime/blob/master/dotfiles/.commands/text): Format text and encode/decode in base64, binary, hex, md5, and sha1
 - [`update`](https://github.com/BarryMode/mac-prime/blob/master/dotfiles/.commands/update): Update all the things
 - [`video`](https://github.com/BarryMode/mac-prime/blob/master/dotfiles/.commands/video): Remux, encode, or merge videos
 

@@ -118,7 +118,7 @@ Once you're done, run `dock` to apply the changes.
 You can install everything with this one-liner.
 
 ```bash
-git clone https://github.com/BarryMode/mac-prime.git ~/ && cd ~//prime.sh
+git clone https://github.com/BarryMode/mac-prime.git ~/ && ~//prime.sh
 ```
 
 ## Author

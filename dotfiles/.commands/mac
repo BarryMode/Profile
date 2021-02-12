@@ -43,13 +43,13 @@ function mac() {
 
     # `mac bluetooth:on`
     "bluetooth:on")
-      echo "$(text color green)Bluetooth Enabled{NC}$(text)"
+      echo "$(text green)Bluetooth Enabled{NC}$(text)"
       sudo defaults write /Library/Preferences/com.apple.Bluetooth ControllerPowerState -int 1
     ;;
 
     # `mac bluetooth:off`
       "bluetooth:off")
-      echo "$(text color green)Bluetooth Disabled$(text)"
+      echo "$(text green)Bluetooth Disabled$(text)"
       sudo defaults write /Library/Preferences/com.apple.Bluetooth ControllerPowerState -int 0
     ;;
 
@@ -62,13 +62,13 @@ function mac() {
 
     # `mac spotlight:on` | Turn on Spotlight indexing
     "spotlight:on")
-      echo "$(text color green)Spotlight Enabled$(text)"
+      echo "$(text green)Spotlight Enabled$(text)"
       sudo mdutil -a -i on
     ;;
 
     # `mac spotlight:off` | Turn off Spotlight indexing
     "spotlight:off")
-      echo "$(text color green)Spotlight Disabled$(text)"
+      echo "$(text green)Spotlight Disabled$(text)"
       sudo mdutil -a -i off
     ;;
 
@@ -88,7 +88,7 @@ function mac() {
 
     # `mac wifi`
     "wifi")
-      echo "$(text color green)Wi-Fi:$(text)"
+      echo "$(text green)Wi-Fi:$(text)"
       /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport -I
     ;;
 
@@ -97,13 +97,13 @@ function mac() {
 
     # `mac wifi:on`
     "wifi:on")
-      echo "$(text color green)Wi-Fi Enabled$(text)"
+      echo "$(text green)Wi-Fi Enabled$(text)"
       networksetup -setairportpower ${_W_DEVICE} on
     ;;
 
     # `mac wifi:off`
     "wifi:off")
-      echo "$(text color green)Wi-Fi Disabled$(text)"
+      echo "$(text green)Wi-Fi Disabled$(text)"
       networksetup -setairportpower ${_W_DEVICE} off
     ;;
 
@@ -115,7 +115,7 @@ function mac() {
         else
           ssid=$1
       fi
-      echo "$(text color green)Wi-Fi Password:$(text)"
+      echo "$(text green)Wi-Fi Password:$(text)"
       security find-generic-password -D "AirPort network password" -a "$ssid" -gw
     ;;
 
@@ -125,19 +125,19 @@ function mac() {
 
     # `mac gatekeeper` | Get status of Gatekeeper
     "gatekeeper")
-      echo "$(text color green)Gatekeeper Status:$(text)"
+      echo "$(text green)Gatekeeper Status:$(text)"
       sudo spctl --status
     ;;
 
     # `mac gatekeeper:on` | Enable Gatekeeper
     "gatekeeper:on")
-      echo "$(text color green)Gatekeeper Enabled$(text)"
+      echo "$(text green)Gatekeeper Enabled$(text)"
       sudo spctl --master-enable
     ;;
 
     # `mac gatekeeper:off` | Disable Gatekeeper
     "gatekeeper:off")
-      echo "$(text color green)Gatekeeper Eisabled$(text)"
+      echo "$(text green)Gatekeeper Eisabled$(text)"
       sudo spctl --master-disable
     ;;
 

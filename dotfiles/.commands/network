@@ -2,9 +2,9 @@
 
 function network() {
   case "$1" in
-    # `network ip` | Get Public IP Address
-    "ip") dig +short myip.opendns.com @resolver1.opendns.com ;;
-    # `network ip:local` | Get local IP Address
+    # `network ip` | Get your public IP address or input a domain to get its IP
+    "ip") if [ -z $2 ]; then dig +short myip.opendns.com @resolver1.opendns.com; else shift 1; dig $1 +short; fi ;;
+    # `network ip:local` | Get your local IP address
     "ip:local") ifconfig | grep "inet " | grep -Fv 127.0.0.1 | awk '{print $2}' ;;
     # `network dns:flush` or `flush` | Flush Directory Service cache
     "dns:flush") sudo killall -HUP mDNSResponder; sudo killall mDNSResponderHelper; sudo dscacheutil -flushcache ;;

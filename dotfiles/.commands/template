@@ -1,9 +1,10 @@
 #!/usr/bin/env bash
 
-# function new_plugin_template() {
+# function new_command() {
 #   case "$1" in
-#     *)
-#       echo 'Hello world!'
-#     ;;
+#     "sub1") echo 'Hello world!' ;;
+#     "sub2") echo 'Hello sky!' ;;
 #   esac
 # }
+#
+# complete -W "sub1 sub2" new_command

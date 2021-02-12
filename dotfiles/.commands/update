@@ -12,7 +12,7 @@ function update() {
     ;;
 
     # `update dotfiles`
-    "dotfiles") ~//dotfiles/install.sh -f ;;
+    "dotfiles") ~//dotfiles/install.sh ;;
 
     # `update repos` | In current directory
     "repos") for d in *; do pushd $d && git pull && popd; done ;;

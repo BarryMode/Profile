@@ -11,6 +11,22 @@ I use **Mac Prime** to automatically tailor my Mac. Use this as a basis for your
 - [`preferences`](https://github.com/BarryMode/mac-prime/tree/master/preferences): Presets for System Preferences
 - [`dock`](https://github.com/BarryMode/mac-prime/tree/master/dock): Customize your Dock
 
+## Packages
+
+### Package Lists
+
+- [`brewfile`](https://github.com/BarryMode/mac-prime/tree/master/packages/brewfile): An installable package list for [Brew](https://github.com/Homebrew/brew)
+- [`npmfile`](https://github.com/BarryMode/mac-prime/tree/master/packages/npmfile): An installable package list for [NPM](https://github.com/npm/cli)
+- [`pipfile`](https://github.com/BarryMode/mac-prime/tree/master/packages/pipfile): An installable package list for [PIP](https://github.com/pypa/pip)
+
+### Install Packages
+
+Run the following script to install all of my apps and programming tools.
+
+```bash
+~//packages/install.sh
+```
+
 ## Dotfiles
 
 ### Install Dotfiles
@@ -41,6 +57,8 @@ Here's what I've got in there for you:
 - [`text`](https://github.com/BarryMode/mac-prime/blob/master/dotfiles/.commands/text): Format text and encode/decode in base64, binary, hex, md5, and sha1
 - [`update`](https://github.com/BarryMode/mac-prime/blob/master/dotfiles/.commands/update): Update all the things
 - [`video`](https://github.com/BarryMode/mac-prime/blob/master/dotfiles/.commands/video): Remux, encode, or merge videos
+
+Note: some of these commands are dependent on packages being installed, so if you skip that section and install just the dotfiles, then not all of them will work.
 
 #### `.path` File
 
@@ -73,22 +91,6 @@ git config --global user.signingkey "$GIT_SIGNING_KEY"
 #### Other Dotfiles
 
 There are several other files in `dotfiles` that set some reasonable defaults including `.hushlogin`, `.wgetrc`, `.gitconfig`, and more.
-
-## Packages
-
-### Package Lists
-
-- [`brewfile`](https://github.com/BarryMode/mac-prime/tree/master/packages/brewfile): An installable package list for [Brew](https://github.com/Homebrew/brew)
-- [`npmfile`](https://github.com/BarryMode/mac-prime/tree/master/packages/npmfile): An installable package list for [NPM](https://github.com/npm/cli)
-- [`pipfile`](https://github.com/BarryMode/mac-prime/tree/master/packages/pipfile): An installable package list for [PIP](https://github.com/pypa/pip)
-
-### Install Packages
-
-Run the following script to install all of my apps and programming tools.
-
-```bash
-~//packages/install.sh
-```
 
 ## Preferences
 

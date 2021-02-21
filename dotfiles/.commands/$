@@ -40,8 +40,6 @@ alias ls="exa"
 # alias find="fd"
 # `grep`
 # alias grep="ripgrep"
-# `nmap`
-alias nmap="rustscan"
 # `sed`
 # alias sed="sd"
 # `top`

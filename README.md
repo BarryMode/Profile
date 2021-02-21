@@ -62,7 +62,7 @@ Here's what I've got in there for you:
 
 #### [`.path`](https://github.com/BarryMode/mac-prime/blob/master/dotfiles/.path) File
 
-Append to the `$PATH`. Here's an example `.path` file that adds `/usr/local/bin` to the `$PATH`:
+Append to the `$PATH`. Here's an example `.path` file that adds `/usr/local/bin` to the `$PATH`.
 
 ```bash
 export PATH="/usr/local/bin:$PATH"
@@ -70,7 +70,7 @@ export PATH="/usr/local/bin:$PATH"
 
 #### `.private` File
 
-Use this to add private code that you don't want to commit to a public repository. My `.private` file looks something like this:
+Use this to add private code that you don't want to commit to a public repository. My `.private` file looks something like this.
 
 ```bash
 # Git credentials

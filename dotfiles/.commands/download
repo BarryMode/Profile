@@ -61,3 +61,7 @@ function download() {
 alias dl="download"
 
 complete -W "links music video 'video range'" download dl
+
+alias mget="download music"
+alias vget="download video"
+complete mget vget

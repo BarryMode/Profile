@@ -31,7 +31,9 @@ Run the following script to install all of my apps and programming tools.
 
 ### Install Dotfiles
 
-Run the following script to install my dotfiles. This will create symlinks in your `$HOME` folder for each of the dotfiles. As you add or remove files, simply rerun this install script to sync your changes. Dead links get removed and new links get added.
+Run the following script to install my [`dotfiles`](https://github.com/BarryMode/mac-prime/tree/master/dotfiles). This will create symlinks in your `$HOME` folder for each of the dotfiles. As you add or remove files, simply rerun this install script to sync your changes. Dead links get removed and new links get added.
+
+Note: Some of the files in [`dotfiles`](https://github.com/BarryMode/mac-prime/tree/master/dotfiles) require [`packages`](https://github.com/BarryMode/mac-prime/tree/master/packages) to be installed first. If you don't want to install my [`packages`](https://github.com/BarryMode/mac-prime/tree/master/packages), then you at least need `stow` (ex. `brew install stow`) to successfully install [`dotfiles`](https://github.com/BarryMode/mac-prime/tree/master/dotfiles).
 
 ```bash
 ~//dotfiles/install.sh
@@ -39,9 +41,9 @@ Run the following script to install my dotfiles. This will create symlinks in yo
 
 ### Customize Dotfiles
 
-#### `.commands` Folder
+#### [`.commands`](https://github.com/BarryMode/mac-prime/tree/master/dotfiles/.commands) Folder
 
-The `.commands` folder is intended for you to add and remove custom commands in a categorical way. Cherry-pick what you want. Refer to `~//dotfiles/.commands/template` for a basic example to create your own commands.
+The [`.commands`](https://github.com/BarryMode/mac-prime/tree/master/dotfiles/.commands) folder is intended for you to add and remove custom commands in a categorical way. Cherry-pick what you want. Refer to the [`template`](https://github.com/BarryMode/mac-prime/blob/master/dotfiles/.commands/template) file for a basic example of how to create your own commands.
 
 Here's what I've got in there for you:
 
@@ -58,9 +60,7 @@ Here's what I've got in there for you:
 - [`update`](https://github.com/BarryMode/mac-prime/blob/master/dotfiles/.commands/update): Update all the things
 - [`video`](https://github.com/BarryMode/mac-prime/blob/master/dotfiles/.commands/video): Remux, encode, or merge videos
 
-Note: some of these commands are dependent on packages being installed, so if you skip that section and install just the dotfiles, then not all of them will work.
-
-#### `.path` File
+#### [`.path`](https://github.com/BarryMode/mac-prime/blob/master/dotfiles/.path) File
 
 Append to the `$PATH`. Here's an example `.path` file that adds `/usr/local/bin` to the `$PATH`:
 
@@ -90,11 +90,11 @@ git config --global user.signingkey "$GIT_SIGNING_KEY"
 
 #### Other Dotfiles
 
-There are several other files in `dotfiles` that set some reasonable defaults including `.hushlogin`, `.wgetrc`, `.gitconfig`, and more.
+There are several other files in [`dotfiles`](https://github.com/BarryMode/mac-prime/tree/master/dotfiles) that set some reasonable defaults including [`.hushlogin`](https://github.com/BarryMode/mac-prime/blob/master/dotfiles/.hushlogin), [`.wgetrc`](https://github.com/BarryMode/mac-prime/blob/master/dotfiles/.wgetrc), [`.gitconfig`](https://github.com/BarryMode/mac-prime/blob/master/dotfiles/.gitconfig), and more.
 
 ## Preferences
 
-Use `preferences` to make adjustments you would otherwise set in the System Preferences app. Define this file once and reuse it whenever you like. If your settings ever get messed up, this is a great way to reset them to the way you prefer.
+Use [`preferences`](https://github.com/BarryMode/mac-prime/blob/master/preferences) to make adjustments you would otherwise set in the System Preferences app. Define this file once and reuse it whenever you like. If your settings ever get messed up, this is a great way to reset them to the way you prefer.
 
 ```bash
 ~//preferences
@@ -102,14 +102,14 @@ Use `preferences` to make adjustments you would otherwise set in the System Pref
 
 ## Dock
 
-Customize your Dock in the `dock` file. Use these commands:
+Customize your Dock in the [`dock`](https://github.com/BarryMode/mac-prime/blob/master/dock) file. Use these commands:
 
 - `dock add "Terminal"`: Add an application to the macOS Dock
 - `dock add:spacer`: Adds an empty space to macOS Dock
 - `dock clear`: Removes all persistent icons from macOS Dock
 - `dock reset`: Reset macOS Dock to default settings
 
-Once you're done, run `dock` to apply the changes.
+Once you're done, run [`dock`](https://github.com/BarryMode/mac-prime/blob/master/dock) to apply the changes.
 
 ```bash
 ~//dock

@@ -45,27 +45,27 @@ function finder() {
     # Actions
     #---------#
     # `finder new x` | Make a folder
-    "new") shift 1; mkdir $1 ;;
+    "new") shift 1; mkdir "$1" ;;
     # `finder remove x` | Remove a file
-    "remove") shift 1; rm -rf $1 ;;
+    "remove") shift 1; rm -rf "$1" ;;
     # `remove:empty` | Remove empty directories in current directory
     "remove:empty") find . -type d -empty -delete ;;
     # `file show x` | Show a symlink without hiding the destination or show a file
-    "show") shift 1; if [ -h "$1" ]; then chflags -h nohidden $1; else chflags nohidden $1; fi ;;
+    "show") shift 1; if [ -h "$1" ]; then chflags -h nohidden "$1"; else chflags nohidden "$1"; fi ;;
     # `file hide x` | Hide a symlink without hiding the destination or hide a file
-    "hide") shift 1; if [ -h "$1" ]; then chflags -h hidden $1; else chflags hidden $1; fi ;;
+    "hide") shift 1; if [ -h "$1" ]; then chflags -h hidden "$1"; else chflags hidden "$1"; fi ;;
     # `file lock x` | Lock a file
-    "lock") shift 1; chflags uchg $1 ;;
+    "lock") shift 1; chflags uchg "$1" ;;
     # `file unlock x` | Unlock a file
-    "unlock") shift 1; chflags nouchg $1 ;;
+    "unlock") shift 1; chflags nouchg "$1" ;;
     # `finder show:r x` | Show file and subfiles
-    "show:r") shift 1; chflags -R nohidden $1 ;;
+    "show:r") shift 1; chflags -R nohidden "$1" ;;
     # `finder hide:r x` | Hide file and subfiles
-    "hide:r") shift 1; chflags -R hidden $1 ;;
+    "hide:r") shift 1; chflags -R hidden "$1" ;;
     # `finder lock:r x` | Lock file and subfiles
-    "lock:r") shift 1; chflags -R uchg $1 ;;
+    "lock:r") shift 1; chflags -R uchg "$1" ;;
     # `finder unlock:r x` | Unlock file and subfiles
-    "unlock:r") shift 1; chflags -R nouchg $1 ;;
+    "unlock:r") shift 1; chflags -R nouchg "$1" ;;
   esac
 }
 

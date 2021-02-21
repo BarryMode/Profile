@@ -14,6 +14,9 @@ function update() {
     # `update dotfiles`
     "dotfiles") ~//dotfiles/install.sh ;;
 
+    # `update hosts`
+    "hosts") cp ~//resources/hosts /etc/hosts ;;
+
     # `update repos` | In current directory
     "repos") for d in *; do pushd $d && git pull && popd; done ;;
 
@@ -113,12 +116,11 @@ function update() {
       pip3 install --upgrade pip
       pip3 install -U $(pip freeze | cut -d '=' -f 1)
       echo
-      echo 'Sublime Text'
+      echo 'Hosts'
       echo '················································································'
       echo
-      echo 'Backing up Sublime Text settings…'
-      cp ~/Library/Application\ Support/Sublime\ Text*/Packages/User/Package\ Control.sublime-settings ~//resources/
-      cp ~/Library/Application\ Support/Sublime\ Text*/Packages/User/Preferences.sublime-settings ~//resources/
+      echo 'Updating hosts…'
+      update hosts
       echo
       echo 'Git Repositories'
       echo '················································································'
@@ -127,6 +129,13 @@ function update() {
       cd ~/Documents/Computers/Repos/
       update repos
       cd ~
+      echo
+      echo 'Sublime Text'
+      echo '················································································'
+      echo
+      echo 'Backing up Sublime Text settings…'
+      cp ~/Library/Application\ Support/Sublime\ Text*/Packages/User/Package\ Control.sublime-settings ~//resources/
+      cp ~/Library/Application\ Support/Sublime\ Text*/Packages/User/Preferences.sublime-settings ~//resources/
       echo
       echo 'macOS'
       echo '················································································'
@@ -164,4 +173,4 @@ function update() {
   esac
 }
 
-complete -W "brew dotfiles repos symlinks" update
+complete -W "brew dotfiles hosts repos symlinks" update

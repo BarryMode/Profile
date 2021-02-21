@@ -570,6 +570,12 @@ cp ~//resources/Package\ Control.sublime-settings ~/Library/Application\ Supp
 cp ~//resources/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text*/Packages/User/
 
 #==============================================================================#
+# Hosts
+#==============================================================================#
+
+cp ~//resources/hosts /etc/hosts
+
+#==============================================================================#
 # Kill affected applications
 #==============================================================================#
 

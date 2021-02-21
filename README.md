@@ -115,6 +115,14 @@ Once you're done, run [`dock`](https://github.com/BarryMode/mac-prime/blob/maste
 ~//dock
 ```
 
+## Hosts
+
+Add custom hosts to the [`hosts`](https://github.com/BarryMode/mac-prime/blob/master/resources/hosts) file then use the following command to replace your system hosts file.
+
+```bash
+update hosts
+```
+
 ## One-line Install
 
 You can install everything with this one-liner.

@@ -117,7 +117,7 @@ Once you're done, run [`dock`](https://github.com/BarryMode/mac-prime/blob/maste
 
 ## Hosts
 
-Add custom hosts to the [`hosts`](https://github.com/BarryMode/mac-prime/blob/master/resources/hosts) file then use the following command to replace your system hosts file.
+Keep track of your hosts in the [`hosts`](https://github.com/BarryMode/mac-prime/blob/master/resources/hosts) file. Use the following command to replace your system hosts file with this one.
 
 ```bash
 update hosts

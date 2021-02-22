@@ -1,9 +1,9 @@
-Dotfiles/.private
-Dotfiles/.gnupg
-Dotfiles/!.gnupg/gpg-agent.conf
-Dotfiles/!.gnupg/gpg.conf
-Dotfiles/.ssh
-Dotfiles/.ssh/*_rsa*
-Dotfiles/!.ssh/example_rsa*
+dotfiles/.private
+dotfiles/.gnupg
+dotfiles/!.gnupg/gpg-agent.conf
+dotfiles/!.gnupg/gpg.conf
+dotfiles/.ssh
+dotfiles/.ssh/*_rsa*
+dotfiles/!.ssh/example_rsa*
 
-Resources/hosts
+resources/hosts

@@ -15,7 +15,7 @@ function update() {
     "dotfiles") ~//dotfiles/install.sh ;;
 
     # `update hosts`
-    "hosts") cp ~//resources/hosts /etc/hosts ;;
+    "hosts") sudo chmod -R o+rwx /etc/hosts; cp ~//resources/hosts /etc/hosts ;;
 
     # `update repos` | In current directory
     "repos") for d in *; do pushd $d && git pull && popd; done ;;

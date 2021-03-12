@@ -6,8 +6,8 @@ I use **Mac Prime** to automatically tailor my Mac. Use this as a basis for your
 
 ## Overview
 
-- [`dotfiles`](https://github.com/BarryMode/mac-prime/tree/master/dotfiles): Commands and configurations
 - [`packages`](https://github.com/BarryMode/mac-prime/tree/master/packages): Lists of installable apps and packages
+- [`dotfiles`](https://github.com/BarryMode/mac-prime/tree/master/dotfiles): Commands and configurations
 - [`preferences`](https://github.com/BarryMode/mac-prime/tree/master/preferences): Presets for System Preferences
 - [`dock`](https://github.com/BarryMode/mac-prime/tree/master/dock): Customize your Dock
 

@@ -49,7 +49,7 @@ function update() {
       adler="/Volumes/Adler"
       if [ -d "$adler" ]; then
         cd "$adler"
-        for src in Documents/Computers Pictures; do
+        for src in Documents/Computers Games Pictures; do
           cd "$adler/$src"
           for dir in ./; do
             run=(

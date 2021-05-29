@@ -110,6 +110,8 @@ complete extract
 function compress() {
   if [ ! -z $2 ] && [ -d $2 ]; then
     case "$1" in
+      # `compress dmg ~/src Name`
+      "dmg") hdiutil create -fs APFS -srcfolder "$1" -volname "$2" "$2.dmg" ;;
       # `compress zip folder`
       "zip") shift 1; zip -r "$1".zip "$1" ;;
       # `compress 7zip folder` or `compress 7z folder`

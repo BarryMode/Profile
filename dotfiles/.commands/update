@@ -21,21 +21,24 @@ function update() {
     "repos") for d in *; do pushd $d && git pull && popd; done ;;
 
     # `update symlinks`
-    # TODO: Use stow
     "symlinks")
+      #==============================================================================#
+      # Other Symlinks
+      #==============================================================================#
+      ln -s /Applications/ ~/Applications/Mac
       #==============================================================================#
       # Google Drive Symlinks
       #==============================================================================#
       gd="/Volumes/GoogleDrive/My Drive"
       if [ -d "$gd" ]; then
         cd "$gd"
-        for src in Books Documents/Computers Games Music Pictures Projects Projects/YouTube Projects/YouTube/Applications Projects/YouTube/Applications/gsc; do
+        for src in Applications Books Documents/Computers Documents/Computers/Repos/gsc Games Music Pictures Projects Projects/YouTube; do
           cd "$gd/$src"
           for dir in ./; do
             run=(
-              stow --target ~/$src    # Target directory
+              stow --target ~/$src    # target directory
                    --restow           # prunes dead links
-                   --verbose 1 "$dir" # Options 0-5
+                   --verbose 1 "$dir" # options 0-5
                    # --simulate       # use for testing
             )
             "${run[@]}"
@@ -53,9 +56,9 @@ function update() {
           cd "$adler/$src"
           for dir in ./; do
             run=(
-              stow --target ~/$src    # Target directory
+              stow --target ~/$src    # target directory
                    --restow           # prunes dead links
-                   --verbose 1 "$dir" # Options 0-5
+                   --verbose 1 "$dir" # options 0-5
                    # --simulate       # use for testing
             )
             "${run[@]}"

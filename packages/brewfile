@@ -199,6 +199,8 @@ cask "font-raleway"
 cask "gemini"
 # App to record the screen
 cask "gifox"
+# Client for the Google Drive storage service
+cask "google-drive"
 cask "google-drive-file-stream"
 # Open-source video transcoder
 cask "handbrake"

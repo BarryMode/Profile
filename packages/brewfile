@@ -243,6 +243,8 @@ cask "plex"
 cask "powershell"
 # VPN client focusing on security
 cask "protonvpn"
+# Album ripper for various websites
+cask "ripme"
 # Displays all open files and sockets in use by all running processes
 cask "sloth"
 # Video game digital distribution service

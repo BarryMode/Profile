@@ -228,8 +228,6 @@ cask "megasync"
 cask "obs"
 # Retro video game emulation
 cask "openemu"
-# Client program for the OpenVPN Access Server
-cask "openvpn-connect"
 # Utility to take screenshots of webpages
 cask "paparazzi"
 cask "paragon-ntfs"

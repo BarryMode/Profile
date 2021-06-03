@@ -239,6 +239,8 @@ cask "paragon-ntfs"
 cask "platypus"
 # Home media server
 cask "plex"
+# Command-line shell and scripting language
+cask "powershell"
 # VPN client focusing on security
 cask "protonvpn"
 # Displays all open files and sockets in use by all running processes

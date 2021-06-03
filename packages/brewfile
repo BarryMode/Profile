@@ -95,6 +95,8 @@ brew "itstool"
 brew "jdupes"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
+# Network authentication protocol
+brew "krb5"
 # Provides library functionality for FIDO U2F & FIDO 2.0, including USB
 brew "libfido2"
 # Postgres C API library
@@ -233,7 +235,7 @@ cask "paparazzi"
 cask "paragon-ntfs"
 # Tool to create native applications from command-line scripts
 cask "platypus"
-# Home media server
+# Home media player
 cask "plex"
 # Command-line shell and scripting language
 cask "powershell"
@@ -259,6 +261,8 @@ cask "vlc"
 cask "webtorrent"
 # Mindmap and brainstorming app
 cask "xmind-zen"
+# Open-source version of the X.Org X Window System
+cask "xquartz"
 cask "yacreader"
 mas "Bitwarden", id: 1352778147
 mas "Ghostery Lite", id: 1436953057

@@ -223,6 +223,7 @@ cask "lulu"
 # Warns about malware, adware and spyware
 cask "malwarebytes"
 cask "massreplaceit"
+cask "mediainfo"
 # Syncs files between computers and MEGA Cloud drives
 cask "megasync"
 # Open-source software for live streaming and screen recording

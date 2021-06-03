@@ -201,7 +201,6 @@ cask "gemini"
 cask "gifox"
 # Client for the Google Drive storage service
 cask "google-drive"
-cask "google-drive-file-stream"
 # Open-source video transcoder
 cask "handbrake"
 # Hex editor focussing on speed

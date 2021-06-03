@@ -63,8 +63,6 @@ brew "ffmpeg"
 brew "freetds"
 # Command-line fuzzy finder written in Go
 brew "fzf"
-# Platform built on V8 to build network applications
-brew "node", link: false
 # Gatsby command-line interface
 brew "gatsby-cli"
 # GNU compiler collection

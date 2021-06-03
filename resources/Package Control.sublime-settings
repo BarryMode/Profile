@@ -5,6 +5,7 @@
 	],
 	"installed_packages":
 	[
+		"Increment Decrement",
 		"Increment Selection",
 		"Jasonette Completions",
 		"jQuery",

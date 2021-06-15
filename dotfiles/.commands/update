@@ -153,6 +153,9 @@ function update() {
       rm -rf ~/Library/Application\ Support/Keybase/kbfs_block_cache
       rm -rf ~/Library/Application\ Support/Google/DriveFS/cef_cache/Cache
       rm -rf ~/Library/Developer/CoreSimulator
+      sudo rm -rf /Applications/Google\ Docs.app
+      sudo rm -rf /Applications/Google\ Sheets.app
+      sudo rm -rf /Applications/Google\ Slides.app
       echo 'Clear clipboard…'
       pbcopy < /dev/null
       echo 'Clear logs…'

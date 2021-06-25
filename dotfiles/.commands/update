@@ -23,16 +23,12 @@ function update() {
     # `update symlinks`
     "symlinks")
       #==============================================================================#
-      # Other Symlinks
-      #==============================================================================#
-      ln -s /Applications/ ~/Applications/Mac
-      #==============================================================================#
-      # Google Drive Symlinks
+      # Google Drive Symlinks :: from Mycroft to Google Drive
       #==============================================================================#
       gd="/Volumes/GoogleDrive/My Drive"
       if [ -d "$gd" ]; then
         cd "$gd"
-        for src in Applications Books Documents/Computers Documents/Computers/Repos/gsc Games Music Pictures Projects Projects/YouTube; do
+        for src in Documents Documents/Repos/gsc Documents/Computer/Applications Documents/Notes/Legal Documents/Projects Documents/Projects/YouTube Games Music Pictures; do
           cd "$gd/$src"
           for dir in ./; do
             run=(
@@ -47,12 +43,12 @@ function update() {
       fi
 
       #==============================================================================#
-      # Adler Symlinks
+      # Adler Symlinks :: from Mycroft to Adler
       #==============================================================================#
       adler="/Volumes/Adler"
       if [ -d "$adler" ]; then
         cd "$adler"
-        for src in Documents/Computers Games Pictures; do
+        for src in Documents/Computer Games Pictures; do
           cd "$adler/$src"
           for dir in ./; do
             run=(
@@ -65,6 +61,11 @@ function update() {
           done
         done
       fi
+
+      #==============================================================================#
+      # Other Symlinks
+      #==============================================================================#
+      ln -s /Applications/ ~/Applications/Mac
     ;;
 
     # `update` | Get macOS Software Updates, update packages, and general cleanup
@@ -123,7 +124,7 @@ function update() {
       echo '················································································'
       echo
       echo 'Updating git repos…'
-      cd ~/Documents/Computers/Repos/
+      cd ~/Documents/Repos/
       update repos
       cd ~
       echo

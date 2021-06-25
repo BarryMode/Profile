@@ -262,7 +262,6 @@ defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool false
 
 # Finder: Show the /Volumes and ~/Library folders
 sudo chflags nohidden /Volumes
-sudo chflags nohidden ~/Library
 
 # Finder: Allow quitting via ⌘ + Q?
 defaults write com.apple.finder QuitMenuItem -bool true
